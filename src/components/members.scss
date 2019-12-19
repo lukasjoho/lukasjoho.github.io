@@ -1,0 +1,49 @@
+@import './_variables';
+
+#members {
+  padding: 5rem 0;
+  h2{
+    font-size: 2.8rem!important;
+  }
+
+  .member {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+    .image-container {
+      position: relative;
+      background: url("../images/team/default.jpg") center;
+      background-size: contain;
+      width: 200px;
+      height: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 100%;
+      margin-bottom: 2rem;
+
+      svg {
+        color: $primary;
+        font-size: 2rem;
+        position: absolute;
+        left: 5%;
+        top: 7%;
+      }
+    }
+
+    h3 {
+      font-weight: 800;
+      font-size: 1.4rem;
+    }
+
+    span {
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    svg {
+      color: #0e76a8;
+      font-size: 1.5rem;
+    }
+  }
+}
