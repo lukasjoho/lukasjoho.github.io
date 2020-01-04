@@ -13,7 +13,7 @@ const Banner = () => (
           <span className="brand-title">Brand. Digital and Motion.</span>
           <img src={logo} alt="Logo" className="banner-logo"/>
           <h3>MEDIENAGENTUR</h3>
-          <p>Als eine hybride Werbeproduktion aus Köln entwickeln wir kreative
+          <p>Als eine hybride Werbeproduktion entwickeln wir kreative
             Lösungen für deine Marke, dein Unternehmen oder dein Projekt.
             Unser Fokus liegt auf Qualität und individueller Zusammenarbeit.</p>
           <PremiumButton to="/projects" text="Unsere Projekte"/>

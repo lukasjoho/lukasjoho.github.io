@@ -14,7 +14,7 @@ const Contact = () => (
             jemand mit einer Idee oder einem unvollendeten Projekt bist: Schreib uns!</p>
         </Col>
         <Col md={6} className="mail">
-          <a href="mailto:email@email.com?subject=Mail from Our Site"><IoIosPaperPlane/>email@email.com</a>
+          <a href="mailto:email@email.com?subject=Mail from Our Site"><IoIosPaperPlane/>mail@excyted.io</a>
         </Col>
       </Row>
     </Container>

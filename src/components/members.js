@@ -1,7 +1,7 @@
 import React from "react"
 import "./members.scss"
 import { Container, Row, Col } from "react-bootstrap"
-import { AiFillLinkedin, AiOutlinePlayCircle } from "react-icons/ai"
+import { AiFillLinkedin, AiOutlinePlayCircle, AiFillCode, AiFillCamera, AiFillVideoCamera, AiOutlineCodeSandbox } from "react-icons/ai"
 
 const Members = () => (
   <section id="members">
@@ -12,45 +12,45 @@ const Members = () => (
       </div>
       <Row>
         <Col md={{ span: 4, offset: 2 }} className="member">
-          <div className="image-container">
+          <div className="image-container member1">
             <AiOutlinePlayCircle/>
           </div>
-          <h3>Member1</h3>
-          <span>- management and camera -</span>
+          <h3>Lukas</h3>
+          <span>- Produktion -</span>
           <a href="https://www.linkedin.com/" rel="noopener noreferrer" target="_blank"><AiFillLinkedin/></a>
         </Col>
         <Col md={4} className="member">
-          <div className="image-container">
-            <AiOutlinePlayCircle/>
+          <div className="image-container member2">
+            <AiFillCode/>
           </div>
-          <h3>Member2</h3>
-          <span>- camera -</span>
+          <h3>Antonio</h3>
+          <span>- IT & Web -</span>
           <a href="https://www.linkedin.com/" rel="noopener noreferrer" target="_blank"><AiFillLinkedin/></a>
         </Col>
       </Row>
       <Row>
         <Col md={4} className="member">
-          <div className="image-container">
-            <AiOutlinePlayCircle/>
+          <div className="image-container member3">
+            <AiFillVideoCamera/>
           </div>
-          <h3>Member3</h3>
-          <span>- IT & WEB -</span>
+          <h3>David</h3>
+          <span>- Kamera -</span>
           <a href="https://www.linkedin.com/" rel="noopener noreferrer" target="_blank"><AiFillLinkedin/></a>
         </Col>
         <Col md={4} className="member">
-          <div className="image-container">
-            <AiOutlinePlayCircle/>
+          <div className="image-container member4">
+            <AiFillCamera/>
           </div>
-          <h3>Member4</h3>
-          <span>- photo -</span>
+          <h3>Moritz</h3>
+          <span>- Foto -</span>
           <a href="https://www.linkedin.com/" rel="noopener noreferrer" target="_blank"><AiFillLinkedin/></a>
         </Col>
         <Col md={4} className="member">
-          <div className="image-container">
-            <AiOutlinePlayCircle/>
+          <div className="image-container member5">
+            <AiOutlineCodeSandbox/>
           </div>
-          <h3>Member5</h3>
-          <span>- communication & design -</span>
+          <h3>Oskar</h3>
+          <span>- Kommunikation & Design -</span>
           <a href="https://www.linkedin.com/" rel="noopener noreferrer" target="_blank"><AiFillLinkedin/></a>
         </Col>
       </Row>
