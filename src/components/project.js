@@ -43,6 +43,17 @@ const Project = ({ data }) => {
               )
             }) : null}
           </div>
+          {
+            data.instagram ? <iframe className="igembed"
+              src={"https://www." + data.instagram + "embed"}
+              frameborder="0"
+              allowfullscreen
+              scrolling="no"
+              allowtransparency
+              width="400px"
+              height="600px"
+            /> : null
+          }
         </Modal.Body>
       </Modal>
     </Col>
