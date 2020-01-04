@@ -15,6 +15,7 @@ const Project = ({ data }) => {
   return (
     <Col lg={4} className="project">
       <div className="project-wrapper" onClick={handleShow} style={style}>
+        <div className="project-overlay"></div>
         <div className="details">
           <p><span>{data.category}</span> - <span>{data.type}</span></p>
           <h3>{data.title}</h3>

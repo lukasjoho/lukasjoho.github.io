@@ -3,7 +3,7 @@ import SEO from "../components/seo"
 import Layout from "../components/layout"
 import { Col, Container, Row } from "react-bootstrap"
 import { AiOutlineScissor } from "react-icons/ai"
-import { FaCameraRetro, FaTabletAlt } from "react-icons/fa"
+import { FaCameraRetro, FaTabletAlt, FaObjectGroup, FaPencilRuler } from "react-icons/fa"
 
 const Jobs = () => (
   <Layout>
@@ -16,9 +16,9 @@ const Jobs = () => (
           <Col md={6}>
             <ul>
               <li><FaCameraRetro/><span>Videographer</span></li>
-              <li><AiOutlineScissor/><span>Graphic Designer</span></li>
+              <li><FaPencilRuler/><span>Graphic Designer</span></li>
               <li><AiOutlineScissor/><span>Cutter</span></li>
-              <li><AiOutlineScissor/><span>UX-Design</span></li>
+              <li><FaObjectGroup/><span>UX-Design</span></li>
               <li><FaTabletAlt/><span>App-Development</span></li>
             </ul>
             <div className="contact-details">
