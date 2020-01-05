@@ -25,7 +25,7 @@ const Header = () => (
           </Nav>
           <Nav className="ml-auto nav-email">
             <Navbar.Text>
-              <a href="mailto:mail@excyted.io?subject=Mail from Our Site">mail@excyted.io</a>
+              <a href="mailto:info@excyted.io?subject=Mail from Our Site">info@excyted.io</a>
             </Navbar.Text>
           </Nav>
         </Navbar.Collapse>
