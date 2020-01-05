@@ -10,12 +10,15 @@ const Banner = () => (
     <Container>
       <Row>
         <Col md={6} className="banner-text">
-          <span className="brand-title">Brand. Digital and Motion.</span>
+          <span className="brand-title">Brand. Digital. and Motion.</span>
           <img src={logo} alt="Logo" className="banner-logo"/>
+          <div className="typewriter-container">
+          <h2 className="typewriter">because brand matters.</h2>
+          </div>
           <h3>MEDIENAGENTUR</h3>
           <p>Als eine hybride Werbeproduktion entwickeln wir kreative
             Lösungen für deine Marke, dein Unternehmen oder dein Projekt.
-            Unser Fokus liegt auf Qualität und individueller Zusammenarbeit.</p>
+            Mit euch wollen wir excyten und eure individuellen Projekte Wirklichkeit werden lassen.</p>
           <PremiumButton to="/projects" text="Unsere Projekte"/>
         </Col>
         <Col md={6} className="showcase">
