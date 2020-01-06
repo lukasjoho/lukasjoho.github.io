@@ -90,11 +90,13 @@
 
 .modal-content {
   border: none;
-  border-radius: 0;
+  border-radius: 10px;
   padding: 3rem 4rem 0;
   width: auto;
   color: $primary;
-  background-color: #151515;
+  // background-color: #151515;
+  background: radial-gradient(44.68% 44.68% at 50% 0%, #2F2F2F 0%, #111111 100%);
+  box-shadow: 0px 0px 40px 20px rgba(0,0,0,0.75);
 
   iframe{
     margin-bottom: 5rem;
