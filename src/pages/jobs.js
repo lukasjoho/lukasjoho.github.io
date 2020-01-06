@@ -23,7 +23,7 @@ const Jobs = () => (
             </ul>
             <div className="contact-details">
               <span>Kontaktier uns unter:</span><br/>
-              <a href="mailto:jobs@excyted.io?subject=Mail from Our Site">jobs@excyted.io</a>
+              <a href="mailto:info@excyted.io?subject=Mail from Our Site">info@excyted.io</a>
             </div>
           </Col>
         </Row>
