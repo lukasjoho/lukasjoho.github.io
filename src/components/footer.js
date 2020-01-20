@@ -10,7 +10,7 @@ const Footer = () => (
         <Col md={6}>
           <h3>excyted UG</h3>
           <ul>
-            <li><Link to="/" activeClassName="active">Medienagentur</Link></li>
+            <li><Link to="/" activeClassName="active">Digitalagentur</Link></li>
             <li><a href="mailto:info@excyted.io?subject=Mail from Our Site">info@excyted.io</a></li>
             <li><a href="https://www.linkedin.com/company/excyted" rel="noopener noreferrer" target="_blank">Linkedin</a></li>
             <li><a href="https://www.instagram.com/excyted.io/" rel="noopener noreferrer" target="_blank">Instagram</a></li>
@@ -29,7 +29,7 @@ const Footer = () => (
           <h3>Rechtliches</h3>
           <ul>
             <li><Link to="/imprint" activeClassName="active">Impressum</Link></li>
-            <li><Link to="/imprint" activeClassName="active">Datenschutz</Link></li>
+            <li><Link to="/imprint#privacy" activeClassName="active">Datenschutz</Link></li>
           </ul>
         </Col>
       </Row>

@@ -15,10 +15,10 @@ const Banner = () => (
           <div className="typewriter-container">
           <h2 className="typewriter">because brand matters.</h2>
           </div>
-          <h3>MEDIENAGENTUR</h3>
+          <h3>DIGITALAGENTUR</h3>
           <p>Als eine hybride Werbeproduktion entwickeln wir kreative
             Lösungen für deine Marke, dein Unternehmen oder dein Projekt.
-            Mit euch wollen wir excyten und eure individuellen Projekte Wirklichkeit werden lassen.</p>
+            Mit dir wollen wir excyten und deine individuellen Projekte Wirklichkeit werden lassen.</p>
           <PremiumButton to="/projects" text="Unsere Projekte"/>
         </Col>
         <Col md={6} className="showcase">
