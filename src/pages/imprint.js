@@ -34,6 +34,8 @@ const Imprint = () => (
               22395 Hamburg
               <br/>
               antonio@excyted.io
+              <br/>
+              +49 160 6111994
               </p>
               
 
