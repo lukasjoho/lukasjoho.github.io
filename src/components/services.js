@@ -22,18 +22,19 @@ const Services = () => (
             <li>Foto</li>
             <li>Motion Design</li>
             <li>Graphic Design</li>
+            <li>Corporate Identity</li>
           </ul>
         </Col>
         <Col md={4}>
           <div className="service-title">
             <AiOutlineAppstore/>
-            <h2>Design</h2>
+            <h2>Web</h2>
           </div>
           <ul>
+            <li>Web Development</li>
+            <li>UI/UX Design</li>
+            <li>Hosting</li>
             <li>Prototyping</li>
-            <li>UI/UX</li>
-            <li>Corporate Identity</li>
-            <li>Corporate Design</li>
           </ul>
         </Col>
         <Col md={4}>

@@ -32,6 +32,8 @@ const Imprint = () => (
               Volksdorfer Damm 272
               <br/>
               22395 Hamburg
+              <br/>
+              antonio@excyted.io
               </p>
               
 
