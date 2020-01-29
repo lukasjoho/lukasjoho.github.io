@@ -6,7 +6,7 @@ import Banner from "../components/banner"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="excyted | Digitalagentur und Filmproduktion"
+    <SEO title="excyted | Creative Studio und Filmproduktion"
          description="Als eine hybride Werbeproduktion entwickeln wir kreative Lösungen für deine Marke, dein Unternehmen oder dein Projekt. Mit dir wollen wir excyten und deine individuellen Projekte Wirklichkeit werden lassen."/>
     <Banner/>
   </Layout>

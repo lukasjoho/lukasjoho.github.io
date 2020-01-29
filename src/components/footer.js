@@ -10,7 +10,7 @@ const Footer = () => (
         <Col md={6}>
           <h3>excyted UG</h3>
           <ul>
-            <li><Link to="/" activeClassName="active">Digitalagentur</Link></li>
+            <li><Link to="/" activeClassName="active">Creative Studio</Link></li>
             <li><a href="mailto:info@excyted.io?subject=Mail from Our Site">info@excyted.io</a></li>
             <li><a href="https://www.linkedin.com/company/excyted" rel="noopener noreferrer" target="_blank">Linkedin</a></li>
             <li><a href="https://www.instagram.com/excyted.io/" rel="noopener noreferrer" target="_blank">Instagram</a></li>

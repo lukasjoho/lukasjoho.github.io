@@ -15,7 +15,7 @@ const Banner = () => (
           <div className="typewriter-container">
           <h2 className="typewriter">because brand matters.</h2>
           </div>
-          <h3>DIGITALAGENTUR</h3>
+          <h3>Creative Studio</h3>
           <p>Als eine hybride Werbeproduktion entwickeln wir kreative
             Lösungen für deine Marke, dein Unternehmen oder dein Projekt.
             Mit dir wollen wir excyten und deine individuellen Projekte Wirklichkeit werden lassen.</p>
