@@ -16,9 +16,10 @@ const Banner = () => (
           <h2 className="typewriter">because brand matters.</h2>
           </div>
           <h3>Creative Studio</h3>
-          <p>Als eine hybride Werbeproduktion entwickeln wir kreative
-            Lösungen für deine Marke, dein Unternehmen oder dein Projekt.
-            Mit dir wollen wir excyten und deine individuellen Projekte Wirklichkeit werden lassen.</p>
+          <p>Als eine hybride Werbeproduktion entwickeln wir kreative Lösungen für deine Marke, dein Unternehmen oder dein Projekt. 
+            Mit dir wollen wir excyten und deine individuellen Projekte als Ganzes umsetzen. 
+            Sowohl konzeptionell als auch technisch und grafisch 
+            arbeiten wir mit dir gemeinsam an deiner Idee.</p>
           <PremiumButton to="/projects" text="Unsere Projekte"/>
         </Col>
         <Col md={6} className="showcase">
