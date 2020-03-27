@@ -13,9 +13,11 @@ const Imprint = () => (
             <div className="title">
             <h1>Impressum</h1>
             </div>
-              <p><strong>excyted UG i. Gr.</strong>
+              
+              <h3>Angaben gemäß § 5 TMG:</h3>
               <br/>
-              Lukas Hoppe
+              <br/>
+              <p><strong>excyted UG (haftungsbeschränkt)</strong>
               <br/>
               Wilmergasse 32
               <br/>
@@ -23,8 +25,10 @@ const Imprint = () => (
               <br/>
               info@excyted.io
               <br/>
-              +49 177 9767078
+              <br/>
+              Registergericht: Amtsgericht Münster Registernummer: HRB 18537
               </p>
+              <p>Geschäftsführer: Lukas Hoppe</p>
               <p><strong>creatix schmitter</strong>
               <br/>
               Antonio Schmitter
