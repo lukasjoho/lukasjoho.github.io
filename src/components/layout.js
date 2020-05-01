@@ -6,6 +6,7 @@ import Header from "./header"
 import "./layout.css"
 import "./styles.scss"
 import Contact from "./contact"
+import { Helmet } from "react-helmet"
 
 const Layout = ({ children }) => {
   // const data = useStaticQuery(graphql`
@@ -21,6 +22,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header/>
+      <Helmet>
+      <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+      </Helmet>
       <main>{children}</main>
       <Contact/>
       <Footer/>
