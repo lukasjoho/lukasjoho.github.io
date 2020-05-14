@@ -1,3 +1,4 @@
+@import "../_variables.scss";
 .premium-button {
     color: #000!important;
     display: inline-block;
@@ -17,8 +18,9 @@
     /*background-repeat: no-repeat;*/
     /*background-position:100%;*/
     background: linear-gradient(149.58deg, #8E9EAB -29.14%, #EEF2F3 93.52%);
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+    border: transparent 2px solid;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
 }
 
 .premium-button, .premium-button:hover {
@@ -37,6 +39,9 @@
     /*background-position: 0;*/
     /*color: #fff!important;*/
     opacity: .8;
+    background: transparent;
+    color: white!important;
+    border: white 2px solid;
 }
 
 .premium-button:hover .arrow {

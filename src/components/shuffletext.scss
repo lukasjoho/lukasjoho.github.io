@@ -1,26 +1,29 @@
 
 @import "./_variables.scss";
 #shuffletext {
+  padding-bottom: 3rem;
+  .shufflediv{
+    height: 300px;
+  }
   .image-wide{
     width: 100vw;
   }
-  .parallax-div{
-    display: flex;
-    align-items: center;
-    height: 500px;
-    justify-content: center;
-    
-  }
-  h1{
-    
-  }
+    h1{
+      margin-left: 10%;
+      position: absolute;
+      width: 100%;
+      line-height: 300px;
+    }
   .text{
     font-size: 8rem;
     text-transform: uppercase;
-    color: black;
+    color: $primary;
     font-weight: bold;
+    @media screen and (max-width: 768px){
+      font-size: 4rem;
+    }
     .stroke{
-      -webkit-text-stroke: 3px black;
+      -webkit-text-stroke: 3px $primary;
       color: rgba($color: #000000, $alpha: 0);
     }
   }

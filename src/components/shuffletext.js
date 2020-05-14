@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from "react-bootstrap"
 
 import "./shuffletext.scss"
+import Particles from 'react-particles-js';
+import "../components/particles.scss";
 
 import redbull from "../images/content/redbull.jpg"
 
@@ -33,25 +35,13 @@ class Shuffletext extends Component {
     return (
 
         <section id="shuffletext">
-        
-        
-        <Parallax
-            blur={0}
-            bgImage={require('../images/content/redbull.jpg')}
-            bgImageAlt="redbull"
-            strength={100}
-        >   
-        <div class="parallax-div">
-        <Container>
-            <h1 class="text">we <span class="stroke">{textThatChanges}</span></h1>
+            <div class="shufflediv">
+            <Container>
+                <h1 class="text">we <span class="stroke">{textThatChanges}</span></h1>
             </Container>
-        </div>
-        </Parallax>
-        </section>
-
-
-        
-      
+            <Particles height={300}/>
+            </div>
+        </section>        
     )
   }
 }
