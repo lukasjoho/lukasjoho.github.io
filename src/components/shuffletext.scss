@@ -1,0 +1,27 @@
+
+@import "./_variables.scss";
+#shuffletext {
+  .image-wide{
+    width: 100vw;
+  }
+  .parallax-div{
+    display: flex;
+    align-items: center;
+    height: 500px;
+    justify-content: center;
+    
+  }
+  h1{
+    
+  }
+  .text{
+    font-size: 8rem;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    .stroke{
+      -webkit-text-stroke: 3px black;
+      color: rgba($color: #000000, $alpha: 0);
+    }
+  }
+}
