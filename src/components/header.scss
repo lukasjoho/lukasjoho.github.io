@@ -7,6 +7,12 @@ header {
   background: #000;
   color: $primary;
   font-weight: bold;
+  
+  .nav-email-bright{
+    color: $primary!important;
+    opacity: 1;
+
+}
 
   .logo {
     padding-top: .3125rem;
@@ -27,21 +33,30 @@ header {
 
     .navbar-text {
       position: relative;
-      color: inherit;
+      color: gray;
       text-align: center;
+      text-transform: uppercase;
+      a:hover{
+        color: $primary!important;
+        opacity: 1;
+      }
+    }
+    .active{
+      color: $primary!important;
     }
 
-    .active:after {
-      bottom: 0;
-      left: 0;
-      top: 0;
-      right: 0;
-      margin: auto;
-      content: '';
-      width: 45px;
-      position: absolute;
-      border-bottom: $primary 2px solid;
-    }
+    // .active:after {
+    //   color: white;
+    //   bottom: 0;
+    //   left: 0;
+    //   top: 0;
+    //   right: 0;
+    //   margin: auto;
+    //   content: '';
+    //   width: 45px;
+    //   position: absolute;
+    //   border-bottom: $primary 2px solid;
+    // }
   }
 
   .navbar-toggler {

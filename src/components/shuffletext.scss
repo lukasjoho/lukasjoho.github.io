@@ -1,18 +1,22 @@
 
 @import "./_variables.scss";
 #shuffletext {
-  padding-bottom: 3rem;
+  padding-top: 8rem;
+  padding-bottom: 10rem;
   .shufflediv{
     height: 300px;
+    .centershuffle{
+      margin-left: 10%;
+      position: absolute;
+      width: 100%;
+    }
   }
   .image-wide{
     width: 100vw;
   }
     h1{
-      margin-left: 10%;
-      position: absolute;
-      width: 100%;
-      line-height: 300px;
+      
+      line-height: 400px;
     }
   .text{
     font-size: 8rem;
@@ -26,5 +30,11 @@
       -webkit-text-stroke: 3px $primary;
       color: rgba($color: #000000, $alpha: 0);
     }
+  }
+}
+@media (max-width: 768px){
+  #shuffletext{
+    padding-top: 3rem;
+    padding-bottom: 4rem;
   }
 }

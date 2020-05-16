@@ -27,11 +27,11 @@
     border-radius: 100px;
     z-index: 2;
     pointer-events: none;
-    transition: 0.05s ease;
+    transition: 0.1s ease;
 }
 
 html {
-    
+    cursor: none !important; 
 }
 
 a {

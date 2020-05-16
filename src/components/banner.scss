@@ -2,13 +2,56 @@
 @import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap');
 @import "./_variables.scss";
 #banner {
+  .rectangles{
+    margin: -3rem 0 6rem 0;
+    position: relative;
+    height: 25vh;
+    width: 100vw;
+
+  }
+  .rect{
+    width: 100vw;
+    height: 25vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: skew(-15deg);
+    h1{
+      font-weight: bold;
+      -webkit-text-stroke: 3px $primary;
+      color: rgba($color: #000000, $alpha: 0);
+      font-size: 3rem;
+    }
+    .rect-text{
+      border: 4px solid $primary;
+      padding: 1rem;
+      &.solid{
+        border: 0;
+        margin-bottom: 1rem;
+      }
+      &.transparent{
+        color: transparent;
+        -webkit-text-stroke: 2px transparent;
+        margin: 0;
+      }
+    }
+  }
+
+
+  div:nth-child(1) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 
   .banner-text {
+    
     position: relative;
     z-index: 1;
     .typewriter-container{
       display: inline-block;
       position: relative;
+      padding: 0;
       
     }
     .typewriter{
@@ -20,6 +63,7 @@
       color: rgba(255, 255, 255, 0.25);
       margin-top: 1.5rem;
       font-family: 'Share Tech Mono' !important;
+      font-size: 1.6rem;
     }
     
     @keyframes typing{
@@ -30,29 +74,16 @@
       from, to{border-color: transparent}
       50% {border-color: rgba(255, 255, 255, 0.25);}
     }
-    .brand-title {
-      position: absolute;
-      font-size: 30px;
-      font-weight: 700;
-      left: -20px;
-      top: 20px;
-      text-transform: uppercase;
-      z-index: -1;
-      color: rgba(255, 255, 255, 0.1);
-    }
 
     img {
       z-index: 2;
-      margin-bottom: 0;
+      margin-bottom: 2rem;
       width: 100%;
     }
   }
 
 
-  div:nth-child(1) {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
+  
 
   h3 {
     font-weight: bold;
@@ -66,34 +97,43 @@
   }
 
   .showcase {
-
-    text-align: center;
-    vertical-align: middle;
+    perspective: 3000px;  
+    transform-style: preserve-3d;
+    
 
     .banner-image {
+      background: rgba(0,0,0,0);
       width: 100%;
       margin-bottom: 0;
+      transform: rotateX(20deg) rotateZ(10deg) rotateY(-20deg) translate3d(30px, 50px, 50px);
+      box-shadow: -80px 80px 80px 5px rgba(255,255,255,0.05);
+      transition: all ease .5s;
+      transform-style: preserve-3d;
+      &:hover{
+        transform: rotateX(0deg) rotateZ(0deg) translate3d(0px, 0px, 0px);
+  box-shadow: 0px 0px 0px 0px rgba(255,255,255,0.0);
+      }
     }
 
-    .thumbnail {
-      width: 70%;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
-    }
+    // .thumbnail {
+    //   width: 70%;
+    //   position: absolute;
+    //   top: 0;
+    //   bottom: 0;
+    //   left: 0;
+    //   right: 0;
+    //   margin: auto;
+    // }
 
-    .blurred {
-      position: absolute;
-      width: 50%;
-      bottom: 0;
-      left: 10px;
-      z-index: -1;
-      filter: blur(8px);
-      -webkit-filter: blur(8px)
-    }
+    // .blurred {
+    //   position: absolute;
+    //   width: 50%;
+    //   bottom: 0;
+    //   left: 10px;
+    //   z-index: -1;
+    //   filter: blur(8px);
+    //   -webkit-filter: blur(8px)
+    // }
   }
 
 }
@@ -101,6 +141,7 @@
 @media screen and (max-width: 767px) {
   #banner {
     .banner-text {
+      text-align: center;
       .brand-title {
         font-size: 20px;
         left: 0;
@@ -118,8 +159,7 @@
       }
     }
     .typewriter-container{
-      left: 50%;
-      transform: translateX(-50%);
+      
     }
     .typewriter{
       margin-bottom: 2.2rem;
@@ -127,7 +167,7 @@
     }
 
     .banner-logo {
-      margin-bottom: 2.5rem;
+      margin-bottom: 3.5rem!important;
     }
 
     .container {

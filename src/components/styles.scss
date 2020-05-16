@@ -4,7 +4,8 @@
 * {
   font-family: 'Poppins', sans-serif !important;
 }
-
+.container{
+}
 html, body {
   color: $primary !important;
   background-color: #000000;
@@ -30,7 +31,7 @@ h1{
 }
 
 p{
-  line-height: 26px;
+  line-height: 30px;
   color: $primary;
 }
 
@@ -130,11 +131,11 @@ a {
   color: inherit !important;
   text-decoration: none !important;
 
-  -webkit-transition: all .3s ease;
-  -moz-transition: all .3s ease;
-  -ms-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
 
   &:hover {
     opacity: 0.5;
