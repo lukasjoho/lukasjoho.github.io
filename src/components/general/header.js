@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import { Container, Nav, Navbar } from "react-bootstrap"
 import "./header.scss"
-import logo from "../images/logo.png"
+import logo from "../../images/logo.png"
 import { AiOutlineAlignRight } from "react-icons/ai";
 
 

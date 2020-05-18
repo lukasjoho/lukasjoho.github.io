@@ -10,7 +10,7 @@ const Contact = () => (
       <Row>
         <Col md={6}>
           <h2>Let's talk!</h2>
-          <p>Egal ob du eine große Agentur, ein neues Start-Up oder ein kleines Studio hast oder einfach
+          <p>Egal ob du eine große Agentur, ein neues Start-Up, ein kleines Studio hast oder einfach
             jemand mit einer Idee oder einem unvollendeten Projekt bist: Schreib uns!</p>
         </Col>
         <Col md={6} className="mail">

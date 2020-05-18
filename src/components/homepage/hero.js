@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from "react-bootstrap"
+import { Container } from "react-bootstrap"
 import "./hero.scss"
 import Particles from 'react-particles-js';
 import "animate.css/animate.css"

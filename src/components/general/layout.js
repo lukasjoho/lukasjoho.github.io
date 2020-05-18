@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import Footer from "./footer"
 import Header from "./header"
 import "./layout.css"
-import "./styles.scss"
+import "../styles.scss"
 import Contact from "./contact"
 import { Helmet } from "react-helmet"
 

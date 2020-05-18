@@ -16,7 +16,7 @@ class ProgressRing extends React.Component {
       
         return (
             <div >
-                <div class="progressring">
+                <div className="progressring">
                 <svg 
                     height={radius * 2}
                     width={radius * 2}
@@ -36,7 +36,7 @@ class ProgressRing extends React.Component {
                 </svg>
                 <p>{progress}</p>
                 </div>
-                <p class="circle-text">{text}</p>
+                <p className="circle-text">{text}</p>
             </div>
         );
       }

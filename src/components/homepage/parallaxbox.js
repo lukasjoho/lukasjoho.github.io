@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from "react-bootstrap"
+import { Container } from "react-bootstrap"
 import "./parallaxbox.scss"
 import { ParallaxBanner } from 'react-scroll-parallax';
-import ScrollAnimation from 'react-animate-on-scroll';
-
-import ImageBackground from '../images/content/parallaxbanner.jpg'
-import ImageBoarderLeft from '../images/content/parallaxboarderleft.png'
-
-import ImageBoarderRight from '../images/content/parallaxbanner-redbull-cropped.png'
+import ImageBackground from '../../images/content/parallaxbanner.jpg'
+import ImageBoarderLeft from '../../images/content/parallaxboarderleft.png'
+import ImageBoarderRight from '../../images/content/parallaxbanner-redbull-cropped.png'
 
 
 
@@ -28,7 +25,7 @@ class ParallaxBox extends Component {
               },
               {
                   image: `${ImageBoarderRight}`,
-                  amount: -0.25,
+                  amount: -0.2,
               },
           ]}
           style={{

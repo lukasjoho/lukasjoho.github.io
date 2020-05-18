@@ -1,15 +1,13 @@
 import React from "react"
 import "./banner.scss"
 import { Container, Row, Col } from "react-bootstrap"
-import PremiumButton from "./buttons/PremiumButton"
-import logo from "../images/banner/logo.png"
-import thumbnail from "../images/banner/banner-final.png"
+import PremiumButton from "../general/PremiumButton"
+import logo from "../../images/banner/logo.png"
 import { Parallax } from 'react-scroll-parallax';
-import StackWhu from '../images/content/whu.jpg'
-import Triangle from "../images/content/triangle.svg"
-import Dots from "../images/content/dots.png"
-import Code1 from "../images/content/code1.png"
-import Grid from "../images/content/grid.svg"
+import StackWhu from '../../images/content/whu.jpg'
+import Triangle from "../../images/content/triangle.svg"
+import Dots from "../../images/content/dots.png"
+import Code1 from "../../images/content/code1.png"
 import Rectangles from "./rectangles"
 
 
@@ -17,7 +15,7 @@ import Rectangles from "./rectangles"
 const Banner = () => (
   <section id="banner">
     <Container>
-      <Row>
+      <Row className="no-padding-top">
         <Col md={6} className="banner-text">
           <div className="typewriter-container">
           <h2 className="typewriter">Brand. Digital. and Motion.</h2>
