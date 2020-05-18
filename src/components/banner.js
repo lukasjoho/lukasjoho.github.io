@@ -41,7 +41,7 @@ const Banner = () => (
             </Parallax>
             </div>
             <div>
-            <Parallax y={[0, -60]} x={[0, 0]} tagOuter="figure">
+            <Parallax y={[0, -80]} x={[0, 0]} tagOuter="figure">
 
               <img src={Code1} alt="" className="code1"/> 
 

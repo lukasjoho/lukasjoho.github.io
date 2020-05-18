@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from "react-bootstrap"
 import "./parallaxbox.scss"
 import { ParallaxBanner } from 'react-scroll-parallax';
+import ScrollAnimation from 'react-animate-on-scroll';
+
 import ImageBackground from '../images/content/parallaxbanner.jpg'
 import ImageBoarderLeft from '../images/content/parallaxboarderleft.png'
 
@@ -35,6 +37,8 @@ class ParallaxBox extends Component {
           >
             <Container>
             <h1><span>Zielorientiert,</span> <br/><span>zum nächsten Projekt</span></h1>
+            
+            
             </Container>
         </ParallaxBanner>
       </section>

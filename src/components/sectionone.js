@@ -57,7 +57,7 @@ const Sectionone = () => (
         <Col md={{ size: 6, order: 2 }}>
           <Textblock
             title="Visualz"
-            text="Bewegtbild und Fotografie verwirklichen wir durch einen eigenen Stil im Cutting und Editing. Planung, Konzeption und eine durchdachte Linie in der Postproduktion sind dabei genau so wichtig die der Shoot selber."
+            text="Bewegtbild und Fotografie verwirklichen wir durch einen eigenen Stil im Cutting und Editing. Planung, Konzeption und eine durchdachte Linie in der Postproduktion sind dabei genau so wichtig wie der Shoot selber."
             icon={IconVisualz}
           />
           <ScrollAnimation animateIn="animate__zoomInElastic">

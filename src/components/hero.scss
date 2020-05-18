@@ -1,0 +1,36 @@
+
+@import "./_variables.scss";
+#hero {
+  padding-top: 8rem;
+  padding-bottom: 10rem;
+  .hero-container{
+    height: 300px;
+    .container-center{
+      margin-left: 10%;
+      position: absolute;
+      width: 100%;
+      h1{
+        line-height: 400px;
+        font-size: 8rem;
+        text-transform: uppercase;
+        color: $primary;
+        font-weight: bold;
+        margin: 0;
+        @media screen and (max-width: 768px){
+          font-size: 4rem;
+        }
+        .stroke{
+          -webkit-text-stroke: 3px $primary;
+          color: rgba($color: #000000, $alpha: 0);
+        }
+      }
+    }
+  }
+    
+}
+@media (max-width: 768px){
+  #hero{
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
+}

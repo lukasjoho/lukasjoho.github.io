@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from "react-bootstrap"
-
-import "./shuffletext.scss"
+import "./hero.scss"
 import Particles from 'react-particles-js';
-import "../components/particles.scss";
 import "animate.css/animate.css"
 import ScrollAnimation from 'react-animate-on-scroll';
 
@@ -11,7 +9,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 const textArray = ['ideate', 'create', 'build','excyte', ];
 
-class Shuffletext extends Component {
+class Hero extends Component {
   constructor() {
     super();
     this.state = { textIdx: 0 };
@@ -32,12 +30,12 @@ class Shuffletext extends Component {
     let textThatChanges = textArray[this.state.textIdx % textArray.length];
 
     return (
-        <section id="shuffletext">
-            <div class="shufflediv">
+        <section id="hero">
+            <div className="hero-container">
             <Container>
-              <div class="centershuffle">
+              <div className="container-center">
                 <ScrollAnimation animateIn="animate__fadeInUpTitle" duration="1.5">
-                <h1 class="text">we <span class="stroke">{textThatChanges}</span></h1>
+                <h1>we <span className="stroke">{textThatChanges}</span></h1>
                 </ScrollAnimation>
               </div>
             </Container>
@@ -50,4 +48,4 @@ class Shuffletext extends Component {
   }
 }
 
-export default Shuffletext;
+export default Hero;

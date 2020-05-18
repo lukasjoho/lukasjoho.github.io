@@ -1,6 +1,5 @@
 @import "./_variables.scss";
 
-
 .projects {
   padding: 4rem 0;
 
@@ -72,6 +71,9 @@
 
 .modal {
   padding: 0 !important;
+}
+.modal-content{
+  cursor: default!important;
 }
 
 .images-container {
