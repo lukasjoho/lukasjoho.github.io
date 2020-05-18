@@ -9,6 +9,7 @@ import Triangle from "../../images/content/triangle.svg"
 import Dots from "../../images/content/dots.png"
 import Code1 from "../../images/content/code1.png"
 import Rectangles from "./rectangles"
+import {Link} from "gatsby"
 
 
 
@@ -27,7 +28,9 @@ const Banner = () => (
             Mit dir wollen wir excyten und deine individuellen Projekte als Ganzes umsetzen. 
             Sowohl konzeptionell als auch technisch und grafisch 
             arbeiten wir mit dir gemeinsam an deiner Idee.</p>
-          <PremiumButton to="/projects" text="Unsere Projekte"/>
+            <Link to="/projects" className="premium-button">
+                <span className="module">Unsere Projekte</span>
+            </Link>
         </Col>
         <Col md={6} className="parallaxfull">
           <div className="parallax-stack">
@@ -46,29 +49,29 @@ const Banner = () => (
             </Parallax>
             </div>
             <div>
-            <Parallax y={[0, 5]} x={[0, -8]} tagOuter="figure">
+            <Parallax y={[0, 10]} x={[0, -10]} tagOuter="figure">
               <img src={StackWhu} alt="" className="opacity3"/>  
             </Parallax>
             </div>
             <div>
-            <Parallax y={[0, 10]} x={[0, -16]} tagOuter="figure">
+            <Parallax y={[0, 20]} x={[0, -20]} tagOuter="figure">
               <img src={StackWhu} alt="" className="opacity2"/>  
             </Parallax>
             </div>
             <div>
-            <Parallax y={[0, 15]} x={[0, -24]} tagOuter="figure">
+            <Parallax y={[0, 30]} x={[0, -30]} tagOuter="figure">
               <img src={StackWhu} alt="" className="opacity1"/>  
             </Parallax>
             </div>
             <div>
-            <Parallax y={[0, 20]} x={[0, -32]} tagOuter="figure">
+            <Parallax y={[0, 40]} x={[0, -40]} tagOuter="figure">
               <img src={StackWhu} alt=""/>  
             </Parallax>
             </div>
             
            
             <div>
-            <Parallax y={[0, 25]} x={[0, -48]} tagOuter="figure">
+            <Parallax y={[0, 50]} x={[0, -50]} tagOuter="figure">
               <img src={Triangle} alt=""/>  
             </Parallax>
             </div>

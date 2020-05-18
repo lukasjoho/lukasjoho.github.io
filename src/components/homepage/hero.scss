@@ -1,16 +1,24 @@
 
 @import "../_variables.scss";
 #hero {
-  padding-top: 8rem;
-  padding-bottom: 10rem;
+  padding-top: 6rem;
+  padding-bottom: 0!important;
+  
   .hero-container{
-    height: 300px;
+    
+    height: 350px;
     .container-center{
-      margin-left: 10%;
+      height: 350px;
+      margin: 0!important;
+      text-align: center;
+      // background: rgba(100,50,150, 0.5);
       position: absolute;
+      left: 0;
       width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       h1{
-        line-height: 400px;
         font-size: 8rem;
         text-transform: uppercase;
         color: $primary;
@@ -33,7 +41,11 @@
       .container-center{
         margin-left: 12%;
         h1{
-          font-size: 3.5rem;
+          font-size: 3rem;
+          .stroke{
+            -webkit-text-stroke: 2px $primary;
+            color: rgba($color: #000000, $alpha: 0);
+          }
         }
       }
     }

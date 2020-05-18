@@ -3,11 +3,13 @@
 
 #rectangles{
   margin: 3rem auto;
+  width: 100vw;
+  overflow: hidden;
   .rectangle-container{
     position: relative;
     padding: 0!important;
     width: 100vw;
-    height: 25vh;
+    height: 35vh;
     .rectangle{
       position: absolute;
       display: flex;
@@ -15,7 +17,7 @@
       align-items: center;
       transform: skew(-15deg);
       width: 100vw;
-      height: 25vh;
+      height: 35vh;
       h1{
         padding: 1rem;
         border: 4px solid $primary;

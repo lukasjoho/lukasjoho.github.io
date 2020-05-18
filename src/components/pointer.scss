@@ -36,3 +36,14 @@ html {
 a {
     cursor: none !important;
 }
+
+@media (max-width: 768px){
+    #pointer-dot {
+        
+        display: none;
+    }
+    
+    #pointer-ring {
+        display: none;
+    }
+}

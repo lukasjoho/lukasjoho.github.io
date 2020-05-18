@@ -59,23 +59,16 @@ const Sections = () => (
             icon={IconVisualz}
           />
           <ScrollAnimation animateIn="animate__zoomInElastic">
-            <Parallax y={[0, 0]} x={[10, 0]} tagOuter="figure">
               <img className="image-right" src={ImageKiel} alt="" width="75%"/>
-            </Parallax>
-            
           </ScrollAnimation>
         </Col>
         <Col md={{ size: 6, order: 1 }}>
         <div className="image-offset">
           <ScrollAnimation animateIn="animate__zoomInElastic">
-            <Parallax y={[0, 0]} x={[-10, 0]} tagOuter="figure">
               <img src={ImageThelen} alt=""/> 
-            </Parallax>
           </ScrollAnimation>
           <ScrollAnimation animateIn="animate__zoomInElastic">
-            <Parallax y={[0, 0]} x={[5, -5]} tagOuter="figure">
               <img className="image-middle" src={ImageCaptor} alt=""/>
-            </Parallax>
           </ScrollAnimation>
         </div>
         </Col> 

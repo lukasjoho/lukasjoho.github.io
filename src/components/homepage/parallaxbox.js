@@ -33,7 +33,7 @@ class ParallaxBox extends Component {
           }}
           >
             <Container>
-            <h1><span>Zielorientiert,</span> <br/><span>zum nächsten Projekt</span></h1>
+            {/* <h1><span>Zielfokussiert</span></h1> */}
             
             
             </Container>

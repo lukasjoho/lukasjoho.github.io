@@ -39,8 +39,19 @@ class Hero extends Component {
                 </ScrollAnimation>
               </div>
             </Container>
-            <Particles 
-            height={400} 
+            
+            <Particles
+            height={350}
+            params={{
+              "particles": {
+                  "number": {
+                      "value": 25
+                  },
+                  "size": {
+                      "value": 1
+                  }
+              }
+            }} 
             />
             </div>
         </section>        
