@@ -32,7 +32,6 @@ class Shuffletext extends Component {
     let textThatChanges = textArray[this.state.textIdx % textArray.length];
 
     return (
-
         <section id="shuffletext">
             <div class="shufflediv">
             <Container>
@@ -42,7 +41,9 @@ class Shuffletext extends Component {
                 </ScrollAnimation>
               </div>
             </Container>
-            <Particles height={400}/>
+            <Particles 
+            height={400} 
+            />
             </div>
         </section>        
     )

@@ -1,8 +1,17 @@
 @import "./_variables.scss";
 
 #sectionone{
+  
   padding-top: 12rem;
   padding-bottom: 6rem;
+  
+
+  .hr{
+    background-color: $sectionSeparator;
+    height: 0.5px;
+    width: 50%;
+    margin: 10rem auto;
+  }
   
   .centercontent{
     display: flex;
@@ -17,11 +26,7 @@
       border-radius: 10px;
     }
   }
-  .textblock{
-    p{
-      margin-top: 1rem;
-    }
-  }
+  
   .forms{
     position: absolute;
     top: 0;
@@ -123,9 +128,10 @@
   }
   .car-middle{
     width: 75%;
+    margin: 0;
   }
   .people{
-    
+    margin: 0;
   }
   h2{
     font-weight: 800;
@@ -134,9 +140,12 @@
   }
   .image-middle{
     position: relative;
+    margin: 0;
     margin-left: 50%;
     margin-top: -10%;
     z-index: 2;
+
+    
     
   }
   .custom-class{
@@ -148,12 +157,7 @@
     float: right;
     
   }
-  .hr{
-    background-color: $sectionSeparator;
-    height: 0.5px;
-    width: 50%;
-    margin: 10rem auto;
-  }
+  
   .progressring{
     display: flex;
     color: green;

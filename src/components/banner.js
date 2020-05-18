@@ -4,11 +4,17 @@ import { Container, Row, Col } from "react-bootstrap"
 import PremiumButton from "./buttons/PremiumButton"
 import logo from "../images/banner/logo.png"
 import thumbnail from "../images/banner/banner-final.png"
-import { ParallaxProvider } from 'react-scroll-parallax';
 import { Parallax } from 'react-scroll-parallax';
+import StackWhu from '../images/content/whu.jpg'
+import Triangle from "../images/content/triangle.svg"
+import Dots from "../images/content/dots.png"
+import Code1 from "../images/content/code1.png"
+import Grid from "../images/content/grid.svg"
+import Rectangles from "./rectangles"
+
+
 
 const Banner = () => (
-  <ParallaxProvider>
   <section id="banner">
     <Container>
       <Row>
@@ -25,32 +31,58 @@ const Banner = () => (
             arbeiten wir mit dir gemeinsam an deiner Idee.</p>
           <PremiumButton to="/projects" text="Unsere Projekte"/>
         </Col>
-        <Col md={6} className="showcase">
-          <div >
-          <img src={thumbnail} alt="Thumbnail" className="banner-image"/>
+        <Col md={6} className="parallaxfull">
+          <div className="parallax-stack">
+            <div>
+            <Parallax y={[0, 0]} x={[0, 10]} tagOuter="figure">
+              <div className="imgequi">
+              <img src={Dots} alt="" className="dots"/>  
+              </div>
+            </Parallax>
+            </div>
+            <div>
+            <Parallax y={[0, -60]} x={[0, 0]} tagOuter="figure">
+
+              <img src={Code1} alt="" className="code1"/> 
+
+            </Parallax>
+            </div>
+            <div>
+            <Parallax y={[0, 5]} x={[0, -8]} tagOuter="figure">
+              <img src={StackWhu} alt="" className="opacity3"/>  
+            </Parallax>
+            </div>
+            <div>
+            <Parallax y={[0, 10]} x={[0, -16]} tagOuter="figure">
+              <img src={StackWhu} alt="" className="opacity2"/>  
+            </Parallax>
+            </div>
+            <div>
+            <Parallax y={[0, 15]} x={[0, -24]} tagOuter="figure">
+              <img src={StackWhu} alt="" className="opacity1"/>  
+            </Parallax>
+            </div>
+            <div>
+            <Parallax y={[0, 20]} x={[0, -32]} tagOuter="figure">
+              <img src={StackWhu} alt=""/>  
+            </Parallax>
+            </div>
+            
+           
+            <div>
+            <Parallax y={[0, 25]} x={[0, -48]} tagOuter="figure">
+              <img src={Triangle} alt=""/>  
+            </Parallax>
+            </div>
+            <div className="heighter"></div>
           </div>
         </Col>
       </Row>
       
     </Container>
-    <div class="rectangles">
-        <div class="rect">
-          <h1 class="rect-text solid">Fokus</h1>    
-        </div>
-        <div class="rect">
-        <Parallax y={[50, -50]} x={[150, -150]} tagOuter="figure">
-          <h1 class="rect-text transparent">Fokus</h1>
-        </Parallax>
-        
-        </div>
-        <div class="rect">
-        <Parallax y={[-50, 50]} x={[-150, 150]} tagOuter="figure">
-          <h1 class="rect-text transparent">Fokus</h1>
-        </Parallax>
-        </div>
-      </div>
+    <hr className="hr"/>
+    <Rectangles/>
   </section>
-  </ParallaxProvider>
 )
 
 export default Banner
