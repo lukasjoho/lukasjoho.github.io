@@ -31,18 +31,18 @@ const Sections = () => (
             icon={IconTools}
           />
           <div className="section-car">
-            <ScrollAnimation animateIn="animate__fadeInRight" duration="1">
+            <ScrollAnimation animateIn="animate__fadeInRight" duration="1" delay="200">
               <img src={IconArrow} className="arrow left" alt=""/>
             </ScrollAnimation>
             <img src={ImageCar} alt="" className="image-car"/>
-            <ScrollAnimation animateIn="animate__fadeInLeft" duration="1">
+            <ScrollAnimation animateIn="animate__fadeInLeft" duration="1" delay="200">
             <img src={IconArrow} className="arrow" alt="" />
             </ScrollAnimation>
           </div>
         </Col>
 
         <Col md={6}>
-          <ScrollAnimation animateIn="animate__fadeInDownSmall" duration="1.5">
+          <ScrollAnimation animateIn="animate__fadeInUpSmall" duration="2">
               <img className="image-people" src={ImagePeople} alt="people"/>
           </ScrollAnimation>
         </Col>

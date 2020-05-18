@@ -13,7 +13,7 @@ class Textblock extends React.Component {
                     <div class="overflow-hidden">
                         <ScrollAnimation animateIn="animate__fadeInUp"><h2>{this.props.title}</h2></ScrollAnimation>
                     </div>
-                    <ScrollAnimation animateIn="animate__fadeInBottomLeft" delay="500">
+                    <ScrollAnimation animateIn="animate__fadeInBottomLeft" delay="300" duration="1">
                         <img className="icon" src={this.props.icon} alt=""/>
                     </ScrollAnimation>
                 </div>

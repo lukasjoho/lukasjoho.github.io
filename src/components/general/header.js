@@ -4,7 +4,7 @@ import React from "react"
 import { Container, Nav, Navbar } from "react-bootstrap"
 import "./header.scss"
 import logo from "../../images/logo.png"
-import { AiOutlineAlignRight } from "react-icons/ai";
+import { AiOutlineAppstore } from "react-icons/ai";
 
 
 const Header = () => (
@@ -13,7 +13,7 @@ const Header = () => (
       <Navbar expand="lg">
         <Link to="/" className="logo"><img src={logo} alt="CX"/></Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
-          <AiOutlineAlignRight/>
+          <AiOutlineAppstore/>
         </Navbar.Toggle>
         <Navbar.Collapse id="navbar">
           <Nav className="m-auto main-nav">
