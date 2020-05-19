@@ -2,6 +2,9 @@ import React from "react"
 import "./project.scss"
 import { Col, Modal } from "react-bootstrap"
 import { IoMdClose } from "react-icons/io"
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.css";
+
 
 
 const Project = ({ data }) => {
@@ -13,7 +16,10 @@ const Project = ({ data }) => {
   }
 
   return (
+    
+
     <Col lg={4} className="project">
+      <ScrollAnimation animateIn="animate__fadeInUp" duration="0.8">
       <div className="project-wrapper" onClick={handleShow} style={style}>
         <div className="project-overlay"></div>
         <div className="details">
@@ -21,6 +27,7 @@ const Project = ({ data }) => {
           <h3>{data.title}</h3>
         </div>
       </div>
+      </ScrollAnimation>
       <Modal show={show} onHide={handleClose} centered>
         <IoMdClose onClick={handleClose} className="modal-close"/>
         <Modal.Header>

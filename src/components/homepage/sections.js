@@ -26,8 +26,8 @@ const Sections = () => (
         <Col md={6}>
           <Textblock 
             title="Digitale Tools" 
-            text="Wir haben uns zur Aufgabe gemacht, die vielfältige Bandbreite digitaler Tools effektiv einzusetzen. Dadurch werden aus Ideen, Konzepte! 
-            Aus Konzepten werden Prototypen und schließlich wollen wir Produkte erschaffen, die deine Projekte in die Welt bringen! "
+            text="Die Bandbreite an digitalen Tools, die uns auf der Welt zur Verfügung stehen ist groß. Und das finden wir super! Denn wir lieben es digitale Werkzeuge effektiv einzusetzen, 
+            sodass Ideen und Fantasien keine Grenzen bei der Umsetzung gesetzt sind. Wir mischen Kreativität mit Fähigkeiten im Web Design, der Bewegtbildproduktion und unserem ständigen Drang ausdrucksvolle Projekte in die Welt zu setzen. Damit verstehen wir uns als Produzenten in einer wachsenden Omni-Channel-Welt. "
             icon={IconTools}
           />
           <div className="section-car">
@@ -55,7 +55,7 @@ const Sections = () => (
         <Col md={{ size: 6, order: 2 }}>
           <Textblock
             title="Visualz"
-            text="Bewegtbild und Fotografie verwirklichen wir durch einen eigenen Stil im Cutting und Editing. Planung, Konzeption und eine durchdachte Linie in der Postproduktion sind dabei genau so wichtig wie der Shoot selber."
+            text="Unsere Königsdisziplin, das Bewegtbild, bietet ganz besonders viel Potenzial für Excytement! Hier geht's um Feeling, Authentizität und Einzigartigkeit. Um das zu erreichen, bieten wir das volle Spektrum an Produktionsdienstleistungen an. Das beginnt bei der Konzeption, geht über die Produktion und den Schnitt und endet beim Ausrollen des Resultats über verschiedene Kanäle."
             icon={IconVisualz}
           />
           <ScrollAnimation animateIn="animate__zoomInElastic">

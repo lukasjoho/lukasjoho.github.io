@@ -8,6 +8,7 @@ import "../styles.scss"
 import Contact from "./contact"
 import { Helmet } from "react-helmet"
 
+
 const Layout = ({ children }) => {
   // const data = useStaticQuery(graphql`
   //   query SiteTitleQuery {

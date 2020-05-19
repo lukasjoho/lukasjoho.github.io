@@ -2,8 +2,8 @@
   padding-bottom: 4rem;
   .client-logo-container {
     padding-bottom: 2rem;
-    background-color: rgba(255,255,255,0.7);
-    border-radius: 20px;
+    background-color: rgba(255,255,255,0.05);
+    border-radius: 10px;
     .client-logo-wrapper {
       display: flex;
       flex-flow: row wrap;
@@ -14,6 +14,11 @@
       img {
         width: 40%;
         margin-bottom: 3.5rem;
+        filter: grayscale(25%);
+        transition: 0.25s ease;
+        &:hover{
+        filter: grayscale(0%);
+        }
       }
 
       //img:nth-of-type(odd){
@@ -26,6 +31,7 @@
 @media screen and (max-width: 767px) {
   #clients {
     .client-logo-container {
+      margin: 0px;
       .client-logo-wrapper {
         img {
           width: 37%;

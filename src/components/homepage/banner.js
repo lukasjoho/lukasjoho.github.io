@@ -24,10 +24,9 @@ const Banner = () => (
           <img src={logo} alt="Logo" className="banner-logo"/>
           
           <h3>Creative Studio</h3>
-          <p>Als eine hybride Werbeproduktion entwickeln wir kreative Lösungen für deine Marke, dein Unternehmen oder dein Projekt. 
-            Mit dir wollen wir excyten und deine individuellen Projekte als Ganzes umsetzen. 
-            Sowohl konzeptionell als auch technisch und grafisch 
-            arbeiten wir mit dir gemeinsam an deiner Idee.</p>
+          <p>Als eine hybride Medienproduktion entwickeln wir kreative Lösungen für deine Marke, dein Unternehmen oder dein Projekt. 
+            Mit excyted bringen wir unsere Disziplinen aus Web Development und der Produktion von Medien zusammen und können so nicht nur konzeptionell sondern auch technisch und grafisch 
+            eng mit dir an deiner Idee basteln. Bock zu excyten?<br/>Let's get in touch! </p>
             <Link to="/projects" className="premium-button">
                 <span className="module">Unsere Projekte</span>
             </Link>

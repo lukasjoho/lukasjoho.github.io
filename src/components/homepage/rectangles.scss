@@ -2,6 +2,15 @@
 
 
 #rectangles{
+  .tagline{
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+    font-size: 0.9rem;
+    opacity: 0.5;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
   margin: 3rem auto;
   width: 100vw;
   overflow: hidden;
@@ -24,7 +33,7 @@
         font-size: 3rem;
         font-weight: bold;
         color: rgba($color: #000000, $alpha: 0);
-        -webkit-text-stroke: 2.5px $primary;   
+        -webkit-text-stroke: 2px $primary;   
         &.solid{
           border: 0;
           margin-bottom: 1rem;
@@ -37,8 +46,8 @@
       }
       @media (max-width: 768px){
         h1{
-          font-size: 1.5rem;
-          -webkit-text-stroke: 1.5px $primary;
+          font-size: 1.4rem;
+          -webkit-text-stroke: 1px $primary;
           border: 2px solid $primary;
         }
       }

@@ -31,21 +31,21 @@ const Services = () => (
             <h2>Web</h2>
           </div>
           <ul>
-            <li>Web Development</li>
             <li>UI/UX Design</li>
-            <li>Hosting</li>
             <li>Prototyping</li>
+            <li>Development</li>
+            <li>Hosting/Deploying</li>
           </ul>
         </Col>
         <Col md={4}>
           <div className="service-title">
             <MdShowChart/>
-            <h2>Strategy</h2>
+            <h2>Brand</h2>
           </div>
           <ul>
-            <li>Marketing</li>
+            <li>Content</li>
             <li>Positioning</li>
-            <li>Content Strategy</li>
+            <li>Zielgruppe</li>
           </ul>
         </Col>
       </Row>

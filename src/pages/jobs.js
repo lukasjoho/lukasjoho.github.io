@@ -26,7 +26,7 @@ const Jobs = () => (
               <a href="mailto:info@excyted.io?subject=Mail from Our Site">info@excyted.io</a>
             </div>
           </Col>
-        </Row>
+        </Row> 
       </Container>
     </section>
   </Layout>

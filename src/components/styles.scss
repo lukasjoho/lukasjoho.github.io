@@ -4,7 +4,15 @@
 * {
   font-family: 'Poppins', sans-serif !important;
 }
-
+.tools{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  margin-top: 4rem;
+}
+.tool{
+  height: 4rem;
+}
 .padding-zero{
   padding-top: 0!important;
   padding-bottom: 0!important;
