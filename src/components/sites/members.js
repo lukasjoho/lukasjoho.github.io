@@ -13,7 +13,7 @@ const Members = () => (
       </div>
     <UseDencrypt/>
       <Row>
-        <Col md={{ span: 4, offset: 2 }} className="member">
+        <Col md={4} className="member">
           <div className="image-container member1">
             <AiOutlinePlayCircle/>
           </div>
@@ -27,7 +27,15 @@ const Members = () => (
           </div>
           <h3>Antonio</h3>
           <span>- IT & Web -</span>
-          <a href="https://www.linkedin.com/in/antonio-schmitter/" rel="noopener noreferrer" target="_blank"><AiFillLinkedin/></a>
+          <a href="https://www.linkedin.com/in/excyted/" rel="noopener noreferrer" target="_blank"><AiFillLinkedin/></a>
+        </Col>
+        <Col md={4} className="member">
+          <div className="image-container member6">
+            <AiFillCode/>
+          </div>
+          <h3>Jonas</h3>
+          <span>- UX/UI-Design -</span>
+          <a href="https://www.linkedin.com/in/excyted/" rel="noopener noreferrer" target="_blank"><AiFillLinkedin/></a>
         </Col>
       </Row>
       <Row>
