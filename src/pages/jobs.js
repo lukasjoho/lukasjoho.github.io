@@ -11,7 +11,7 @@ const Jobs = () => (
     <section id="jobs">
       <Container>
         <div className="text-left"><h1>Jobs</h1><p>Excyted mit uns zu arbeiten?</p></div>
-        <h2>Wir suchen Freelancer die in diesen Bereichen arbeiten:</h2>
+        <h2>Wir suchen Woman- und Manpower in diesen Bereichen:</h2>
         <Row>
           <Col md={6}>
             <ul>

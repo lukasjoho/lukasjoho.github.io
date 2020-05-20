@@ -32,27 +32,27 @@ class Hero extends Component {
     return (
         <section id="hero">
             <div className="hero-container">
-            <Container>
-              <div className="container-center">
-                <ScrollAnimation animateIn="animate__fadeInUpTitle" duration="1.5">
-                <h1>we <span className="stroke">{textThatChanges}</span></h1>
-                </ScrollAnimation>
-              </div>
-            </Container>
-            
-            <Particles
-            height={350}
-            params={{
-              "particles": {
-                  "number": {
-                      "value": 25
-                  },
-                  "size": {
-                      "value": 1
-                  }
-              }
-            }} 
-            />
+              <Container>
+                <div className="container-center">
+                  <ScrollAnimation animateIn="animate__fadeInUpTitle" duration="1.5">
+                  <h1>we <span className="stroke">{textThatChanges}</span></h1>
+                  </ScrollAnimation>
+                </div>
+              </Container>
+              <Particles
+              height={350}
+              params={{
+                "particles": {
+                    "number": {
+                        "value": 20
+                    },
+                    "size": {
+                        "value": 1
+                    }
+                }
+              }} 
+              />
+              
             </div>
         </section>        
     )

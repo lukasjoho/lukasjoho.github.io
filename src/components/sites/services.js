@@ -2,10 +2,14 @@ import React from "react"
 import { Col, Container, Row } from "react-bootstrap"
 import { AiOutlineEye, AiOutlineAppstore } from "react-icons/ai"
 import { MdShowChart } from "react-icons/md"
+import Wireframes from "../sites/wireframes"
+import { ParallaxProvider } from 'react-scroll-parallax';
 import "./services.scss"
 
 const Services = () => (
   <section id="services">
+    <ParallaxProvider>
+
     <Container>
       <div className="title">
         <h1>Unsere Leistungen</h1>
@@ -22,7 +26,6 @@ const Services = () => (
             <li>Foto</li>
             <li>Motion Design</li>
             <li>Graphic Design</li>
-            <li>Corporate Identity</li>
           </ul>
         </Col>
         <Col md={4}>
@@ -44,11 +47,14 @@ const Services = () => (
           </div>
           <ul>
             <li>Content</li>
+            <li>Corporate Identity</li>
             <li>Positioning</li>
-            <li>Zielgruppe</li>
           </ul>
         </Col>
       </Row>
+      </Container>
+      <Wireframes/>
+      <Container>
       <div className="service-container">
         <h2>We Create</h2>
         <Row>
@@ -117,6 +123,7 @@ const Services = () => (
         </Col>
       </Row>
     </Container>
+    </ParallaxProvider>
   </section>
 )
 

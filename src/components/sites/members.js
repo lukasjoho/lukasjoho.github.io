@@ -1,6 +1,7 @@
 import React from "react"
 import "./members.scss"
 import { Container, Row, Col } from "react-bootstrap"
+import UseDencrypt from "./usedencrypt"
 import { AiFillLinkedin, AiOutlinePlayCircle, AiFillCode, AiFillCamera, AiFillVideoCamera, AiOutlineCodeSandbox } from "react-icons/ai"
 
 const Members = () => (
@@ -10,6 +11,7 @@ const Members = () => (
         <h2>Unser Team</h2>
         <p>Mit wem wir excyten</p>
       </div>
+    <UseDencrypt/>
       <Row>
         <Col md={{ span: 4, offset: 2 }} className="member">
           <div className="image-container member1">
