@@ -4,6 +4,7 @@ import { AiOutlineEye, AiOutlineAppstore } from "react-icons/ai"
 import { MdShowChart } from "react-icons/md"
 import Wireframes from "../sites/wireframes"
 import { ParallaxProvider } from 'react-scroll-parallax';
+import Accordion from "./accordion"
 import "./services.scss"
 
 const Services = () => (
@@ -15,7 +16,8 @@ const Services = () => (
         <h1>Unsere Leistungen</h1>
         <p>Wie wir excyten</p>
       </div>
-      <Row className="services-with-icons">
+      <Accordion/>
+      {/* <Row className="services-with-icons">
         <Col md={4}>
           <div className="service-title">
             <AiOutlineEye/>
@@ -51,7 +53,7 @@ const Services = () => (
             <li>Positioning</li>
           </ul>
         </Col>
-      </Row>
+      </Row> */}
       </Container>
       <Wireframes/>
       <Container>

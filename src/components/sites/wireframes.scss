@@ -2,10 +2,11 @@
 #wireframes{
   height: 500px;
   margin-bottom: 6rem;
-  margin-top: -4rem;
+  margin-top: -2rem;
 }
 @media (max-width: 767px){
   #wireframes{
-    height: 200px;
+    height: 150px;
+    margin-top: -8rem;
   }
 }
