@@ -1,13 +1,12 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from "react";
+import PropTypes from "prop-types";
 // import { useStaticQuery, graphql } from "gatsby"
-import Footer from "./footer"
-import Header from "./header"
-import "./layout.css"
-import "../styles.scss"
-import Contact from "./contact"
-import { Helmet } from "react-helmet"
-
+import Footer from "./footer";
+import Header from "./header";
+import "./layout.css";
+import "../styles.scss";
+import Contact from "./contact";
+import { Helmet } from "react-helmet";
 
 const Layout = ({ children }) => {
   // const data = useStaticQuery(graphql`
@@ -22,19 +21,22 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header/>
+      <Header />
       <Helmet>
-      <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+        />
       </Helmet>
       <main>{children}</main>
-      <Contact/>
-      <Footer/>
+      <Contact />
+      <Footer />
     </>
-  )
-}
+  );
+};
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+  children: PropTypes.node.isRequired
+};
 
-export default Layout
+export default Layout;
