@@ -1,6 +1,6 @@
 import React from "react"
 import SEO from "../components/seo"
-import Layout from "../components/layout"
+import Layout from "../components/general/layout"
 import { Col, Container, Row } from "react-bootstrap"
 
 const Imprint = () => (

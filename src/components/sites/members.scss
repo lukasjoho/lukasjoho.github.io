@@ -1,0 +1,71 @@
+@import '../_variables';
+
+#members {
+  padding: 5rem 0;
+  h2{
+    font-size: 2.8rem!important;
+  }
+
+  .member {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+    .image-container {
+      position: relative;
+      
+      width: 200px;
+      height: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 100%;
+      margin-bottom: 2rem;
+      
+      svg {
+        color: $primary;
+        font-size: 2rem;
+        position: absolute;
+        left: 5%;
+        top: 7%;
+      }
+    }
+    .member1{
+      background: url("../../images/team/lukas.jpg") center;
+      background-size: contain;
+    }
+    .member2{
+      background: url("../../images/team/antonio.jpg") center;
+      background-size: contain;
+    }
+    .member3{
+      background: url("../../images/team/david.jpg") center;
+      background-size: contain;
+    }
+    .member4{
+      background: url("../../images/team/moritz.jpg") center;
+      background-size: contain;
+    }
+    .member5{
+      background: url("../../images/team/oskar.jpg") center;
+      background-size: contain;
+    }
+    .member6{
+      background: url("../../images/team/jonas.jpg") center;
+      background-size: contain;
+    }
+    h3 {
+      font-weight: 800;
+      font-size: 1.4rem;
+    }
+
+    span {
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    svg {
+      color: #0e76a8;
+      font-size: 1.5rem;
+    }
+  }
+}

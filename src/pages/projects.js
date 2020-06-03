@@ -1,10 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby"
-
 import SEO from "../components/seo"
-import Layout from "../components/layout"
+import Layout from "../components/general/layout"
 import { Container, Row } from "react-bootstrap"
-import Project from "../components/project"
+import Project from "../components/sites/project"
+
 
 const Projects = ({ data }) => {
   const { edges } = data.allContentfulProject

@@ -1,0 +1,46 @@
+// 
+// #pointer-dot {
+//     left: 0;
+//     top: 0;
+//     width: 0;
+//     height: 0;
+//     border: 2.5px solid black;
+//     position: fixed;
+//     border-radius: 4px;
+//     z-index: 1;
+//     pointer-events: none;
+//     transition: border-color 0.5s;
+// }
+
+// #pointer-ring {
+//     left: 0;
+//     top: 0;
+//     width: 0;
+//     height: 0;
+//     padding: 15px;
+//     border: 2px solid black;
+//     position: fixed;
+//     border-radius: 100px;
+//     z-index: 2;
+//     pointer-events: none;
+//     transition: 0.1s ease;
+// }
+
+// html {
+//     cursor: default !important; 
+// }
+
+// a {
+//     cursor: none !important;
+// }
+
+// @media (max-width: 768px){
+//     #pointer-dot {
+        
+//         display: none;
+//     }
+    
+//     #pointer-ring {
+//         display: none;
+//     }
+// }

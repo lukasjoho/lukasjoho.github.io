@@ -1,6 +1,6 @@
 import React from "react"
 import SEO from "../components/seo"
-import Layout from "../components/layout"
+import Layout from "../components/general/layout"
 import { Col, Container, Row } from "react-bootstrap"
 import { AiOutlineScissor } from "react-icons/ai"
 import { FaCameraRetro, FaTabletAlt, FaObjectGroup, FaPencilRuler } from "react-icons/fa"
@@ -11,7 +11,7 @@ const Jobs = () => (
     <section id="jobs">
       <Container>
         <div className="text-left"><h1>Jobs</h1><p>Excyted mit uns zu arbeiten?</p></div>
-        <h2>Wir suchen Freelancer die in diesen Bereichen arbeiten:</h2>
+        <h2>Wir suchen Woman- und Manpower in diesen Bereichen:</h2>
         <Row>
           <Col md={6}>
             <ul>
@@ -26,7 +26,7 @@ const Jobs = () => (
               <a href="mailto:info@excyted.io?subject=Mail from Our Site">info@excyted.io</a>
             </div>
           </Col>
-        </Row>
+        </Row> 
       </Container>
     </section>
   </Layout>

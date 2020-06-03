@@ -5,6 +5,8 @@
   "version": "1.0.0",
   "author": "Jaykch",
   "dependencies": {
+    "animate.css": "^4.1.0",
+    "babel-plugin-styled-components": "^1.10.7",
     "bootstrap": "^4.4.1",
     "dotenv": "^8.2.0",
     "gatsby": "^2.18.5",
@@ -15,6 +17,7 @@
     "gatsby-plugin-sass": "^2.1.24",
     "gatsby-plugin-sharp": "^2.3.4",
     "gatsby-plugin-sitemap": "^2.2.24",
+    "gatsby-plugin-styled-components": "^3.3.3",
     "gatsby-source-contentful": "^2.1.65",
     "gatsby-source-filesystem": "^2.1.39",
     "gatsby-transformer-sharp": "^2.3.6",
@@ -22,10 +25,16 @@
     "node-sass": "^4.13.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
+    "react-animate-on-scroll": "^2.1.5",
     "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
-    "react-icons": "^3.8.0"
+    "react-icons": "^3.8.0",
+    "react-parallax": "^3.0.3",
+    "react-particles-js": "^3.2.1",
+    "react-scroll-parallax": "^2.3.2",
+    "styled-components": "^5.1.1",
+    "use-dencrypt-effect": "^1.0.2"
   },
   "devDependencies": {
     "prettier": "^1.19.1"

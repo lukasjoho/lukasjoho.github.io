@@ -1,0 +1,24 @@
+@import '../_variables';
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap');
+
+#usedencrypt{
+  height: 1.5rem;
+  h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Share Tech Mono' !important;
+    font-size: 1.5rem!important;
+    margin-bottom: 0;
+  }
+  margin-bottom: 4rem;
+  
+}
+@media(max-width: 768px){
+  #usedencrypt{
+    height: 1.2rem;
+    h2{
+      font-size: 1.2rem!important;
+    }
+  }
+  
+}
