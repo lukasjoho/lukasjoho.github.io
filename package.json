@@ -6,6 +6,7 @@
   "author": "Jaykch",
   "dependencies": {
     "animate.css": "^4.1.0",
+    "babel-plugin-styled-components": "^1.10.7",
     "bootstrap": "^4.4.1",
     "dotenv": "^8.2.0",
     "gatsby": "^2.18.5",
@@ -16,6 +17,7 @@
     "gatsby-plugin-sass": "^2.1.24",
     "gatsby-plugin-sharp": "^2.3.4",
     "gatsby-plugin-sitemap": "^2.2.24",
+    "gatsby-plugin-styled-components": "^3.3.3",
     "gatsby-source-contentful": "^2.1.65",
     "gatsby-source-filesystem": "^2.1.39",
     "gatsby-transformer-sharp": "^2.3.6",
@@ -31,6 +33,7 @@
     "react-parallax": "^3.0.3",
     "react-particles-js": "^3.2.1",
     "react-scroll-parallax": "^2.3.2",
+    "styled-components": "^5.1.1",
     "use-dencrypt-effect": "^1.0.2"
   },
   "devDependencies": {
