@@ -1,30 +1,33 @@
-import React from "react"
-import { graphql } from "gatsby"
-import SEO from "../components/seo"
-import Layout from "../components/general/layout"
-import { Container, Row } from "react-bootstrap"
-import Project from "../components/sites/project"
-
+import React from "react";
+import { graphql } from "gatsby";
+import SEO from "../components/seo";
+import Layout from "../components/general/layout";
+import { Container, Row } from "react-bootstrap";
+import Project from "../components/sites/project";
 
 const Projects = ({ data }) => {
-  const { edges } = data.allContentfulProject
-  const projectArray = edges.map((edge) => {
-    return <Project key={edge.node.title} data={edge.node} images={edge.node.images ? edge.node.images : ""}/>
-  })
+  const { edges } = data.allContentfulProject;
+  const projectArray = edges.map(edge => {
+    return (
+      <Project
+        key={edge.node.title}
+        data={edge.node}
+        images={edge.node.images ? edge.node.images : ""}
+      />
+    );
+  });
 
   return (
     <Layout>
-      <SEO title="Projekte" description="Das haben wir bereits produziert."/>
+      <SEO title="Projekte" description="Das haben wir bereits produziert." />
       <section className="projects">
         <Container>
-          <Row>
-            {projectArray}
-          </Row>
+          <Row>{projectArray}</Row>
         </Container>
       </section>
     </Layout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query MyQuery {
@@ -49,7 +52,7 @@ export const query = graphql`
         }
       }
     }
-}
-`
+  }
+`;
 
-export default Projects
+export default Projects;
