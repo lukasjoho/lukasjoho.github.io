@@ -1,22 +1,22 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import { Parallax } from "react-scroll-parallax";
-import ScrollAnimation from "react-animate-on-scroll";
-import UiAnimation from "./uianimation";
-import Progressring from "./ProgressRing";
-import ImageCode from "../../images/content/image-code.png";
-import ImageCar from "../../images/content/image-car.png";
-import ImageKiel from "../../images/content/image-kiel.jpg";
-import ImageThelen from "../../images/content/image-thelen.jpg";
-import ImageCaptor from "../../images/content/image-captor.jpg";
-import ImagePeople from "../../images/content/image-people.png";
-import IconArrow from "../../images/content/icon-arrow.svg";
-import IconCode from "../../images/content/code.svg";
-import IconTools from "../../images/content/tools.svg";
-import IconVisualz from "../../images/content/visualz.svg";
-import Textblock from "./textblock";
-import "./sections.scss";
-import "animate.css/animate.css";
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import { Parallax } from 'react-scroll-parallax';
+import ScrollAnimation from 'react-animate-on-scroll';
+import UiAnimation from './uianimation';
+import Progressring from './ProgressRing';
+import ImageCode from '../../images/content/image-code.png';
+import ImageCar from '../../images/content/image-car.png';
+import ImageKiel from '../../images/content/image-kiel.jpg';
+import ImageThelen from '../../images/content/image-thelen.jpg';
+import ImageCaptor from '../../images/content/image-captor.jpg';
+import ImagePeople from '../../images/content/image-people.png';
+import IconArrow from '../../images/content/icon-arrow.svg';
+import IconCode from '../../images/content/code.svg';
+import IconTools from '../../images/content/tools.svg';
+import IconVisualz from '../../images/content/visualz.svg';
+import Textblock from './textblock';
+import './sections.scss';
+import 'animate.css/animate.css';
 const Sections = () => (
   <section id="sections">
     <Container>

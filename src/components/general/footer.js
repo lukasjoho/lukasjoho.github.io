@@ -1,7 +1,7 @@
-import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import { Link } from "gatsby";
-import "./footer.scss";
+import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import { Link } from 'gatsby';
+import './footer.scss';
 
 const Footer = () => (
   <footer>

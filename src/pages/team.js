@@ -1,9 +1,9 @@
-import React from "react";
-import Layout from "../components/general/layout";
-import SEO from "../components/seo";
-import Values from "../components/sites/values";
-import Members from "../components/sites/members";
-import Jubel from "../components/sites/jubel";
+import React from 'react';
+import Layout from '../components/general/layout';
+import SEO from '../components/seo';
+import Values from '../components/sites/values';
+import Members from '../components/sites/members';
+import Jubel from '../components/sites/jubel';
 
 const Team = () => (
   <Layout>

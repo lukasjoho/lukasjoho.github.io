@@ -1,4 +1,4 @@
-require("dotenv").config({
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`
 });
 
@@ -7,7 +7,7 @@ module.exports = {
     title: `Excyted - We create`,
     description: `Als eine hybride Werbeproduktion entwickeln wir kreative Lösungen für deine Marke, dein Unternehmen oder dein Projekt. Unser Fokus liegt auf Qualität und individueller Zusammenarbeit.`,
     author: `@lukasjoho, @jaykch`,
-    keywords: ["Werbeagentur", "Filmproduktion", "digital"],
+    keywords: ['Werbeagentur', 'Filmproduktion', 'digital'],
     siteUrl: `http://excyted.io`
   },
   plugins: [

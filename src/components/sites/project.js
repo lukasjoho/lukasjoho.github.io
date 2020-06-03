@@ -1,16 +1,16 @@
-import React from "react";
-import "./project.scss";
-import { Col, Modal } from "react-bootstrap";
-import { IoMdClose } from "react-icons/io";
-import ScrollAnimation from "react-animate-on-scroll";
-import "animate.css/animate.css";
+import React from 'react';
+import './project.scss';
+import { Col, Modal } from 'react-bootstrap';
+import { IoMdClose } from 'react-icons/io';
+import ScrollAnimation from 'react-animate-on-scroll';
+import 'animate.css/animate.css';
 
 const Project = ({ data }) => {
   const [show, setShow] = React.useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const style = {
-    backgroundImage: "url(" + data.photo.file.url + ")"
+    backgroundImage: 'url(' + data.photo.file.url + ')'
   };
 
   return (
@@ -65,7 +65,7 @@ const Project = ({ data }) => {
           {data.instagram ? (
             <iframe
               className="igembed"
-              src={"https://www." + data.instagram + "embed"}
+              src={'https://www.' + data.instagram + 'embed'}
               frameborder="0"
               allowfullscreen
               scrolling="no"

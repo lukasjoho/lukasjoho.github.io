@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import "./textblock.scss";
-import ScrollAnimation from "react-animate-on-scroll";
+import React from 'react';
+import PropTypes from 'prop-types';
+import './textblock.scss';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 class Textblock extends React.Component {
   render() {

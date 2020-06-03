@@ -1,10 +1,10 @@
-import { Link } from "gatsby";
-import PropTypes from "prop-types";
-import React from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
-import "./header.scss";
-import logo from "../../images/logo.png";
-import { AiOutlineAppstore } from "react-icons/ai";
+import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
+import React from 'react';
+import { Container, Nav, Navbar } from 'react-bootstrap';
+import './header.scss';
+import logo from '../../images/logo.png';
+import { AiOutlineAppstore } from 'react-icons/ai';
 
 const Header = () => (
   <header>

@@ -1,11 +1,11 @@
-import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import { AiOutlineEye, AiOutlineAppstore } from "react-icons/ai";
-import { MdShowChart } from "react-icons/md";
-import Wireframes from "../sites/wireframes";
-import { ParallaxProvider } from "react-scroll-parallax";
-import Accordion from "./accordion";
-import "./services.scss";
+import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import { AiOutlineEye, AiOutlineAppstore } from 'react-icons/ai';
+import { MdShowChart } from 'react-icons/md';
+import Wireframes from '../sites/wireframes';
+import { ParallaxProvider } from 'react-scroll-parallax';
+import Accordion from './accordion';
+import './services.scss';
 
 const Services = () => (
   <section id="services">
@@ -62,8 +62,8 @@ const Services = () => (
             <Col
               md={6}
               style={{
-                borderRight: "1.5px solid #313131",
-                paddingBottom: "2.5rem"
+                borderRight: '1.5px solid #313131',
+                paddingBottom: '2.5rem'
               }}
             >
               <div className="service">
@@ -79,7 +79,7 @@ const Services = () => (
                 </p>
               </div>
             </Col>
-            <Col md={6} style={{ paddingBottom: "2.5rem" }}>
+            <Col md={6} style={{ paddingBottom: '2.5rem' }}>
               <div className="service">
                 <h3>Konzeption</h3>
                 <p>
@@ -92,7 +92,7 @@ const Services = () => (
             </Col>
             <Col
               md={6}
-              style={{ borderRight: "1.5px solid #313131" }}
+              style={{ borderRight: '1.5px solid #313131' }}
               className="budget"
             >
               <div className="service">

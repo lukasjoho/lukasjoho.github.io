@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import { Container } from "react-bootstrap";
-import "./parallaxbox.scss";
-import { ParallaxBanner } from "react-scroll-parallax";
-import ImageBackground from "../../images/content/parallaxbanner.jpg";
-import ImageBoarderLeft from "../../images/content/parallaxboarderleft.png";
-import ImageBoarderRight from "../../images/content/parallaxbanner-redbull-cropped.png";
+import React, { Component } from 'react';
+import { Container } from 'react-bootstrap';
+import './parallaxbox.scss';
+import { ParallaxBanner } from 'react-scroll-parallax';
+import ImageBackground from '../../images/content/parallaxbanner.jpg';
+import ImageBoarderLeft from '../../images/content/parallaxboarderleft.png';
+import ImageBoarderRight from '../../images/content/parallaxbanner-redbull-cropped.png';
 
 class ParallaxBox extends Component {
   render() {
@@ -27,7 +27,7 @@ class ParallaxBox extends Component {
             }
           ]}
           style={{
-            height: "100%"
+            height: '100%'
           }}
         >
           <Container>{/* <h1><span>Zielfokussiert</span></h1> */}</Container>

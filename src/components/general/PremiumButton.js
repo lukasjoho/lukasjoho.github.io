@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import "./PremiumButton.css";
-import { Link } from "gatsby";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import './PremiumButton.css';
+import { Link } from 'gatsby';
 
 class PremiumButton extends Component {
   componentDidMount() {}
