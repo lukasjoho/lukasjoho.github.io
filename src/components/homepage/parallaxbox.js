@@ -25,7 +25,7 @@ class ParallaxBox extends Component {
               },
               {
                   image: `${ImageBoarderRight}`,
-                  amount: -0.2,
+                  amount: -0.25,
               },
           ]}
           style={{

@@ -92,6 +92,7 @@ class IndexPage extends React.Component {
     //   ringSize: 15,
     //   ringClickSize: 20
     // });
+    //fhsadjkhgfhkjsad
   }
   
   
