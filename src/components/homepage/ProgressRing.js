@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 class ProgressRing extends React.Component {
   constructor(props) {
@@ -23,7 +23,7 @@ class ProgressRing extends React.Component {
               stroke="green"
               fill="transparent"
               strokeWidth={stroke}
-              strokeDasharray={this.circumference + " " + this.circumference}
+              strokeDasharray={this.circumference + ' ' + this.circumference}
               style={{ strokeDashoffset }}
               stroke-width={stroke}
               r={this.normalizedRadius}

@@ -1,9 +1,9 @@
-import React from "react";
-import "./values.scss";
-import { Col, Container, Row } from "react-bootstrap";
-import { FiFastForward } from "react-icons/fi";
-import { MdReplay, MdSettingsInputComponent } from "react-icons/md";
-import { FaClipboardCheck } from "react-icons/fa";
+import React from 'react';
+import './values.scss';
+import { Col, Container, Row } from 'react-bootstrap';
+import { FiFastForward } from 'react-icons/fi';
+import { MdReplay, MdSettingsInputComponent } from 'react-icons/md';
+import { FaClipboardCheck } from 'react-icons/fa';
 
 const Values = () => (
   <section id="values">

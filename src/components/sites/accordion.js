@@ -1,9 +1,9 @@
-import React from "react";
-import AccordionBody from "./accordion.body";
-import { Row, Col } from "react-bootstrap";
-import { AiOutlineEye, AiOutlineAppstore } from "react-icons/ai";
-import { MdShowChart } from "react-icons/md";
-import "./accordion.scss";
+import React from 'react';
+import AccordionBody from './accordion.body';
+import { Row, Col } from 'react-bootstrap';
+import { AiOutlineEye, AiOutlineAppstore } from 'react-icons/ai';
+import { MdShowChart } from 'react-icons/md';
+import './accordion.scss';
 
 class ServicesAccordion extends React.Component {
   constructor(props) {

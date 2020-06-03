@@ -1,6 +1,6 @@
-import React from "react";
-import Accordion from "react-bootstrap/Accordion";
-import { AiOutlineArrowDown } from "react-icons/ai";
+import React from 'react';
+import Accordion from 'react-bootstrap/Accordion';
+import { AiOutlineArrowDown } from 'react-icons/ai';
 
 class AccordionItem extends React.Component {
   constructor(props) {

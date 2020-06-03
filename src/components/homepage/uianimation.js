@@ -1,6 +1,6 @@
-import React from "react";
-import ScrollAnimation from "react-animate-on-scroll";
-import "./uianimation.scss";
+import React from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
+import './uianimation.scss';
 
 class UiAnimation extends React.Component {
   render() {

@@ -1,15 +1,15 @@
-import React from "react";
-import "./banner.scss";
-import { Container, Row, Col } from "react-bootstrap";
-import PremiumButton from "../general/PremiumButton";
-import logo from "../../images/banner/logo.png";
-import { Parallax } from "react-scroll-parallax";
-import StackWhu from "../../images/content/whu.jpg";
-import Triangle from "../../images/content/triangle.svg";
-import Dots from "../../images/content/dots.png";
-import Code1 from "../../images/content/code1.png";
-import Rectangles from "./rectangles";
-import { Link } from "gatsby";
+import React from 'react';
+import './banner.scss';
+import { Container, Row, Col } from 'react-bootstrap';
+import PremiumButton from '../general/PremiumButton';
+import logo from '../../images/banner/logo.png';
+import { Parallax } from 'react-scroll-parallax';
+import StackWhu from '../../images/content/whu.jpg';
+import Triangle from '../../images/content/triangle.svg';
+import Dots from '../../images/content/dots.png';
+import Code1 from '../../images/content/code1.png';
+import Rectangles from './rectangles';
+import { Link } from 'gatsby';
 
 const Banner = () => (
   <section id="banner">
@@ -30,7 +30,7 @@ const Banner = () => (
             sondern auch technisch und grafisch eng mit dir an deiner Idee
             basteln. Bock zu excyten?
             <br />
-            Let's get in touch!{" "}
+            Let's get in touch!{' '}
           </p>
           <Link to="/projects" className="premium-button">
             <span className="module">Unsere Projekte</span>

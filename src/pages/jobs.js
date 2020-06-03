@@ -1,14 +1,14 @@
-import React from "react";
-import SEO from "../components/seo";
-import Layout from "../components/general/layout";
-import { Col, Container, Row } from "react-bootstrap";
-import { AiOutlineScissor } from "react-icons/ai";
+import React from 'react';
+import SEO from '../components/seo';
+import Layout from '../components/general/layout';
+import { Col, Container, Row } from 'react-bootstrap';
+import { AiOutlineScissor } from 'react-icons/ai';
 import {
   FaCameraRetro,
   FaTabletAlt,
   FaObjectGroup,
   FaPencilRuler
-} from "react-icons/fa";
+} from 'react-icons/fa';
 
 const Jobs = () => (
   <Layout>

@@ -1,6 +1,6 @@
-import React from "react";
-import Accordion from "react-bootstrap/Accordion";
-import AccordionItem from "./accordion.item";
+import React from 'react';
+import Accordion from 'react-bootstrap/Accordion';
+import AccordionItem from './accordion.item';
 
 class AccordionBody extends React.Component {
   constructor(props) {

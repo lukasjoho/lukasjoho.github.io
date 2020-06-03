@@ -1,12 +1,12 @@
-import * as React from "react";
+import * as React from 'react';
 
-import { useDencrypt } from "use-dencrypt-effect";
-import "./usedencrypt.scss";
+import { useDencrypt } from 'use-dencrypt-effect';
+import './usedencrypt.scss';
 
 const values = [
-  "wir sind neugierig",
-  "erzähl uns deine story",
-  "meet the Team"
+  'wir sind neugierig',
+  'erzähl uns deine story',
+  'meet the Team'
 ];
 
 const UseDencrypt = () => {

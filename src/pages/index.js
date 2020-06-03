@@ -1,13 +1,13 @@
-import React from "react";
-import { ParallaxProvider } from "react-scroll-parallax";
-import ParallaxBox from "../components/homepage/parallaxbox";
-import Layout from "../components/general/layout";
-import SEO from "../components/seo";
-import Banner from "../components/homepage/banner";
-import Sections from "../components/homepage/sections";
-import Hero from "../components/homepage/hero";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "../components/pointer.scss";
+import React from 'react';
+import { ParallaxProvider } from 'react-scroll-parallax';
+import ParallaxBox from '../components/homepage/parallaxbox';
+import Layout from '../components/general/layout';
+import SEO from '../components/seo';
+import Banner from '../components/homepage/banner';
+import Sections from '../components/homepage/sections';
+import Hero from '../components/homepage/hero';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../components/pointer.scss';
 
 class IndexPage extends React.Component {
   constructor() {

@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import { Container } from "react-bootstrap";
-import "./hero.scss";
-import Particles from "react-particles-js";
-import "animate.css/animate.css";
-import ScrollAnimation from "react-animate-on-scroll";
+import React, { Component } from 'react';
+import { Container } from 'react-bootstrap';
+import './hero.scss';
+import Particles from 'react-particles-js';
+import 'animate.css/animate.css';
+import ScrollAnimation from 'react-animate-on-scroll';
 
-const textArray = ["ideate", "create", "build", "excyte"];
+const textArray = ['ideate', 'create', 'build', 'excyte'];
 
 class Hero extends Component {
   constructor() {

@@ -1,6 +1,6 @@
-import React from "react";
-import "./rectangles.scss";
-import { Parallax } from "react-scroll-parallax";
+import React from 'react';
+import './rectangles.scss';
+import { Parallax } from 'react-scroll-parallax';
 
 class Rectangles extends React.Component {
   render() {

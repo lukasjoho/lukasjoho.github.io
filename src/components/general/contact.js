@@ -1,7 +1,7 @@
-import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import "./contact.scss";
-import { IoIosPaperPlane } from "react-icons/io";
+import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import './contact.scss';
+import { IoIosPaperPlane } from 'react-icons/io';
 
 const Contact = () => (
   <section id="contact">

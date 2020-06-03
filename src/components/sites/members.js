@@ -1,7 +1,7 @@
-import React from "react";
-import "./members.scss";
-import { Container, Row, Col } from "react-bootstrap";
-import UseDencrypt from "./usedencrypt";
+import React from 'react';
+import './members.scss';
+import { Container, Row, Col } from 'react-bootstrap';
+import UseDencrypt from './usedencrypt';
 import {
   AiFillLinkedin,
   AiOutlinePlayCircle,
@@ -9,7 +9,7 @@ import {
   AiFillCamera,
   AiFillVideoCamera,
   AiOutlineCodeSandbox
-} from "react-icons/ai";
+} from 'react-icons/ai';
 
 const Members = () => (
   <section id="members">
