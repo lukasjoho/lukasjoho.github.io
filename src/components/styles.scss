@@ -2,159 +2,161 @@
 @import './_variables';
 
 * {
-  font-family: 'Poppins', sans-serif !important;
+	font-family: 'Poppins', sans-serif !important;
 }
-.tools{
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: scroll;
-  margin-top: 4rem;
+.tools {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: scroll;
+	margin-top: 4rem;
 }
-.tool{
-  height: 4rem;
+.tool {
+	height: 4rem;
 }
-.padding-zero{
-  padding-top: 0!important;
-  padding-bottom: 0!important;
+.padding-zero {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
 }
-.no-padding-top{
-  padding-top: 0!important;
+.no-padding-top {
+	padding-top: 0 !important;
 }
-html, body {
-  color: $primary !important;
-  background-color: #000000;
-  letter-spacing: 0.02rem;
+html,
+body {
+	color: $primary !important;
+	background-color: #000000;
+	letter-spacing: 0.02rem;
 }
 
-body{
-  font-size: 0.9rem!important;
+body {
+	font-size: 0.9rem !important;
 }
 
 main {
-  background: $gradientBackground;
-  background-attachment: fixed;
+	background: $gradientBackground;
+	background-attachment: fixed;
 }
 
 ul {
-  list-style: none;
-  margin: 0;
+	list-style: none;
+	margin: 0;
 }
 
-h1{
-  font-weight: 800;
+h1 {
+	font-weight: 800;
 }
 
-p{
-  line-height: 30px;
-  color: $primary;
+p {
+	line-height: 30px;
+	color: $primary;
 }
 
-#imprint, #privacy {
+#imprint,
+#privacy {
+	padding: 3rem 0;
 
-  padding: 3rem 0;
-
-  h2 {
-    font-size: 2rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    margin-bottom: 2rem;
-  }
+	h2 {
+		font-size: 2rem;
+		font-weight: 800;
+		text-transform: uppercase;
+		margin-bottom: 2rem;
+	}
 }
 
 #jobs {
-  padding-top: 5rem;
-  padding-bottom: 10rem;
+	padding-top: 5rem;
+	padding-bottom: 10rem;
 
-  h1 {
-    font-weight: 800;
-    margin-bottom: 0;
-    font-size: 3rem;
-  }
+	h1 {
+		font-weight: 800;
+		margin-bottom: 0;
+		font-size: 3rem;
+	}
 
-  p {
-    color: $secondary;
-    font-weight: 600;
-    font-size: .8rem;
-  }
+	p {
+		color: $secondary;
+		font-weight: 600;
+		font-size: 0.8rem;
+	}
 
-  h2 {
-    margin: 1.5rem 0;
-    font-weight: 700;
-  }
+	h2 {
+		margin: 1.5rem 0;
+		font-weight: 700;
+	}
 
-  ul {
-    margin-bottom: 1.5rem;
+	ul {
+		margin-bottom: 1.5rem;
 
-    li {
-      font-size: 1rem;
+		li {
+			font-size: 1rem;
 
-      span {
-        margin-left: 1rem;
-      }
-    }
-  }
+			span {
+				margin-left: 1rem;
+			}
+		}
+	}
 
-  a {
-    font-weight: 800;
-    font-size: 1rem;
-  }
+	a {
+		font-weight: 800;
+		font-size: 1rem;
+	}
 }
 
 #imprint {
-  padding-top: 5rem;
-  .title{
-    text-align: left;
-  }
-  h3 {
-    margin-top: 5rem;
-    font-weight: 800;
-    font-size: 1.4rem;
-  }
+	padding-top: 5rem;
+	.title {
+		text-align: left;
+	}
+	h3 {
+		margin-top: 5rem;
+		font-weight: 800;
+		font-size: 1.4rem;
+	}
 }
 #privacy {
-  .title{
-    text-align: left;
-  }
-  h3 {
-    font-weight: 800;
-    font-size: 1.4rem;
-  }
+	.title {
+		text-align: left;
+	}
+	h3 {
+		font-weight: 800;
+		font-size: 1.4rem;
+	}
 }
 
-
 .title {
-  text-align: center;
+	text-align: center;
 
-  h2, h1 {
-    font-weight: 800;
-    margin-bottom: 0;
-    font-size: 2.8rem;
-  }
-  
+	h2,
+	h1 {
+		font-weight: 800;
+		margin-bottom: 0;
+		font-size: 2.8rem;
+	}
 
-  p, span {
-    color: $secondary;
-    font-weight: 600;
-    font-size: .8rem;
-  }
+	p,
+	span {
+		color: $secondary;
+		font-weight: 600;
+		font-size: 0.8rem;
+	}
 
-  margin-bottom: 4rem;
+	margin-bottom: 4rem;
 }
 
 a {
-  color: inherit !important;
-  text-decoration: none !important;
+	color: inherit !important;
+	text-decoration: none !important;
 
-  -webkit-transition: all .2s ease;
-  -moz-transition: all .2s ease;
-  -ms-transition: all .2s ease;
-  -o-transition: all .2s ease;
-  transition: all .2s ease;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
 
-  &:hover {
-    opacity: 0.5;
-  }
-  &:focus, &:visited{
-    opacity: 1;
-  }
+	&:hover {
+		opacity: 0.5;
+	}
+	&:focus,
+	&:visited {
+		opacity: 1;
+	}
 }
