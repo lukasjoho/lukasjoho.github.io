@@ -4,6 +4,7 @@ import { Col, Modal } from 'react-bootstrap';
 import { IoMdClose } from 'react-icons/io';
 import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css/animate.css';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 const Project = ({ data }) => {
 	const [show, setShow] = React.useState(false);
@@ -37,6 +38,13 @@ const Project = ({ data }) => {
 					</Modal.Title>
 				</Modal.Header>
 				<Modal.Body>
+					{data.description ? (
+						<div className='rich-text-container'>
+							{documentToReactComponents(data.description.json)}
+						</div>
+					) : (
+						''
+					)}
 					{data.video ? (
 						<iframe
 							width='560'
