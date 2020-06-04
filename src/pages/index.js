@@ -10,25 +10,25 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../components/pointer.scss';
 
 class IndexPage extends React.Component {
-  constructor() {
-    super();
-  }
-  render() {
-    return (
-      <ParallaxProvider>
-        <Layout>
-          <SEO
-            title='excyted | Creative Studio und Filmproduktion'
-            description='Als eine hybride Werbeproduktion entwickeln wir kreative Lösungen für deine Marke, dein Unternehmen oder dein Projekt. Mit dir wollen wir excyten und deine individuellen Projekte Wirklichkeit werden lassen.'
-          />
-          <Hero />
-          <Banner />
-          <ParallaxBox />
-          <Sections />
-        </Layout>
-      </ParallaxProvider>
-    );
-  }
+	constructor() {
+		super();
+	}
+	render() {
+		return (
+			<ParallaxProvider>
+				<Layout>
+					<SEO
+						title='excyted | Creative Studio und Filmproduktion'
+						description='Als eine hybride Werbeproduktion entwickeln wir kreative Lösungen für deine Marke, dein Unternehmen oder dein Projekt. Mit dir wollen wir excyten und deine individuellen Projekte Wirklichkeit werden lassen.'
+					/>
+					<Hero />
+					<Banner />
+					<ParallaxBox />
+					<Sections />
+				</Layout>
+			</ParallaxProvider>
+		);
+	}
 }
 
 export default IndexPage;

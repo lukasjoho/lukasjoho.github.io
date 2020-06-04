@@ -23,40 +23,40 @@ import ottogroup from '../../images/clients/ottogroup.png';
 import purecleanearth from '../../images/clients/purecleanearth.png';
 
 const Clients = () => (
-  <section id='clients'>
-    <Container>
-      <div className='title'>
-        <h2>Unsere Kunden</h2>
-        <span>Hier hatten wir unsere Pfoten im Spiel</span>
-      </div>
-      <Row className='client-logo-container'>
-        <Col md={6} className='client-logo-wrapper'>
-          <img src={idealab} alt='' />
-          <img src={liba} alt='' />
-          <img src={s4s} alt='' />
-          <img src={harvard} alt='' />
-        </Col>
-        <Col md={6} className='client-logo-wrapper'>
-          <img src={kiel} alt='' />
-          <img src={ingolstadt} alt='' />
-          <img src={stadtmuenster} alt='' />
-          <img src={muensterland} alt='' />
-        </Col>
-        <Col md={6} className='client-logo-wrapper'>
-          <img src={wwubaskets} alt='' />
-          <img src={ottogroup} alt='' />
-          <img src={yomaro} alt='' />
-          <img src={ihk} alt='' />
-        </Col>
-        <Col md={6} className='client-logo-wrapper'>
-          <img src={jaworskyj} alt='' />
-          <img src={grampp} alt='' />
-          <img src={dockland} alt='' />
-          <img src={biersafe} alt='' />
-        </Col>
-      </Row>
-    </Container>
-  </section>
+	<section id='clients'>
+		<Container>
+			<div className='title'>
+				<h2>Unsere Kunden</h2>
+				<span>Hier hatten wir unsere Pfoten im Spiel</span>
+			</div>
+			<Row className='client-logo-container'>
+				<Col md={6} className='client-logo-wrapper'>
+					<img src={idealab} alt='' />
+					<img src={liba} alt='' />
+					<img src={s4s} alt='' />
+					<img src={harvard} alt='' />
+				</Col>
+				<Col md={6} className='client-logo-wrapper'>
+					<img src={kiel} alt='' />
+					<img src={ingolstadt} alt='' />
+					<img src={stadtmuenster} alt='' />
+					<img src={muensterland} alt='' />
+				</Col>
+				<Col md={6} className='client-logo-wrapper'>
+					<img src={wwubaskets} alt='' />
+					<img src={ottogroup} alt='' />
+					<img src={yomaro} alt='' />
+					<img src={ihk} alt='' />
+				</Col>
+				<Col md={6} className='client-logo-wrapper'>
+					<img src={jaworskyj} alt='' />
+					<img src={grampp} alt='' />
+					<img src={dockland} alt='' />
+					<img src={biersafe} alt='' />
+				</Col>
+			</Row>
+		</Container>
+	</section>
 );
 
 export default Clients;
