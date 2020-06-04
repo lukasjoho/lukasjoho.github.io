@@ -8,10 +8,10 @@ import Accordion from './accordion';
 import './services.scss';
 
 const Services = () => (
-  <section id="services">
+  <section id='services'>
     <ParallaxProvider>
       <Container>
-        <div className="title">
+        <div className='title'>
           <h1>Unsere Leistungen</h1>
           <p>Wie wir excyten</p>
         </div>
@@ -56,7 +56,7 @@ const Services = () => (
       </Container>
       <Wireframes />
       <Container>
-        <div className="service-container">
+        <div className='service-container'>
           <h2>We Create</h2>
           <Row>
             <Col
@@ -66,7 +66,7 @@ const Services = () => (
                 paddingBottom: '2.5rem'
               }}
             >
-              <div className="service">
+              <div className='service'>
                 <h3>Zielsetzung</h3>
                 <p>
                   Was sind eure Werbeziele und wer ist eure Zielgruppe?
@@ -80,7 +80,7 @@ const Services = () => (
               </div>
             </Col>
             <Col md={6} style={{ paddingBottom: '2.5rem' }}>
-              <div className="service">
+              <div className='service'>
                 <h3>Konzeption</h3>
                 <p>
                   Damit die tatsächliche Umsetzung der Leistungsspezifikation
@@ -93,9 +93,9 @@ const Services = () => (
             <Col
               md={6}
               style={{ borderRight: '1.5px solid #313131' }}
-              className="budget"
+              className='budget'
             >
-              <div className="service">
+              <div className='service'>
                 <h3>Budgetierung</h3>
                 <p>
                   Wie umfassend das Projekt ist und wie viel Arbeit in dieses
@@ -107,7 +107,7 @@ const Services = () => (
               </div>
             </Col>
             <Col md={6}>
-              <div className="service">
+              <div className='service'>
                 <h3>Produktion</h3>
                 <p>
                   Hier wird das Produkt erstellt, iterativ nachbearbeitet und
@@ -121,7 +121,7 @@ const Services = () => (
       </Container>
       <Container>
         <Row>
-          <Col md={8} className="m-auto banner">
+          <Col md={8} className='m-auto banner'>
             <h2>We tell your story</h2>
             <p>
               Wir sind professionell, aber locker und offen.

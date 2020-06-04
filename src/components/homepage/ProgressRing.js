@@ -17,11 +17,11 @@ class ProgressRing extends React.Component {
 
     return (
       <div>
-        <div className="progressring">
+        <div className='progressring'>
           <svg height={radius * 2} width={radius * 2}>
             <circle
-              stroke="green"
-              fill="transparent"
+              stroke='green'
+              fill='transparent'
               strokeWidth={stroke}
               strokeDasharray={this.circumference + ' ' + this.circumference}
               style={{ strokeDashoffset }}
@@ -33,7 +33,7 @@ class ProgressRing extends React.Component {
           </svg>
           <p>{progress}</p>
         </div>
-        <p className="circle-text">{text}</p>
+        <p className='circle-text'>{text}</p>
       </div>
     );
   }

@@ -5,12 +5,12 @@ import { Col, Container, Row } from 'react-bootstrap';
 
 const Imprint = () => (
   <Layout>
-    <SEO title="Imprint" />
-    <section id="imprint">
+    <SEO title='Imprint' />
+    <section id='imprint'>
       <Container>
         <Row>
           <Col md={6}>
-            <div className="title">
+            <div className='title'>
               <h1>Impressum</h1>
             </div>
 
@@ -109,11 +109,11 @@ const Imprint = () => (
         </Row>
       </Container>
     </section>
-    <section id="privacy">
+    <section id='privacy'>
       <Container>
         <Row>
           <Col md={6}>
-            <div className="title">
+            <div className='title'>
               <h1>Datenschutzerklärung</h1>
             </div>
             <div>
@@ -453,9 +453,9 @@ const Imprint = () => (
                 Weitere Informationen hierzu finden Sie in der
                 Datenschutzerkl&auml;rung von Instagram:{' '}
                 <a
-                  href="https://instagram.com/about/legal/privacy/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href='https://instagram.com/about/legal/privacy/'
+                  target='_blank'
+                  rel='noopener noreferrer'
                 >
                   https://instagram.com/about/legal/privacy/
                 </a>
@@ -503,9 +503,9 @@ const Imprint = () => (
                 Weitere Informationen zum Umgang mit Nutzerdaten finden Sie in
                 der Datenschutzerkl&auml;rung von YouTube unter:{' '}
                 <a
-                  href="https://policies.google.com/privacy?hl=de"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href='https://policies.google.com/privacy?hl=de'
+                  target='_blank'
+                  rel='noopener noreferrer'
                 >
                   https://policies.google.com/privacy?hl=de
                 </a>
@@ -539,17 +539,17 @@ const Imprint = () => (
               <p>
                 Weitere Informationen zu Google Web Fonts finden Sie unter{' '}
                 <a
-                  href="https://developers.google.com/fonts/faq"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href='https://developers.google.com/fonts/faq'
+                  target='_blank'
+                  rel='noopener noreferrer'
                 >
                   https://developers.google.com/fonts/faq
                 </a>{' '}
                 und in der Datenschutzerkl&auml;rung von Google:{' '}
                 <a
-                  href="https://policies.google.com/privacy?hl=de"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href='https://policies.google.com/privacy?hl=de'
+                  target='_blank'
+                  rel='noopener noreferrer'
                 >
                   https://policies.google.com/privacy?hl=de
                 </a>

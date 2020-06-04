@@ -8,105 +8,105 @@ import Lottie from 'lottie-react-web';
 import navButton from '../../json/navButton.json';
 
 export class Header extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			isToggled: false,
-			isPaused: false,
-		};
-	}
-	render() {
-		return (
-			<header>
-				<Container>
-					<Navbar expand='lg'>
-						<Link to='/' className='logo'>
-							<img src={logo} alt='CX' />
-						</Link>
-						<Navbar.Toggle
-							style={{ fontSize: '0' }}
-							aria-controls='basic-navbar-nav'
-							onClick={() => {
-								this.setState((prevState) => ({
-									isToggled: !prevState.isToggled,
-								}));
-								if (this.state.isPaused) {
-									this.setState({
-										isPaused: false,
-									});
-								} else {
-									setTimeout(() => {
-										this.setState({
-											isPaused: true,
-										});
-									}, 600);
-								}
-							}}
-						>
-							<Lottie
-								width={32}
-								height={32}
-								isPaused={this.state.isPaused}
-								direction={this.state.isToggled ? 1 : -1}
-								speed={2}
-								options={{
-									animationData: navButton,
-									loop: false,
-								}}
-							/>
-						</Navbar.Toggle>
-						<Navbar.Collapse id='navbar'>
-							<Nav className='m-auto main-nav'>
-								<Navbar.Text>
-									<Link to='/' activeClassName='active'>
-										Home
-									</Link>
-								</Navbar.Text>
-								<Navbar.Text>
-									<Link to='/projects' activeClassName='active'>
-										Projekte
-									</Link>
-								</Navbar.Text>
-								<Navbar.Text>
-									<Link to='/services' activeClassName='active'>
-										Leistungen
-									</Link>
-								</Navbar.Text>
-								<Navbar.Text>
-									<Link to='/team' activeClassName='active'>
-										Team
-									</Link>
-								</Navbar.Text>
-								<Navbar.Text>
-									<Link to='/jobs' activeClassName='active'>
-										Jobs
-									</Link>
-								</Navbar.Text>
-							</Nav>
-							<Nav className='ml-auto nav-email'>
-								<Navbar.Text>
-									<a
-										className='nav-email-bright'
-										href='mailto:info@excyted.io?subject=Mail from Our Site'
-									>
-										info@excyted.io
-									</a>
-								</Navbar.Text>
-							</Nav>
-						</Navbar.Collapse>
-					</Navbar>
-				</Container>
-			</header>
-		);
-	}
+  constructor(props) {
+    super(props);
+    this.state = {
+      isToggled: false,
+      isPaused: false
+    };
+  }
+  render() {
+    return (
+      <header>
+        <Container>
+          <Navbar expand='lg'>
+            <Link to='/' className='logo'>
+              <img src={logo} alt='CX' />
+            </Link>
+            <Navbar.Toggle
+              style={{ fontSize: '0' }}
+              aria-controls='basic-navbar-nav'
+              onClick={() => {
+                this.setState(prevState => ({
+                  isToggled: !prevState.isToggled
+                }));
+                if (this.state.isPaused) {
+                  this.setState({
+                    isPaused: false
+                  });
+                } else {
+                  setTimeout(() => {
+                    this.setState({
+                      isPaused: true
+                    });
+                  }, 600);
+                }
+              }}
+            >
+              <Lottie
+                width={32}
+                height={32}
+                isPaused={this.state.isPaused}
+                direction={this.state.isToggled ? 1 : -1}
+                speed={2}
+                options={{
+                  animationData: navButton,
+                  loop: false
+                }}
+              />
+            </Navbar.Toggle>
+            <Navbar.Collapse id='navbar'>
+              <Nav className='m-auto main-nav'>
+                <Navbar.Text>
+                  <Link to='/' activeClassName='active'>
+                    Home
+                  </Link>
+                </Navbar.Text>
+                <Navbar.Text>
+                  <Link to='/projects' activeClassName='active'>
+                    Projekte
+                  </Link>
+                </Navbar.Text>
+                <Navbar.Text>
+                  <Link to='/services' activeClassName='active'>
+                    Leistungen
+                  </Link>
+                </Navbar.Text>
+                <Navbar.Text>
+                  <Link to='/team' activeClassName='active'>
+                    Team
+                  </Link>
+                </Navbar.Text>
+                <Navbar.Text>
+                  <Link to='/jobs' activeClassName='active'>
+                    Jobs
+                  </Link>
+                </Navbar.Text>
+              </Nav>
+              <Nav className='ml-auto nav-email'>
+                <Navbar.Text>
+                  <a
+                    className='nav-email-bright'
+                    href='mailto:info@excyted.io?subject=Mail from Our Site'
+                  >
+                    info@excyted.io
+                  </a>
+                </Navbar.Text>
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
+        </Container>
+      </header>
+    );
+  }
 }
 
 Header.propTypes = {
-	siteTitle: PropTypes.string,
+  siteTitle: PropTypes.string
 };
 
 Header.defaultProps = {
-	siteTitle: ``,
+  siteTitle: ``
 };
 
 export default Header;

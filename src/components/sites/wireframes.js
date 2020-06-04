@@ -7,9 +7,9 @@ import ImageWireframes from '../../images/content/wireframes.jpg';
 class Wireframes extends Component {
   render() {
     return (
-      <section id="wireframes">
+      <section id='wireframes'>
         <ParallaxBanner
-          className=""
+          className=''
           layers={[
             {
               image: `${ImageWireframes}`,

@@ -11,16 +11,16 @@ class AccordionItem extends React.Component {
       <>
         <li>
           <Accordion.Toggle
-            className="acc-title"
-            variant="link"
+            className='acc-title'
+            variant='link'
             eventKey={this.props.eventKey}
           >
             {this.props.title}
-            <AiOutlineArrowDown className="acc-icon" />
+            <AiOutlineArrowDown className='acc-icon' />
           </Accordion.Toggle>
-          <Accordion.Collapse className="text" eventKey={this.props.eventKey}>
+          <Accordion.Collapse className='text' eventKey={this.props.eventKey}>
             <>
-              <div className="text">{this.props.text}</div>
+              <div className='text'>{this.props.text}</div>
             </>
           </Accordion.Collapse>
         </li>

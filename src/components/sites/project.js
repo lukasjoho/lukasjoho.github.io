@@ -14,11 +14,11 @@ const Project = ({ data }) => {
   };
 
   return (
-    <Col lg={4} className="project">
-      <ScrollAnimation animateIn="animate__fadeInUp" duration="0.8">
-        <div className="project-wrapper" onClick={handleShow} style={style}>
-          <div className="project-overlay"></div>
-          <div className="details">
+    <Col lg={4} className='project'>
+      <ScrollAnimation animateIn='animate__fadeInUp' duration='0.8'>
+        <div className='project-wrapper' onClick={handleShow} style={style}>
+          <div className='project-overlay'></div>
+          <div className='details'>
             <p>
               <span>{data.category}</span> - <span>{data.type}</span>
             </p>
@@ -27,7 +27,7 @@ const Project = ({ data }) => {
         </div>
       </ScrollAnimation>
       <Modal show={show} onHide={handleClose} centered>
-        <IoMdClose onClick={handleClose} className="modal-close" />
+        <IoMdClose onClick={handleClose} className='modal-close' />
         <Modal.Header>
           <Modal.Title>
             <h3>{data.title}</h3>
@@ -39,24 +39,24 @@ const Project = ({ data }) => {
         <Modal.Body>
           {data.video ? (
             <iframe
-              width="560"
-              height="315"
+              width='560'
+              height='315'
               src={data.video}
-              frameBorder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              frameBorder='0'
+              allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
               allowFullScreen
               title={data.title}
             />
           ) : null}
-          <div className="images-container">
+          <div className='images-container'>
             {data.images
               ? data.images.map(image => {
                   console.log(image.file.url);
                   return (
                     <img
                       src={image.file.url}
-                      alt="portfolio"
-                      className="portfolio-image"
+                      alt='portfolio'
+                      className='portfolio-image'
                     />
                   );
                 })
@@ -64,14 +64,14 @@ const Project = ({ data }) => {
           </div>
           {data.instagram ? (
             <iframe
-              className="igembed"
+              className='igembed'
               src={'https://www.' + data.instagram + 'embed'}
-              frameborder="0"
+              frameborder='0'
               allowfullscreen
-              scrolling="no"
+              scrolling='no'
               allowtransparency
-              width="400px"
-              height="600px"
+              width='400px'
+              height='600px'
             />
           ) : null}
         </Modal.Body>

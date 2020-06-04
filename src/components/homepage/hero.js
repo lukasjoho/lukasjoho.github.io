@@ -28,16 +28,16 @@ class Hero extends Component {
     let textThatChanges = textArray[this.state.textIdx % textArray.length];
 
     return (
-      <section id="hero">
-        <div className="hero-container">
+      <section id='hero'>
+        <div className='hero-container'>
           <Container>
-            <div className="container-center">
+            <div className='container-center'>
               <ScrollAnimation
-                animateIn="animate__fadeInUpTitle"
-                duration="1.5"
+                animateIn='animate__fadeInUpTitle'
+                duration='1.5'
               >
                 <h1>
-                  we <span className="stroke">{textThatChanges}</span>
+                  we <span className='stroke'>{textThatChanges}</span>
                 </h1>
               </ScrollAnimation>
             </div>

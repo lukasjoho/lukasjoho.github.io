@@ -31,7 +31,7 @@ const UseDencrypt = () => {
   }, []);
 
   return (
-    <div id="usedencrypt">
+    <div id='usedencrypt'>
       <h2>{result}</h2>
     </div>
   );

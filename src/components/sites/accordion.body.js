@@ -12,22 +12,22 @@ class AccordionBody extends React.Component {
         <AccordionItem
           title={this.props.title1}
           text={this.props.text1}
-          eventKey="1"
+          eventKey='1'
         />
         <AccordionItem
           title={this.props.title2}
           text={this.props.text2}
-          eventKey="2"
+          eventKey='2'
         />
         <AccordionItem
           title={this.props.title3}
           text={this.props.text3}
-          eventKey="3"
+          eventKey='3'
         />
         <AccordionItem
           title={this.props.title4}
           text={this.props.text4}
-          eventKey="4"
+          eventKey='4'
         />
       </Accordion>
     );

@@ -4,9 +4,9 @@ import './contact.scss';
 import { IoIosPaperPlane } from 'react-icons/io';
 
 const Contact = () => (
-  <section id="contact">
+  <section id='contact'>
     <Container>
-      <span id="back-text">Kontakt</span>
+      <span id='back-text'>Kontakt</span>
       <Row>
         <Col md={6}>
           <h2>Let's talk!</h2>
@@ -16,8 +16,8 @@ const Contact = () => (
             unvollendeten Projekt bist: Schreib uns!
           </p>
         </Col>
-        <Col md={6} className="mail">
-          <a href="mailto:info@excyted.io?subject=Mail from Our Site">
+        <Col md={6} className='mail'>
+          <a href='mailto:info@excyted.io?subject=Mail from Our Site'>
             <IoIosPaperPlane />
             info@excyted.io
           </a>

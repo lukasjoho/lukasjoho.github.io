@@ -8,8 +8,8 @@ import Jubel from '../components/sites/jubel';
 const Team = () => (
   <Layout>
     <SEO
-      title="Team"
-      description="Das sind wir. Ein interdisziplinäres Team aus kreativen Köpfen."
+      title='Team'
+      description='Das sind wir. Ein interdisziplinäres Team aus kreativen Köpfen.'
     />
     <Members />
     <Jubel />

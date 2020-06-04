@@ -6,15 +6,15 @@ import { MdReplay, MdSettingsInputComponent } from 'react-icons/md';
 import { FaClipboardCheck } from 'react-icons/fa';
 
 const Values = () => (
-  <section id="values">
+  <section id='values'>
     <Container>
-      <div className="title">
+      <div className='title'>
         <h2>Unsere Werte</h2>
         <span>Die Zusammenarbeit mit uns</span>
       </div>
       <Row>
-        <Col md={6} className="value">
-          <div className="icon">
+        <Col md={6} className='value'>
+          <div className='icon'>
             <FiFastForward />
           </div>
           <h3>Motivation</h3>
@@ -24,8 +24,8 @@ const Values = () => (
           </p>
         </Col>
 
-        <Col md={6} className="value">
-          <div className="icon">
+        <Col md={6} className='value'>
+          <div className='icon'>
             <MdReplay />
           </div>
           <h3>Erfahrung</h3>
@@ -37,8 +37,8 @@ const Values = () => (
           </p>
         </Col>
 
-        <Col md={6} className="value">
-          <div className="icon">
+        <Col md={6} className='value'>
+          <div className='icon'>
             <MdSettingsInputComponent />
           </div>
           <h3>Team-Work</h3>
@@ -50,8 +50,8 @@ const Values = () => (
           </p>
         </Col>
 
-        <Col md={6} className="value">
-          <div className="icon">
+        <Col md={6} className='value'>
+          <div className='icon'>
             <FaClipboardCheck />
           </div>
           <h3>Customization</h3>

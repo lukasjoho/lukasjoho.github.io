@@ -8,8 +8,8 @@ class PremiumButton extends Component {
 
   render() {
     return (
-      <Link to={this.props.to} className="premium-button">
-        <span className="module">{this.props.text}</span>
+      <Link to={this.props.to} className='premium-button'>
+        <span className='module'>{this.props.text}</span>
       </Link>
     );
   }

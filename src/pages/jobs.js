@@ -13,12 +13,12 @@ import {
 const Jobs = () => (
   <Layout>
     <SEO
-      title="Jobs"
-      description="Wir suchen Freelancer in vielen Bereichen. Melde dich bei uns."
+      title='Jobs'
+      description='Wir suchen Freelancer in vielen Bereichen. Melde dich bei uns.'
     />
-    <section id="jobs">
+    <section id='jobs'>
       <Container>
-        <div className="text-left">
+        <div className='text-left'>
           <h1>Jobs</h1>
           <p>Excyted mit uns zu arbeiten?</p>
         </div>
@@ -47,10 +47,10 @@ const Jobs = () => (
                 <span>App-Development</span>
               </li>
             </ul>
-            <div className="contact-details">
+            <div className='contact-details'>
               <span>Kontaktier uns unter:</span>
               <br />
-              <a href="mailto:info@excyted.io?subject=Mail from Our Site">
+              <a href='mailto:info@excyted.io?subject=Mail from Our Site'>
                 info@excyted.io
               </a>
             </div>

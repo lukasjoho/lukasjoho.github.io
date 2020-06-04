@@ -9,9 +9,9 @@ import ImageBoarderRight from '../../images/content/parallaxbanner-redbull-cropp
 class ParallaxBox extends Component {
   render() {
     return (
-      <section id="parallaxbox">
+      <section id='parallaxbox'>
         <ParallaxBanner
-          className="parallax-banner"
+          className='parallax-banner'
           layers={[
             {
               image: `${ImageBackground}`,
