@@ -24,6 +24,7 @@ export class Header extends React.Component {
 							<img src={logo} alt='CX' />
 						</Link>
 						<Navbar.Toggle
+							style={{ fontSize: '0' }}
 							aria-controls='basic-navbar-nav'
 							onClick={() => {
 								this.setState((prevState) => ({
@@ -38,16 +39,16 @@ export class Header extends React.Component {
 										this.setState({
 											isPaused: true,
 										});
-									}, 1200);
+									}, 600);
 								}
 							}}
 						>
 							<Lottie
-								width={40}
-								height={40}
+								width={32}
+								height={32}
 								isPaused={this.state.isPaused}
 								direction={this.state.isToggled ? 1 : -1}
-								speed={1.5}
+								speed={2}
 								options={{
 									animationData: navButton,
 									loop: false,
