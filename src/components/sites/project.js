@@ -15,7 +15,11 @@ const Project = ({ data }) => {
 
 	return (
 		<Col lg={4} className='project'>
-			<ScrollAnimation animateIn='animate__fadeInUp' duration='0.8'>
+			<ScrollAnimation
+				animateIn='animate__fadeInUp'
+				duration='0.8'
+				animateOnce='true'
+			>
 				<div className='project-wrapper' onClick={handleShow} style={style}>
 					<div className='project-overlay'></div>
 					<div className='details'>
