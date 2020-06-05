@@ -12,6 +12,7 @@ class UiAnimation extends React.Component {
 							animateIn='animate__fadeIn'
 							duration='0.5'
 							delay='1000'
+							animateOnce='true'
 						>
 							<div className='frame-top'></div>
 						</ScrollAnimation>
@@ -21,6 +22,7 @@ class UiAnimation extends React.Component {
 									animateIn='animate__fadeIn'
 									duration='0.5'
 									delay='1100'
+									animateOnce='true'
 								>
 									<div className='balken'></div>
 								</ScrollAnimation>
@@ -28,6 +30,7 @@ class UiAnimation extends React.Component {
 									animateIn='animate__fadeIn'
 									duration='0.5'
 									delay='1200'
+									animateOnce='true'
 								>
 									<div className='balken'></div>
 								</ScrollAnimation>
@@ -35,6 +38,7 @@ class UiAnimation extends React.Component {
 									animateIn='animate__fadeIn'
 									duration='0.5'
 									delay='1300'
+									animateOnce='true'
 								>
 									<div className='balken'></div>
 								</ScrollAnimation>
@@ -42,6 +46,7 @@ class UiAnimation extends React.Component {
 									animateIn='animate__fadeIn'
 									duration='0.5'
 									delay='1400'
+									animateOnce='true'
 								>
 									<div className='balken'></div>
 								</ScrollAnimation>
@@ -51,6 +56,7 @@ class UiAnimation extends React.Component {
 									animateIn='animate__fadeIn'
 									duration='1'
 									delay='1500'
+									animateOnce='true'
 								>
 									<div class='right-fill'></div>
 								</ScrollAnimation>
@@ -62,12 +68,14 @@ class UiAnimation extends React.Component {
 					animateIn='animate__fadeIn'
 					duration='0.3'
 					delay='1600'
+					animateOnce='true'
 				>
 					<div className='square-container'>
 						<ScrollAnimation
 							animateIn='animate__zoomIn'
 							duration='0.3'
 							delay='1700'
+							animateOnce='true'
 						>
 							<div className='square'></div>
 						</ScrollAnimation>
@@ -75,6 +83,7 @@ class UiAnimation extends React.Component {
 							animateIn='animate__zoomIn'
 							duration='0.3'
 							delay='1800'
+							animateOnce='true'
 						>
 							<div className='square'></div>
 						</ScrollAnimation>
@@ -82,6 +91,7 @@ class UiAnimation extends React.Component {
 							animateIn='animate__zoomIn'
 							duration='0.3'
 							delay='1900'
+							animateOnce='true'
 						>
 							<div className='square'></div>
 						</ScrollAnimation>
@@ -89,6 +99,7 @@ class UiAnimation extends React.Component {
 							animateIn='animate__zoomIn'
 							duration='0.3'
 							delay='2000'
+							animateOnce='true'
 						>
 							<div className='square'></div>
 						</ScrollAnimation>

@@ -9,16 +9,20 @@ class Textblock extends React.Component {
 			<div class='textblock'>
 				<div className='iconsinline'>
 					<div class='overflow-hidden'>
-						<ScrollAnimation animateIn='animate__fadeInUp'>
+						<ScrollAnimation animateIn='animate__fadeInUp' animateOnce='true'>
 							<h2>{this.props.title}</h2>
 						</ScrollAnimation>
 					</div>
-					<ScrollAnimation animateIn='animate__fadeInBottomLeft' delay='200'>
+					<ScrollAnimation
+						animateIn='animate__fadeInBottomLeft'
+						delay='200'
+						animateOnce='true'
+					>
 						<img className='icon' src={this.props.icon} alt='' />
 					</ScrollAnimation>
 				</div>
 				<div class='overflow-hidden'>
-					<ScrollAnimation animateIn='animate__fadeInUp'>
+					<ScrollAnimation animateIn='animate__fadeInUp' animateOnce='true'>
 						<p>{this.props.text}</p>
 					</ScrollAnimation>
 				</div>

@@ -30,28 +30,14 @@ const Sections = () => (
 						icon={IconTools}
 					/>
 					<div className='section-car'>
-						<ScrollAnimation
-							animateIn='animate__fadeInRight'
-							duration='1'
-							delay='200'
-						>
-							<img src={IconArrow} className='arrow left' alt='' />
-						</ScrollAnimation>
+						<img src={IconArrow} className='arrow left' alt='' />
 						<img src={ImageCar} alt='' className='image-car' />
-						<ScrollAnimation
-							animateIn='animate__fadeInLeft'
-							duration='1'
-							delay='200'
-						>
-							<img src={IconArrow} className='arrow' alt='' />
-						</ScrollAnimation>
+						<img src={IconArrow} className='arrow' alt='' />
 					</div>
 				</Col>
 
 				<Col md={6}>
-					<ScrollAnimation animateIn='animate__fadeInUpSmall' duration='2'>
-						<img className='image-people' src={ImagePeople} alt='people' />
-					</ScrollAnimation>
+					<img className='image-people' src={ImagePeople} alt='people' />
 				</Col>
 			</Row>
 
@@ -65,18 +51,12 @@ const Sections = () => (
 						text="Unsere Königsdisziplin, das Bewegtbild, bietet ganz besonders viel Potenzial für Excytement! Hier geht's um Feeling, Authentizität und Einzigartigkeit. Um das zu erreichen, bieten wir das volle Spektrum an Produktionsdienstleistungen an. Das beginnt bei der Konzeption, geht über die Produktion und den Schnitt und endet beim Ausrollen des Resultats über verschiedene Kanäle."
 						icon={IconVisualz}
 					/>
-					<ScrollAnimation animateIn='animate__zoomInElastic'>
-						<img className='image-right' src={ImageKiel} alt='' width='75%' />
-					</ScrollAnimation>
+					<img className='image-right' src={ImageKiel} alt='' width='75%' />
 				</Col>
 				<Col md={{ size: 6, order: 1 }}>
 					<div className='image-offset'>
-						<ScrollAnimation animateIn='animate__zoomInElastic'>
-							<img src={ImageThelen} alt='' />
-						</ScrollAnimation>
-						<ScrollAnimation animateIn='animate__zoomInElastic'>
-							<img className='image-middle' src={ImageCaptor} alt='' />
-						</ScrollAnimation>
+						<img src={ImageThelen} alt='' />
+						<img className='image-middle' src={ImageCaptor} alt='' />
 					</div>
 				</Col>
 			</Row>
@@ -92,7 +72,12 @@ const Sections = () => (
 				</Col>
 				<Col md={6} className='ring-container'>
 					<div className='ring'>
-						<ScrollAnimation animateIn='animate__fadeIn' duration='1' delay='0'>
+						<ScrollAnimation
+							animateIn='animate__fadeIn'
+							duration='1'
+							delay='0'
+							animateOnce='true'
+						>
 							<Progressring
 								radius='50'
 								stroke='6'
@@ -106,6 +91,7 @@ const Sections = () => (
 							animateIn='animate__fadeIn'
 							duration='1'
 							delay='200'
+							animateOnce='true'
 						>
 							<Progressring
 								radius='50'
@@ -120,6 +106,7 @@ const Sections = () => (
 							animateIn='animate__fadeIn'
 							duration='1'
 							delay='400'
+							animateOnce='true'
 						>
 							<Progressring
 								radius='50'
@@ -134,6 +121,7 @@ const Sections = () => (
 							animateIn='animate__fadeIn'
 							duration='1'
 							delay='600'
+							animateOnce='true'
 						>
 							<Progressring radius='50' stroke='6' progress='100' text='SEO' />
 						</ScrollAnimation>
