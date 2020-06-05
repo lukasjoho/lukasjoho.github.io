@@ -26,7 +26,7 @@ const Sections = () => (
 					<Textblock
 						title='Digitale Tools'
 						text='Die Bandbreite an digitalen Tools, die uns auf der Welt zur Verfügung stehen ist groß. Und das finden wir super! Denn wir lieben es digitale Werkzeuge effektiv einzusetzen, 
-            sodass Ideen und Fantasien keine Grenzen bei der Umsetzung gesetzt sind. Wir mischen Kreativität mit Fähigkeiten im Web Design, der Bewegtbildproduktion und unserem ständigen Drang ausdrucksvolle Projekte in die Welt zu setzen. Damit verstehen wir uns als Produzenten in einer wachsenden Omni-Channel-Welt. '
+            sodass Ideen und Fantasien keine Grenzen bei der Umsetzung gesetzt sind. Wir mischen Kreativität mit Fähigkeiten im Web Design, der Bewegtbildproduktion und unserem ständigen Drang ausdrucksvolle Projekte für dich zu erstellen. Damit verstehen wir uns als Produzenten in einer wachsenden Omni-Channel-Welt. '
 						icon={IconTools}
 					/>
 					<div className='section-car'>
@@ -47,8 +47,8 @@ const Sections = () => (
 			<Row>
 				<Col md={{ size: 6, order: 2 }}>
 					<Textblock
-						title='Visualz'
-						text="Unsere Königsdisziplin, das Bewegtbild, bietet ganz besonders viel Potenzial für Excytement! Hier geht's um Feeling, Authentizität und Einzigartigkeit. Um das zu erreichen, bieten wir das volle Spektrum an Produktionsdienstleistungen an. Das beginnt bei der Konzeption, geht über die Produktion und den Schnitt und endet beim Ausrollen des Resultats über verschiedene Kanäle."
+						title='Media'
+						text="Videos und Bilder bieten ganz besonders viel Potenzial für Excytement! Hier geht's um Feeling, Authentizität und Einzigartigkeit. Um das zu erreichen, bieten wir das volle Spektrum an Produktionsdienstleistungen an. Das beginnt bei der Konzeption, geht über die Produktion und den Schnitt und endet beim Ausrollen des Resultats über verschiedene Kanäle."
 						icon={IconVisualz}
 					/>
 					<img className='image-right' src={ImageKiel} alt='' width='75%' />
@@ -65,8 +65,9 @@ const Sections = () => (
 			<Row>
 				<Col md={6}>
 					<Textblock
-						title='Digital Web'
-						text='...meets performance. Performance steht bei uns an erster Stelle. Speed ist das A und O, für eine erfolgreiche User Experience. Deshalb entwickeln wir unsere Websiten mit einem federleichten Javascript-Framework. Dadurch erzielen wir fast maximale Performance-Ergebnisse.'
+						title='Web'
+						text='Eine Website hat mittlerweile jeder. Aber eine die schnell lädt, weit oben bei Google erscheint und alle Funktionen beinhaltet die du brauchst hat nicht jeder. Das wollen wir ändern.
+						Angefangen beim Entwickeln der grundsätzlichen Struktur deiner Seite und dem Design erstellen wir mit dir gemeinsam eine ausdrucksvolle Website die dich und deine Kunden excyted. '
 						icon={IconCode}
 					/>
 				</Col>
