@@ -31,12 +31,15 @@ const Projects = ({ data }) => {
 
 export const query = graphql`
 	query MyQuery {
-		allContentfulProject {
+		allContentfulProject(sort: { fields: order, order: DESC }) {
 			edges {
 				node {
 					title
 					category
 					type
+					description {
+						json
+					}
 					photo {
 						file {
 							url
