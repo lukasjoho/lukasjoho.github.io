@@ -1,31 +1,31 @@
 @import '../_variables';
-#parallaxbox{
-  height: 500px;
-  .parallax-banner{
-    display: flex;
-    align-items: center;
-    h1 span{
-      position: relative;
-      padding: 1rem;
-      background: black;
-      font-size: 1.5rem;
-      font-weight: bold;
-      line-height: 4.5rem;
-      color: $primary;
-      z-index: 10;
-      border-radius: 4px;
-    }
-  }
+#parallaxbox {
+	height: 500px;
+	.parallax-banner {
+		display: flex;
+		align-items: center;
+		h1 span {
+			position: relative;
+			padding: 1rem;
+			background: black;
+			font-size: 1.5rem;
+			font-weight: bold;
+			line-height: 4.5rem;
+			color: $primary;
+			z-index: 10;
+			border-radius: 4px;
+		}
+	}
 }
 
-@media (max-width: 768px){
-  #parallaxbox{
-    height: 150px;
-    .parallax-banner{
-      h1 span{
-        font-size: 1rem;
-        line-height: 3.5rem;
-      }
-    }
-  }
+@media (max-width: 768px) {
+	#parallaxbox {
+		height: 150px;
+		.parallax-banner {
+			h1 span {
+				font-size: 1rem;
+				line-height: 3.5rem;
+			}
+		}
+	}
 }

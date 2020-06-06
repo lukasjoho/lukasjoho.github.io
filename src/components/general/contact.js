@@ -11,9 +11,9 @@ const Contact = () => (
 				<Col md={6}>
 					<h2>Let's talk!</h2>
 					<p>
-						Egal ob du eine große Agentur, ein neues Start-Up, ein kleines
-						Studio hast oder einfach jemand mit einer Idee oder einem
-						unvollendeten Projekt bist: Schreib uns!
+						Egal ob du zu einem etablierten Unternehmen oder einem Start-Up
+						gehörst, jemand mit einer Idee oder einem unvollendeten Projekt
+						bist: Kontaktiere uns!
 					</p>
 				</Col>
 				<Col md={6} className='mail'>

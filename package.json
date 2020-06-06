@@ -48,7 +48,7 @@
 	"scripts": {
 		"build": "gatsby build",
 		"develop": "gatsby develop",
-		"format": "prettier --single-quote --jsx-single-quote --trailing-comma --use-tabs --write \"**/*.{js,jsx,json,md}\"",
+		"format": "prettier --single-quote --jsx-single-quote --trailing-comma --use-tabs --write \"**/*.{js,jsx,json,md,css,scss}\"",
 		"start": "npm run develop",
 		"serve": "gatsby serve",
 		"clean": "gatsby clean",

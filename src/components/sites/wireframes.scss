@@ -1,12 +1,12 @@
 @import '../_variables';
-#wireframes{
-  height: 500px;
-  margin-bottom: 6rem;
-  margin-top: -2rem;
+#wireframes {
+	height: 500px;
+	margin-bottom: 6rem;
+	margin-top: -2rem;
 }
-@media (max-width: 767px){
-  #wireframes{
-    height: 150px;
-    margin-top: -8rem;
-  }
+@media (max-width: 767px) {
+	#wireframes {
+		height: 150px;
+		margin-top: -8rem;
+	}
 }
