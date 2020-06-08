@@ -15,7 +15,7 @@ class Rectangles extends React.Component {
 					</div>
 					<div className='rectangle'>
 						<Parallax y={[50, -50]} x={[150, -150]} tagOuter='figure'>
-							<h1 class='transparent'>eye-popping reality</h1>
+							<h1 className='transparent'>eye-popping reality</h1>
 						</Parallax>
 					</div>
 					<div className='rectangle'>
