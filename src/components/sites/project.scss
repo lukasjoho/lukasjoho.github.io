@@ -72,7 +72,6 @@
 }
 
 .images-container {
-
 	margin: auto;
 
 	.portfolio-image {
@@ -121,9 +120,12 @@
 					margin-bottom: 0;
 				}
 			}
+			a {
+				border-bottom: 1px solid $primary;
+			}
 		}
 	}
-  
+
 	.modal-close {
 		position: absolute;
 		top: 1.5rem;
