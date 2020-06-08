@@ -23,9 +23,9 @@ class ServicesAccordion extends React.Component {
 								title1='Film'
 								text1='Wir produzieren Werbespots, Aftermovies und Social Media Content in vielen Bereichen, darunter: Business, Sport, Musik und Technologie.'
 								title2='Foto'
-								text2='Ob Fotos für die Website, für das Unternehmen, das neue Projekt oder alles zusammen,'
+								text2='Ob Fotos für die Website, für das Unternehmen, das neue Projekt oder alles zusammen, wir erstellen Dir genau die Fotos die Du brauchst.'
 								title3='Motion Graphics'
-								text3='Wir sind fest davon überzeugt, dass Motion Graphics eine immer größere Rolle im Bewegtbild spielen wird. Texte und Elemente perspektivisch eingefügt ins Video, können die Krische auf der Torte sein.  '
+								text3='Wir sind fest davon überzeugt, dass Motion Graphics eine immer größere Rolle im Bewegtbild spielen wird. Texte und Elemente perspektivisch eingefügt ins Video, können die Kirsche auf der Torte sein.  '
 								title4='Graphic Design'
 								text4='Hier machen wir dein Anliegen durch die Kombination aus Bild, Farbe, Formen und Typographie durch die neusten digitalen Tools visuell erkennbar.'
 							/>
@@ -42,11 +42,11 @@ class ServicesAccordion extends React.Component {
 								text1='Vor dem Entwickeln einer Web Applikation oder Website sketchen und designen wir. So sind beide Seiten effizienter und agiler in der kreativen Phase bevor die Website tatsächlich
 								entwickelt wird.'
 								title2='Prototyping'
-								text2='Wir kreieren einen Klick-Dummie der geplanten Web App, um das zukünftige Ergebnis schonmal vorab auf User Experience zu testen.'
+								text2='Wir erstellen einen Prototyp der geplanten Web App, um das zukünftige Ergebnis schonmal vorab auf User Experience zu testen.'
 								title3='Development'
 								text3='Damit unsere Web Applikationen bestmögliche Performance erzielen, basieren wir die Programmierung auf federleichtem Javascript. Wir bauen Content Management Systems manuell ein und behalten so maximale Kontrolle über das Produkt.'
 								title4='Hosting/Deployment'
-								text4='Nicht zu vernachlässigen ist das richtige Hosting auf schnellen, sicheren und einfach zu wartenden Servern damit sowohl du als auch deine User die bestmögliche User Experience erleben.'
+								text4='Nicht zu vernachlässigen ist das richtige Hosting auf schnellen, sicheren und einfach zu wartenden Servern damit sowohl Du als auch deine User die bestmögliche User Experience erleben.'
 							/>
 						</ul>
 					</Col>

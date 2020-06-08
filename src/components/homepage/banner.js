@@ -27,7 +27,7 @@ const Banner = () => (
 						für deine Marke, dein Unternehmen oder dein Projekt. Mit excyted
 						bringen wir unsere Disziplinen aus Web Development und der
 						Produktion von Medien zusammen und können so nicht nur konzeptionell
-						sondern auch technisch und grafisch eng mit dir an deiner Idee
+						sondern auch technisch und grafisch eng mit Dir an deiner Idee
 						basteln. Bock zu excyten?
 						<br />
 						Let's get in touch!{' '}

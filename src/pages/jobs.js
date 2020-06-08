@@ -14,7 +14,7 @@ const Jobs = () => (
 	<Layout>
 		<SEO
 			title='Jobs'
-			description='Wir suchen Freelancer in vielen Bereichen. Melde dich bei uns.'
+			description='Wir suchen Freelancer in vielen Bereichen. Melde Dich bei uns.'
 		/>
 		<section id='jobs'>
 			<Container>

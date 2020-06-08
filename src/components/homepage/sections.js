@@ -26,7 +26,7 @@ const Sections = () => (
 					<Textblock
 						title='Digitale Tools'
 						text='Die Bandbreite an digitalen Tools, die uns auf der Welt zur Verfügung stehen ist groß. Und das finden wir super! Denn wir lieben es digitale Werkzeuge effektiv einzusetzen, 
-            sodass Ideen und Fantasien keine Grenzen bei der Umsetzung gesetzt sind. Wir mischen Kreativität mit Fähigkeiten im Web Design, der Bewegtbildproduktion und unserem ständigen Drang ausdrucksvolle Projekte für dich zu erstellen. Damit verstehen wir uns als Produzenten in einer wachsenden Omni-Channel-Welt. '
+            sodass Ideen und Fantasien keine Grenzen bei der Umsetzung gesetzt sind. Wir mischen Kreativität mit Fähigkeiten im Web Design, der Bewegtbildproduktion und unserem ständigen Drang ausdrucksvolle Projekte für Dich zu erstellen. Damit verstehen wir uns als Produzenten in einer wachsenden Omni-Channel-Welt. '
 						icon={IconTools}
 					/>
 					<div className='section-car'>
@@ -66,8 +66,8 @@ const Sections = () => (
 				<Col md={6}>
 					<Textblock
 						title='Web'
-						text='Eine Website hat mittlerweile jeder. Aber eine die schnell lädt, weit oben bei Google erscheint und alle Funktionen beinhaltet die du brauchst hat nicht jeder. Das wollen wir ändern.
-						Angefangen beim Entwickeln der grundsätzlichen Struktur deiner Seite und dem Design erstellen wir mit dir gemeinsam eine ausdrucksvolle Website die dich und deine Kunden excyted. '
+						text='Eine Website hat mittlerweile jeder. Aber eine die schnell lädt, weit oben bei Google erscheint und alle Funktionen beinhaltet die Du brauchst hat nicht jeder. Das wollen wir ändern.
+						Angefangen beim Entwickeln der grundsätzlichen Struktur deiner Seite und dem Design erstellen wir mit Dir gemeinsam eine ausdrucksvolle Website die Dich und deine Kunden excyted. '
 						icon={IconCode}
 					/>
 				</Col>
