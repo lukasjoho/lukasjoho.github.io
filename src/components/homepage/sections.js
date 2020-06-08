@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { Parallax } from 'react-scroll-parallax';
 import ScrollAnimation from 'react-animate-on-scroll';
 import UiAnimation from './uianimation';
 import Progressring from './ProgressRing';

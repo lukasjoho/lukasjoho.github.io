@@ -9,9 +9,6 @@ import Hero from '../components/homepage/hero';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class IndexPage extends React.Component {
-	constructor() {
-		super();
-	}
 	render() {
 		return (
 			<ParallaxProvider>

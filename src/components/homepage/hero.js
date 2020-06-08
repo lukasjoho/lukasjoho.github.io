@@ -20,7 +20,7 @@ class Hero extends Component {
 		}, 1500);
 	}
 
-	componentDidUnmount() {
+	componentWillUnmount() {
 		clearInterval(this.timeout);
 	}
 
