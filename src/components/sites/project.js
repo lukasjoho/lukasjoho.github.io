@@ -31,8 +31,8 @@ class Project extends React.Component {
 				<Col lg={4} className='project'>
 					<ScrollAnimation
 						animateIn='animate__fadeInUp'
-						duration='0.8'
-						animateOnce='true'
+						duration={0.8}
+						animateOnce={true}
 					>
 						<div
 							className='project-wrapper'
@@ -87,6 +87,7 @@ class Project extends React.Component {
 											console.log(image.file.url);
 											return (
 												<img
+													key={image.id}
 													src={image.file.url}
 													alt='portfolio'
 													className='portfolio-image'
@@ -100,10 +101,10 @@ class Project extends React.Component {
 									<iframe
 										className='igembed'
 										src={'https://www.' + data.instagram + 'embed'}
-										frameborder='0'
-										allowfullscreen
+										frameBorder='0'
+										allowFullScreen
 										scrolling='no'
-										allowtransparency
+										allowtransparency='true'
 										width='100%'
 										height='100%'
 									/>

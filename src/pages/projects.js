@@ -10,7 +10,7 @@ const Projects = ({ data }) => {
 	const projectArray = edges.map(edge => {
 		return (
 			<Project
-				key={edge.node.title}
+				key={edge.node.id}
 				data={edge.node}
 				images={edge.node.images ? edge.node.images : ''}
 			/>
@@ -37,6 +37,7 @@ export const query = graphql`
 					title
 					category
 					type
+					id
 					description {
 						json
 					}
@@ -47,6 +48,7 @@ export const query = graphql`
 					}
 					video
 					images {
+						id
 						file {
 							url
 						}
