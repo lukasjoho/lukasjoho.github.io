@@ -84,13 +84,39 @@
 		margin-top: 0;
 	}
 }
+.ratio-youtube {
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%;
+	margin-bottom: 5rem;
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
+.ratio-instagram {
+	position: relative;
+	width: 100%;
+	padding-bottom: 150%;
+	margin-bottom: 5rem;
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
 
 .modal-content {
 	border: none;
 	border-radius: 10px;
 	padding: 3rem 4rem 0;
-	width: auto;
-	max-width: 700px;
+	width: 100%;
+	max-width: 900px;
 	color: $primary;
 	// background-color: #151515;
 	background: radial-gradient(
@@ -201,12 +227,6 @@
 			top: 0.5rem;
 			right: 0.5rem;
 			font-size: 2rem;
-		}
-
-		iframe {
-			width: 300px;
-			height: 200px;
-			margin-bottom: 5rem;
 		}
 
 		.igembed {

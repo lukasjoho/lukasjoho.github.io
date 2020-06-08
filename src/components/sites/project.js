@@ -1,95 +1,119 @@
 import React from 'react';
-import './project.scss';
 import { Col, Modal } from 'react-bootstrap';
 import { IoMdClose } from 'react-icons/io';
 import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css/animate.css';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import './project.scss';
 
-const Project = ({ data }) => {
-	const [show, setShow] = React.useState(false);
-	const handleClose = () => setShow(false);
-	const handleShow = () => setShow(true);
-	const style = {
-		backgroundImage: 'url(' + data.photo.file.url + ')',
-	};
+class Project extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			isClient: false,
+			show: false,
+		};
+	}
+	handleClose = () => this.setState({ show: false });
+	handleShow = () => this.setState({ show: true });
 
-	return (
-		<Col lg={4} className='project'>
-			<ScrollAnimation
-				animateIn='animate__fadeInUp'
-				duration='0.8'
-				animateOnce='true'
-			>
-				<div className='project-wrapper' onClick={handleShow} style={style}>
-					<div className='project-overlay'></div>
-					<div className='details'>
-						<p>
-							<span>{data.category}</span> - <span>{data.type}</span>
-						</p>
-						<h3>{data.title}</h3>
-					</div>
-				</div>
-			</ScrollAnimation>
-			<Modal show={show} onHide={handleClose} centered>
-				<IoMdClose onClick={handleClose} className='modal-close' />
-				<Modal.Header>
-					<Modal.Title>
-						<h3>{data.title}</h3>
-						<p>
-							<span>{data.category}</span> - <span>{data.type}</span>
-						</p>
-					</Modal.Title>
-				</Modal.Header>
-				<Modal.Body>
-					{data.description ? (
-						<div className='rich-text-container'>
-							{documentToReactComponents(data.description.json)}
+	componentDidMount() {
+		this.setState({ isClient: true });
+	}
+
+	render() {
+		var { data } = this.props;
+		var style = {
+			backgroundImage: 'url(' + data.photo.file.url + ')',
+		};
+		return (
+			<React.Fragment key={this.state.isClient}>
+				<Col lg={4} className='project'>
+					<ScrollAnimation
+						animateIn='animate__fadeInUp'
+						duration='0.8'
+						animateOnce='true'
+					>
+						<div
+							className='project-wrapper'
+							onClick={this.handleShow}
+							style={style}
+						>
+							<div className='project-overlay'></div>
+							<div className='details'>
+								<p>
+									<span>{data.category}</span> - <span>{data.type}</span>
+								</p>
+								<h3>{data.title}</h3>
+							</div>
 						</div>
-					) : (
-						''
-					)}
-					{data.video ? (
-						<iframe
-							width='560'
-							height='315'
-							src={data.video}
-							frameBorder='0'
-							allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
-							allowFullScreen
-							title={data.title}
-						/>
-					) : null}
-					<div className='images-container'>
-						{data.images
-							? data.images.map(image => {
-									console.log(image.file.url);
-									return (
-										<img
-											src={image.file.url}
-											alt='portfolio'
-											className='portfolio-image'
-										/>
-									);
-							  })
-							: null}
-					</div>
-					{data.instagram ? (
-						<iframe
-							className='igembed'
-							src={'https://www.' + data.instagram + 'embed'}
-							frameborder='0'
-							allowfullscreen
-							scrolling='no'
-							allowtransparency
-							width='400px'
-							height='600px'
-						/>
-					) : null}
-				</Modal.Body>
-			</Modal>
-		</Col>
-	);
-};
+					</ScrollAnimation>
+					<Modal show={this.state.show} onHide={this.handleClose} centered>
+						<IoMdClose onClick={this.handleClose} className='modal-close' />
+						<Modal.Header>
+							<Modal.Title>
+								<h3>{data.title}</h3>
+								<p>
+									<span>{data.category}</span> - <span>{data.type}</span>
+								</p>
+							</Modal.Title>
+						</Modal.Header>
+						<Modal.Body>
+							{data.description ? (
+								<div className='rich-text-container'>
+									{documentToReactComponents(data.description.json)}
+								</div>
+							) : (
+								''
+							)}
 
+							{data.video ? (
+								<div className='ratio-youtube'>
+									<iframe
+										width='100%'
+										height='100%'
+										src={data.video}
+										frameBorder='0'
+										allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+										allowFullScreen
+										title={data.title}
+									/>
+								</div>
+							) : null}
+
+							<div className='images-container'>
+								{data.images
+									? data.images.map(image => {
+											console.log(image.file.url);
+											return (
+												<img
+													src={image.file.url}
+													alt='portfolio'
+													className='portfolio-image'
+												/>
+											);
+									  })
+									: null}
+							</div>
+							{data.instagram ? (
+								<div className='ratio-instagram'>
+									<iframe
+										className='igembed'
+										src={'https://www.' + data.instagram + 'embed'}
+										frameborder='0'
+										allowfullscreen
+										scrolling='no'
+										allowtransparency
+										width='100%'
+										height='100%'
+									/>
+								</div>
+							) : null}
+						</Modal.Body>
+					</Modal>
+				</Col>
+			</React.Fragment>
+		);
+	}
+}
 export default Project;
