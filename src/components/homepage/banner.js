@@ -1,7 +1,6 @@
 import React from 'react';
 import './banner.scss';
 import { Container, Row, Col } from 'react-bootstrap';
-import PremiumButton from '../general/PremiumButton';
 import logo from '../../images/banner/logo.png';
 import { Parallax } from 'react-scroll-parallax';
 import StackWhu from '../../images/content/whu.jpg';
