@@ -11,7 +11,7 @@ const Contact = () => (
 				<Col md={6}>
 					<h2>Let's talk!</h2>
 					<p>
-						Egal ob du zu einem etablierten Unternehmen oder einem Start-Up
+						Egal ob Du zu einem etablierten Unternehmen oder einem Start-Up
 						gehörst, jemand mit einer Idee oder einem unvollendeten Projekt
 						bist: Kontaktiere uns!
 					</p>

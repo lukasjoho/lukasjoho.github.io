@@ -72,7 +72,7 @@ const Services = () => (
 									Was sind eure Werbeziele und wer ist eure Zielgruppe?
 									<br />
 									Dies ist der erste wichtige Baustein im
-									Produktenstehungsprozess, über den sowohl Sie als auch wir uns
+									Produktenstehungsprozess, über den sowohl Du als auch wir uns
 									im Klaren sein müssen. <br />
 									Nur dann kann das Produkt entsprechend effektiv konzipiert und
 									gestaltet werden.
