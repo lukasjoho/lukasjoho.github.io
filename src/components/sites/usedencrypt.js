@@ -10,7 +10,7 @@ const values = [
 ];
 
 const UseDencrypt = () => {
-	const { result, dencrypt } = useDencrypt();
+	const { result } = useDencrypt();
 
 	React.useEffect(() => {
 		let i = 0;
