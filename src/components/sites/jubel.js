@@ -1,7 +1,6 @@
 import React from 'react';
 import './jubel.scss';
 import ImageJubel from '../../images/content/kiel-jubel.jpg';
-import RectangleOutline from '../../images/content/rectangle.svg';
 import { Col, Row, Container } from 'react-bootstrap';
 import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css/animate.css';

@@ -38,6 +38,8 @@ class Project extends React.Component {
 							className='project-wrapper'
 							onClick={this.handleShow}
 							style={style}
+							role='link'
+							tabindex='0'
 						>
 							<div className='project-overlay'></div>
 							<div className='details'>
@@ -107,6 +109,7 @@ class Project extends React.Component {
 										allowtransparency='true'
 										width='100%'
 										height='100%'
+										title={data.title}
 									/>
 								</div>
 							) : null}

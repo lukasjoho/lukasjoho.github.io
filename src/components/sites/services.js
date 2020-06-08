@@ -1,7 +1,5 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import { AiOutlineEye, AiOutlineAppstore } from 'react-icons/ai';
-import { MdShowChart } from 'react-icons/md';
 import Wireframes from '../sites/wireframes';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import Accordion from './accordion';
@@ -16,43 +14,6 @@ const Services = () => (
 					<p>Wie wir excyten</p>
 				</div>
 				<Accordion />
-				{/* <Row className="services-with-icons">
-        <Col md={4}>
-          <div className="service-title">
-            <AiOutlineEye/>
-            <h2>Visuals</h2>
-          </div>
-          <ul>
-            <li>Film</li>
-            <li>Foto</li>
-            <li>Motion Design</li>
-            <li>Graphic Design</li>
-          </ul>
-        </Col>
-        <Col md={4}>
-          <div className="service-title">
-            <AiOutlineAppstore/>
-            <h2>Web</h2>
-          </div>
-          <ul>
-            <li>UI/UX Design</li>
-            <li>Prototyping</li>
-            <li>Development</li>
-            <li>Hosting/Deploying</li>
-          </ul>
-        </Col>
-        <Col md={4}>
-          <div className="service-title">
-            <MdShowChart/>
-            <h2>Brand</h2>
-          </div>
-          <ul>
-            <li>Content</li>
-            <li>Corporate Identity</li>
-            <li>Positioning</li>
-          </ul>
-        </Col>
-      </Row> */}
 			</Container>
 			<Wireframes />
 			<Container>

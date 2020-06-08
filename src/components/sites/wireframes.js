@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './wireframes.scss';
-import { ParallaxProvider } from 'react-scroll-parallax';
 import { ParallaxBanner } from 'react-scroll-parallax';
 import ImageWireframes from '../../images/content/wireframes.jpg';
 

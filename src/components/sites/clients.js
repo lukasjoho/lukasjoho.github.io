@@ -6,7 +6,6 @@ import harvard from '../../images/clients/harvard.png';
 import liba from '../../images/clients/liba.png';
 import biersafe from '../../images/clients/biersafe.png';
 import grampp from '../../images/clients/grampp.png';
-import huerter from '../../images/clients/huerter.png';
 import idealab from '../../images/clients/idealab.png';
 import ihk from '../../images/clients/ihk.png';
 import ingolstadt from '../../images/clients/ingolstadt.png';
@@ -16,11 +15,8 @@ import stadtmuenster from '../../images/clients/stadtmuenster.png';
 import s4s from '../../images/clients/s4s.png';
 import yomaro from '../../images/clients/yomaro.png';
 import wwubaskets from '../../images/clients/wwubaskets.png';
-import studymaniac from '../../images/clients/studymaniac.png';
 import jaworskyj from '../../images/clients/jaworskyj.png';
-import items from '../../images/clients/items.png';
 import ottogroup from '../../images/clients/ottogroup.png';
-import purecleanearth from '../../images/clients/purecleanearth.png';
 
 const Clients = () => (
 	<section id='clients'>
