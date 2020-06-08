@@ -7,7 +7,6 @@ import Banner from '../components/homepage/banner';
 import Sections from '../components/homepage/sections';
 import Hero from '../components/homepage/hero';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../components/pointer.scss';
 
 class IndexPage extends React.Component {
 	constructor() {
