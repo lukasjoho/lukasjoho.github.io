@@ -19,7 +19,7 @@ const UseDencrypt = () => {
 			i = i === values.length - 1 ? 0 : i + 1;
 		}
 		crypting();
-		setInterval(crypting, 3000);
+		const action = setInterval(crypting, 3000);
 
 		// const action = setInterval(() => {
 		//   dencrypt(values[i]);
@@ -27,7 +27,7 @@ const UseDencrypt = () => {
 		//   i = i === values.length - 1 ? 0 : i + 1;
 		// }, 2500);
 
-		// return () => clearInterval(action);
+		return () => clearInterval(action);
 	}, []);
 
 	return (

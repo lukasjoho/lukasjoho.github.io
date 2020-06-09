@@ -42,15 +42,15 @@ export const query = graphql`
 						json
 					}
 					photo {
-						file {
-							url
+						fluid(quality: 80, maxWidth: 690) {
+							...GatsbyContentfulFluid
 						}
 					}
 					video
 					images {
 						id
-						file {
-							url
+						fluid(quality: 80, maxWidth: 740) {
+							...GatsbyContentfulFluid
 						}
 					}
 					instagram

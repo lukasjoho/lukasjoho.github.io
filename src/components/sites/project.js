@@ -1,4 +1,6 @@
 import React from 'react';
+import BackgroundImage from 'gatsby-background-image';
+import Img from 'gatsby-image';
 import { Col, Modal } from 'react-bootstrap';
 import { IoMdClose } from 'react-icons/io';
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -23,9 +25,6 @@ class Project extends React.Component {
 
 	render() {
 		var { data } = this.props;
-		var style = {
-			backgroundImage: 'url(' + data.photo.file.url + ')',
-		};
 		return (
 			<React.Fragment key={this.state.isClient}>
 				<Col lg={4} className='project'>
@@ -34,10 +33,10 @@ class Project extends React.Component {
 						duration={0.8}
 						animateOnce={true}
 					>
-						<div
+						<BackgroundImage
 							className='project-wrapper'
 							onClick={this.handleShow}
-							style={style}
+							fluid={data.photo.fluid}
 							role='link'
 							tabindex='0'
 						>
@@ -48,7 +47,7 @@ class Project extends React.Component {
 								</p>
 								<h3>{data.title}</h3>
 							</div>
-						</div>
+						</BackgroundImage>
 					</ScrollAnimation>
 					<Modal show={this.state.show} onHide={this.handleClose} centered>
 						<IoMdClose onClick={this.handleClose} className='modal-close' />
@@ -86,11 +85,10 @@ class Project extends React.Component {
 							<div className='images-container'>
 								{data.images
 									? data.images.map(image => {
-											console.log(image.file.url);
 											return (
-												<img
+												<Img
 													key={image.id}
-													src={image.file.url}
+													fluid={image.fluid}
 													alt='portfolio'
 													className='portfolio-image'
 												/>
