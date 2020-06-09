@@ -9,6 +9,7 @@ import IconCode from '../../images/content/code.svg';
 import IconTools from '../../images/content/tools.svg';
 import IconVisualz from '../../images/content/visualz.svg';
 import Textblock from './textblock';
+import Showreel from '../../images/content/showreel.mp4';
 import './sections.scss';
 import 'animate.css/animate.css';
 
@@ -108,11 +109,9 @@ const Sections = () => {
 						/>
 					</Col>
 					<Col md={{ size: 6, order: 1 }}>
-						<Img
-							fluid={thelen.childImageSharp.fluid}
-							alt=''
-							className='image-left'
-						/>
+						<video className='showreel' preload='auto' loop autoPlay muted>
+							<source src={Showreel} type='video/mp4' />
+						</video>
 						<Img
 							className='image-middle'
 							fluid={captor.childImageSharp.fluid}

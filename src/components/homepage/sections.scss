@@ -41,10 +41,16 @@
 	.image-middle {
 		position: relative;
 		margin: 0;
-		margin-left: 50%;
-		margin-top: -10%;
-		z-index: 2;
+		margin-left: 70%;
+		margin-top: -30%;
+		z-index: 1;
 		width: 100%;
+	}
+	.showreel {
+		position: relative;
+		z-index: 2;
+		box-shadow: 15px 15px 40px 10px rgba(0, 0, 0, 0.6);
+		width: 90%;
 	}
 	.image-right {
 		position: relative;
@@ -99,15 +105,18 @@
 
 @media (max-width: 768px) {
 	#sections {
-		.image-middle {
-			margin-top: -3rem;
-			margin-left: 0;
-			float: right;
-			width: 90%;
+		.image-right {
+			float: left;
 		}
-		.image-left {
+		.image-middle {
+			margin: 0;
 			margin-top: -3rem;
-			width: 90%;
+			width: 80%;
+			float: right;
+		}
+		.showreel {
+			margin-left: 5%;
+			margin-top: -3rem;
 		}
 		.ring-container {
 			margin-top: 4rem;
