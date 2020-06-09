@@ -146,7 +146,7 @@
 		position: relative;
 		transition: 0.5s;
 		display: flex;
-		align-items: start;
+		align-items: flex-start;
 
 		flex: 1;
 
@@ -162,22 +162,21 @@
 
 			margin: 0;
 			padding: 0 !important;
-			img {
-				margin: 0;
-				&.opacity1 {
-					opacity: 0.75;
-				}
-				&.opacity2 {
-					opacity: 0.5;
-				}
-				&.opacity3 {
-					opacity: 0.25;
-				}
+
+			&.opacity1 {
+				opacity: 0.75;
 			}
+			&.opacity2 {
+				opacity: 0.5;
+			}
+			&.opacity3 {
+				opacity: 0.25;
+			}
+
 			.code1 {
 				position: relative;
 				width: 60%;
-
+				height: 50%;
 				left: 20%;
 				margin: auto;
 				background: rgba(255, 255, 255, 0.03);

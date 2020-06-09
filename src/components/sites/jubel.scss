@@ -20,7 +20,8 @@
 		}
 		.text {
 			z-index: 2;
-			overflow: hidden;
+			overflow-x: hidden;
+			white-space: nowrap;
 			margin-left: -25%;
 			margin-bottom: -15%;
 			h1 {

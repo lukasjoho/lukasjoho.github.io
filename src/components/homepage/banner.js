@@ -6,12 +6,11 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { Parallax } from 'react-scroll-parallax';
 import Triangle from '../../images/content/triangle.svg';
 import Dots from '../../images/content/dots.png';
-import Code1 from '../../images/content/code1.png';
 import Rectangles from './rectangles';
 import { Link } from 'gatsby';
 
 const Banner = () => {
-	const { logo, whu } = useStaticQuery(graphql`
+	const { logo, whu, code } = useStaticQuery(graphql`
 		query {
 			logo: file(relativePath: { eq: "banner/logo.png" }) {
 				childImageSharp {
@@ -21,6 +20,13 @@ const Banner = () => {
 				}
 			}
 			whu: file(relativePath: { eq: "content/whu.jpg" }) {
+				childImageSharp {
+					fluid(quality: 100, maxWidth: 506) {
+						...GatsbyImageSharpFluid_noBase64
+					}
+				}
+			}
+			code: file(relativePath: { eq: "content/code1.png" }) {
 				childImageSharp {
 					fluid(quality: 100, maxWidth: 506) {
 						...GatsbyImageSharpFluid_noBase64
@@ -70,8 +76,13 @@ const Banner = () => {
 								</Parallax>
 							</div>
 							<div>
-								<Parallax y={[0, -80]} x={[0, 0]} tagOuter='figure'>
-									<img fluid={Code1} alt='' className='code1' />
+								<Parallax y={[0, -20]} x={[-20, -20]} tagOuter='figure'>
+									<Img
+										fluid={code.childImageSharp.fluid}
+										alt=''
+										className='code1'
+										imgStyle={{ objectFit: 'contain' }}
+									/>
 								</Parallax>
 							</div>
 							<div>

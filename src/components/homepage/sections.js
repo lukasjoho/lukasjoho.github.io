@@ -5,7 +5,6 @@ import { graphql, useStaticQuery } from 'gatsby';
 import ScrollAnimation from 'react-animate-on-scroll';
 import UiAnimation from './uianimation';
 import Progressring from './ProgressRing';
-import ImageCode from '../../images/content/image-code.png';
 import IconCode from '../../images/content/code.svg';
 import IconTools from '../../images/content/tools.svg';
 import IconVisualz from '../../images/content/visualz.svg';
