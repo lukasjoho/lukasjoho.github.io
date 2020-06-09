@@ -10,6 +10,7 @@ import IconTools from '../../images/content/tools.svg';
 import IconVisualz from '../../images/content/visualz.svg';
 import Textblock from './textblock';
 import Showreel from '../../images/content/showreel.mp4';
+import ShowreelPoster from '../../images/content/showreel-poster.jpg';
 import './sections.scss';
 import 'animate.css/animate.css';
 
@@ -117,6 +118,7 @@ const Sections = () => {
 							autoPlay
 							muted
 							src={Showreel}
+							poster={ShowreelPoster}
 						></video>
 						<Img
 							className='image-middle'
