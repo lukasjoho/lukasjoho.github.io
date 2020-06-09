@@ -28,7 +28,7 @@ const Banner = () => {
 			}
 			code: file(relativePath: { eq: "content/code1.png" }) {
 				childImageSharp {
-					fluid(quality: 100, maxWidth: 506) {
+					fluid(quality: 40, maxWidth: 200) {
 						...GatsbyImageSharpFluid_noBase64
 					}
 				}
