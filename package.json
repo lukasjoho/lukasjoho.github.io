@@ -48,7 +48,7 @@
 	"license": "MIT",
 	"scripts": {
 		"build": "gatsby build",
-		"develop": "gatsby develop",
+		"develop": "gatsby develop -H 0.0.0.0",
 		"format": "prettier --single-quote --jsx-single-quote --trailing-comma --use-tabs --write \"**/*.{js,jsx,json,md,css,scss}\"",
 		"start": "npm run develop",
 		"serve": "gatsby serve",

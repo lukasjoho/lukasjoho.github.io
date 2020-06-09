@@ -109,9 +109,15 @@ const Sections = () => {
 						/>
 					</Col>
 					<Col md={{ size: 6, order: 1 }}>
-						<video className='showreel' preload='auto' loop autoPlay muted>
-							<source src={Showreel} type='video/mp4' />
-						</video>
+						<video
+							className='showreel'
+							preload='auto'
+							loop={true}
+							playsInline
+							autoPlay
+							muted
+							src={Showreel}
+						></video>
 						<Img
 							className='image-middle'
 							fluid={captor.childImageSharp.fluid}
