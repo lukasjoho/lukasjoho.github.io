@@ -24,7 +24,7 @@ const Sections = () => {
 			}
 			car: file(relativePath: { eq: "content/image-car.png" }) {
 				childImageSharp {
-					fluid(quality: 70, maxWidth: 540) {
+					fluid(quality: 40, maxWidth: 540) {
 						...GatsbyImageSharpFluid_noBase64
 					}
 				}
@@ -52,7 +52,7 @@ const Sections = () => {
 			}
 			code: file(relativePath: { eq: "content/image-code.png" }) {
 				childImageSharp {
-					fluid(quality: 30, maxWidth: 540) {
+					fluid(quality: 20, maxWidth: 270) {
 						...GatsbyImageSharpFluid_noBase64
 					}
 				}
