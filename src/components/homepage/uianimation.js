@@ -9,62 +9,24 @@ class UiAnimation extends React.Component {
 				<ScrollAnimation
 					animateIn='animate__flipInX'
 					duration='1'
-					delay='500'
+					delay='0'
 					animateOnce='true'
 				>
 					<div class='frame'>
-						<ScrollAnimation
-							animateIn='animate__fadeIn'
-							duration='0.5'
-							delay='1000'
-							animateOnce='true'
-						>
-							<div className='frame-top'></div>
-						</ScrollAnimation>
+						<div className='frame-top'></div>
 						<div class='frame-bottom'>
 							<div class='bottom-left'>
-								<ScrollAnimation
-									animateIn='animate__fadeIn'
-									duration='0.5'
-									delay='1100'
-									animateOnce='true'
-								>
-									<div className='balken'></div>
-								</ScrollAnimation>
-								<ScrollAnimation
-									animateIn='animate__fadeIn'
-									duration='0.5'
-									delay='1200'
-									animateOnce='true'
-								>
-									<div className='balken'></div>
-								</ScrollAnimation>
-								<ScrollAnimation
-									animateIn='animate__fadeIn'
-									duration='0.5'
-									delay='1300'
-									animateOnce='true'
-								>
-									<div className='balken'></div>
-								</ScrollAnimation>
-								<ScrollAnimation
-									animateIn='animate__fadeIn'
-									duration='0.5'
-									delay='1400'
-									animateOnce='true'
-								>
-									<div className='balken'></div>
-								</ScrollAnimation>
+								<div className='balken'></div>
+
+								<div className='balken'></div>
+
+								<div className='balken'></div>
+
+								<div className='balken'></div>
 							</div>
+
 							<div class='bottom-right'>
-								<ScrollAnimation
-									animateIn='animate__fadeIn'
-									duration='1'
-									delay='1500'
-									animateOnce='true'
-								>
-									<div class='right-fill'></div>
-								</ScrollAnimation>
+								<div class='right-fill'></div>
 							</div>
 						</div>
 					</div>
@@ -72,38 +34,38 @@ class UiAnimation extends React.Component {
 				<ScrollAnimation
 					animateIn='animate__fadeIn'
 					duration='0.3'
-					delay='1600'
+					delay='200'
 					animateOnce='true'
 				>
 					<div className='square-container'>
 						<ScrollAnimation
 							animateIn='animate__zoomIn'
-							duration='0.3'
-							delay='1700'
+							duration='0.2'
+							delay='400'
 							animateOnce='true'
 						>
 							<div className='square'></div>
 						</ScrollAnimation>
 						<ScrollAnimation
 							animateIn='animate__zoomIn'
-							duration='0.3'
-							delay='1800'
+							duration='0.2'
+							delay='600'
 							animateOnce='true'
 						>
 							<div className='square'></div>
 						</ScrollAnimation>
 						<ScrollAnimation
 							animateIn='animate__zoomIn'
-							duration='0.3'
-							delay='1900'
+							duration='0.2'
+							delay='800'
 							animateOnce='true'
 						>
 							<div className='square'></div>
 						</ScrollAnimation>
 						<ScrollAnimation
 							animateIn='animate__zoomIn'
-							duration='0.3'
-							delay='2000'
+							duration='0.2'
+							delay='1000'
 							animateOnce='true'
 						>
 							<div className='square'></div>

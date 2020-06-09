@@ -11,6 +11,8 @@ import IconVisualz from '../../images/content/visualz.svg';
 import Textblock from './textblock';
 import Showreel from '../../images/content/showreel.mp4';
 import ShowreelPoster from '../../images/content/showreel-poster.jpg';
+import Screen from '../../images/content/screen.jpg';
+
 import './sections.scss';
 import 'animate.css/animate.css';
 
@@ -74,13 +76,14 @@ const Sections = () => {
             sodass Ideen und Fantasien keine Grenzen bei der Umsetzung gesetzt sind. Wir mischen Kreativität mit Fähigkeiten im Web Design, der Bewegtbildproduktion und unserem ständigen Drang ausdrucksvolle Projekte für Dich zu erstellen. Damit verstehen wir uns als Produzenten in einer wachsenden Omni-Channel-Welt. '
 							icon={IconTools}
 						/>
-						<div className='section-car'>
+						{/* <div className='section-car'>
 							<Img
 								fluid={car.childImageSharp.fluid}
 								alt=''
 								className='image-car'
 							/>
-						</div>
+						</div> */}
+						<UiAnimation />
 					</Col>
 
 					<Col md={6}>
@@ -130,7 +133,7 @@ const Sections = () => {
 				<hr className='hr' />
 				{/* SECTION 3 */}
 				<Row>
-					<Col md={6}>
+					<Col md={4} className='centercol'>
 						<Textblock
 							title='Web'
 							text='Eine Website hat mittlerweile jeder. Aber eine die schnell lädt, weit oben bei Google erscheint und alle Funktionen beinhaltet die Du brauchst hat nicht jeder. Das wollen wir ändern.
@@ -138,7 +141,27 @@ const Sections = () => {
 							icon={IconCode}
 						/>
 					</Col>
-					<Col md={6} className='ring-container'>
+					<Col md={8}>
+						<div className='macbook'>
+							<div className='screen'>
+								<div className='viewport'></div>
+							</div>
+							<div className='base'></div>
+							<div className='notch'></div>
+						</div>
+					</Col>
+				</Row>
+
+				<Row>
+					<Col md={3}></Col>
+					<Col md={6}>
+						<Img
+							className='image-code'
+							fluid={code.childImageSharp.fluid}
+							alt=''
+						/>
+					</Col>
+					<Col md={12} className='ring-container'>
 						<div className='ring'>
 							<ScrollAnimation
 								animateIn='animate__fadeIn'
@@ -199,18 +222,6 @@ const Sections = () => {
 								/>
 							</ScrollAnimation>
 						</div>
-					</Col>
-				</Row>
-
-				<Row>
-					<Col md={3}></Col>
-					<Col md={6}>
-						<Img
-							className='image-code'
-							fluid={code.childImageSharp.fluid}
-							alt=''
-						/>
-						<UiAnimation />
 					</Col>
 				</Row>
 			</Container>
