@@ -30,7 +30,10 @@ const Jubel = () => {
 					<Col xs={5} md={5} className='center-col'>
 						<div className='rectangle'></div>
 						<div className='text'>
-							<ScrollAnimation animateIn='animate__fadeInLeft'>
+							<ScrollAnimation
+								animateIn='animate__fadeInLeft'
+								animateOnce='true'
+							>
 								<h1>
 									Nur <br />
 									Gemeinsam

@@ -6,7 +6,12 @@ class UiAnimation extends React.Component {
 	render() {
 		return (
 			<section id='uianimation'>
-				<ScrollAnimation animateIn='animate__flipInX' duration='1' delay='500'>
+				<ScrollAnimation
+					animateIn='animate__flipInX'
+					duration='1'
+					delay='500'
+					animateOnce='true'
+				>
 					<div class='frame'>
 						<ScrollAnimation
 							animateIn='animate__fadeIn'
