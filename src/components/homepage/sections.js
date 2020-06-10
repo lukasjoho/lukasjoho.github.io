@@ -146,7 +146,7 @@ const Sections = () => {
 						<div className='macbook'>
 							<div className='screen'>
 								<div className='viewport'>
-									<Parallax y={[0, -60]} tagOuter='figure'>
+									<Parallax y={[0, -80]} tagOuter='figure'>
 										<img className='screen-content' src={Screen} alt='' />
 									</Parallax>
 								</div>
