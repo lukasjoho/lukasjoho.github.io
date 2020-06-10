@@ -47,7 +47,7 @@ class Hero extends Component {
 						params={{
 							particles: {
 								number: {
-									value: 20,
+									value: 15,
 								},
 								size: {
 									value: 1,
