@@ -18,18 +18,11 @@ import './sections.scss';
 import 'animate.css/animate.css';
 
 const Sections = () => {
-	const { people, car, kiel, thelen, captor, code } = useStaticQuery(graphql`
+	const { people, kiel, thelen, captor, code, screen } = useStaticQuery(graphql`
 		query {
 			people: file(relativePath: { eq: "content/image-people.png" }) {
 				childImageSharp {
 					fluid(quality: 70, maxWidth: 540) {
-						...GatsbyImageSharpFluid_noBase64
-					}
-				}
-			}
-			car: file(relativePath: { eq: "content/image-car.png" }) {
-				childImageSharp {
-					fluid(quality: 40, maxWidth: 540) {
 						...GatsbyImageSharpFluid_noBase64
 					}
 				}
@@ -58,6 +51,13 @@ const Sections = () => {
 			code: file(relativePath: { eq: "content/image-code.png" }) {
 				childImageSharp {
 					fluid(quality: 20, maxWidth: 270) {
+						...GatsbyImageSharpFluid_noBase64
+					}
+				}
+			}
+			screen: file(relativePath: { eq: "content/screen.jpg" }) {
+				childImageSharp {
+					fluid(quality: 60, maxWidth: 550) {
 						...GatsbyImageSharpFluid_noBase64
 					}
 				}
@@ -146,8 +146,12 @@ const Sections = () => {
 						<div className='macbook'>
 							<div className='screen'>
 								<div className='viewport'>
-									<Parallax y={[0, -60]} tagOuter='figure'>
-										<img className='screen-content' src={Screen} alt='' />
+									<Parallax y={[0, -120]} tagOuter='figure'>
+										<Img
+											className='screen-content'
+											fluid={screen.childImageSharp.fluid}
+											imgStyle={{ objectFit: 'contain' }}
+										/>
 									</Parallax>
 								</div>
 							</div>
