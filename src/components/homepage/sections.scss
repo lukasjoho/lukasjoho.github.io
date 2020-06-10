@@ -126,12 +126,6 @@
 	width: 80%;
 	overflow: auto;
 	z-index: 2;
-	img {
-		position: absolute;
-		left: 0;
-		top: 0;
-		z-index: 2;
-	}
 }
 
 .screen:before {
@@ -161,15 +155,12 @@
 
 .viewport {
 	position: absolute;
-	z-index: 3;
+	// z-index: 3;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	top: 0;
 	margin: 4.3% 3.2%;
-	background: #333;
-	background-image: url('../../images/content/screen.jpg');
-	overflow: scroll;
 }
 
 .base {
@@ -245,8 +236,11 @@
 	transition: background-position 1.5s ease;
 	background-position: 0 0;
 	background-size: 100% auto;
-	overflow: hidden;
+	overflow: scroll;
 	cursor: pointer;
+	.screen-content {
+		width: 100%;
+	}
 }
 
 .macbook:hover .viewport {

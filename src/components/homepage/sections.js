@@ -12,6 +12,7 @@ import Textblock from './textblock';
 import Showreel from '../../images/content/showreel.mp4';
 import ShowreelPoster from '../../images/content/showreel-poster.jpg';
 import Screen from '../../images/content/screen.jpg';
+import { Parallax } from 'react-scroll-parallax';
 
 import './sections.scss';
 import 'animate.css/animate.css';
@@ -144,7 +145,11 @@ const Sections = () => {
 					<Col md={8}>
 						<div className='macbook'>
 							<div className='screen'>
-								<div className='viewport'></div>
+								<div className='viewport'>
+									<Parallax y={[0, -60]} tagOuter='figure'>
+										<img className='screen-content' src={Screen} alt='' />
+									</Parallax>
+								</div>
 							</div>
 							<div className='base'></div>
 							<div className='notch'></div>
