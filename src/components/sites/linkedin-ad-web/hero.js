@@ -6,6 +6,9 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import Progressring from '../../homepage/ProgressRing';
 import Textblock from '../../homepage/textblock';
 import { Parallax } from 'react-scroll-parallax';
+import { AiOutlineMobile } from 'react-icons/ai';
+import { IoMdSpeedometer } from 'react-icons/io';
+import { IoLogoBuffer } from 'react-icons/io';
 
 import './hero.scss';
 import 'animate.css/animate.css';
@@ -36,15 +39,59 @@ const Sections = () => {
 				{/* SECTION 3 */}
 				<Row>
 					<Col>
-						<h1>Wir erstellen dir deine schnelle Website</h1>
+						<div className='web-heading'>
+							<h1>Deine Website.</h1>
+							<h2>Für maximale Online Performance.</h2>
+						</div>
+					</Col>
+				</Row>
+				<Row className='web-values'>
+					<Col md={4}>
+						<ScrollAnimation
+							animateIn='animate__fadeInUp'
+							duration='1'
+							delay={200}
+							animateOnce={true}
+						>
+							<div>
+								<AiOutlineMobile className='icon' />
+								<h4>Responsive Design</h4>
+							</div>
+						</ScrollAnimation>
+					</Col>
+					<Col md={4}>
+						<ScrollAnimation
+							animateIn='animate__fadeInUp'
+							duration='1'
+							delay={400}
+							animateOnce={true}
+						>
+							<div>
+								<IoMdSpeedometer className='icon' />
+								<h4>Geschwindigkeit</h4>
+							</div>
+						</ScrollAnimation>
+					</Col>
+					<Col md={4}>
+						<ScrollAnimation
+							animateIn='animate__fadeInUp'
+							duration='1'
+							delay={600}
+							animateOnce={true}
+						>
+							<div>
+								<IoLogoBuffer className='icon' />
+								<h4>Content Management</h4>
+							</div>
+						</ScrollAnimation>
 					</Col>
 				</Row>
 				<Row>
 					<Col md={5} className='centercol'>
 						<Textblock
-							title='Langsame Website?'
-							text='Eine Website hat mittlerweile jeder. Aber eine die schnell lädt, weit oben bei Google erscheint und alle Funktionen beinhaltet die Du brauchst hat nicht jeder. Das wollen wir ändern.
-						Angefangen beim Entwickeln der grundsätzlichen Struktur deiner Seite und dem Design erstellen wir mit Dir gemeinsam eine ausdrucksvolle Website die Dich und deine Kunden excyted.'
+							title='Moderne Webentwicklung'
+							text='Wir entwickeln dir deine Website nach den neusten Web-Technologie Standards.
+							Responsives Design, hohe Geschwindigkeit und user-zentriertes Design resultieren in bester Performance und hohem Google Ranking. Genauso wichtig sind uns sicheres Hosting und einfaches Content Management, damit du die Kontrolle über deine Inhalte besitzt.'
 						/>
 					</Col>
 					<Col md={7}>

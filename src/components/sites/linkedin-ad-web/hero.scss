@@ -3,6 +3,34 @@
 #linkedin-web {
 	padding-top: 8rem;
 	padding-bottom: 4rem;
+	.web-heading {
+		h1 {
+			margin-bottom: 1rem;
+		}
+		h2 {
+			font-size: 1.5rem;
+			text-align: center;
+			margin: 0;
+		}
+	}
+	.web-values {
+		opacity: 0.6;
+		text-align: center;
+		width: 70%;
+		margin: auto;
+		margin-top: 4rem;
+		margin-bottom: 4rem;
+
+		.icon {
+			font-size: 3rem;
+			margin-bottom: 1rem;
+		}
+		h4 {
+			font-weight: 500;
+			font-size: 1rem;
+			margin-bottom: 2rem;
+		}
+	}
 
 	.centercol {
 		display: flex;
