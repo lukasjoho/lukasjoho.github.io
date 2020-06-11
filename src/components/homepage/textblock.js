@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './textblock.scss';
+import Style from './textblock.module.scss';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 class Textblock extends React.Component {
 	render() {
 		return (
-			<div class='textblock'>
-				<div className='iconsinline'>
-					<div class='overflow-hidden'>
+			<div class={Style.textblock}>
+				<div className={Style.iconsinline}>
+					<div>
 						<ScrollAnimation animateIn='animate__fadeInUp' animateOnce='true'>
 							<h2>{this.props.title}</h2>
 						</ScrollAnimation>
@@ -18,10 +18,10 @@ class Textblock extends React.Component {
 						delay='200'
 						animateOnce='true'
 					>
-						<img className='icon' src={this.props.icon} alt='' />
+						<img className={Style.icon} src={this.props.icon} alt='' />
 					</ScrollAnimation>
 				</div>
-				<div class='overflow-hidden'>
+				<div>
 					<ScrollAnimation animateIn='animate__fadeInUp' animateOnce='true'>
 						<p>{this.props.text}</p>
 					</ScrollAnimation>

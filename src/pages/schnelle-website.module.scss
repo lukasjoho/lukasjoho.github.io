@@ -1,0 +1,13 @@
+@import '../components/_variables';
+
+.centerrow {
+	display: flex;
+	justify-content: center;
+}
+
+.button-container {
+	display: flex;
+	justify-content: space-around;
+	max-width: 400px;
+	margin: 4rem 0;
+}

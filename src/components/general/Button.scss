@@ -1,0 +1,41 @@
+@import '../_variables.scss';
+.button {
+	color: $primary !important;
+	display: inline-block;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 0.8rem 1.5rem;
+	border-radius: 5px;
+	font-weight: 600;
+	font-size: 0.9rem;
+	border: 2px $primary solid;
+	-webkit-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+.button,
+.button:hover {
+	text-decoration: none;
+}
+
+.button .arrow {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.button:hover {
+	/*background-position: 0;*/
+	/*color: #fff!important;*/
+	opacity: 0.8;
+	background: transparent;
+	color: white !important;
+	border: white 2px solid;
+}
+
+.button:hover .arrow {
+	margin-left: 5px;
+}
