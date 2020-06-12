@@ -7,8 +7,11 @@ import Progressring from '../../homepage/ProgressRing';
 import Textblock from '../../homepage/textblock';
 import { Parallax } from 'react-scroll-parallax';
 import { AiOutlineMobile } from 'react-icons/ai';
-import { IoMdSpeedometer } from 'react-icons/io';
+import { IoIosSpeedometer } from 'react-icons/io';
 import { IoLogoBuffer } from 'react-icons/io';
+import { IoIosLock } from 'react-icons/io';
+import { IoLogoGoogle } from 'react-icons/io';
+import { IoIosColorPalette } from 'react-icons/io';
 
 import './hero.scss';
 import 'animate.css/animate.css';
@@ -46,7 +49,7 @@ const Sections = () => {
 					</Col>
 				</Row>
 				<Row className='web-values'>
-					<Col md={4}>
+					<Col md={4} sm={6} xs={6}>
 						<ScrollAnimation
 							animateIn='animate__fadeInUp'
 							duration='1'
@@ -59,7 +62,7 @@ const Sections = () => {
 							</div>
 						</ScrollAnimation>
 					</Col>
-					<Col md={4}>
+					<Col md={4} xs={6}>
 						<ScrollAnimation
 							animateIn='animate__fadeInUp'
 							duration='1'
@@ -67,12 +70,12 @@ const Sections = () => {
 							animateOnce={true}
 						>
 							<div>
-								<IoMdSpeedometer className='icon' />
-								<h4>Geschwindigkeit</h4>
+								<IoIosSpeedometer className='icon' />
+								<h4>Hohe Geschwindigkeit</h4>
 							</div>
 						</ScrollAnimation>
 					</Col>
-					<Col md={4}>
+					<Col md={4} xs={6}>
 						<ScrollAnimation
 							animateIn='animate__fadeInUp'
 							duration='1'
@@ -81,7 +84,46 @@ const Sections = () => {
 						>
 							<div>
 								<IoLogoBuffer className='icon' />
-								<h4>Content Management</h4>
+								<h4>Content Management System</h4>
+							</div>
+						</ScrollAnimation>
+					</Col>
+					<Col md={4} xs={6}>
+						<ScrollAnimation
+							animateIn='animate__fadeInUp'
+							duration='1'
+							delay={600}
+							animateOnce={true}
+						>
+							<div>
+								<IoLogoGoogle className='icon' />
+								<h4>Search Engine Optimization</h4>
+							</div>
+						</ScrollAnimation>
+					</Col>
+					<Col md={4} xs={6}>
+						<ScrollAnimation
+							animateIn='animate__fadeInUp'
+							duration='1'
+							delay={600}
+							animateOnce={true}
+						>
+							<div>
+								<IoIosColorPalette className='icon' />
+								<h4>Individuelle Gestaltung</h4>
+							</div>
+						</ScrollAnimation>
+					</Col>
+					<Col md={4} xs={6}>
+						<ScrollAnimation
+							animateIn='animate__fadeInUp'
+							duration='1'
+							delay={600}
+							animateOnce={true}
+						>
+							<div>
+								<IoIosLock className='icon' />
+								<h4>Verschlüsselt</h4>
 							</div>
 						</ScrollAnimation>
 					</Col>
@@ -98,7 +140,7 @@ const Sections = () => {
 						<div className='macbook'>
 							<div className='screen'>
 								<div className='viewport'>
-									<Parallax y={[10, -120]} tagOuter='figure'>
+									<Parallax y={[0, -120]} tagOuter='figure'>
 										<Img
 											className='screen-content'
 											fluid={screen.childImageSharp.fluid}

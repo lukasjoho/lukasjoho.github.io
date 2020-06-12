@@ -6,7 +6,7 @@ import Services from '../components/sites/linkedin-ad-web/services';
 import Hero from '../components/sites/linkedin-ad-web/hero';
 import PremiumButton from '../components/general/PremiumButton';
 import Button from '../components/general/Button';
-import Style from './schnelle-website.module.scss';
+import Style from './webentwicklung.module.scss';
 import { Container, Row, Col } from 'react-bootstrap';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
