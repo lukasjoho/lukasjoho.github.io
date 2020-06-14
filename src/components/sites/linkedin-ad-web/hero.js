@@ -53,7 +53,7 @@ const Sections = () => {
 						<ScrollAnimation
 							animateIn='animate__fadeInUp'
 							duration='1'
-							delay={200}
+							delay={100}
 							animateOnce={true}
 						>
 							<div>
@@ -66,7 +66,7 @@ const Sections = () => {
 						<ScrollAnimation
 							animateIn='animate__fadeInUp'
 							duration='1'
-							delay={400}
+							delay={200}
 							animateOnce={true}
 						>
 							<div>
@@ -79,7 +79,7 @@ const Sections = () => {
 						<ScrollAnimation
 							animateIn='animate__fadeInUp'
 							duration='1'
-							delay={600}
+							delay={300}
 							animateOnce={true}
 						>
 							<div>
@@ -92,7 +92,7 @@ const Sections = () => {
 						<ScrollAnimation
 							animateIn='animate__fadeInUp'
 							duration='1'
-							delay={600}
+							delay={400}
 							animateOnce={true}
 						>
 							<div>
@@ -105,7 +105,7 @@ const Sections = () => {
 						<ScrollAnimation
 							animateIn='animate__fadeInUp'
 							duration='1'
-							delay={600}
+							delay={500}
 							animateOnce={true}
 						>
 							<div>
