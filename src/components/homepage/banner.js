@@ -53,12 +53,12 @@ const Banner = () => {
 
 						<h3>Creative Studio</h3>
 						<p>
-							Als eine hybride Medienproduktion entwickeln wir kreative Lösungen
-							für deine Marke, dein Unternehmen oder dein Projekt. Mit excyted
+							Als hybride Medienproduktion entwickeln wir kreative Lösungen für
+							deine Marke, dein Unternehmen oder dein Projekt. Mit excyted
 							bringen wir unsere Disziplinen aus Web Development und der
 							Produktion von Medien zusammen und können so nicht nur
-							konzeptionell sondern auch technisch und grafisch eng mit Dir an
-							deiner Idee basteln. Bock zu excyten?
+							konzeptionell sondern auch technisch eng mit Dir an deiner Idee
+							basteln. <br /> Bock zu excyten?
 							<br />
 							Let's get in touch!{' '}
 						</p>
