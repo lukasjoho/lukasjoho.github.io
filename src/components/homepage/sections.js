@@ -90,41 +90,6 @@ const Sections = () => {
 
 				<hr class='hr' />
 
-				{/* SECTION 2 */}
-				<Row>
-					<Col md={{ size: 6, order: 2 }}>
-						<Textblock
-							title='Media'
-							text="Videos und Bilder bieten ganz besonders viel Potenzial für Excytement! Hier geht's um Feeling, Authentizität und Einzigartigkeit. Um das zu erreichen, bieten wir das volle Spektrum an Produktionsdienstleistungen an. Das beginnt bei der Konzeption, geht über die Produktion und den Schnitt und endet beim Ausrollen des Resultats über verschiedene Kanäle."
-							icon={IconVisualz}
-						/>
-						<Img
-							className='image-right'
-							fluid={kiel.childImageSharp.fluid}
-							alt=''
-							style={{ width: '75%' }}
-						/>
-					</Col>
-					<Col md={{ size: 6, order: 1 }}>
-						<video
-							className='showreel'
-							preload='auto'
-							loop={true}
-							playsInline
-							autoPlay
-							muted
-							src={Showreel}
-							poster={ShowreelPoster}
-						></video>
-						<Img
-							className='image-middle'
-							fluid={captor.childImageSharp.fluid}
-							alt=''
-						/>
-					</Col>
-				</Row>
-				<hr className='hr' />
-				{/* SECTION 3 */}
 				<Row>
 					<Col md={4} className='centercol'>
 						<Textblock
@@ -224,6 +189,44 @@ const Sections = () => {
 						</div>
 					</Col>
 				</Row>
+
+				<hr className='hr' />
+
+				{/* SECTION 2 */}
+				<Row className='media-row'>
+					<Col md={{ size: 6, order: 2 }}>
+						<Textblock
+							title='Media'
+							text="Videos und Bilder bieten ganz besonders viel Potenzial für Excytement! Hier geht's um Feeling, Authentizität und Einzigartigkeit. Um das zu erreichen, bieten wir das volle Spektrum an Produktionsdienstleistungen an. Das beginnt bei der Konzeption, geht über die Produktion und den Schnitt und endet beim Ausrollen des Resultats über verschiedene Kanäle."
+							icon={IconVisualz}
+						/>
+						<Img
+							className='image-right'
+							fluid={kiel.childImageSharp.fluid}
+							alt=''
+							style={{ width: '75%' }}
+						/>
+					</Col>
+					<Col md={{ size: 6, order: 1 }}>
+						<video
+							className='showreel'
+							preload='auto'
+							loop={true}
+							playsInline
+							autoPlay
+							muted
+							src={Showreel}
+							poster={ShowreelPoster}
+						></video>
+						<Img
+							className='image-middle'
+							fluid={captor.childImageSharp.fluid}
+							alt=''
+						/>
+					</Col>
+				</Row>
+
+				{/* SECTION 3 */}
 			</Container>
 		</section>
 	);
