@@ -4,11 +4,11 @@ require('dotenv').config({
 
 module.exports = {
 	siteMetadata: {
-		title: `Excyted - We create`,
+		title: `Excyted`,
 		description: `Als eine hybride Werbeproduktion entwickeln wir kreative Lösungen für deine Marke, dein Unternehmen oder dein Projekt. Unser Fokus liegt auf Qualität und individueller Zusammenarbeit.`,
-		author: `@lukasjoho, @jaykch`,
 		keywords: ['Werbeagentur', 'Filmproduktion', 'digital'],
 		siteUrl: `http://excyted.io`,
+		lang: `de`,
 	},
 	plugins: [
 		`gatsby-plugin-react-helmet`,

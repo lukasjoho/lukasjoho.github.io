@@ -1,31 +1,57 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from 'react';
 import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
+// import { useLocation } from "@reach/router"
 
-function SEO({ description, lang, meta, title }) {
-	const { site } = useStaticQuery(
+function SEO({ title, description, image, robots }) {
+	// const { pathname } = useLocation()
+	const { site, file } = useStaticQuery(
 		graphql`
 			query {
 				site {
 					siteMetadata {
-						title
-						description
-						author
+						defaultTitle: title
+						defaultDescription: description
+						siteUrl
+						lang
+					}
+				}
+				file(relativePath: { eq: "favicon.jpg" }) {
+					childImageSharp {
+						fixed {
+							defaultImage: src
+						}
 					}
 				}
 			}
 		`
 	);
 
-	const metaDescription = description || site.siteMetadata.description;
+	const { defaultTitle, defaultDescription, siteUrl, lang } = site.siteMetadata;
+
+	const { defaultImage } = file.childImageSharp.fixed;
+
+	// Remove leading double slashes (//) from contentful source link received by graphql query
+	let modifiedImageUrl;
+	if (image) {
+		// if contentful asset
+		if (image.startsWith('//images.ctfassets.net')) {
+			modifiedImageUrl = image.replace(/^\/\//, 'http://');
+		}
+		// if static asset
+		else {
+			modifiedImageUrl = `${siteUrl}${image}`;
+		}
+	}
+
+	const seo = {
+		title: title || defaultTitle,
+		description: description || defaultDescription,
+		image: modifiedImageUrl || `${siteUrl}${defaultImage}`,
+		siteUrl: siteUrl,
+		robots: robots || 'all',
+	};
 
 	return (
 		<Helmet
@@ -33,60 +59,47 @@ function SEO({ description, lang, meta, title }) {
 				lang,
 			}}
 			title={title}
-			titleTemplate={`%s | ${site.siteMetadata.title}`}
-			meta={[
-				{
-					name: `description`,
-					content: metaDescription,
-				},
-				{
-					property: `og:title`,
-					content: title,
-				},
-				{
-					property: `og:description`,
-					content: metaDescription,
-				},
-				{
-					property: `og:type`,
-					content: `website`,
-				},
-				{
-					property: `og:image`,
-					content: `website`,
-				},
-				{
-					name: `twitter:card`,
-					content: `summary`,
-				},
-				{
-					name: `twitter:creator`,
-					content: site.siteMetadata.author,
-				},
-				{
-					name: `twitter:title`,
-					content: title,
-				},
-				{
-					name: `twitter:description`,
-					content: metaDescription,
-				},
-			].concat(meta)}
-		/>
+			titleTemplate={`%s | ${defaultTitle}`}
+		>
+			<meta name='description' content={seo.description} />
+			<meta name='image' content={seo.image} />
+
+			{seo.robots && <meta name='robots' content={seo.robots} />}
+
+			{seo.siteUrl && <meta property='og:url' content={seo.siteUrl} />}
+
+			{seo.title && <meta property='og:title' content={seo.title} />}
+
+			{seo.description && (
+				<meta property='og:description' content={seo.description} />
+			)}
+
+			{seo.image && <meta property='og:image' content={seo.image} />}
+
+			<meta name='twitter:card' content='summary_large_image' />
+
+			{seo.title && <meta name='twitter:title' content={seo.title} />}
+
+			{seo.description && (
+				<meta name='twitter:description' content={seo.description} />
+			)}
+
+			{seo.image && <meta name='twitter:image' content={seo.image} />}
+		</Helmet>
 	);
 }
 
 SEO.defaultProps = {
-	lang: `en`,
-	meta: [],
-	description: ``,
+	title: null,
+	description: null,
+	image: null,
 };
 
 SEO.propTypes = {
-	description: PropTypes.string,
-	lang: PropTypes.string,
-	meta: PropTypes.arrayOf(PropTypes.object),
 	title: PropTypes.string.isRequired,
+	description: PropTypes.string,
+	image: PropTypes.string,
+	robots: PropTypes.string,
 };
 
 export default SEO;

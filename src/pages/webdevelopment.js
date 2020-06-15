@@ -17,8 +17,8 @@ class IndexPage extends React.Component {
 			<ParallaxProvider>
 				<Layout>
 					<SEO
-						title='Webentwicklung'
-						description='Maximale Online Performance durch moderne Webentwickling.'
+						title='Web Development'
+						description='Maximale Online Performance durch modernes Web Development.'
 					/>
 					<Hero />
 					<Container className={buttonStyle.container}>

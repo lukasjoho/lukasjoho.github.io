@@ -18,7 +18,7 @@ class IndexPage extends React.Component {
 				<Layout>
 					<SEO
 						title='Medienproduktion'
-						description='Maximale Online Performance durch moderne Webentwickling.'
+						description='Ideen zum Ausdruck bringen.'
 					/>
 					<Hero />
 					<Container className={buttonStyle.container}>
