@@ -11,14 +11,13 @@ import IconVisualz from '../../images/content/visualz.svg';
 import Textblock from './textblock';
 import Showreel from '../../images/content/showreel.mp4';
 import ShowreelPoster from '../../images/content/showreel-poster.jpg';
-import Screen from '../../images/content/screen.jpg';
 import { Parallax } from 'react-scroll-parallax';
 
 import './sections.scss';
 import 'animate.css/animate.css';
 
 const Sections = () => {
-	const { people, kiel, thelen, captor, code, screen } = useStaticQuery(graphql`
+	const { people, kiel, captor, code, screen } = useStaticQuery(graphql`
 		query {
 			people: file(relativePath: { eq: "content/image-people.png" }) {
 				childImageSharp {
@@ -30,13 +29,6 @@ const Sections = () => {
 			kiel: file(relativePath: { eq: "content/image-kiel.jpg" }) {
 				childImageSharp {
 					fluid(quality: 70, maxWidth: 405) {
-						...GatsbyImageSharpFluid_noBase64
-					}
-				}
-			}
-			thelen: file(relativePath: { eq: "content/image-thelen.jpg" }) {
-				childImageSharp {
-					fluid(quality: 70, maxWidth: 540) {
 						...GatsbyImageSharpFluid_noBase64
 					}
 				}
