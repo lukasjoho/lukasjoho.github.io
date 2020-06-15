@@ -41,7 +41,7 @@ const Sections = () => {
 					<Col>
 						<div className='web-heading'>
 							<h1>Full Service Medienproduktion</h1>
-							<h2>Für maximales Feeling.</h2>
+							<h2>Ideen zum Ausdruck bringen.</h2>
 						</div>
 					</Col>
 				</Row>
@@ -89,7 +89,7 @@ const Sections = () => {
 				<Row>
 					<Col md={{ size: 6, order: 2 }}>
 						<Textblock
-							title='Moderne Medienproduktion'
+							title='Kreation. Produktion.'
 							text="Videos und Bilder bieten ganz besonders viel Potenzial für Excytement! Hier geht's um Feeling, Authentizität und Einzigartigkeit. Um das zu erreichen, bieten wir das volle Spektrum an Produktionsdienstleistungen an. Das beginnt bei der Konzeption, geht über die Produktion und den Schnitt und endet beim Ausrollen des Resultats über verschiedene Kanäle."
 						/>
 						<Img
