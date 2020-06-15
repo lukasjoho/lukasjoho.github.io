@@ -1,6 +1,9 @@
 @import '../_variables.scss';
 
 #sections {
+	.media-row {
+		margin-bottom: 4rem;
+	}
 	padding-top: 8rem;
 	padding-bottom: 6rem;
 	.centercol {
@@ -87,6 +90,7 @@
 		height: 100%;
 		display: flex;
 		flex-wrap: wrap;
+		margin-bottom: -4rem;
 		.ring {
 			width: 25%;
 			margin-bottom: 2rem;
@@ -279,7 +283,7 @@
 		}
 		.ring-container {
 			margin-top: -3rem;
-			margin-bottom: 0rem;
+			margin-bottom: -4rem;
 			.ring {
 				width: 50%;
 			}
