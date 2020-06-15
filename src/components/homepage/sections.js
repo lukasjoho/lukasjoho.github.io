@@ -129,8 +129,7 @@ const Sections = () => {
 					<Col md={4} className='centercol'>
 						<Textblock
 							title='Web'
-							text='Eine Website hat mittlerweile jeder. Aber eine die schnell lädt, weit oben bei Google erscheint und alle Funktionen beinhaltet die Du brauchst hat nicht jeder. Das wollen wir ändern.
-						Angefangen beim Entwickeln der grundsätzlichen Struktur deiner Seite und dem Design erstellen wir mit Dir gemeinsam eine ausdrucksvolle Website die Dich und deine Kunden excyted. '
+							text='Wir entwickeln dir deine Website nach den neusten Web-Technologie Standards. Responsives Design, hohe Geschwindigkeit und user-zentriertes Design resultieren in bester Performance und hohem Google Ranking. Genauso wichtig sind uns sicheres Hosting und einfaches Content Management, damit du die Kontrolle über deine Inhalte besitzt.'
 							icon={IconCode}
 						/>
 					</Col>
