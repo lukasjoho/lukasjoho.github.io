@@ -6,12 +6,10 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import Showreel from '../../../../images/content/showreel.mp4';
 import ShowreelPoster from '../../../../images/content/showreel-poster.jpg';
 import Textblock from '../../../homepage/textblock';
-import { AiOutlineMobile } from 'react-icons/ai';
+import { TiSocialInstagram } from 'react-icons/ti';
 import { IoIosSpeedometer } from 'react-icons/io';
-import { IoLogoBuffer } from 'react-icons/io';
-import { IoIosLock } from 'react-icons/io';
-import { IoLogoGoogle } from 'react-icons/io';
-import { IoIosColorPalette } from 'react-icons/io';
+import { GiFilmStrip } from 'react-icons/gi';
+import { IoIosBusiness } from 'react-icons/io';
 
 import '../hero.scss';
 import 'animate.css/animate.css';
@@ -48,7 +46,7 @@ const Sections = () => {
 					</Col>
 				</Row>
 				<Row className='web-values'>
-					<Col md={4} sm={6} xs={6}>
+					<Col md={4} sm={12} xs={12}>
 						<ScrollAnimation
 							animateIn='animate__fadeInUp'
 							duration='1'
@@ -56,12 +54,12 @@ const Sections = () => {
 							animateOnce={true}
 						>
 							<div>
-								<AiOutlineMobile className='icon' />
+								<GiFilmStrip className='icon' />
 								<h4>Werbespot</h4>
 							</div>
 						</ScrollAnimation>
 					</Col>
-					<Col md={4} xs={6}>
+					<Col md={4} xs={12}>
 						<ScrollAnimation
 							animateIn='animate__fadeInUp'
 							duration='1'
@@ -69,12 +67,12 @@ const Sections = () => {
 							animateOnce={true}
 						>
 							<div>
-								<IoIosSpeedometer className='icon' />
+								<TiSocialInstagram className='icon' />
 								<h4>Social Media Content</h4>
 							</div>
 						</ScrollAnimation>
 					</Col>
-					<Col md={4} xs={6}>
+					<Col md={4} xs={12}>
 						<ScrollAnimation
 							animateIn='animate__fadeInUp'
 							duration='1'
@@ -82,47 +80,8 @@ const Sections = () => {
 							animateOnce={true}
 						>
 							<div>
-								<IoLogoBuffer className='icon' />
-								<h4>Animationen</h4>
-							</div>
-						</ScrollAnimation>
-					</Col>
-					<Col md={4} xs={6}>
-						<ScrollAnimation
-							animateIn='animate__fadeInUp'
-							duration='1'
-							delay={400}
-							animateOnce={true}
-						>
-							<div>
-								<IoLogoGoogle className='icon' />
-								<h4>Fotos</h4>
-							</div>
-						</ScrollAnimation>
-					</Col>
-					<Col md={4} xs={6}>
-						<ScrollAnimation
-							animateIn='animate__fadeInUp'
-							duration='1'
-							delay={500}
-							animateOnce={true}
-						>
-							<div>
-								<IoIosColorPalette className='icon' />
-								<h4>Luftaufnahmen</h4>
-							</div>
-						</ScrollAnimation>
-					</Col>
-					<Col md={4} xs={6}>
-						<ScrollAnimation
-							animateIn='animate__fadeInUp'
-							duration='1'
-							delay={600}
-							animateOnce={true}
-						>
-							<div>
-								<IoIosLock className='icon' />
-								<h4>Corporate / Brand Film</h4>
+								<IoIosBusiness className='icon' />
+								<h4>Corporate/Brand Film</h4>
 							</div>
 						</ScrollAnimation>
 					</Col>
