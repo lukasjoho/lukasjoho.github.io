@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './PremiumButton.css';
+import './PremiumButton.scss';
 import { Link } from 'gatsby';
 
 const PremiumButton = props => {

@@ -2,8 +2,8 @@ import React from 'react';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import Layout from '../components/general/layout';
 import SEO from '../components/seo';
-import Services from '../components/sites/linkedin-ad/web/services';
-import Hero from '../components/sites/linkedin-ad/web/hero';
+import Services from '../components/sites/linkedin-ad/media/services';
+import Hero from '../components/sites/linkedin-ad/media/hero';
 import PremiumButton from '../components/general/PremiumButton';
 import Button from '../components/general/Button';
 import buttonStyle from '../components/sites/linkedin-ad/buttons.module.scss';
@@ -17,7 +17,7 @@ class IndexPage extends React.Component {
 			<ParallaxProvider>
 				<Layout>
 					<SEO
-						title='Webentwicklung'
+						title='Medienproduktion'
 						description='Maximale Online Performance durch moderne Webentwickling.'
 					/>
 					<Hero />

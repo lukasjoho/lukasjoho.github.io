@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { ParallaxProvider } from 'react-scroll-parallax';
-import Style from './services.module.scss';
+import Style from '../services.module.scss';
 
 const Services = () => (
 	<section id={Style.services}>

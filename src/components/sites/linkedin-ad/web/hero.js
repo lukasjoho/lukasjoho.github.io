@@ -3,8 +3,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Img from 'gatsby-image';
 import { graphql, useStaticQuery } from 'gatsby';
 import ScrollAnimation from 'react-animate-on-scroll';
-import Progressring from '../../homepage/ProgressRing';
-import Textblock from '../../homepage/textblock';
+import Progressring from '../../../homepage/ProgressRing';
+import Textblock from '../../../homepage/textblock';
 import { Parallax } from 'react-scroll-parallax';
 import { AiOutlineMobile } from 'react-icons/ai';
 import { IoIosSpeedometer } from 'react-icons/io';
@@ -13,7 +13,7 @@ import { IoIosLock } from 'react-icons/io';
 import { IoLogoGoogle } from 'react-icons/io';
 import { IoIosColorPalette } from 'react-icons/io';
 
-import './hero.scss';
+import '../hero.scss';
 import 'animate.css/animate.css';
 
 const Sections = () => {
@@ -37,13 +37,12 @@ const Sections = () => {
 	`);
 
 	return (
-		<section id='linkedin-web'>
+		<section id='linkedin'>
 			<Container>
-				{/* SECTION 3 */}
 				<Row>
 					<Col>
 						<div className='web-heading'>
-							<h1>Deine Website.</h1>
+							<h1>State of the Art Website</h1>
 							<h2>Für maximale Online Performance.</h2>
 						</div>
 					</Col>
