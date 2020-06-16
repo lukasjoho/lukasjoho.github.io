@@ -24,6 +24,11 @@
 				height: 100%;
 				border-radius: 50%;
 				overflow: hidden;
+				filter: brightness(85%);
+				transition: 0.2s ease;
+				&:hover {
+					filter: brightness(100%);
+				}
 			}
 
 			svg {
