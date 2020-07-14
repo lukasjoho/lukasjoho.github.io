@@ -108,10 +108,15 @@
 	}
 
 	h3 {
-		font-weight: bold;
-		font-size: 1.1rem;
+		font-weight: 600;
+		letter-spacing: 0.03rem;
+		font-size: 1.4rem;
 		margin: 1rem 0 1rem;
 		text-transform: uppercase;
+		line-height: 3rem;
+		span {
+			font-weight: 300;
+		}
 	}
 
 	p {
