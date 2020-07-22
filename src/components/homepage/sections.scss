@@ -1,6 +1,9 @@
 @import '../_variables.scss';
 
 #sections {
+	.web-row {
+		margin-bottom: -6rem;
+	}
 	.media-row {
 		margin-bottom: 4rem;
 	}
@@ -268,6 +271,9 @@
 
 @media (max-width: 768px) {
 	#sections {
+		.web-row {
+			margin-bottom: 0;
+		}
 		.image-right {
 			float: left;
 		}

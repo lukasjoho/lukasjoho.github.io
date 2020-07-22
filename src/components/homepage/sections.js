@@ -61,7 +61,7 @@ const Sections = () => {
 		<section id='sections'>
 			<Container>
 				{/* SECTION 1 */}
-				<Row>
+				<Row className='web-row'>
 					<Col md={6}>
 						<Textblock
 							title='Digitale Tools'
