@@ -51,16 +51,20 @@ const Banner = () => {
 							imgStyle={{ objectFit: 'contain' }}
 						/>
 
-						<h3>Creative Studio</h3>
-						<p>
-							Als hybride Medienproduktion entwickeln wir kreative Lösungen für
-							deine Marke, dein Unternehmen oder dein Projekt. Mit excyted
-							bringen wir unsere Disziplinen aus Web Development und der
-							Produktion von Medien zusammen und können so nicht nur
-							konzeptionell sondern auch technisch eng mit Dir an deiner Idee
-							basteln. <br /> Bock zu excyten?
+						<h3>
+							State-of-the-Art Lösungen
 							<br />
-							Let's get in touch!{' '}
+							<span>und </span>
+							kreative Produkte
+							<br />
+							<span>für </span>
+							die digitale Welt.
+							<br />
+						</h3>
+						<p>
+							Bock zu excyten?
+							<br />
+							Let's get in touch!
 						</p>
 						<Link to='/projects' className='premium-button'>
 							<span className='module'>Unsere Projekte</span>
