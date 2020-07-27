@@ -52,7 +52,12 @@ const Banner = () => {
 						/>
 
 						<h3>Creative Studio</h3>
-						<p>
+						<h2 className='banner-tagline'>
+							State-of-the-Art Lösungen <br />
+							und kreative Produkte <br />
+							für die digitale Welt.
+						</h2>
+						{/* <p>
 							Als hybride Medienproduktion entwickeln wir kreative Lösungen für
 							deine Marke, dein Unternehmen oder dein Projekt. Mit excyted
 							bringen wir unsere Disziplinen aus Web Development und der
@@ -61,7 +66,7 @@ const Banner = () => {
 							basteln. <br /> Bock zu excyten?
 							<br />
 							Let's get in touch!{' '}
-						</p>
+						</p> */}
 						<Link to='/projects' className='premium-button'>
 							<span className='module'>Unsere Projekte</span>
 						</Link>
