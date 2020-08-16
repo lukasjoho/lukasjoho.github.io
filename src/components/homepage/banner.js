@@ -51,12 +51,13 @@ const Banner = () => {
 							imgStyle={{ objectFit: 'contain' }}
 						/>
 
-						<h3>Creative Studio</h3>
-						<h2 className='banner-tagline'>
-							State-of-the-Art Lösungen <br />
+						<h3>
+							Als Creative Studio entwickeln wir <br /> State-of-the-Art
+							Lösungen <br />
 							und kreative Produkte <br />
 							für die digitale Welt.
-						</h2>
+						</h3>
+
 						{/* <p>
 							Als hybride Medienproduktion entwickeln wir kreative Lösungen für
 							deine Marke, dein Unternehmen oder dein Projekt. Mit excyted
