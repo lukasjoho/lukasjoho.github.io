@@ -63,6 +63,10 @@ function SEO({ title, description, image, robots }) {
 		>
 			<meta name='description' content={seo.description} />
 			<meta name='image' content={seo.image} />
+			<meta
+				name='google-site-verification'
+				content='HMruL3I2pItCeZy-kcZkKeiOgbCmoMaWYFsrZpxtd7Q'
+			/>
 
 			{seo.robots && <meta name='robots' content={seo.robots} />}
 
