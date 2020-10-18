@@ -77,15 +77,17 @@ $heightWhyMobile: 12rem;
 		h2 {
 			font-size: $heightWhyMobile;
 			line-height: $heightWhyMobile;
+			opacity: 0.03;
+
 			&.stroke {
-				-webkit-text-stroke: 8px $primary;
+				-webkit-text-stroke: 7px $primary;
 				color: rgba($color: #000000, $alpha: 0);
 			}
 		}
 		h3 {
 			line-height: 2.2rem;
 
-			font-size: 1.5rem;
+			font-size: 1.4rem;
 			span {
 				display: block;
 				.first-child {

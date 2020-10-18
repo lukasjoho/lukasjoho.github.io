@@ -43,7 +43,7 @@ class Hero extends Component {
 						</div>
 					</Container>
 					<Particles
-						height={350}
+						height={400}
 						params={{
 							particles: {
 								number: {
