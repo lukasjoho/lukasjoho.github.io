@@ -27,7 +27,7 @@ class Project extends React.Component {
 		var { data } = this.props;
 		return (
 			<React.Fragment key={this.state.isClient}>
-				<Col lg={4} className='project'>
+				<Col lg={6} className='project'>
 					<ScrollAnimation
 						animateIn='animate__fadeInUp'
 						duration={0.8}
