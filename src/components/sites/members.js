@@ -86,7 +86,7 @@ const Members = () => {
 							<AiOutlinePlayCircle />
 						</div>
 						<h3>Lukas</h3>
-						<span>- Management & Produktion -</span>
+						<span>- Produktion -</span>
 						<a
 							href='https://www.linkedin.com/in/lukas-hoppe-948142178'
 							rel='noopener noreferrer'

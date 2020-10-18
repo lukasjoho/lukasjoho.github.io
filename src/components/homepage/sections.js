@@ -76,7 +76,7 @@ const Sections = () => {
 								className='image-car'
 							/>
 						</div> */}
-						<UiAnimation />
+						<UiAnimation className='ui-animation' />
 					</Col>
 
 					<Col md={6}>
