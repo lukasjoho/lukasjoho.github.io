@@ -1,0 +1,97 @@
+@import '../_variables.scss';
+$heightWhy: 45rem;
+$heightWhyTablet: 30rem;
+$heightWhyMobile: 12rem;
+
+#why {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	height: $heightWhy;
+	display: flex;
+	align-items: center;
+	color: $primary;
+	h2 {
+		width: 100%;
+		height: 100%;
+		font-size: $heightWhy;
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		opacity: 0.04;
+		margin: 0;
+		&.stroke {
+			-webkit-text-stroke: 18px $primary;
+			color: rgba($color: #000000, $alpha: 0);
+		}
+	}
+	h3 {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 3rem;
+		width: 100%;
+		height: 100%;
+		font-weight: 600;
+		text-align: center;
+		margin: 0;
+		span {
+			display: flex;
+			.first-child {
+				margin-right: 1rem;
+			}
+		}
+	}
+}
+@media (max-width: 1000px) {
+	#why {
+		height: $heightWhyTablet;
+		h2 {
+			font-size: $heightWhyTablet;
+			&.stroke {
+				-webkit-text-stroke: 8px $primary;
+				color: rgba($color: #000000, $alpha: 0);
+			}
+		}
+		h3 {
+			line-height: 3rem;
+
+			font-size: 2rem;
+			span {
+				display: block;
+				.first-child {
+					margin-right: 0rem;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	#why {
+		height: $heightWhyMobile;
+		margin-top: 2rem;
+
+		h2 {
+			font-size: $heightWhyMobile;
+			line-height: $heightWhyMobile;
+			&.stroke {
+				-webkit-text-stroke: 8px $primary;
+				color: rgba($color: #000000, $alpha: 0);
+			}
+		}
+		h3 {
+			line-height: 2.2rem;
+
+			font-size: 1.5rem;
+			span {
+				display: block;
+				.first-child {
+					margin-right: 0rem;
+				}
+			}
+		}
+	}
+}
