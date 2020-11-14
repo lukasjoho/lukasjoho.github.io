@@ -6,7 +6,7 @@ import SEO from '../components/seo';
 import Banner from '../components/homepage/banner';
 import Sections from '../components/homepage/sections';
 import Hero from '../components/homepage/hero';
-import Why from '../components/homepage/why';
+import Casestudy from '../components/homepage/casestudy';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class IndexPage extends React.Component {
@@ -19,7 +19,7 @@ class IndexPage extends React.Component {
 						description='Als hybride Werbeproduktion entwickeln wir kreative Lösungen für deine Marke, dein Unternehmen oder dein Projekt. Mit Dir wollen wir excyten und deine individuellen Projekte Wirklichkeit werden lassen.'
 					/>
 					<Hero />
-					<Why />
+					<Casestudy />
 					<Banner />
 					<ParallaxBox />
 					<Sections />
