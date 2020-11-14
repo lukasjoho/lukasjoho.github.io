@@ -22,22 +22,23 @@ class Casestudy extends Component {
 						<Col md={8} className='main'>
 							<div className='case'>
 								<div className='client'>
-									<Parallax y={[0, 0]} x={[10, -10]} tagOuter='figure'>
+									<Parallax y={[0, 0]} x={[5, -5]} tagOuter='figure'>
 										<h1>Siemens</h1>
 									</Parallax>
 								</div>
-
-								<img src={ImageSiemensCase} alt='' />
+								<img className='main-image' src={ImageSiemensCase} alt='' />
 								<div className='overlay'></div>
+								<div className='image'>
+									<Parallax y={[10, -10]} x={[-5, 5]} tagOuter='figure'>
+										<img src={ImageVscode} alt='' />
+									</Parallax>
+								</div>
+								<div className='description'>
+									<Parallax y={[-10, 25]} x={[0, -0]} tagOuter='figure'>
+										<h1>Case Study</h1>
+									</Parallax>
+								</div>
 							</div>
-							<div className='image'>
-								<Parallax y={[10, -10]} x={[-10, 10]} tagOuter='figure'>
-									<img src={ImageVscode} alt='' />
-								</Parallax>
-							</div>
-							<Parallax y={[-10, 25]} x={[0, -0]} tagOuter='figure'>
-								<h1 className='description'>Case Study</h1>
-							</Parallax>
 						</Col>
 						<Col md={2}></Col>
 					</Row>
