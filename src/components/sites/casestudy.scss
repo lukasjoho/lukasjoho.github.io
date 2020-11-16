@@ -119,10 +119,9 @@
 	.image-iphone {
 		margin-top: 60px;
 		display: flex;
-		justify-content: flex-start;
+		justify-content: center;
 		@include media-breakpoint-up(lg) {
 			margin-top: 0px;
-			justify-content: center;
 		}
 	}
 	.container {

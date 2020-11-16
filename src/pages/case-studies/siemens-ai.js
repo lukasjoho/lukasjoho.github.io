@@ -69,7 +69,7 @@ const Siemens = () => {
 								Javascript Framework Gatsby gebaut. Dies ermöglichte uns die
 								Erstellung von Seiten mit schnellstmöglicher Ladezeit. Lange
 								unübersichtliche Seiten konnten dadurch auf mehrere kürzere
-								Unterseiten gesplittet werden.{' '}
+								Unterseiten gesplittet werden.
 							</p>
 						</Col>
 					</Row>
@@ -79,17 +79,19 @@ const Siemens = () => {
 								<h3>Gleiches Design, aber besser</h3>
 
 								<p>
-									Das Siemens interne Design Theme, basierend auf dem CSS
-									Framework Bootstrap, haben wir in die neue Website eingebaut,
-									um die Siemens Corporate Identity beizubehalten.
-									Designelemente und Funktionen, die mit der alten Technologie
-									nicht möglich waren, haben wir CI gerecht neu überdacht,
-									designed und animiert. Eine neue Statusleiste der „Innovation
-									Journey“ Seite führt Besucher jetzt elegant und übersichtlich
-									durch die einzelnen Prozesse die jedes Kundenprojekt
-									durchläuft. Sie basiert auf der derzeitigen Scrollposition des
-									Nutzers und bietet jetzt, anders als vorher, auch für mobile
-									Geräte eine tolle Experience
+									Um die Siemens Corporate Identity beizubehalten, haben wir das
+									Siemens interne Design Theme, basierend auf dem CSS Framework
+									Bootstrap, in die neue Website eingebaut,. Designelemente und
+									Funktionen, welche mit der alten Technologie nicht umsetzbar
+									waren, haben wir CI gerecht neu überdacht, designed und
+									animiert. <br />
+									<br />
+									Eine neue Statusleiste der „Innovation Journey“ Seite führt
+									Besucher nun elegant und übersichtlich durch die einzelnen
+									Prozesse, welche jedes Kundenprojekt durchläuft. Sie basiert
+									auf der derzeitigen Scrollposition des Nutzers und bietet
+									jetzt, anders als vorher, auch für mobile Geräte eine tolle
+									Experience.
 								</p>
 							</div>
 						</Col>
@@ -101,15 +103,17 @@ const Siemens = () => {
 						<Col md={7} className='has-image'>
 							<h3>Maßgeschneidertes Content Management System</h3>
 							<p>
-								Wir haben Markdown-Dateien genutzt um der Website ein
-								individualisiertes und funktionsspezifisches Content Management
-								System zu geben. Texte, Bilder, Icons, Seiten und Verlinkungen
+								Die von uns eingebauten Markdown-Dateien ergeben für die Website
+								ein individualisiertes und funktionsspezifisches Content
+								Management System. Texte, Bilder, Icons, Seiten und Verlinkungen
 								können jetzt ganz einfach bearbeitet und hinzugefügt werden.
 								Dazu braucht es keinen technischen Hintergrund und das Layout
-								der Seite bleibt komplett unberührt. Inhalte wie z.B diese Texte
-								über ein angebotenes Training können sehr intuitiv über Markdown
-								Dateien geändert werden. Selbst Textformatierungen können über
-								einfache Codierungen vorgenommen werden.
+								der Seite bleibt komplett unberührt. <br />
+								<br />
+								Inhalte wie z.B diese Texte über ein angebotenes Training können
+								sehr intuitiv über Markdown Dateien geändert werden. Selbst
+								Textformatierungen können über einfache Codierungen vorgenommen
+								werden.
 							</p>
 						</Col>
 						<Col className='images-mdx' md={7}>
@@ -121,9 +125,9 @@ const Siemens = () => {
 						<Col md={7} className='has-image'>
 							<h3>Kundenspezifisches Teilen von Inhalten</h3>
 							<p>
-								Um bestimmte Projekte zu sehen, können diese über den Use Case
-								Explorer nach vier Kriterien gefiltert werden. Mit einem Klick
-								auf das jeweilige Projekt werden dann weitere
+								Um nur Projekte zu sehen, welche bestimmte Kriterien erfüllen,
+								können diese im „Use Case Explorer“ über Dropdowns gefiltert
+								werden. Mit einem Klick auf das jeweilige Projekt werden weitere
 								Detailinformationen angezeigt. Die Filter werden in der URL der
 								Seite gespeichert. Dadurch kann die vorgefilterte Seite per Link
 								einfach an interessierte Kunden weitergeleitet werden.
