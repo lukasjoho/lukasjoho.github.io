@@ -1,0 +1,150 @@
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints';
+.casepage {
+	padding-top: 30px;
+	@include media-breakpoint-up(md) {
+		padding-top: 60px;
+	}
+	img {
+		border-radius: 10px;
+	}
+
+	p,
+	h1,
+	h2,
+	h3 {
+		margin: 0;
+	}
+	h1 {
+		font-size: 50px;
+		font-weight: 700;
+		margin-bottom: 10px;
+		@include media-breakpoint-up(md) {
+			font-size: 80px;
+		}
+	}
+	h2 {
+		font-size: 40px;
+		font-weight: 600;
+		margin-bottom: 40px;
+		@include media-breakpoint-up(md) {
+			margin-bottom: 20px;
+		}
+	}
+	h3 {
+		font-size: 24px;
+		font-weight: 600;
+		margin-bottom: 10px;
+		@include media-breakpoint-up(md) {
+			margin-bottom: 20px;
+		}
+	}
+	ul {
+		list-style-type: disc;
+		-webkit-padding-start: 20px;
+		margin: 0;
+		li {
+			line-height: 2;
+			margin-top: 1rem;
+			margin-bottom: 0;
+		}
+	}
+	.label {
+		position: relative;
+		font-size: 14px;
+		@include media-breakpoint-up(md) {
+			font-size: inherit;
+		}
+		span {
+			font-weight: 700;
+		}
+	}
+
+	.case-row {
+		display: flex;
+		div {
+			width: 50%;
+		}
+	}
+	.image-imac {
+		display: flex;
+		justify-content: center;
+
+		img {
+			width: 90%;
+			margin: auto;
+			@include media-breakpoint-up(md) {
+				width: 45%;
+			}
+		}
+	}
+	.image-phone {
+		img {
+			width: 75%;
+			float: right;
+		}
+	}
+	.images-mdx {
+		position: relative;
+		margin-bottom: 100px;
+		@include media-breakpoint-up(md) {
+			margin-bottom: 0;
+		}
+		img {
+			border-radius: 10px;
+			margin: 0;
+		}
+		.mdx-page {
+			width: 100%;
+			@include media-breakpoint-up(md) {
+				width: 70%;
+			}
+		}
+		.mdx-code {
+			position: absolute;
+			right: 50%;
+			bottom: 0;
+			transform: translate3d(50%, 50%, 0);
+			width: 80%;
+			border: 4px solid #ff3232;
+			@include media-breakpoint-up(md) {
+				width: 70%;
+				right: 0;
+				transform: translateX(30%);
+				bottom: auto;
+			}
+		}
+	}
+	.image-iphone {
+		margin-top: 60px;
+		display: flex;
+		justify-content: flex-start;
+		@include media-breakpoint-up(lg) {
+			margin-top: 0px;
+			justify-content: center;
+		}
+	}
+	.container {
+		.row {
+			padding-bottom: 80px;
+			@include media-breakpoint-up(md) {
+				padding-bottom: 120px;
+			}
+			&.pb-hero {
+				padding-bottom: 80px;
+				@include media-breakpoint-up(md) {
+					padding-bottom: 40px;
+				}
+			}
+			.col-md-7 {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+			.has-image {
+				margin-bottom: 50px;
+			}
+		}
+	}
+}
