@@ -82,20 +82,6 @@ class Project extends React.Component {
 								</div>
 							) : null}
 
-							<div className='images-container'>
-								{data.images
-									? data.images.map(image => {
-											return (
-												<Img
-													key={image.id}
-													fluid={image.fluid}
-													alt='portfolio'
-													className='portfolio-image'
-												/>
-											);
-									  })
-									: null}
-							</div>
 							{data.instagram ? (
 								<div className='ratio-instagram'>
 									<iframe
@@ -111,6 +97,34 @@ class Project extends React.Component {
 									/>
 								</div>
 							) : null}
+							{data.vimeo ? (
+								<div className='ratio-youtube'>
+									<iframe
+										src={data.vimeo}
+										frameBorder='0'
+										allowFullScreen
+										scrolling='no'
+										allowtransparency='true'
+										width='100%'
+										height='100%'
+										title={data.title}
+									/>
+								</div>
+							) : null}
+							<div className='images-container'>
+								{data.images
+									? data.images.map(image => {
+											return (
+												<Img
+													key={image.id}
+													fluid={image.fluid}
+													alt='portfolio'
+													className='portfolio-image'
+												/>
+											);
+									  })
+									: null}
+							</div>
 						</Modal.Body>
 					</Modal>
 				</Col>
