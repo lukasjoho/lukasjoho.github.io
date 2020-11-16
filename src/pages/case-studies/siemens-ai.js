@@ -30,6 +30,7 @@ const Siemens = () => {
 								individuell Inhalte und Strukturen zu ändern.
 							</p>
 						</Col>
+						<Col md={5}></Col>
 
 						<Col className='image-imac' md={12}>
 							<img src={ImageImac} alt='' />

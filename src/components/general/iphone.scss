@@ -1,10 +1,12 @@
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints';
 .mockup {
 	height: 100%;
 	overflow: hidden;
 	display: flex;
 	user-select: none;
 	background: none;
-
 	.title {
 		color: rgba(255, 255, 255, 0.07);
 		display: flex;
@@ -52,13 +54,17 @@
 		fill: #000;
 	}
 	.iphonex {
-		width: 20em;
-		height: 40em;
+		width: 18em !important;
+		height: 36em !important;
 		display: flex;
 		position: relative;
 		transform: rotate(0deg);
 		transition: all cubic-bezier(0.36, 0.41, 0.38, 1) 0.4s;
 		z-index: 10;
+		@include media-breakpoint-up(md) {
+			width: 20em;
+			height: 40em;
+		}
 	}
 	.iphonex:hover {
 		transform: rotate(0deg) scale(0.95);

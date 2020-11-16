@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './iphone.scss';
 import Video from '../../images/content/video-siemens-trimmed.mp4';
+import ImagePosterSiemens from '../../images/content/image-poster-siemens.png';
 const Iphone = () => {
 	const videoRef = React.createRef();
 
@@ -24,6 +25,7 @@ const Iphone = () => {
 								loop={false}
 								playsInline
 								muted
+								poster={ImagePosterSiemens}
 								src={Video}
 							></video>
 							{/* <div class='dribbbleLogo'>
