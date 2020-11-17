@@ -5,9 +5,7 @@ import SEO from '../../components/seo';
 import Layout from '../../components/general/layout';
 import { Container, Row, Col } from 'react-bootstrap';
 import Iphone from '../../components/general/iphone';
-import ImageMdxCode from '../../images/content/image-mdx-code.png';
-import ImageMdxPage from '../../images/content/image-mdx-page.jpg';
-import ImageDropdown from '../../images/content/image-dropdown.jpg';
+
 import Img from 'gatsby-image';
 
 import '../../components/sites/casestudy.scss';

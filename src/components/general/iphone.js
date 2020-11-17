@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './iphone.scss';
 import Video from '../../images/content/video-siemens-trimmed.mp4';
 import ImagePosterSiemens from '../../images/content/image-poster-siemens.png';
+import { BrowserView, MobileView } from 'react-device-detect';
+
 const Iphone = () => {
 	const videoRef = React.createRef();
 
@@ -10,7 +12,7 @@ const Iphone = () => {
 			<div
 				className='iphonex'
 				onMouseOver={() => videoRef.current.play()}
-				onMouseOut={() => {
+				onMouseLeave={() => {
 					videoRef.current.pause();
 					videoRef.current.currentTime = 0;
 				}}
@@ -42,6 +44,14 @@ const Iphone = () => {
 				<div className='phoneButtons phoneButtons-left2'></div>
 				<div className='phoneButtons phoneButtons-left3'></div>
 				<div className='back'></div>
+			</div>
+			<div className='info'>
+				<BrowserView>
+					<small>Phone hovern für Animation</small>
+				</BrowserView>
+				<MobileView>
+					<small>Phone tappen für Animation</small>
+				</MobileView>
 			</div>
 		</div>
 	);
