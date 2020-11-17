@@ -73,11 +73,14 @@
 			display: flex;
 			justify-content: center;
 		}
-		img {
-			width: 90%;
-			margin: auto;
-			@include media-breakpoint-up(md) {
-				width: 45%;
+		.gatsby-image {
+			width: 100%;
+			.img {
+				width: 90%;
+				margin: auto;
+				@include media-breakpoint-up(md) {
+					width: 45%;
+				}
 			}
 		}
 	}

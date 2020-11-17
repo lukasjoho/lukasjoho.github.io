@@ -1,16 +1,55 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
+
 import SEO from '../../components/seo';
 import Layout from '../../components/general/layout';
 import { Container, Row, Col } from 'react-bootstrap';
-import ImageImac from '../../images/content/image-imac.png';
 import Iphone from '../../components/general/iphone';
 import ImageMdxCode from '../../images/content/image-mdx-code.png';
 import ImageMdxPage from '../../images/content/image-mdx-page.jpg';
 import ImageDropdown from '../../images/content/image-dropdown.jpg';
+import Img from 'gatsby-image';
+
 import '../../components/sites/casestudy.scss';
 
 const Siemens = () => {
+	const {
+		imageImac,
+		imageDropdown,
+		imageMdxCode,
+		imageMdxPage,
+	} = useStaticQuery(graphql`
+		query {
+			imageImac: file(relativePath: { eq: "content/image-imac.png" }) {
+				childImageSharp {
+					fluid(quality: 90, maxWidth: 600) {
+						...GatsbyImageSharpFluid_noBase64
+					}
+				}
+			}
+			imageDropdown: file(relativePath: { eq: "content/image-dropdown.jpg" }) {
+				childImageSharp {
+					fluid(quality: 70, maxWidth: 405) {
+						...GatsbyImageSharpFluid_noBase64
+					}
+				}
+			}
+			imageMdxCode: file(relativePath: { eq: "content/image-mdx-code.png" }) {
+				childImageSharp {
+					fluid(quality: 70, maxWidth: 540) {
+						...GatsbyImageSharpFluid_noBase64
+					}
+				}
+			}
+			imageMdxPage: file(relativePath: { eq: "content/image-mdx-page.jpg" }) {
+				childImageSharp {
+					fluid(quality: 70, maxWidth: 270) {
+						...GatsbyImageSharpFluid_noBase64
+					}
+				}
+			}
+		}
+	`);
 	return (
 		<Layout>
 			<SEO title='Siemens' description='Das haben wir bereits produziert.' />
@@ -33,7 +72,13 @@ const Siemens = () => {
 						<Col md={5}></Col>
 
 						<Col className='image-imac' md={12}>
-							<img src={ImageImac} alt='' />
+							<div className='gatsby-image'>
+								<Img
+									fluid={imageImac.childImageSharp.fluid}
+									alt=''
+									className='img'
+								/>
+							</div>
 						</Col>
 					</Row>
 					<Row>
