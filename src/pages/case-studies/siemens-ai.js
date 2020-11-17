@@ -20,28 +20,28 @@ const Siemens = () => {
 		query {
 			imageImac: file(relativePath: { eq: "content/image-imac.png" }) {
 				childImageSharp {
-					fluid(quality: 90, maxWidth: 600) {
-						...GatsbyImageSharpFluid_noBase64
-					}
-				}
-			}
-			imageDropdown: file(relativePath: { eq: "content/image-dropdown.jpg" }) {
-				childImageSharp {
-					fluid(quality: 90, maxWidth: 760) {
-						...GatsbyImageSharpFluid_noBase64
-					}
-				}
-			}
-			imageMdxCode: file(relativePath: { eq: "content/image-mdx-code.png" }) {
-				childImageSharp {
-					fluid(quality: 90, maxWidth: 530) {
+					fluid(quality: 90, maxWidth: 700) {
 						...GatsbyImageSharpFluid_noBase64
 					}
 				}
 			}
 			imageMdxPage: file(relativePath: { eq: "content/image-mdx-page.jpg" }) {
 				childImageSharp {
-					fluid(quality: 90, maxWidth: 530) {
+					fluid(quality: 90, maxWidth: 850) {
+						...GatsbyImageSharpFluid_noBase64
+					}
+				}
+			}
+			imageMdxCode: file(relativePath: { eq: "content/image-mdx-code.png" }) {
+				childImageSharp {
+					fluid(quality: 90, maxWidth: 740) {
+						...GatsbyImageSharpFluid_noBase64
+					}
+				}
+			}
+			imageDropdown: file(relativePath: { eq: "content/image-dropdown.jpg" }) {
+				childImageSharp {
+					fluid(quality: 90, maxWidth: 1100) {
 						...GatsbyImageSharpFluid_noBase64
 					}
 				}
@@ -54,7 +54,7 @@ const Siemens = () => {
 			<section className='casepage' id='siemens'>
 				<Container>
 					<Row className='pb-hero'>
-						<Col md={7}>
+						<Col xs={12} lg={7}>
 							<p className='label'>
 								Case Study: <span>Web Development</span>
 							</p>
@@ -67,20 +67,17 @@ const Siemens = () => {
 								individuell Inhalte und Strukturen zu ändern.
 							</p>
 						</Col>
-						<Col md={5}></Col>
 
-						<Col className='image-imac' md={12}>
-							<div className='gatsby-image'>
-								<Img
-									fluid={imageImac.childImageSharp.fluid}
-									alt=''
-									className='img'
-								/>
-							</div>
+						<Col className='image-imac' xs={12}>
+							<Img
+								fluid={imageImac.childImageSharp.fluid}
+								alt=''
+								className='img-imac'
+							/>
 						</Col>
 					</Row>
 					<Row>
-						<Col md={7}>
+						<Col xs={12} lg={7}>
 							<h2>Die Challenge</h2>
 							<p>
 								Die auf der Website basierende Technologie ist über die Zeit in
@@ -105,7 +102,7 @@ const Siemens = () => {
 						</Col>
 					</Row>
 					<Row>
-						<Col md={7}>
+						<Col xs={12} lg={7}>
 							<h2>Die Umsetzung</h2>
 							<h3>Blitzschnelle Ladezeiten</h3>
 							<p>
@@ -118,7 +115,7 @@ const Siemens = () => {
 						</Col>
 					</Row>
 					<Row>
-						<Col md={7}>
+						<Col xs={12} lg={7}>
 							<div>
 								<h3>Gleiches Design, aber besser</h3>
 
@@ -144,7 +141,7 @@ const Siemens = () => {
 						</Col>
 					</Row>
 					<Row>
-						<Col md={7} className='has-image'>
+						<Col xs={12} lg={7} className='has-image'>
 							<h3>Maßgeschneidertes Content Management System</h3>
 							<p>
 								Die von uns eingebauten Markdown-Dateien ergeben für die Website
@@ -160,7 +157,7 @@ const Siemens = () => {
 								werden.
 							</p>
 						</Col>
-						<Col className='images-mdx' md={7}>
+						<Col className='images-mdx' xs={12} lg={11}>
 							<Img
 								className='mdx-page'
 								fluid={imageMdxPage.childImageSharp.fluid}
@@ -175,7 +172,7 @@ const Siemens = () => {
 						</Col>
 					</Row>
 					<Row>
-						<Col md={7} className='has-image'>
+						<Col xs={12} lg={7} className='has-image'>
 							<h3>Kundenspezifisches Teilen von Inhalten</h3>
 							<p>
 								Um nur Projekte zu sehen, welche bestimmte Kriterien erfüllen,
@@ -186,7 +183,7 @@ const Siemens = () => {
 								einfach an interessierte Kunden weitergeleitet werden.
 							</p>
 						</Col>
-						<Col md={7}>
+						<Col xs={12} lg={10}>
 							<Img
 								fluid={imageDropdown.childImageSharp.fluid}
 								alt=''
