@@ -29,21 +29,21 @@ const Siemens = () => {
 			}
 			imageDropdown: file(relativePath: { eq: "content/image-dropdown.jpg" }) {
 				childImageSharp {
-					fluid(quality: 70, maxWidth: 405) {
+					fluid(quality: 90, maxWidth: 760) {
 						...GatsbyImageSharpFluid_noBase64
 					}
 				}
 			}
 			imageMdxCode: file(relativePath: { eq: "content/image-mdx-code.png" }) {
 				childImageSharp {
-					fluid(quality: 70, maxWidth: 540) {
+					fluid(quality: 90, maxWidth: 530) {
 						...GatsbyImageSharpFluid_noBase64
 					}
 				}
 			}
 			imageMdxPage: file(relativePath: { eq: "content/image-mdx-page.jpg" }) {
 				childImageSharp {
-					fluid(quality: 70, maxWidth: 270) {
+					fluid(quality: 90, maxWidth: 530) {
 						...GatsbyImageSharpFluid_noBase64
 					}
 				}
@@ -127,7 +127,7 @@ const Siemens = () => {
 								<p>
 									Um die Siemens Corporate Identity beizubehalten, haben wir das
 									Siemens interne Design Theme, basierend auf dem CSS Framework
-									Bootstrap, in die neue Website eingebaut,. Designelemente und
+									Bootstrap, in die neue Website eingebaut. Designelemente und
 									Funktionen, welche mit der alten Technologie nicht umsetzbar
 									waren, haben wir CI gerecht neu überdacht, designed und
 									animiert. <br />
@@ -163,8 +163,17 @@ const Siemens = () => {
 							</p>
 						</Col>
 						<Col className='images-mdx' md={7}>
-							<img className='mdx-page' src={ImageMdxPage} alt='' />
-							<img className='mdx-code' src={ImageMdxCode} alt='' />
+							<Img
+								className='mdx-page'
+								fluid={imageMdxPage.childImageSharp.fluid}
+								alt=''
+							/>
+							<Img
+								className='mdx-code'
+								fluid={imageMdxCode.childImageSharp.fluid}
+								alt=''
+								style={{ position: 'absolute' }}
+							/>
 						</Col>
 					</Row>
 					<Row>
@@ -180,7 +189,11 @@ const Siemens = () => {
 							</p>
 						</Col>
 						<Col md={7}>
-							<img src={ImageDropdown} alt='' />
+							<Img
+								fluid={imageDropdown.childImageSharp.fluid}
+								alt=''
+								className='use-case-explorer'
+							/>
 						</Col>
 					</Row>
 				</Container>

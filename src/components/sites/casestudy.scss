@@ -6,9 +6,6 @@
 	@include media-breakpoint-up(md) {
 		padding-top: 60px;
 	}
-	img {
-		border-radius: 10px;
-	}
 
 	p,
 	h1,
@@ -96,14 +93,12 @@
 		@include media-breakpoint-up(md) {
 			margin-bottom: 0;
 		}
-		img {
-			border-radius: 10px;
-			margin: 0;
-		}
+
 		.mdx-page {
 			width: 100%;
+			border-radius: 10px;
 			@include media-breakpoint-up(md) {
-				width: 70%;
+				width: 80%;
 			}
 		}
 		.mdx-code {
@@ -113,6 +108,7 @@
 			transform: translate3d(50%, 50%, 0);
 			width: 80%;
 			border: 4px solid #ff3232;
+			border-radius: 10px;
 			@include media-breakpoint-up(md) {
 				width: 70%;
 				right: 0;
@@ -121,10 +117,16 @@
 			}
 		}
 	}
+
+	.use-case-explorer {
+		border-radius: 10px;
+	}
+
 	.image-iphone {
 		margin-top: 60px;
 		display: flex;
 		justify-content: center;
+
 		@include media-breakpoint-up(lg) {
 			margin-top: 0px;
 		}
