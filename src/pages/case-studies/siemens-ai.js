@@ -5,9 +5,7 @@ import SEO from '../../components/seo';
 import Layout from '../../components/general/layout';
 import { Container, Row, Col } from 'react-bootstrap';
 import Iphone from '../../components/general/iphone';
-import ImageMdxCode from '../../images/content/image-mdx-code.png';
-import ImageMdxPage from '../../images/content/image-mdx-page.jpg';
-import ImageDropdown from '../../images/content/image-dropdown.jpg';
+
 import Img from 'gatsby-image';
 
 import '../../components/sites/casestudy.scss';
@@ -22,28 +20,28 @@ const Siemens = () => {
 		query {
 			imageImac: file(relativePath: { eq: "content/image-imac.png" }) {
 				childImageSharp {
-					fluid(quality: 90, maxWidth: 600) {
-						...GatsbyImageSharpFluid_noBase64
-					}
-				}
-			}
-			imageDropdown: file(relativePath: { eq: "content/image-dropdown.jpg" }) {
-				childImageSharp {
-					fluid(quality: 70, maxWidth: 405) {
-						...GatsbyImageSharpFluid_noBase64
-					}
-				}
-			}
-			imageMdxCode: file(relativePath: { eq: "content/image-mdx-code.png" }) {
-				childImageSharp {
-					fluid(quality: 70, maxWidth: 540) {
+					fluid(quality: 90, maxWidth: 700) {
 						...GatsbyImageSharpFluid_noBase64
 					}
 				}
 			}
 			imageMdxPage: file(relativePath: { eq: "content/image-mdx-page.jpg" }) {
 				childImageSharp {
-					fluid(quality: 70, maxWidth: 270) {
+					fluid(quality: 90, maxWidth: 850) {
+						...GatsbyImageSharpFluid_noBase64
+					}
+				}
+			}
+			imageMdxCode: file(relativePath: { eq: "content/image-mdx-code.png" }) {
+				childImageSharp {
+					fluid(quality: 90, maxWidth: 740) {
+						...GatsbyImageSharpFluid_noBase64
+					}
+				}
+			}
+			imageDropdown: file(relativePath: { eq: "content/image-dropdown.jpg" }) {
+				childImageSharp {
+					fluid(quality: 90, maxWidth: 1100) {
 						...GatsbyImageSharpFluid_noBase64
 					}
 				}
@@ -56,7 +54,7 @@ const Siemens = () => {
 			<section className='casepage' id='siemens'>
 				<Container>
 					<Row className='pb-hero'>
-						<Col md={7}>
+						<Col xs={12} lg={7}>
 							<p className='label'>
 								Case Study: <span>Web Development</span>
 							</p>
@@ -69,20 +67,17 @@ const Siemens = () => {
 								individuell Inhalte und Strukturen zu ändern.
 							</p>
 						</Col>
-						<Col md={5}></Col>
 
-						<Col className='image-imac' md={12}>
-							<div className='gatsby-image'>
-								<Img
-									fluid={imageImac.childImageSharp.fluid}
-									alt=''
-									className='img'
-								/>
-							</div>
+						<Col className='image-imac' xs={12}>
+							<Img
+								fluid={imageImac.childImageSharp.fluid}
+								alt=''
+								className='img-imac'
+							/>
 						</Col>
 					</Row>
 					<Row>
-						<Col md={7}>
+						<Col xs={12} lg={7}>
 							<h2>Die Challenge</h2>
 							<p>
 								Die auf der Website basierende Technologie ist über die Zeit in
@@ -107,7 +102,7 @@ const Siemens = () => {
 						</Col>
 					</Row>
 					<Row>
-						<Col md={7}>
+						<Col xs={12} lg={7}>
 							<h2>Die Umsetzung</h2>
 							<h3>Blitzschnelle Ladezeiten</h3>
 							<p>
@@ -120,14 +115,14 @@ const Siemens = () => {
 						</Col>
 					</Row>
 					<Row>
-						<Col md={7}>
+						<Col xs={12} lg={7}>
 							<div>
 								<h3>Gleiches Design, aber besser</h3>
 
 								<p>
 									Um die Siemens Corporate Identity beizubehalten, haben wir das
 									Siemens interne Design Theme, basierend auf dem CSS Framework
-									Bootstrap, in die neue Website eingebaut,. Designelemente und
+									Bootstrap, in die neue Website eingebaut. Designelemente und
 									Funktionen, welche mit der alten Technologie nicht umsetzbar
 									waren, haben wir CI gerecht neu überdacht, designed und
 									animiert. <br />
@@ -146,7 +141,7 @@ const Siemens = () => {
 						</Col>
 					</Row>
 					<Row>
-						<Col md={7} className='has-image'>
+						<Col xs={12} lg={7} className='has-image'>
 							<h3>Maßgeschneidertes Content Management System</h3>
 							<p>
 								Die von uns eingebauten Markdown-Dateien ergeben für die Website
@@ -162,13 +157,22 @@ const Siemens = () => {
 								werden.
 							</p>
 						</Col>
-						<Col className='images-mdx' md={7}>
-							<img className='mdx-page' src={ImageMdxPage} alt='' />
-							<img className='mdx-code' src={ImageMdxCode} alt='' />
+						<Col className='images-mdx' xs={12} lg={11}>
+							<Img
+								className='mdx-page'
+								fluid={imageMdxPage.childImageSharp.fluid}
+								alt=''
+							/>
+							<Img
+								className='mdx-code'
+								fluid={imageMdxCode.childImageSharp.fluid}
+								alt=''
+								style={{ position: 'absolute' }}
+							/>
 						</Col>
 					</Row>
 					<Row>
-						<Col md={7} className='has-image'>
+						<Col xs={12} lg={7} className='has-image'>
 							<h3>Kundenspezifisches Teilen von Inhalten</h3>
 							<p>
 								Um nur Projekte zu sehen, welche bestimmte Kriterien erfüllen,
@@ -179,8 +183,12 @@ const Siemens = () => {
 								einfach an interessierte Kunden weitergeleitet werden.
 							</p>
 						</Col>
-						<Col md={7}>
-							<img src={ImageDropdown} alt='' />
+						<Col xs={12} lg={10}>
+							<Img
+								fluid={imageDropdown.childImageSharp.fluid}
+								alt=''
+								className='use-case-explorer'
+							/>
 						</Col>
 					</Row>
 				</Container>

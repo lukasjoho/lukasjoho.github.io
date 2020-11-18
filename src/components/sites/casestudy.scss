@@ -6,9 +6,6 @@
 	@include media-breakpoint-up(md) {
 		padding-top: 60px;
 	}
-	img {
-		border-radius: 10px;
-	}
 
 	p,
 	h1,
@@ -73,14 +70,11 @@
 			display: flex;
 			justify-content: center;
 		}
-		.gatsby-image {
+		.img-imac {
 			width: 100%;
-			.img {
-				width: 90%;
-				margin: auto;
-				@include media-breakpoint-up(md) {
-					width: 45%;
-				}
+			max-width: 600px;
+			@include media-breakpoint-up(xl) {
+				max-width: 700px;
 			}
 		}
 	}
@@ -96,12 +90,10 @@
 		@include media-breakpoint-up(md) {
 			margin-bottom: 0;
 		}
-		img {
-			border-radius: 10px;
-			margin: 0;
-		}
+
 		.mdx-page {
 			width: 100%;
+			border-radius: 10px;
 			@include media-breakpoint-up(md) {
 				width: 70%;
 			}
@@ -113,18 +105,31 @@
 			transform: translate3d(50%, 50%, 0);
 			width: 80%;
 			border: 4px solid #ff3232;
+			border-radius: 10px;
+			box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+				0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+				0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+				0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
 			@include media-breakpoint-up(md) {
-				width: 70%;
-				right: 0;
+				width: 60%;
+				right: 20%;
 				transform: translateX(30%);
-				bottom: auto;
+				top: 25%;
+				bottom: 25%;
+				height: 50%;
 			}
 		}
 	}
+
+	.use-case-explorer {
+		border-radius: 10px;
+	}
+
 	.image-iphone {
 		margin-top: 60px;
 		display: flex;
 		justify-content: center;
+
 		@include media-breakpoint-up(lg) {
 			margin-top: 0px;
 		}
