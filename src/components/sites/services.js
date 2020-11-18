@@ -3,6 +3,8 @@ import { Col, Container, Row } from 'react-bootstrap';
 import Wireframes from '../sites/wireframes';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import Accordion from './accordion';
+import Picture from './picture';
+
 import './services.scss';
 
 const Services = () => (
@@ -15,6 +17,8 @@ const Services = () => (
 				</div>
 				<Accordion />
 			</Container>
+			<Picture />
+
 			<Wireframes />
 			<Container>
 				<div className='service-container'>

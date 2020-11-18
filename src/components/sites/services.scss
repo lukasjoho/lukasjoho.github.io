@@ -1,4 +1,7 @@
 @import '../_variables';
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints';
 
 #services {
 	text-align: center;
@@ -15,7 +18,10 @@
 
 	.services-with-icons {
 		margin-top: 5rem;
-		margin-bottom: 5rem;
+		margin-bottom: 0rem;
+		@include media-breakpoint-up(md) {
+			margin-bottom: 2rem;
+		}
 
 		.service-title {
 			margin-bottom: 0;
