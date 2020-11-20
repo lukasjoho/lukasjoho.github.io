@@ -7,7 +7,6 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Iphone from '../../components/general/iphone';
 
 import Img from 'gatsby-image';
-
 import '../../components/sites/casestudy.scss';
 
 const Siemens = () => {
@@ -16,6 +15,7 @@ const Siemens = () => {
 		imageDropdown,
 		imageMdxCode,
 		imageMdxPage,
+		imageSiemensCase,
 	} = useStaticQuery(graphql`
 		query {
 			imageImac: file(relativePath: { eq: "content/image-imac.png" }) {
@@ -46,11 +46,25 @@ const Siemens = () => {
 					}
 				}
 			}
+			imageSiemensCase: file(
+				relativePath: { eq: "content/image-siemens-case.jpg" }
+			) {
+				childImageSharp {
+					fixed(width: 1200, quality: 90) {
+						src
+					}
+				}
+			}
 		}
 	`);
 	return (
 		<Layout>
-			<SEO title='Siemens' description='Das haben wir bereits produziert.' />
+			<SEO
+				title='Siemens'
+				description='Das haben wir bereits produziert.'
+				image={imageSiemensCase.childImageSharp.fixed.src}
+			/>
+
 			<section className='casepage' id='siemens'>
 				<Container>
 					<Row className='pb-hero'>
