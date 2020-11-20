@@ -80,25 +80,29 @@ const Siemens = () => {
 						<Col xs={12} lg={7}>
 							<h2>Die Challenge</h2>
 							<p>
-								Die auf der Website basierende Technologie ist über die Zeit in
-								die Jahre gekommen.
+								Die alte Seite von Siemens AI@CT basiert auf einer überholten
+								Web-Architektur, die verschiedene Probleme mit sich bringt:
+								<br />
+								<ul>
+									<li>Langsame Ladezeiten der einzelnen Seiten</li>
+									<li>
+										Kein responsives Verhalten bei unterschiedlichen
+										Screen-Größen
+									</li>
+									<li>Umständliches Ändern von Website-Inhalten</li>
+									<li>
+										Gestaltungseinschränkungen durch Technologielimitierungen
+									</li>
+								</ul>
+								<br />
+								Um Trainings, Wissen und Prozesse von Siemens AI@CT intern
+								darzustellen und zu verkaufen soll die aktuelle Seite neu
+								entwickelt werden. Ein neues high-speed Web-Framework soll die
+								Ladezeit der Seite perfektionieren und Editoren der Seite
+								außerdem die Möglichkeit geben Inhalte einfach und schnell
+								einzupflegen und anzupassen. Dafür soll ein indivduell
+								angepasstes CMS in die Seite integriert werden.
 							</p>
-							<br />
-							<p>
-								<strong>Die Hauptprobleme</strong>
-							</p>
-							<ul>
-								<li>Langsame Ladezeiten der einzelnen Seiten</li>
-								<li>
-									Kein responsive Verhalten bei unterschiedlichen Screen-Größen
-								</li>
-								<li>
-									Umständliches Ändern von Inhalten wie Texten und Bildern
-								</li>
-								<li>
-									Gestaltungseinschränkungen durch Technologielimitierungen
-								</li>
-							</ul>
 						</Col>
 					</Row>
 					<Row>
@@ -106,7 +110,7 @@ const Siemens = () => {
 							<h2>Die Umsetzung</h2>
 							<h3>Blitzschnelle Ladezeiten</h3>
 							<p>
-								Die neue Website haben wir mit dem Komponenten basierten
+								Die neue Website haben wir mit dem komponenten-basierten
 								Javascript Framework Gatsby gebaut. Dies ermöglichte uns die
 								Erstellung von Seiten mit schnellstmöglicher Ladezeit. Lange
 								unübersichtliche Seiten konnten dadurch auf mehrere kürzere
@@ -115,24 +119,21 @@ const Siemens = () => {
 						</Col>
 					</Row>
 					<Row>
-						<Col xs={12} lg={7}>
+						<Col xs={12} lg={7} className='d-flex align-items-center'>
 							<div>
 								<h3>Gleiches Design, aber besser</h3>
 
 								<p>
-									Um die Siemens Corporate Identity beizubehalten, haben wir das
-									Siemens interne Design Theme, basierend auf dem CSS Framework
-									Bootstrap, in die neue Website eingebaut. Designelemente und
-									Funktionen, welche mit der alten Technologie nicht umsetzbar
-									waren, haben wir CI gerecht neu überdacht, designed und
-									animiert. <br />
+									Um die Corporate Identity von Siemens beizubehalten, haben wir
+									das siemens-interne Design-Theme, in die neue Website
+									integriert. Designelemente und Funktionen, welche mit der
+									alten Technologie nicht umsetzbar waren, haben wir CI gerecht
+									neu überdacht, designed und animiert. <br />
 									<br />
-									Eine neue Statusleiste der „Innovation Journey“ Seite führt
-									Besucher nun elegant und übersichtlich durch die einzelnen
-									Prozesse, welche jedes Kundenprojekt durchläuft. Sie basiert
-									auf der derzeitigen Scrollposition des Nutzers und bietet
-									jetzt, anders als vorher, auch für mobile Geräte eine tolle
-									Experience.
+									Die neue Statusleiste führt Besucher nun übersichtlich durch
+									die auf der Seite dargestellten Prozesse. Sie zeigt die
+									aktuelle Scrollposition des Users und bietet jetzt, anders als
+									vorher, auch auf mobilen Geräte eine nahtlose Experience.
 								</p>
 							</div>
 						</Col>
@@ -144,20 +145,20 @@ const Siemens = () => {
 						<Col xs={12} lg={7} className='has-image'>
 							<h3>Maßgeschneidertes Content Management System</h3>
 							<p>
-								Die von uns eingebauten Markdown-Dateien ergeben für die Website
-								ein individualisiertes und funktionsspezifisches Content
-								Management System. Texte, Bilder, Icons, Seiten und Verlinkungen
-								können jetzt ganz einfach bearbeitet und hinzugefügt werden.
-								Dazu braucht es keinen technischen Hintergrund und das Layout
-								der Seite bleibt komplett unberührt. <br />
+								Die von uns eingebauten Markdown-Dateien bilden ein
+								individualisiertes und funktionsspezifisches Content Management
+								System. Texte, Bilder, Icons, Seiten und Verlinkungen können
+								damit ganz einfach bearbeitet und hinzugefügt werden. Dazu
+								braucht es keinen technischen Hintergrund und die Funktion der
+								Seite kann nicht ungewollt beeinträchtigt werden. <br />
 								<br />
-								Inhalte wie z.B diese Texte über ein angebotenes Training können
-								sehr intuitiv über Markdown Dateien geändert werden. Selbst
-								Textformatierungen können über einfache Codierungen vorgenommen
-								werden.
+								Inhalte wie z.B diese Texte über ein angebotenes Training (rot
+								markiert) können sehr intuitiv über Markdown-Dateien geändert
+								werden. Textformatierungen, Metadaten und das Einfügen von
+								Komponenten können über einfache Codierungen vorgenommen werden.
 							</p>
 						</Col>
-						<Col className='images-mdx' xs={12} lg={11}>
+						<Col className='images-mdx' xs={12} lg={10}>
 							<Img
 								className='mdx-page'
 								fluid={imageMdxPage.childImageSharp.fluid}
@@ -173,17 +174,17 @@ const Siemens = () => {
 					</Row>
 					<Row>
 						<Col xs={12} lg={7} className='has-image'>
-							<h3>Kundenspezifisches Teilen von Inhalten</h3>
+							<h3>Filtering von Projekten</h3>
 							<p>
-								Um nur Projekte zu sehen, welche bestimmte Kriterien erfüllen,
-								können diese im „Use Case Explorer“ über Dropdowns gefiltert
-								werden. Mit einem Klick auf das jeweilige Projekt werden weitere
-								Detailinformationen angezeigt. Die Filter werden in der URL der
-								Seite gespeichert. Dadurch kann die vorgefilterte Seite per Link
-								einfach an interessierte Kunden weitergeleitet werden.
+								Über den „Use Case Explorer“ können Projekte nach mehreren
+								Kriterien intelligent gefiltert und angezeigt werden. Mit einem
+								Klick auf das jeweilige Projekt werden weitere
+								Detailinformationen angezeigt. Die Seite greift dabei auf eine
+								bereits bestehende interne API zurück, in der die Projekte
+								hinterlegt sind.
 							</p>
 						</Col>
-						<Col xs={12} lg={10}>
+						<Col xs={12} lg={9}>
 							<Img
 								fluid={imageDropdown.childImageSharp.fluid}
 								alt=''
