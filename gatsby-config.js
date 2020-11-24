@@ -5,9 +5,9 @@ require('dotenv').config({
 module.exports = {
 	siteMetadata: {
 		title: `Excyted`,
-		description: `Als eine hybride Werbeproduktion entwickeln wir kreative Lösungen für deine Marke, dein Unternehmen oder dein Projekt. Unser Fokus liegt auf Qualität und individueller Zusammenarbeit.`,
-		keywords: ['Werbeagentur', 'Filmproduktion', 'digital'],
-		siteUrl: `http://excyted.io`,
+		description: `Excyted entwickelt digitale Produkte um deine Marke, dein Unternehmen oder dein Projekt in der Web- und Medienwelt nach vorne zu bringen. Lass dich excyten. Excyte andere.`,
+		keywords: ['Webentwicklung', 'Filmproduktion', 'digital'],
+		siteUrl: `https://excyted.io`,
 		lang: `de`,
 	},
 	plugins: [
@@ -38,7 +38,7 @@ module.exports = {
 				background_color: `#fff`,
 				theme_color: `#000`,
 				display: `minimal-ui`,
-				icon: `src/images/favicon.jpg`, // This path is relative to the root of the site.
+				icon: `src/images/favicon.svg`, // This path is relative to the root of the site.
 			},
 		},
 		{

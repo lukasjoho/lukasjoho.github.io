@@ -15,8 +15,8 @@ class IndexPage extends React.Component {
 			<ParallaxProvider>
 				<Layout>
 					<SEO
-						title='excyted | Creative Studio und Filmproduktion'
-						description='Als hybride Werbeproduktion entwickeln wir kreative Lösungen für deine Marke, dein Unternehmen oder dein Projekt. Mit Dir wollen wir excyten und deine individuellen Projekte Wirklichkeit werden lassen.'
+						title='Excyted | Creative Digital Studio'
+						description='Excyted entwickelt digitale Produkte um deine Marke, dein Unternehmen oder dein Projekt in der Web- und Medienwelt nach vorne zu bringen. Lass dich excyten. Excyte andere.'
 					/>
 					<Hero />
 					<Casestudy />

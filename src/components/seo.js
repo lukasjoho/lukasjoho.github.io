@@ -17,7 +17,7 @@ function SEO({ title, description, image, robots }) {
 						lang
 					}
 				}
-				file(relativePath: { eq: "favicon.jpg" }) {
+				file(relativePath: { eq: "favicon.svg" }) {
 					childImageSharp {
 						fixed {
 							defaultImage: src
