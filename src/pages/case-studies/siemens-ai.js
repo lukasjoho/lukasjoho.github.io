@@ -60,9 +60,10 @@ const Siemens = () => {
 	return (
 		<Layout>
 			<SEO
-				title='Siemens'
-				description='Das haben wir bereits produziert.'
+				title='Siemens AI@CT Intranetseite'
+				description='Die Intranetseite von Siemens AI@CT dient der internen Kommunikation von Dienstleistungen und gibt den Bearbeitern der Website die Möglichkeit eigenständig und individuell Inhalte und Strukturen zu ändern.'
 				image={imageSiemensCase.childImageSharp.fixed.src}
+				url='https://excyted.io/case-studies/siemens-ai'
 			/>
 
 			<section className='casepage' id='siemens'>
