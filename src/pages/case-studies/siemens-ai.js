@@ -61,7 +61,7 @@ const Siemens = () => {
 		<Layout>
 			<SEO
 				title='Siemens'
-				description='Das haben wir bereits produziert.'
+				description='Die Intranetseite von Siemens AI@CT dient der internen Kommunikation von Dienstleistungen und gibt den Bearbeitern der Website die Möglichkeit eigenständig und individuell Inhalte und Strukturen zu ändern.'
 				image={imageSiemensCase.childImageSharp.fixed.src}
 			/>
 
