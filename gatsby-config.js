@@ -7,7 +7,7 @@ module.exports = {
 		title: `Excyted`,
 		description: `Als eine hybride Werbeproduktion entwickeln wir kreative Lösungen für deine Marke, dein Unternehmen oder dein Projekt. Unser Fokus liegt auf Qualität und individueller Zusammenarbeit.`,
 		keywords: ['Werbeagentur', 'Filmproduktion', 'digital'],
-		siteUrl: `http://excyted.io`,
+		siteUrl: `https://excyted.io`,
 		lang: `de`,
 	},
 	plugins: [
