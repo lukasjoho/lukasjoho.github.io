@@ -12,6 +12,21 @@ import Textblock from './textblock';
 import Showreel from '../../images/content/showreel.mp4';
 import ShowreelPoster from '../../images/content/showreel-poster.jpg';
 import { Parallax } from 'react-scroll-parallax';
+import WebIcon from './webIcon';
+
+import IconDesign from '../../images/content/icons/icon-design.svg';
+import IconCMS from '../../images/content/icons/icon-cms.svg';
+import IconSeo from '../../images/content/icons/icon-seo.svg';
+import IconFast from '../../images/content/icons/icon-fast.svg';
+import IconHosting from '../../images/content/icons/icon-hosting.svg';
+import IconCloudFunctions from '../../images/content/icons/icon-cloud-functions.svg';
+import IconUsers from '../../images/content/icons/icon-users.svg';
+import IconDatabase from '../../images/content/icons/icon-database.svg';
+import IconScalability from '../../images/content/icons/icon-scalability.svg';
+import IconPayment from '../../images/content/icons/icon-payment.svg';
+import IconZahnrad from '../../images/content/icons/icon-zahnrad.svg';
+import IconGlobe from '../../images/content/icons/icon-globe.svg';
+import Build from './build';
 
 import './sections.scss';
 import 'animate.css/animate.css';
@@ -59,9 +74,10 @@ const Sections = () => {
 
 	return (
 		<section id='sections'>
+			<Build />
+			{/* SECTION 1 */}
 			<Container>
-				{/* SECTION 1 */}
-				<Row>
+				{/* <Row>
 					<Col md={6}>
 						<Textblock
 							title='Digitale Tools'
@@ -69,13 +85,6 @@ const Sections = () => {
             sodass Ideen und Fantasien keine Grenzen bei der Umsetzung gesetzt sind. Wir mischen Kreativität mit Fähigkeiten im Web Design, der Bewegtbildproduktion und unserem ständigen Drang ausdrucksvolle Projekte für Dich zu erstellen. Damit verstehen wir uns als Produzenten in einer wachsenden Omni-Channel-Welt. '
 							icon={IconTools}
 						/>
-						{/* <div className='section-car'>
-							<Img
-								fluid={car.childImageSharp.fluid}
-								alt=''
-								className='image-car'
-							/>
-						</div> */}
 						<UiAnimation className='ui-animation' />
 					</Col>
 
@@ -86,15 +95,15 @@ const Sections = () => {
 							alt='people'
 						/>
 					</Col>
-				</Row>
+				</Row> */}
 
-				<hr class='hr' />
+				{/* <hr class='hr' /> */}
 
 				<Row>
 					<Col md={4} className='centercol'>
 						<Textblock
 							title='Web'
-							text='Wir entwickeln dir deine Website nach den neusten Web-Technologie Standards. Responsives Design, hohe Geschwindigkeit und user-zentriertes Design resultieren in bester Performance und hohem Google Ranking. Genauso wichtig sind uns sicheres Hosting und einfaches Content Management, damit du die Kontrolle über deine Inhalte besitzt.'
+							text='Wir entwickeln dir deine Website oder Web-App nach den neusten und zukunftssichersten Web-Technologie Standards.'
 							icon={IconCode}
 						/>
 					</Col>
@@ -116,8 +125,68 @@ const Sections = () => {
 						</div>
 					</Col>
 				</Row>
+				<section id='web-spacer'>
+					<div className='image-code-wrapper'>
+						<Img
+							className='image-code'
+							fluid={code.childImageSharp.fluid}
+							alt=''
+						/>
+					</div>
+					<div className='spacer-rect'>
+						<img className='icons globe' src={IconGlobe} alt='' />
 
-				<Row>
+						<img className='icons zahnrad' src={IconZahnrad} alt='' />
+					</div>
+				</section>
+				<Row className='web'>
+					<Col className='col-with-margin' md={5}>
+						<div className='web-panel web-site'>
+							<h3>Website</h3>
+							<Row>
+								<Col md={6}>
+									<WebIcon icon={IconCMS} text='einfaches CMS' />
+								</Col>
+								<Col md={6}>
+									<WebIcon icon={IconDesign} text='Custom Design' />
+								</Col>
+								<Col md={6}>
+									<WebIcon icon={IconFast} text='Schnelle Ladezeiten' />
+								</Col>
+								<Col md={6}>
+									<WebIcon icon={IconSeo} text='SEO & Analytics' />
+								</Col>
+							</Row>
+						</div>
+					</Col>
+					<Col md={7}>
+						<div className='web-panel web-app'>
+							<h3>Web-App</h3>
+							<Row>
+								<Col md={4}>
+									<WebIcon icon={IconDatabase} text='Schnelle Datenbanken' />
+								</Col>
+								<Col md={4}>
+									<WebIcon icon={IconCloudFunctions} text='Cloud Functions' />
+								</Col>
+								<Col md={4}>
+									<WebIcon icon={IconPayment} text='Payment Integration' />
+								</Col>
+								<Col md={4}>
+									<WebIcon icon={IconUsers} text='User-Authorisierung' />
+								</Col>
+								<Col md={4}>
+									<WebIcon icon={IconHosting} text='sicheres Hosting' />
+								</Col>
+								<Col md={4}>
+									<WebIcon icon={IconScalability} text='Skalierbarkeit' />
+								</Col>
+							</Row>
+						</div>
+					</Col>
+				</Row>
+
+				{/* <Row>
 					<Col md={3}></Col>
 					<Col md={6}>
 						<Img
@@ -188,7 +257,7 @@ const Sections = () => {
 							</ScrollAnimation>
 						</div>
 					</Col>
-				</Row>
+				</Row> */}
 
 				<hr className='hr' />
 

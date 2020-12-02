@@ -1,0 +1,35 @@
+@import '../_variables.scss';
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints';
+.web-icon {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+	p {
+		margin: 0;
+	}
+	.image {
+		width: 50px;
+		margin-right: 20px;
+
+		img {
+			margin: 0;
+		}
+	}
+
+	@include media-breakpoint-up(md) {
+		margin-top: 30px;
+
+		flex-direction: column;
+		align-items: center;
+		.image {
+			margin-right: 0px;
+			margin-bottom: 10px;
+
+			img {
+				height: 60px;
+			}
+		}
+	}
+}

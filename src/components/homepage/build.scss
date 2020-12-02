@@ -1,0 +1,86 @@
+@import '../_variables.scss';
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints';
+#build {
+	position: relative;
+	padding: 0px 0 180px;
+	@include media-breakpoint-up(md) {
+		padding: 120px 0 250px;
+	}
+	@include media-breakpoint-up(xl) {
+		padding: 220px 0 350px;
+	}
+	display: flex;
+	align-items: center;
+	.col-video {
+		display: flex;
+		align-items: center;
+		img {
+			margin: 0;
+			border-radius: 12px;
+			box-shadow: 0 0 60px 0 rgba(198, 234, 255, 0.7);
+			@include media-breakpoint-up(md) {
+				border-radius: 20px;
+			}
+		}
+	}
+	.col-text {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		@include media-breakpoint-up(lg) {
+			justify-content: flex-end;
+		}
+	}
+	.lines {
+		width: 100%;
+		position: absolute;
+		margin-top: -200px;
+		opacity: 0.75;
+		transform: scale(2);
+		@include media-breakpoint-up(md) {
+			width: 100%;
+			transform: scale(1.5);
+
+			margin-top: -400px;
+		}
+		@include media-breakpoint-up(lg) {
+			margin-top: -80px;
+			transform: scale(1.1);
+		}
+		@include media-breakpoint-up(xl) {
+			transform: scale(1);
+
+			margin-top: -150px;
+		}
+	}
+	h2 {
+		font-size: 50px !important;
+		text-align: center;
+		margin-bottom: 50px !important;
+		@include media-breakpoint-up(md) {
+			text-align: center;
+			margin-bottom: 100px !important;
+
+			font-size: 80px !important;
+		}
+		@include media-breakpoint-up(lg) {
+			margin-bottom: 0px !important;
+			font-size: 70px !important;
+
+			text-align: right;
+		}
+		@include media-breakpoint-up(xl) {
+			font-size: 90px !important;
+		}
+		span {
+			-webkit-text-stroke: 1px $primary;
+			color: rgba($color: #000000, $alpha: 0);
+			@include media-breakpoint-up(md) {
+				-webkit-text-stroke: 3px $primary;
+			}
+		}
+	}
+}
