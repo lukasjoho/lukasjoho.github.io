@@ -127,6 +127,7 @@ const Banner = () => {
 										fluid={whu.childImageSharp.fluid}
 										imgStyle={{ objectFit: 'contain' }}
 										alt=''
+										className='front-image'
 									/>
 								</Parallax>
 							</div>
