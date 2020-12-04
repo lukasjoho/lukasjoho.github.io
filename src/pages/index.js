@@ -15,7 +15,7 @@ const IndexPage = () => {
 		<ParallaxProvider>
 			<Layout>
 				<SEO
-					title='Excyted | Creative Digital Studio'
+					title='Creative Digital Studio'
 					description='Excyted entwickelt digitale Produkte um deine Marke, dein Unternehmen oder dein Projekt in der Web- und Medienwelt nach vorne zu bringen. Lass dich excyten. Excyte andere.'
 				/>
 				<Hero />

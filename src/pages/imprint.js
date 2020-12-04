@@ -5,7 +5,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 
 const Imprint = () => (
 	<Layout>
-		<SEO title='Imprint' />
+		<SEO title='Imprint' robots='noindex' />
 		<section id='imprint'>
 			<Container>
 				<Row>
