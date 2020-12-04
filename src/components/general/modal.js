@@ -8,7 +8,7 @@ const MyModal = props => {
 		<Modal {...props} centered className='modal' size='lg'>
 			<div className='dialog'>
 				<Modal.Header>
-					<h1>Just Call Us!</h1>
+					<h1>Reach Out to Us!</h1>
 				</Modal.Header>
 				<Modal.Body>
 					<div className='contacts first-child'>
