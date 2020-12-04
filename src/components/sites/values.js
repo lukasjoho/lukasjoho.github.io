@@ -30,10 +30,9 @@ const Values = () => (
 					</div>
 					<h3>Erfahrung</h3>
 					<p>
-						Das Portfolio wächst und wächst. Verschiedenste Projekte in Film,
-						Foto, Design und Branding aus den Bereichen Sport, Musik, Business
-						und Event entstehen in eigener Sache, in Unternehmen, auf Festivals
-						und im Sportbereich.
+						Das Portfolio wächst und wächst. Verschiedenste Web-, Video- und
+						Foto-projekte haben wir in den verschiedensten Bereichen
+						abgeschlossen. Darunter B2B, B2C, Sport, Fashion und Event.
 					</p>
 				</Col>
 
