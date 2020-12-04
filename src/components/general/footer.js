@@ -63,6 +63,11 @@ const Footer = () => (
 								Team
 							</Link>
 						</li>
+						<li>
+							<Link to='/jobs' activeClassName='active'>
+								Jobs
+							</Link>
+						</li>
 					</ul>
 				</Col>
 				<Col md={3}>

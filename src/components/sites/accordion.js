@@ -1,7 +1,11 @@
 import React from 'react';
 import AccordionBody from './accordion.body';
 import { Row, Col } from 'react-bootstrap';
-import { AiOutlineEye, AiOutlineAppstore } from 'react-icons/ai';
+import {
+	AiOutlineDesktop,
+	AiOutlineCloudServer,
+	AiOutlineYoutube,
+} from 'react-icons/ai';
 import { MdShowChart } from 'react-icons/md';
 import './accordion.scss';
 
@@ -15,56 +19,50 @@ class ServicesAccordion extends React.Component {
 				<Row className='services-with-icons'>
 					<Col md={4}>
 						<div className='service-title'>
-							<AiOutlineEye />
+							<AiOutlineDesktop />
 							<h2>Visuals</h2>
 						</div>
 						<ul>
 							<AccordionBody
+								title1='Branding'
+								text1='Je nach Bedarf stellen wir eine Branding-Session an den Anfang
+								Darin schärfen und definieren wir die Marke, damit wir mit klarer Linie in den Design-Prozess starten können.'
+								title2='UI/UX Design'
+								text2='In einer kreativen, agilen Phase werden User-Probleme identifiziert und durch Design gelöst. Das User-Involvement wird bestimmt, die Funktionalität wird perfektioniert und es wird eine starke Verbindung zwischen Customer und Produkt geschaffen.'
+								title3='Javascript Framework'
+								text3='Wir programmieren mit ReactJS und den darauf basierenden Frameworks "Gatsby" und "Next". Damit erzielen wir für unsere Websites und Web-Apps blitzschnelle Ladezeiten, individuelle Features und endlose Skalierbarkeit.'
+							/>
+						</ul>
+					</Col>
+					<Col md={4}>
+						<div className='service-title'>
+							<AiOutlineCloudServer />
+							<h2>Backend</h2>
+						</div>
+						<ul>
+							<AccordionBody
+								title1='Backend'
+								text1='Für die komplette Backend-Infrastruktur einer Web-App setzen wir auf die Google Cloud Plattform inklusive Firebase. So können wir innerhalb kürzester Zeit Datenbanken, Autorisierungen, Funktionen, Builds und Hosting aufsetzen.'
+								title2='3rd Party Services'
+								text2='Wir können Services aller Art in die Web-App integrieren. Darunter: Zahlungssysteme wie Stripe, CMS wie Contentful und CRM-Systeme wie ActiveCampaign.'
+								title3='CI/CD-Pipeline'
+								text3='Durch eine, auch für den Kunden, transparente CI/CD-Pipeline lassen sich bestehende Software-Versionen modifizieren. Das erlaubt eine kontinuierliche Weiterentwicklung der Web-App mit Entwicklungs- , Release- und Validierungs-Zyklen.'
+							/>
+						</ul>
+					</Col>
+					<Col md={4}>
+						<div className='service-title'>
+							<AiOutlineYoutube />
+							<h2>Media</h2>
+						</div>
+						<ul>
+							<AccordionBody
 								title1='Film'
-								text1='Wir produzieren Werbespots, Aftermovies und Social Media Content in vielen Bereichen, darunter: Business, Sport, Musik und Technologie.'
+								text1='Teil unseres Leistungsangebots ist die Produktion von Werbespots und Videos, die daraufhin einwandfrei in das Web-Projekt integriert werden können.'
 								title2='Foto'
-								text2='Ob Fotos für die Website, für das Unternehmen, das neue Projekt oder alles zusammen, wir erstellen Dir genau die Fotos die Du brauchst.'
-								title3='Motion Graphics'
-								text3='Wir sind fest davon überzeugt, dass Motion Graphics eine immer größere Rolle im Bewegtbild spielen wird. Texte und Elemente perspektivisch eingefügt ins Video, können die Kirsche auf der Torte sein.  '
-								title4='Graphic Design'
-								text4='Hier machen wir dein Anliegen durch die Kombination aus Bild, Farbe, Formen und Typographie durch die neusten digitalen Tools visuell erkennbar.'
-							/>
-						</ul>
-					</Col>
-					<Col md={4}>
-						<div className='service-title'>
-							<AiOutlineAppstore />
-							<h2>Web</h2>
-						</div>
-						<ul>
-							<AccordionBody
-								title1='UX/UI Design'
-								text1='Vor dem Entwickeln einer Web Applikation oder Website sketchen und designen wir. So sind beide Seiten effizienter und agiler in der kreativen Phase bevor die Website tatsächlich
-								entwickelt wird.'
-								title2='Prototyping'
-								text2='Wir erstellen einen Prototyp der geplanten Web App, um das zukünftige Ergebnis schonmal vorab auf User Experience zu testen.'
-								title3='Development'
-								text3='Damit unsere Web Applikationen bestmögliche Performance erzielen, basieren wir die Programmierung auf federleichtem Javascript. Wir bauen Content Management Systems manuell ein und behalten so maximale Kontrolle über das Produkt.'
-								title4='Hosting/Deployment'
-								text4='Nicht zu vernachlässigen ist das richtige Hosting auf schnellen, sicheren und einfach zu wartenden Servern damit sowohl Du als auch deine User die bestmögliche User Experience erleben.'
-							/>
-						</ul>
-					</Col>
-					<Col md={4}>
-						<div className='service-title'>
-							<MdShowChart />
-							<h2>Brand</h2>
-						</div>
-						<ul>
-							<AccordionBody
-								title1='Content'
-								text1='Damit der produzierte Content auch die richtige Leute zur richtigen Zeit erwischt bedarf es einer Content Strategie. Hier geht es um Personas, User/Viewer Journeys und Trendanalysen.'
-								title2='Corporate Identity'
-								text2='Die Corporate Identity ist dein Kommunikationskonzept nach außen. Sie bestimmt wesentlich die Persönlichkeit deiner Brand und sollte im Einklang mit den einzelnen Kommunikationsaktivitäten stehen.'
-								title3='Social Media'
-								text3='Die Produktion von webfähigen Produkten ist nur die halbe Miete. Das Kommunizieren des Ergebnisses über die richtigen Social Media Kanäle bestimmt maßgeblich das Engagement mit deiner Brand.'
-								title4='Positioning'
-								text4='Du möchtest das deine Brand in einer bestimmten Art und Weise wahrgenommen wird. Vor der Produktion von Inhalten überlegen wir uns deshalb gemeinsam, wie diese deine Brand überhaupt darstellen sollen.'
+								text2='Integraler Bestandteil jeder Website sind website-spezifische Fotos. Im Design-Prozess erarbeiten wir Potenziale für Fotos, die wir daraufhin umsetzen können.'
+								title3='Motion Design'
+								text3='Wir sind fest davon überzeugt, dass individuelle abgestimmte Animationen auf modernen Websites essentiell sind um eine User-Experience zu bieten die sich natürlich anfühlt.'
 							/>
 						</ul>
 					</Col>

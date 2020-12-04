@@ -5,9 +5,17 @@ import { Link } from 'gatsby';
 
 const PremiumButton = props => {
 	return (
-		<Link to={props.to} className='premium-button'>
-			<span className='module'>{props.text}</span>
-		</Link>
+		<>
+			{props.modal ? (
+				<button className='premium-button' onClick={() => props.openModal()}>
+					{props.text}
+				</button>
+			) : (
+				<Link to={props.to} className='premium-button'>
+					<span className='module'>{props.text}</span>
+				</Link>
+			)}
+		</>
 	);
 };
 

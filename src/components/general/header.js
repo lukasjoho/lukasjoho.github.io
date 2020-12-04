@@ -6,6 +6,7 @@ import './header.scss';
 import logo from '../../images/logo.png';
 import Lottie from 'lottie-react-web';
 import navButton from '../../json/navButton.json';
+import PremiumButton from './PremiumButton';
 
 export class Header extends React.Component {
 	constructor(props) {
@@ -77,20 +78,14 @@ export class Header extends React.Component {
 										Team
 									</Link>
 								</Navbar.Text>
-								<Navbar.Text>
-									<Link to='/jobs' activeClassName='active'>
-										Jobs
-									</Link>
-								</Navbar.Text>
 							</Nav>
 							<Nav className='ml-auto nav-email'>
 								<Navbar.Text>
-									<a
-										className='nav-email-bright'
-										href='mailto:info@excyted.io?subject=Mail from Our Site'
-									>
-										info@excyted.io
-									</a>
+									<PremiumButton
+										text='Projekt starten'
+										modal
+										openModal={this.props.openModal}
+									/>
 								</Navbar.Text>
 							</Nav>
 						</Navbar.Collapse>

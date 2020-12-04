@@ -24,11 +24,6 @@ class AccordionBody extends React.Component {
 					text={this.props.text3}
 					eventKey='3'
 				/>
-				<AccordionItem
-					title={this.props.title4}
-					text={this.props.text4}
-					eventKey='4'
-				/>
 			</Accordion>
 		);
 	}
