@@ -11,15 +11,16 @@
 		border: none;
 		// background: rgb(33, 48, 61);
 
-		border-radius: 2rem;
+		border-radius: 1rem;
 		color: white;
 		width: 90%;
 		margin: auto;
 		padding: 2rem 1rem;
 		@include media-breakpoint-up(lg) {
 			padding: 3rem;
+			border-radius: 2rem;
 		}
-		text-align: center;
+		text-align: left !important;
 		.modal-header {
 			border-bottom: 1px solid #333539;
 			padding: 0;

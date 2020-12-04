@@ -85,6 +85,10 @@
 		width: 100%;
 		display: block;
 		margin: 5rem auto;
+		border-radius: 10px;
+		img {
+			margin: 0;
+		}
 	}
 
 	.portfolio-image:nth-child(1) {
@@ -140,6 +144,7 @@
 	.modal-body {
 		.rich-text-container {
 			margin-bottom: 5rem;
+			white-space: pre-line;
 
 			h4 {
 				font-weight: 800;
@@ -161,8 +166,8 @@
 
 	.modal-close {
 		position: absolute;
-		top: 1.5rem;
-		right: 1.5rem;
+		top: 2rem;
+		right: 2rem;
 		font-size: 3rem;
 		color: $primary;
 		cursor: pointer;
@@ -222,6 +227,11 @@
 			}
 		}
 	}
+	.images-container {
+		.portfolio-image {
+			margin: 2.4rem 0;
+		}
+	}
 
 	.modal-content {
 		padding: 3rem 1rem 0.5rem;
@@ -235,11 +245,14 @@
 
 		.modal-body {
 			padding-bottom: 0rem;
+			.rich-text-container {
+				margin-bottom: 3rem;
+			}
 		}
 
 		.modal-close {
-			top: 0.5rem;
-			right: 0.5rem;
+			top: 1rem;
+			right: 1rem;
 			font-size: 2rem;
 		}
 
