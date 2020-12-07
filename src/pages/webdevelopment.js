@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import Layout from '../components/general/layout';
 import SEO from '../components/seo';
@@ -8,47 +8,60 @@ import PremiumButton from '../components/general/PremiumButton';
 import Button from '../components/general/Button';
 import buttonStyle from '../components/sites/linkedin-ad/buttons.module.scss';
 import { Container, Row, Col } from 'react-bootstrap';
+import MyModal from '../components/general/modal';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-class IndexPage extends React.Component {
-	render() {
-		return (
-			<ParallaxProvider>
-				<Layout>
-					<SEO
-						title='Web Development'
-						description='Maximale Online Performance durch modernes Web Development.'
-						robots='noindex'
-					/>
-					<Hero />
-					<Container className={buttonStyle.container}>
-						<Row className={buttonStyle.centerrow}>
-							<Col className={buttonStyle.buttonContainer}>
-								<PremiumButton to='/' text='Zu excyted' />
-								<Button
-									to='mailto:info@excyted.io'
-									text='Sende uns eine Email'
-								/>
-							</Col>
-						</Row>
-					</Container>
-					<Services />
-					<Container className={buttonStyle.container}>
-						<Row className={buttonStyle.centerrow}>
-							<Col className={buttonStyle.buttonContainer}>
-								<PremiumButton to='/' text='Zu excyted' />
-								<Button
-									to='mailto:info@excyted.io'
-									text='Sende uns eine Email'
-								/>
-							</Col>
-						</Row>
-					</Container>
-				</Layout>
-			</ParallaxProvider>
-		);
-	}
-}
+const IndexPage = () => {
+	const [modalShow, setModalShow] = useState(false);
+	const [modalText, setModalText] = useState('demo');
+	const openModal = () => {
+		console.log('triggered!');
+		setModalShow(true);
+	};
+
+	return (
+		<ParallaxProvider>
+			<Layout>
+				<SEO
+					title='Web Development'
+					description='Maximale Online Performance durch modernes Web Development.'
+				/>
+				<Hero />
+				<Container className={buttonStyle.container}>
+					<Row className={buttonStyle.centerrow}>
+						<Col className={buttonStyle.buttonContainer}>
+							<PremiumButton
+								text='Projekt starten'
+								modal
+								openModal={openModal}
+							/>
+							<Button to='/' text='Zu Excyted' />
+						</Col>
+					</Row>
+				</Container>
+				<Services />
+				<Container className={buttonStyle.container}>
+					<Row className={buttonStyle.centerrow}>
+						<Col className={buttonStyle.buttonContainer}>
+							<PremiumButton
+								text='Projekt starten'
+								modal
+								openModal={openModal}
+							/>
+							<Button to='/' text='Zu Excyted' />
+						</Col>
+					</Row>
+				</Container>
+
+				<MyModal
+					modaltext={modalText}
+					show={modalShow}
+					onHide={() => setModalShow(false)}
+				/>
+			</Layout>
+		</ParallaxProvider>
+	);
+};
 
 export default IndexPage;
