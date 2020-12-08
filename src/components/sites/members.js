@@ -86,7 +86,7 @@ const Members = () => {
 							<AiOutlinePlayCircle />
 						</div>
 						<h3>Lukas</h3>
-						<span>- Produktion -</span>
+						<span>- UX & Web -</span>
 						<a
 							href='https://www.linkedin.com/in/lukas-hoppe-948142178'
 							rel='noopener noreferrer'
@@ -106,7 +106,7 @@ const Members = () => {
 						<h3>Antonio</h3>
 						<span>- IT & Web -</span>
 						<a
-							href='https://www.linkedin.com/in/excyted/'
+							href='https://www.linkedin.com/in/antonio-schmitter/'
 							rel='noopener noreferrer'
 							target='_blank'
 						>
@@ -116,15 +116,15 @@ const Members = () => {
 					<Col md={4} className='member'>
 						<div className='image-container'>
 							<BackgroundImage
-								fluid={jonas.childImageSharp.fluid}
+								fluid={moritz.childImageSharp.fluid}
 								className='image'
 							/>
-							<AiFillCode />
+							<AiFillCamera />
 						</div>
-						<h3>Jonas</h3>
-						<span>- UX/UI-Design -</span>
+						<h3>Moritz</h3>
+						<span>- Foto -</span>
 						<a
-							href='https://www.linkedin.com/in/excyted/'
+							href='https://www.linkedin.com/in/moritzkarnahl/'
 							rel='noopener noreferrer'
 							target='_blank'
 						>
@@ -144,25 +144,7 @@ const Members = () => {
 						<h3>David</h3>
 						<span>- Kamera -</span>
 						<a
-							href='https://www.linkedin.com/company/excyted'
-							rel='noopener noreferrer'
-							target='_blank'
-						>
-							<AiFillLinkedin />
-						</a>
-					</Col>
-					<Col md={4} className='member'>
-						<div className='image-container'>
-							<BackgroundImage
-								fluid={moritz.childImageSharp.fluid}
-								className='image'
-							/>
-							<AiFillCamera />
-						</div>
-						<h3>Moritz</h3>
-						<span>- Foto -</span>
-						<a
-							href='https://www.linkedin.com/company/excyted'
+							href='https://www.linkedin.com/in/david-greco-/'
 							rel='noopener noreferrer'
 							target='_blank'
 						>
@@ -181,6 +163,24 @@ const Members = () => {
 						<span>- Kommunikation & Design -</span>
 						<a
 							href='https://www.linkedin.com/company/excyted'
+							rel='noopener noreferrer'
+							target='_blank'
+						>
+							<AiFillLinkedin />
+						</a>
+					</Col>
+					<Col md={4} className='member'>
+						<div className='image-container'>
+							<BackgroundImage
+								fluid={jonas.childImageSharp.fluid}
+								className='image'
+							/>
+							<AiFillCode />
+						</div>
+						<h3>Jonas</h3>
+						<span>- UX/UI-Design -</span>
+						<a
+							href='https://www.linkedin.com/in/excyted/'
 							rel='noopener noreferrer'
 							target='_blank'
 						>
