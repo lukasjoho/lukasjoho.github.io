@@ -19,7 +19,7 @@ const IndexPage = () => {
 					title='Creative Digital Studio'
 					description='Excyted entwickelt digitale Produkte um deine Marke, dein Unternehmen oder dein Projekt in der Web- und Medienwelt nach vorne zu bringen. Lass dich excyten. Excyte andere.'
 				/>
-				<Fireworks />
+				{/* <Fireworks /> */}
 				<Hero />
 				<Casestudy />
 				<Banner />
