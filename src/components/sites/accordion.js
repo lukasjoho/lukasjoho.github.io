@@ -20,7 +20,7 @@ class ServicesAccordion extends React.Component {
 					<Col md={4}>
 						<div className='service-title'>
 							<AiOutlineDesktop />
-							<h2>Visuals</h2>
+							<h2>Frontend</h2>
 						</div>
 						<ul>
 							<AccordionBody
