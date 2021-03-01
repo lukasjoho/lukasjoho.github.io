@@ -30,19 +30,6 @@ const Imprint = () => (
 							Registergericht: Amtsgericht Münster Registernummer: HRB 18537
 						</p>
 						<p>Geschäftsführer: Lukas Hoppe</p>
-						<p>
-							<strong>creatix schmitter</strong>
-							<br />
-							Antonio Schmitter
-							<br />
-							Volksdorfer Damm 272
-							<br />
-							22395 Hamburg
-							<br />
-							antonio@excyted.io
-							<br />
-							+49 160 6111994
-						</p>
 
 						<div>
 							<h3>Rechtliche Hinweise</h3>
