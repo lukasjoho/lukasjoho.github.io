@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './Button.scss';
-import { Link } from 'gatsby';
+import { Link } from 'gatsby-plugin-intl';
 
 const Button = props => {
 	if (props.to.startsWith('mailto')) {

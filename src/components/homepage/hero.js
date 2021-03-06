@@ -34,7 +34,7 @@ class Hero extends Component {
 						<div className='container-center'>
 							<ScrollAnimation
 								animateIn='animate__fadeInUpTitle'
-								duration='1.5'
+								duration={1.5}
 							>
 								<h1>
 									we <span className='stroke'>{textThatChanges}</span>

@@ -3,8 +3,7 @@ import './picture.scss';
 import { Col, Row, Container } from 'react-bootstrap';
 import Img from 'gatsby-image';
 import { graphql, useStaticQuery } from 'gatsby';
-import ScrollAnimation from 'react-animate-on-scroll';
-
+import { FormattedMessage } from 'gatsby-plugin-intl';
 import 'animate.css/animate.css';
 
 const Picture = () => {
@@ -28,11 +27,11 @@ const Picture = () => {
 						<div className='main'>
 							<Img fluid={main.childImageSharp.fluid} />
 							<div className='text'>
-								<h1>'Ne nice CX</h1>
-
+								<h1>
+									<FormattedMessage id='services.picture.title' />{' '}
+								</h1>
 								<p>
-									Eine gute Customer Experience im gesamten Projektverlauf ist
-									uns wichtig und selbstverständlich.
+									<FormattedMessage id='services.picture.text' />
 								</p>
 							</div>
 						</div>

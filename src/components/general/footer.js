@@ -1,7 +1,8 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import { Link } from 'gatsby';
+import { Link } from 'gatsby-plugin-intl';
 import './footer.scss';
+import { FormattedMessage } from 'gatsby-plugin-intl';
 
 const Footer = () => (
 	<footer>
@@ -12,7 +13,7 @@ const Footer = () => (
 					<ul>
 						<li>
 							<Link to='/' activeClassName='active'>
-								Creative Studio
+								Technology Studio
 							</Link>
 						</li>
 						<li>
@@ -50,12 +51,12 @@ const Footer = () => (
 						</li>
 						<li>
 							<Link to='/projects' activeClassName='active'>
-								Projekte
+								<FormattedMessage id='layout.footer.projects' />
 							</Link>
 						</li>
 						<li>
 							<Link to='/services' activeClassName='active'>
-								Leistungen
+								<FormattedMessage id='layout.footer.services' />
 							</Link>
 						</li>
 						<li>
@@ -71,16 +72,18 @@ const Footer = () => (
 					</ul>
 				</Col>
 				<Col md={3}>
-					<h3>Rechtliches</h3>
+					<h3>
+						<FormattedMessage id='layout.footer.legal' />
+					</h3>
 					<ul>
 						<li>
-							<Link to='/imprint' activeClassName='active'>
-								Impressum
+							<Link to='/legal-notice' activeClassName='active'>
+								<FormattedMessage id='layout.footer.legalNotice' />
 							</Link>
 						</li>
 						<li>
-							<Link to='/imprint#privacy' activeClassName='active'>
-								Datenschutz
+							<Link to='/legal-notice#privacy' activeClassName='active'>
+								<FormattedMessage id='layout.footer.dataPrivacy' />
 							</Link>
 						</li>
 					</ul>

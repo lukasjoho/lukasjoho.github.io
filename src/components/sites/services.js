@@ -4,6 +4,7 @@ import Wireframes from '../sites/wireframes';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import Accordion from './accordion';
 import Picture from './picture';
+import { FormattedMessage, FormattedHTMLMessage } from 'gatsby-plugin-intl';
 
 import './services.scss';
 
@@ -12,8 +13,12 @@ const Services = () => (
 		<ParallaxProvider>
 			<Container>
 				<div className='title'>
-					<h1>Unsere Leistungen</h1>
-					<p>Wie wir excyten</p>
+					<h1>
+						<FormattedMessage id='services.title' />
+					</h1>
+					<p>
+						<FormattedMessage id='services.subtitle' />
+					</p>
 				</div>
 				<Accordion />
 			</Container>
@@ -32,26 +37,21 @@ const Services = () => (
 							}}
 						>
 							<div className='service'>
-								<h3>Zielsetzung</h3>
+								<h3>
+									<FormattedMessage id='services.services.0.title' />
+								</h3>
 								<p>
-									Was sind eure Werbeziele und wer ist eure Zielgruppe?
-									<br />
-									Dies ist der erste wichtige Baustein im
-									Produktenstehungsprozess, über den sowohl Du als auch wir uns
-									im Klaren sein müssen. <br />
-									Nur dann kann das Produkt entsprechend effektiv konzipiert und
-									gestaltet werden.
+									<FormattedMessage id='services.services.0.text' />
 								</p>
 							</div>
 						</Col>
 						<Col md={6} style={{ paddingBottom: '2.5rem' }}>
 							<div className='service'>
-								<h3>Konzeption</h3>
+								<h3>
+									<FormattedMessage id='services.services.1.title' />
+								</h3>
 								<p>
-									Damit die tatsächliche Umsetzung der Leistungsspezifikation
-									ins Produkt effizient durchgeführt werden kann, ist eine
-									entsprechende Konzeption vorher wichtig. Wir initieren diesen
-									Prozess im Vorhinein.
+									<FormattedMessage id='services.services.1.text' />
 								</p>
 							</div>
 						</Col>
@@ -61,23 +61,22 @@ const Services = () => (
 							className='budget'
 						>
 							<div className='service'>
-								<h3>Budgetierung</h3>
+								<h3>
+									<FormattedMessage id='services.services.1.title' />
+								</h3>
 								<p>
-									Wie umfassend das Projekt ist und wie viel Arbeit in dieses
-									Projekt gesteckt werden kann hängt unter anderem vom Umfang
-									des Budgets ab. Aber keine Angst, unser Leistungsangebot ist
-									so aufgestellt, dass auch Projekte mit schmaleren Budgets
-									realisiert werden können.
+									<FormattedMessage id='services.services.1.text' />
 								</p>
 							</div>
 						</Col>
 						<Col md={6}>
 							<div className='service'>
-								<h3>Produktion</h3>
+								<h3>
+									{' '}
+									<FormattedMessage id='services.services.2.title' />
+								</h3>
 								<p>
-									Hier wird das Produkt erstellt, iterativ nachbearbeitet und
-									final ausgegeben. Wo die Ausführung am entscheidensten ist,
-									arbeiten wir gerne eng mit dem Kunden zusammen.
+									<FormattedMessage id='services.services.2.text' />
 								</p>
 							</div>
 						</Col>
@@ -87,17 +86,11 @@ const Services = () => (
 			<Container>
 				<Row>
 					<Col md={8} className='m-auto banner'>
-						<h2>We tell your story</h2>
+						<h2>
+							<FormattedMessage id='services.text.title' />
+						</h2>
 						<p>
-							Wir sind professionell, aber locker und offen.
-							<br />
-							Wir arbeiten für noch so kleine Details.
-							<br />
-							Wir arbeiten in einem kreativen und kollaborativen Umfeld.
-							<br />
-							Wir sind vielfältig.
-							<br />
-							Wir lieben, was wir machen.
+							<FormattedHTMLMessage id='services.text.text' />
 						</p>
 					</Col>
 				</Row>

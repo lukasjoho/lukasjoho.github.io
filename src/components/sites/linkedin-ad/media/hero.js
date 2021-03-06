@@ -7,7 +7,6 @@ import Showreel from '../../../../images/content/showreel.mp4';
 import ShowreelPoster from '../../../../images/content/showreel-poster.jpg';
 import Textblock from '../../../homepage/textblock';
 import { TiSocialInstagram } from 'react-icons/ti';
-import { IoIosSpeedometer } from 'react-icons/io';
 import { GiFilmStrip } from 'react-icons/gi';
 import { IoIosBusiness } from 'react-icons/io';
 
@@ -49,7 +48,7 @@ const Sections = () => {
 					<Col md={4} sm={12} xs={12}>
 						<ScrollAnimation
 							animateIn='animate__fadeInUp'
-							duration='1'
+							duration={1}
 							delay={100}
 							animateOnce={true}
 						>
@@ -62,7 +61,7 @@ const Sections = () => {
 					<Col md={4} xs={12}>
 						<ScrollAnimation
 							animateIn='animate__fadeInUp'
-							duration='1'
+							duration={1}
 							delay={200}
 							animateOnce={true}
 						>
@@ -75,7 +74,7 @@ const Sections = () => {
 					<Col md={4} xs={12}>
 						<ScrollAnimation
 							animateIn='animate__fadeInUp'
-							duration='1'
+							duration={1}
 							delay={300}
 							animateOnce={true}
 						>

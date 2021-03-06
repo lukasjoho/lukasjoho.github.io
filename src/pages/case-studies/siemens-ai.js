@@ -1,15 +1,21 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
+import {
+	useIntl,
+	FormattedHTMLMessage,
+	FormattedMessage,
+} from 'gatsby-plugin-intl';
 
 import SEO from '../../components/seo';
 import Layout from '../../components/general/layout';
 import { Container, Row, Col } from 'react-bootstrap';
-import Iphone from '../../components/general/iphone';
+import Iphone from '~/components/sites/case-studies/siemens/iphone';
 
 import Img from 'gatsby-image';
-import '../../components/sites/casestudy.scss';
+import '~/components/sites/case-studies/siemens/casestudy.scss';
 
 const Siemens = () => {
+	const intl = useIntl();
 	const {
 		imageImac,
 		imageDropdown,
@@ -60,8 +66,10 @@ const Siemens = () => {
 	return (
 		<Layout>
 			<SEO
-				title='Siemens AI@CT Intranetseite'
-				description='Die Intranetseite von Siemens AI@CT dient der internen Kommunikation von Dienstleistungen und gibt den Bearbeitern der Website die Möglichkeit eigenständig und individuell Inhalte und Strukturen zu ändern.'
+				title={intl.formatMessage({ id: 'caseStudies.siemens.seo.title' })}
+				description={intl.formatMessage({
+					id: 'caseStudies.siemens.seo.description',
+				})}
 				image={imageSiemensCase.childImageSharp.fixed.src}
 				url='https://excyted.io/case-studies/siemens-ai'
 			/>
@@ -71,15 +79,13 @@ const Siemens = () => {
 					<Row className='pb-hero'>
 						<Col xs={12} lg={7}>
 							<p className='label'>
-								Case Study: <span>Web Development</span>
+								<FormattedHTMLMessage id='caseStudies.siemens.category' />
 							</p>
-							<h1>Siemens</h1>
+							<h1>
+								<FormattedMessage id='caseStudies.siemens.title' />
+							</h1>
 							<p>
-								Wir haben für Siemens ARTIFICIAL INTELLIGENCE @ CORPORATE
-								TECHNOLOGY eine neue Intranetseite entwickelt. Sie dient der
-								internen Kommunikation von Dienstleistungen und gibt den
-								Bearbeitern der Website die Möglichkeit eigenständig und
-								individuell Inhalte und Strukturen zu ändern.
+								<FormattedMessage id='caseStudies.siemens.subtitle' />
 							</p>
 						</Col>
 
@@ -93,63 +99,18 @@ const Siemens = () => {
 					</Row>
 					<Row>
 						<Col xs={12} lg={7}>
-							<h2>Die Challenge</h2>
-							<p>
-								Die alte Seite von Siemens AI@CT basiert auf einer überholten
-								Web-Architektur, die verschiedene Probleme mit sich bringt:
-								<br />
-								<ul>
-									<li>Langsame Ladezeiten der einzelnen Seiten</li>
-									<li>
-										Kein responsives Verhalten bei unterschiedlichen
-										Screen-Größen
-									</li>
-									<li>Umständliches Ändern von Website-Inhalten</li>
-									<li>
-										Gestaltungseinschränkungen durch Technologielimitierungen
-									</li>
-								</ul>
-								<br />
-								Um Trainings, Wissen und Prozesse von Siemens AI@CT intern
-								darzustellen und zu verkaufen soll die aktuelle Seite neu
-								entwickelt werden. Ein neues high-speed Web-Framework soll die
-								Ladezeit der Seite perfektionieren und Editoren der Seite
-								außerdem die Möglichkeit geben Inhalte einfach und schnell
-								einzupflegen und anzupassen. Dafür soll ein indivduell
-								angepasstes CMS in die Seite integriert werden.
-							</p>
+							<FormattedHTMLMessage id='caseStudies.siemens.text.0' />
 						</Col>
 					</Row>
 					<Row>
 						<Col xs={12} lg={7}>
-							<h2>Die Umsetzung</h2>
-							<h3>Blitzschnelle Ladezeiten</h3>
-							<p>
-								Die neue Website haben wir mit dem komponenten-basierten
-								Javascript Framework Gatsby gebaut. Dies ermöglichte uns die
-								Erstellung von Seiten mit schnellstmöglicher Ladezeit. Lange
-								unübersichtliche Seiten konnten dadurch auf mehrere kürzere
-								Unterseiten gesplittet werden.
-							</p>
+							<FormattedHTMLMessage id='caseStudies.siemens.text.1' />
 						</Col>
 					</Row>
 					<Row>
 						<Col xs={12} lg={7} className='d-flex align-items-center'>
 							<div>
-								<h3>Gleiches Design, aber besser</h3>
-
-								<p>
-									Um die Corporate Identity von Siemens beizubehalten, haben wir
-									das siemens-interne Design-Theme, in die neue Website
-									integriert. Designelemente und Funktionen, welche mit der
-									alten Technologie nicht umsetzbar waren, haben wir CI gerecht
-									neu überdacht, designed und animiert. <br />
-									<br />
-									Die neue Statusleiste führt Besucher nun übersichtlich durch
-									die auf der Seite dargestellten Prozesse. Sie zeigt die
-									aktuelle Scrollposition des Users und bietet jetzt, anders als
-									vorher, auch auf mobilen Geräte eine nahtlose Experience.
-								</p>
+								<FormattedHTMLMessage id='caseStudies.siemens.text.2' />
 							</div>
 						</Col>
 						<Col lg={5} className='image-iphone'>
@@ -158,20 +119,7 @@ const Siemens = () => {
 					</Row>
 					<Row>
 						<Col xs={12} lg={7} className='has-image'>
-							<h3>Maßgeschneidertes Content Management System</h3>
-							<p>
-								Die von uns eingebauten Markdown-Dateien bilden ein
-								individualisiertes und funktionsspezifisches Content Management
-								System. Texte, Bilder, Icons, Seiten und Verlinkungen können
-								damit ganz einfach bearbeitet und hinzugefügt werden. Dazu
-								braucht es keinen technischen Hintergrund und die Funktion der
-								Seite kann nicht ungewollt beeinträchtigt werden. <br />
-								<br />
-								Inhalte wie z.B diese Texte über ein angebotenes Training (rot
-								markiert) können sehr intuitiv über Markdown-Dateien geändert
-								werden. Textformatierungen, Metadaten und das Einfügen von
-								Komponenten können über einfache Codierungen vorgenommen werden.
-							</p>
+							<FormattedHTMLMessage id='caseStudies.siemens.text.3' />
 						</Col>
 						<Col className='images-mdx' xs={12} lg={10}>
 							<Img
@@ -189,15 +137,7 @@ const Siemens = () => {
 					</Row>
 					<Row>
 						<Col xs={12} lg={7} className='has-image'>
-							<h3>Filtering von Projekten</h3>
-							<p>
-								Über den „Use Case Explorer“ können Projekte nach mehreren
-								Kriterien intelligent gefiltert und angezeigt werden. Mit einem
-								Klick auf das jeweilige Projekt werden weitere
-								Detailinformationen angezeigt. Die Seite greift dabei auf eine
-								bereits bestehende interne API zurück, in der die Projekte
-								hinterlegt sind.
-							</p>
+							<FormattedHTMLMessage id='caseStudies.siemens.text.4' />
 						</Col>
 						<Col xs={12} lg={9}>
 							<Img

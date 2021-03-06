@@ -14,7 +14,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const IndexPage = () => {
 	const [modalShow, setModalShow] = useState(false);
-	const [modalText, setModalText] = useState('demo');
 	const openModal = () => {
 		console.log('triggered!');
 		setModalShow(true);
@@ -54,11 +53,7 @@ const IndexPage = () => {
 					</Row>
 				</Container>
 
-				<MyModal
-					modaltext={modalText}
-					show={modalShow}
-					onHide={() => setModalShow(false)}
-				/>
+				<MyModal show={modalShow} onHide={() => setModalShow(false)} />
 			</Layout>
 		</ParallaxProvider>
 	);

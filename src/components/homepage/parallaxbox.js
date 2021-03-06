@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Container } from 'react-bootstrap';
 import './parallaxbox.scss';
 import { ParallaxBanner } from 'react-scroll-parallax';
 import ImageBackground from '../../images/content/parallaxbanner.jpg';
@@ -29,9 +28,7 @@ class ParallaxBox extends Component {
 					style={{
 						height: '100%',
 					}}
-				>
-					<Container>{/* <h1><span>Zielfokussiert</span></h1> */}</Container>
-				</ParallaxBanner>
+				/>
 			</section>
 		);
 	}

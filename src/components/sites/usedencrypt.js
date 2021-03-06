@@ -1,22 +1,16 @@
-import * as React from 'react';
+import React from 'react';
 
 import { useDencrypt } from 'use-dencrypt-effect';
 import './usedencrypt.scss';
 
-const values = [
-	'wir sind neugierig',
-	'erzähl uns deine story',
-	'meet the Team',
-];
-
-const UseDencrypt = () => {
+const UseDencrypt = ({ text }) => {
 	const { result, dencrypt } = useDencrypt();
 
 	React.useEffect(() => {
 		let i = 0;
 		function crypting() {
-			dencrypt(values[i]);
-			i = i === values.length - 1 ? 0 : i + 1;
+			dencrypt(text[i]);
+			i = i === text.length - 1 ? 0 : i + 1;
 		}
 		crypting();
 		const action = setInterval(crypting, 3000);

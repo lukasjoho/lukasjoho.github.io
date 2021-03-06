@@ -53,8 +53,9 @@
 		@include media-breakpoint-up(md) {
 			font-size: inherit;
 		}
-		span {
+		em {
 			font-weight: 700;
+			font-style: normal;
 		}
 	}
 

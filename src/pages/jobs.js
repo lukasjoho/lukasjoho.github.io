@@ -9,56 +9,68 @@ import {
 	FaObjectGroup,
 	FaPencilRuler,
 } from 'react-icons/fa';
+import { useIntl, FormattedMessage } from 'gatsby-plugin-intl';
 
-const Jobs = () => (
-	<Layout>
-		<SEO
-			title='Jobs'
-			description='Wir suchen Freelancer in vielen Bereichen. Melde Dich bei uns.'
-		/>
-		<section id='jobs'>
-			<Container>
-				<div className='text-left'>
-					<h1>Jobs</h1>
-					<p>Excyted mit uns zu arbeiten?</p>
-				</div>
-				<h2>Wir suchen Woman- und Manpower in diesen Bereichen:</h2>
-				<Row>
-					<Col md={6}>
-						<ul>
-							<li>
-								<FaCameraRetro />
-								<span>Videographer</span>
-							</li>
-							<li>
-								<FaPencilRuler />
-								<span>Graphic Designer</span>
-							</li>
-							<li>
-								<AiOutlineScissor />
-								<span>Cutter</span>
-							</li>
-							<li>
-								<FaObjectGroup />
-								<span>UX-Design</span>
-							</li>
-							<li>
-								<FaTabletAlt />
-								<span>App-Development</span>
-							</li>
-						</ul>
-						<div className='contact-details'>
-							<span>Kontaktier uns unter:</span>
-							<br />
-							<a href='mailto:info@excyted.io?subject=Mail from Our Site'>
-								info@excyted.io
-							</a>
-						</div>
-					</Col>
-				</Row>
-			</Container>
-		</section>
-	</Layout>
-);
+const Jobs = () => {
+	const intl = useIntl();
+	return (
+		<Layout>
+			<SEO
+				title={intl.formatMessage({ id: 'jobs.seo.title' })}
+				description={intl.formatMessage({ id: 'jobs.seo.description' })}
+			/>
+			<section id='jobs'>
+				<Container>
+					<div className='text-left'>
+						<h1>
+							<FormattedMessage id='jobs.title' />
+						</h1>
+						<p>
+							<FormattedMessage id='jobs.subtitle' />
+						</p>
+					</div>
+					<h2>
+						<FormattedMessage id='jobs.heading' />
+					</h2>
+					<Row>
+						<Col md={6}>
+							<ul>
+								<li>
+									<FaCameraRetro />
+									<span>Videographer</span>
+								</li>
+								<li>
+									<FaPencilRuler />
+									<span>Graphic Designer</span>
+								</li>
+								<li>
+									<AiOutlineScissor />
+									<span>Cutter</span>
+								</li>
+								<li>
+									<FaObjectGroup />
+									<span>UX-Design</span>
+								</li>
+								<li>
+									<FaTabletAlt />
+									<span>App-Development</span>
+								</li>
+							</ul>
+							<div className='contact-details'>
+								<span>
+									<FormattedMessage id='jobs.contactUs' />
+								</span>
+								<br />
+								<a href='mailto:info@excyted.io?subject=Mail from Our Site'>
+									info@excyted.io
+								</a>
+							</div>
+						</Col>
+					</Row>
+				</Container>
+			</section>
+		</Layout>
+	);
+};
 
 export default Jobs;

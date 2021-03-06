@@ -2,30 +2,13 @@ import React from 'react';
 import Accordion from 'react-bootstrap/Accordion';
 import AccordionItem from './accordion.item';
 
-class AccordionBody extends React.Component {
-	constructor(props) {
-		super(props);
-	}
-	render() {
-		return (
-			<Accordion>
-				<AccordionItem
-					title={this.props.title1}
-					text={this.props.text1}
-					eventKey='1'
-				/>
-				<AccordionItem
-					title={this.props.title2}
-					text={this.props.text2}
-					eventKey='2'
-				/>
-				<AccordionItem
-					title={this.props.title3}
-					text={this.props.text3}
-					eventKey='3'
-				/>
-			</Accordion>
-		);
-	}
-}
+const AccordionBody = ({ title1, title2, title3, text1, text2, text3 }) => {
+	return (
+		<Accordion>
+			<AccordionItem title={title1} text={text1} eventKey='1' />
+			<AccordionItem title={title2} text={text2} eventKey='2' />
+			<AccordionItem title={title3} text={text3} eventKey='3' />
+		</Accordion>
+	);
+};
 export default AccordionBody;
