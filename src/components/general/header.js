@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import './header.scss';
-import logo from '../../images/logo.png';
+import logo from '../../images/favicon.svg';
 import Lottie from 'lottie-react-web';
 import navButton from '../../json/navButton.json';
 import PremiumButton from './PremiumButton';
