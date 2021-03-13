@@ -2,9 +2,10 @@ import React from 'react';
 import Modal from 'react-bootstrap/Modal';
 import { FormattedMessage } from 'gatsby-plugin-intl';
 import './modal.scss';
-const MyModal = props => {
+
+const ContactModal = props => {
 	return (
-		<Modal {...props} centered className='modal' size='lg'>
+		<Modal {...props} centered className='modal-contact' size='lg'>
 			<div className='dialog'>
 				<Modal.Header>
 					<h1>
@@ -27,4 +28,4 @@ const MyModal = props => {
 		</Modal>
 	);
 };
-export default MyModal;
+export default ContactModal;
