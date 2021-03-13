@@ -21,6 +21,7 @@ const Build = () => {
 					</Col>
 					<Col lg={6} className='col-video'>
 						<video
+							aria-label='Website design process'
 							className='build-video'
 							preload='auto'
 							loop={true}

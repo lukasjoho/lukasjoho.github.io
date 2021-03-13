@@ -24,6 +24,7 @@ const Iphone = () => {
 					<div className='screen'>
 						<div className='screen__view'>
 							<video
+								aria-label='Use Case Explorer Animation'
 								ref={videoRef}
 								className='view__video'
 								preload='auto'

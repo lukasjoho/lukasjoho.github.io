@@ -226,6 +226,7 @@ const Sections = () => {
 					</Col>
 					<Col md={{ size: 6, order: 1 }}>
 						<video
+							aria-label='Showreel Video'
 							className='showreel'
 							preload='auto'
 							loop={true}
