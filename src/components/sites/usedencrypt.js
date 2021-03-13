@@ -22,7 +22,7 @@ const UseDencrypt = ({ text }) => {
 		// }, 2500);
 
 		return () => clearInterval(action);
-	}, []);
+	}, [dencrypt, text]);
 
 	return (
 		<div id='usedencrypt'>
