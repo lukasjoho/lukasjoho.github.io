@@ -1,4 +1,7 @@
 @import '../_variables';
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints';
 
 footer {
 	padding: 3rem 0 0;
@@ -6,6 +9,7 @@ footer {
 	line-height: 28px;
 	background: $background;
 	border-top: $sectionSeparator 1px solid;
+	padding-bottom: 3rem;
 
 	.row {
 		div {
@@ -13,6 +17,34 @@ footer {
 
 			&:nth-child(1) {
 				text-align: left;
+			}
+		}
+		.locale-switcher-container {
+			display: flex;
+
+			@include media-breakpoint-up(md) {
+				margin-bottom: 3rem;
+			}
+			@include media-breakpoint-up(lg) {
+				width: 100%;
+				margin-bottom: 0rem;
+			}
+			.locale-switcher {
+				margin-right: 0.5rem;
+				width: 2rem;
+				height: 2rem;
+				background-color: transparent;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 50%;
+				border: 2px $primary solid;
+				color: $primary;
+
+				&.active {
+					background-color: $primary;
+					color: black;
+				}
 			}
 		}
 	}
@@ -25,7 +57,6 @@ footer {
 
 	ul {
 		list-style: none;
-		margin: 0 0 3rem;
 
 		li {
 			margin: 0;
