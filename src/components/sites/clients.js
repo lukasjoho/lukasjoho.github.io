@@ -1,6 +1,8 @@
 import React from 'react';
 import './clients.scss';
 import { Row, Col, Container } from 'react-bootstrap';
+import { FormattedMessage } from 'gatsby-plugin-intl';
+
 import dockland from '../../images/clients/dockland.png';
 import harvard from '../../images/clients/harvard.png';
 import liba from '../../images/clients/liba.png';
@@ -22,8 +24,12 @@ const Clients = () => (
 	<section id='clients'>
 		<Container>
 			<div className='title'>
-				<h2>Unsere Kunden</h2>
-				<span>Hier hatten wir unsere Pfoten im Spiel</span>
+				<h2>
+					<FormattedMessage id='services.clients.title' />
+				</h2>
+				<span>
+					<FormattedMessage id='services.clients.subtitle' />
+				</span>
 			</div>
 			<Row className='client-logo-container'>
 				<Col md={6} className='client-logo-wrapper'>

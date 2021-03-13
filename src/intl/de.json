@@ -139,6 +139,10 @@
 		"text": {
 			"title": "We tell your story",
 			"text": "Wir sind professionell, aber locker und offen. <br /> Wir arbeiten für noch so kleine Details. <br /> Wir arbeiten in einem kreativen und kollaborativen Umfeld. <br /> Wir sind vielfältig. <br /> Wir lieben, was wir machen."
+		},
+		"clients": {
+			"title": "Unsere Kunden",
+			"subtitle": "Hier hatten wir unsere Pfoten im Spiel"
 		}
 	},
 	"team": {
@@ -149,6 +153,11 @@
 		"members": {
 			"title": "Unser Team",
 			"subtitle": "Mit wem wir excyten",
+			"dencrypt": [
+				"Wir sind neugierig",
+				"Erzähl uns deine Story",
+				"Triff das Team"
+			],
 			"members": [
 				{ "name": "Lukas", "specialty": "UX & Web development" },
 				{ "name": "Antonio", "specialty": "Web development" },
@@ -162,11 +171,7 @@
 		"values": {
 			"title": "Unsere Werte",
 			"subtitle": "Die Zusammenarbeit mit uns",
-			"dencrypt": [
-				"Wir sind neugierig",
-				"Erzähl uns deine Story",
-				"Triff das Team"
-			],
+
 			"values": [
 				{
 					"title": "Motivation",
@@ -211,7 +216,7 @@
 				"mobile": "Phone tappen für Animation"
 			},
 			"text": [
-				"<h2>Die Challenge</h2> <p> Die alte Seite von Siemens AI@CT basiert auf einer überholten Web-Architektur, die verschiedene Probleme mit sich bringt: <br /> <ul> <li>Langsame Ladezeiten der einzelnen Seiten</li> <li> Kein responsives Verhalten bei unterschiedlichen Screen-Größen </li> <li>Umständliches Ändern von Website-Inhalten</li> <li> Gestaltungseinschränkungen durch Technologielimitierungen </li> </ul> <br /> Um Trainings, Wissen und Prozesse von Siemens AI@CT intern darzustellen und zu verkaufen soll die aktuelle Seite neu entwickelt werden. Ein neues high-speed Web-Framework soll die Ladezeit der Seite perfektionieren und Editoren der Seite außerdem die Möglichkeit geben Inhalte einfach und schnell einzupflegen und anzupassen. Dafür soll ein indivduell angepasstes CMS in die Seite integriert werden. </p>",
+				"<h2>Die Challenge</h2> <p>Die alte Seite von Siemens AI@CT basiert auf einer überholten Web-Architektur, die verschiedene Probleme mit sich bringt:</p> <br /> <ul> <li>Langsame Ladezeiten der einzelnen Seiten</li> <li> Kein responsives Verhalten bei unterschiedlichen Screen-Größen </li> <li>Umständliches Ändern von Website-Inhalten</li> <li> Gestaltungseinschränkungen durch Technologielimitierungen </li> </ul> <br /> <p>Um Trainings, Wissen und Prozesse von Siemens AI@CT intern darzustellen und zu verkaufen soll die aktuelle Seite neu entwickelt werden. Ein neues high-speed Web-Framework soll die Ladezeit der Seite perfektionieren und Editoren der Seite außerdem die Möglichkeit geben Inhalte einfach und schnell einzupflegen und anzupassen. Dafür soll ein indivduell angepasstes CMS in die Seite integriert werden.</p>",
 
 				"<h2>Die Umsetzung</h2> <h3>Blitzschnelle Ladezeiten</h3> <p> Die neue Website haben wir mit dem komponenten-basierten Javascript Framework Gatsby gebaut. Dies ermöglichte uns die Erstellung von Seiten mit schnellstmöglicher Ladezeit. Lange unübersichtliche Seiten konnten dadurch auf mehrere kürzere Unterseiten gesplittet werden. </p>",
 

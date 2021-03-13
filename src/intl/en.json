@@ -3,7 +3,7 @@
 		"navbar": {
 			"projects": "Projects",
 			"services": "Services",
-			"button": "Start project",
+			"button": "Start a project",
 			"modal": {
 				"title": "Contact us!"
 			}
@@ -139,6 +139,10 @@
 		"text": {
 			"title": "We tell your story",
 			"text": "We are professional, but relaxed and open. <br /> We work for even the smallest details. <br /> We work in a creative and collaborative environment. <br /> We are multifaceted. <br /> We love what we do."
+		},
+		"clients": {
+			"title": "Our clients",
+			"subtitle": "This is where we had our hands in the game"
 		}
 	},
 	"team": {
@@ -149,6 +153,7 @@
 		"members": {
 			"title": "Our Team",
 			"subtitle": "With whom we excyte",
+			"dencrypt": ["We're curious", "Tell us your story", "Meet the Team"],
 			"members": [
 				{ "name": "Lukas", "specialty": "UX & Web development" },
 				{ "name": "Antonio", "specialty": "Web development" },
@@ -158,11 +163,10 @@
 				{ "name": "Jonas", "specialty": "UX/UI-Design" }
 			]
 		},
-		"jubel": "Only <br />Together<br />Will it become<br />Great",
+		"jubel": "Only <br />Together<br />Will it <br/> become<br />Great",
 		"values": {
 			"title": "Our values",
 			"subtitle": "Cooperation with us",
-			"dencrypt": ["We're curious", "Tell us your story", "Meet the Team"],
 			"values": [
 				{
 					"title": "Motivation",
@@ -201,13 +205,13 @@
 			},
 			"category": "Case Study: <em>Web Development</em>",
 			"title": "Siemens",
-			"subtitle": "We have developed a new intranet site for Siemens ARTIFICIAL INTELLIGENCE @ CORPORATE TECHNOLOGY. It serves the internal communication of services and gives the editors of the website the possibility to change contents and structures independently and individually.",
+			"subtitle": "We have developed a new intranet site for Siemens ARTIFICIAL INTELLIGENCE @ CORPORATE TECHNOLOGY. It serves as the internal communication of services and gives the editors of the website the possibility to change contents and structures independently and individually.",
 			"phoneTooltip": {
 				"desktop": "Hover phone for animation",
 				"mobile": "Tap phone for animation"
 			},
 			"text": [
-				"<h2>The Challenge</h2> <p>The old Siemens AI@CT site is based on an outdated web architecture, which causes several problems: <br /> <ul> <li>Slow loading times of individual pages</li> <li>No responsive behavior at different screen sizes</li> <li>Inconvenient changing of website content</li> <li>Design restrictions due to technology limitations</li> </ul> <br />In order to present and sell training, knowledge and processes of Siemens AI@CT internally, the current site needs to be redeveloped. A new high-speed web framework is intended to perfect the loading time of pages and also give editors of the site the ability to easily and quickly add and customize content. For this purpose, an individually adapted CMS shall be integrated into the site. </p>",
+				"<h2>The Challenge</h2> <p>The old Siemens AI@CT site is based on an outdated web architecture, which causes several problems:</p> <br /> <ul> <li>Slow loading times of individual pages</li> <li>No responsive behavior at different screen sizes</li> <li>Inconvenient changing of website content</li> <li>Design restrictions due to technology limitations</li> </ul> <br /> <p>In order to present and sell training, knowledge and processes of Siemens AI@CT internally, the current site needs to be redeveloped. A new high-speed web framework is intended to perfect the loading time of pages and also give editors of the site the ability to easily and quickly add and customize content. For this purpose, an individually adapted CMS shall be integrated into the site. </p>",
 
 				"<h2>The implementation</h2> <h3>Lightning-fast loading times</h3> <p>We built the new website using the Gatsby component-based JavaScript framework. This allowed us to create pages with the fastest possible loading time. Long cluttered pages could thus be split into several shorter subpages. </p>",
 

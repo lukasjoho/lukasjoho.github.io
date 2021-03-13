@@ -51,12 +51,12 @@ const Iphone = () => {
 			<div className='info'>
 				<BrowserView>
 					<small>
-						<FormattedMessage id='caseStudies.siemenes.phoneTooltip.desktop' />
+						<FormattedMessage id='caseStudies.siemens.phoneTooltip.desktop' />
 					</small>
 				</BrowserView>
 				<MobileView>
 					<small>
-						<FormattedMessage id='caseStudies.siemenes.phoneTooltip.mobile' />
+						<FormattedMessage id='caseStudies.siemens.phoneTooltip.mobile' />
 					</small>
 				</MobileView>
 			</div>
