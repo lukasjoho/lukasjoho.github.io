@@ -97,56 +97,58 @@ const Siemens = () => {
 							/>
 						</Col>
 					</Row>
-					<Row>
-						<Col xs={12} lg={7}>
-							<FormattedHTMLMessage id='caseStudies.siemens.text.0' />
-						</Col>
-					</Row>
-					<Row>
-						<Col xs={12} lg={7}>
-							<FormattedHTMLMessage id='caseStudies.siemens.text.1' />
-						</Col>
-					</Row>
-					<Row>
-						<Col xs={12} lg={7} className='d-flex align-items-center'>
-							<div>
-								<FormattedHTMLMessage id='caseStudies.siemens.text.2' />
-							</div>
-						</Col>
-						<Col lg={5} className='image-iphone'>
-							<Iphone />
-						</Col>
-					</Row>
-					<Row>
-						<Col xs={12} lg={7} className='has-image'>
-							<FormattedHTMLMessage id='caseStudies.siemens.text.3' />
-						</Col>
-						<Col className='images-mdx' xs={12} lg={10}>
-							<Img
-								className='mdx-page'
-								fluid={imageMdxPage.childImageSharp.fluid}
-								alt=''
-							/>
-							<Img
-								className='mdx-code'
-								fluid={imageMdxCode.childImageSharp.fluid}
-								alt=''
-								style={{ position: 'absolute' }}
-							/>
-						</Col>
-					</Row>
-					<Row>
-						<Col xs={12} lg={7} className='has-image'>
-							<FormattedHTMLMessage id='caseStudies.siemens.text.4' />
-						</Col>
-						<Col xs={12} lg={9}>
-							<Img
-								fluid={imageDropdown.childImageSharp.fluid}
-								alt=''
-								className='use-case-explorer'
-							/>
-						</Col>
-					</Row>
+					<article>
+						<Row>
+							<Col xs={12} lg={7}>
+								<FormattedHTMLMessage id='caseStudies.siemens.text.0' />
+							</Col>
+						</Row>
+						<Row>
+							<Col xs={12} lg={7}>
+								<FormattedHTMLMessage id='caseStudies.siemens.text.1' />
+							</Col>
+						</Row>
+						<Row>
+							<Col xs={12} lg={7} className='d-flex align-items-center'>
+								<div>
+									<FormattedHTMLMessage id='caseStudies.siemens.text.2' />
+								</div>
+							</Col>
+							<Col lg={5} className='image-iphone'>
+								<Iphone />
+							</Col>
+						</Row>
+						<Row>
+							<Col xs={12} lg={7} className='has-image'>
+								<FormattedHTMLMessage id='caseStudies.siemens.text.3' />
+							</Col>
+							<Col className='images-mdx' xs={12} lg={10}>
+								<Img
+									className='mdx-page'
+									fluid={imageMdxPage.childImageSharp.fluid}
+									alt=''
+								/>
+								<Img
+									className='mdx-code'
+									fluid={imageMdxCode.childImageSharp.fluid}
+									alt=''
+									style={{ position: 'absolute' }}
+								/>
+							</Col>
+						</Row>
+						<Row>
+							<Col xs={12} lg={7} className='has-image'>
+								<FormattedHTMLMessage id='caseStudies.siemens.text.4' />
+							</Col>
+							<Col xs={12} lg={9}>
+								<Img
+									fluid={imageDropdown.childImageSharp.fluid}
+									alt=''
+									className='use-case-explorer'
+								/>
+							</Col>
+						</Row>
+					</article>
 				</Container>
 			</section>
 		</Layout>
