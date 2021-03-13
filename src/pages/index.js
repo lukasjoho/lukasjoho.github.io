@@ -8,6 +8,7 @@ import Sections from '../components/homepage/sections';
 import Hero from '../components/homepage/hero';
 import Casestudy from '../components/homepage/casestudy';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'focus-visible/dist/focus-visible.js';
 import { useIntl } from 'gatsby-plugin-intl';
 
 const IndexPage = () => {

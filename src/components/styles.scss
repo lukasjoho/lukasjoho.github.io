@@ -176,3 +176,10 @@ a {
 		max-width: 1350px !important;
 	}
 }
+
+//Polyfill until all browsers support :focus-visible
+//When supported delete this and also npm package focus-visible
+// Removes focus outline on mouse and keeps it on keyboard
+[data-js-focus-visible] :focus:not([data-focus-visible-added]) {
+	outline: none !important;
+}
