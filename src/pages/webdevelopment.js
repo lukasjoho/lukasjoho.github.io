@@ -8,13 +8,12 @@ import PremiumButton from '../components/general/PremiumButton';
 import Button from '../components/general/Button';
 import buttonStyle from '../components/sites/linkedin-ad/buttons.module.scss';
 import { Container, Row, Col } from 'react-bootstrap';
-import MyModal from '../components/general/modal';
+import ContactModal from '../components/general/ContactModal';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const IndexPage = () => {
 	const [modalShow, setModalShow] = useState(false);
-	const [modalText, setModalText] = useState('demo');
 	const openModal = () => {
 		console.log('triggered!');
 		setModalShow(true);
@@ -54,11 +53,7 @@ const IndexPage = () => {
 					</Row>
 				</Container>
 
-				<MyModal
-					modaltext={modalText}
-					show={modalShow}
-					onHide={() => setModalShow(false)}
-				/>
+				<ContactModal show={modalShow} onHide={() => setModalShow(false)} />
 			</Layout>
 		</ParallaxProvider>
 	);

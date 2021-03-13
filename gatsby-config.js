@@ -1,3 +1,5 @@
+const path = require('path');
+
 require('dotenv').config({
 	path: `.env.${process.env.NODE_ENV}`,
 });
@@ -17,7 +19,7 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-sitemap`,
 			options: {
-				exclude: [`/imprint`],
+				exclude: [`/legal-notice`],
 			},
 		},
 		{
@@ -25,6 +27,12 @@ module.exports = {
 			options: {
 				name: `images`,
 				path: `${__dirname}/src/images`,
+			},
+		},
+		{
+			resolve: 'gatsby-plugin-root-import',
+			options: {
+				'~': path.join(__dirname, 'src/'),
 			},
 		},
 		`gatsby-transformer-sharp`,
@@ -39,6 +47,19 @@ module.exports = {
 				theme_color: `#000`,
 				display: `minimal-ui`,
 				icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+			},
+		},
+		{
+			resolve: `gatsby-plugin-intl`,
+			options: {
+				// language JSON resource path
+				path: `${__dirname}/src/intl`,
+				// supported language
+				languages: [`de`, `en`],
+				// language file path
+				defaultLanguage: `de`,
+				// option to redirect to `/de` when connecting `/`
+				redirect: true,
 			},
 		},
 		{

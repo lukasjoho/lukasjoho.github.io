@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './PremiumButton.scss';
-import { Link } from 'gatsby';
+import { Link } from 'gatsby-plugin-intl';
 
 const PremiumButton = props => {
 	return (
@@ -20,7 +20,7 @@ const PremiumButton = props => {
 };
 
 PremiumButton.propTypes = {
-	to: PropTypes.string.isRequired,
+	to: PropTypes.string,
 	text: PropTypes.string.isRequired,
 };
 

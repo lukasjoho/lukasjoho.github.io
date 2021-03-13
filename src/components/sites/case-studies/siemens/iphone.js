@@ -1,8 +1,9 @@
 import React from 'react';
 import './iphone.scss';
-import Video from '../../images/content/video-siemens-trimmed.mp4';
-import ImagePosterSiemens from '../../images/content/image-poster-siemens.png';
+import Video from '~/images/content/video-siemens-trimmed.mp4';
+import ImagePosterSiemens from '~/images/content/image-poster-siemens.png';
 import { BrowserView, MobileView } from 'react-device-detect';
+import { FormattedMessage } from 'gatsby-plugin-intl';
 
 const Iphone = () => {
 	const videoRef = React.createRef();
@@ -10,8 +11,10 @@ const Iphone = () => {
 	return (
 		<div className='mockup'>
 			<div
+				role='presentation'
 				className='iphonex'
 				onMouseOver={() => videoRef.current.play()}
+				onFocus={() => videoRef.current.play()}
 				onMouseLeave={() => {
 					videoRef.current.pause();
 					videoRef.current.currentTime = 0;
@@ -21,6 +24,7 @@ const Iphone = () => {
 					<div className='screen'>
 						<div className='screen__view'>
 							<video
+								aria-label='Use Case Explorer Animation'
 								ref={videoRef}
 								className='view__video'
 								preload='auto'
@@ -47,10 +51,14 @@ const Iphone = () => {
 			</div>
 			<div className='info'>
 				<BrowserView>
-					<small>Phone hovern für Animation</small>
+					<small>
+						<FormattedMessage id='caseStudies.siemens.phoneTooltip.desktop' />
+					</small>
 				</BrowserView>
 				<MobileView>
-					<small>Phone tappen für Animation</small>
+					<small>
+						<FormattedMessage id='caseStudies.siemens.phoneTooltip.mobile' />
+					</small>
 				</MobileView>
 			</div>
 		</div>

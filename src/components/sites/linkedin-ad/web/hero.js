@@ -51,7 +51,7 @@ const Sections = () => {
 					<Col md={4} sm={6} xs={6}>
 						<ScrollAnimation
 							animateIn='animate__fadeInUp'
-							duration='1'
+							duration={1}
 							delay={100}
 							animateOnce={true}
 						>
@@ -64,7 +64,7 @@ const Sections = () => {
 					<Col md={4} xs={6}>
 						<ScrollAnimation
 							animateIn='animate__fadeInUp'
-							duration='1'
+							duration={1}
 							delay={200}
 							animateOnce={true}
 						>
@@ -77,7 +77,7 @@ const Sections = () => {
 					<Col md={4} xs={6}>
 						<ScrollAnimation
 							animateIn='animate__fadeInUp'
-							duration='1'
+							duration={1}
 							delay={300}
 							animateOnce={true}
 						>
@@ -90,7 +90,7 @@ const Sections = () => {
 					<Col md={4} xs={6}>
 						<ScrollAnimation
 							animateIn='animate__fadeInUp'
-							duration='1'
+							duration={1}
 							delay={400}
 							animateOnce={true}
 						>
@@ -103,7 +103,7 @@ const Sections = () => {
 					<Col md={4} xs={6}>
 						<ScrollAnimation
 							animateIn='animate__fadeInUp'
-							duration='1'
+							duration={1}
 							delay={500}
 							animateOnce={true}
 						>
@@ -116,7 +116,7 @@ const Sections = () => {
 					<Col md={4} xs={6}>
 						<ScrollAnimation
 							animateIn='animate__fadeInUp'
-							duration='1'
+							duration={1}
 							delay={600}
 							animateOnce={true}
 						>
@@ -167,7 +167,7 @@ const Sections = () => {
 						<div className='ring'>
 							<ScrollAnimation
 								animateIn='animate__fadeIn'
-								duration='1'
+								duration={1}
 								delay={0}
 								animateOnce={true}
 							>
@@ -182,7 +182,7 @@ const Sections = () => {
 						<div className='ring'>
 							<ScrollAnimation
 								animateIn='animate__fadeIn'
-								duration='1'
+								duration={1}
 								delay={200}
 								animateOnce={true}
 							>
@@ -197,7 +197,7 @@ const Sections = () => {
 						<div className='ring'>
 							<ScrollAnimation
 								animateIn='animate__fadeIn'
-								duration='1'
+								duration={1}
 								delay={400}
 								animateOnce={true}
 							>
@@ -212,7 +212,7 @@ const Sections = () => {
 						<div className='ring'>
 							<ScrollAnimation
 								animateIn='animate__fadeIn'
-								duration='1'
+								duration={1}
 								delay={600}
 								animateOnce={true}
 							>

@@ -33,24 +33,25 @@ class Project extends React.Component {
 						duration={0.8}
 						animateOnce={true}
 					>
-						<BackgroundImage
-							className='project-wrapper'
-							onClick={this.handleShow}
-							fluid={data.photo.fluid}
-							role='link'
-							tabindex='0'
-						>
-							<div className='project-overlay'></div>
-							<div className='details'>
-								<p>
-									<span>{data.category}</span> - <span>{data.type}</span>
-								</p>
-								<h3>{data.title}</h3>
-							</div>
-						</BackgroundImage>
+						<button onClick={this.handleShow} className='project-wrapper'>
+							<BackgroundImage
+								fluid={data.photo.fluid}
+								className='background-image'
+							>
+								<div className='project-overlay'></div>
+								<div className='details'>
+									<p>
+										<span>{data.category}</span> - <span>{data.type}</span>
+									</p>
+									<h3>{data.title}</h3>
+								</div>
+							</BackgroundImage>
+						</button>
 					</ScrollAnimation>
 					<Modal show={this.state.show} onHide={this.handleClose} centered>
-						<IoMdClose onClick={this.handleClose} className='modal-close' />
+						<button className='modal-close' onClick={this.handleClose}>
+							<IoMdClose />
+						</button>
 						<Modal.Header>
 							<Modal.Title>
 								<h3>{data.title}</h3>

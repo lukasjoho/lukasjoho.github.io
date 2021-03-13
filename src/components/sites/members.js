@@ -12,8 +12,10 @@ import {
 } from 'react-icons/ai';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
+import { useIntl, FormattedMessage } from 'gatsby-plugin-intl';
 
 const Members = () => {
+	const intl = useIntl();
 	const {
 		lukas,
 		antonio,
@@ -72,10 +74,20 @@ const Members = () => {
 		<section id='members'>
 			<Container>
 				<div className='title'>
-					<h2>Unser Team</h2>
-					<p>Mit wem wir excyten</p>
+					<h2>
+						<FormattedMessage id='team.members.title' />
+					</h2>
+					<p>
+						<FormattedMessage id='team.members.subtitle' />
+					</p>
 				</div>
-				<UseDencrypt />
+				<UseDencrypt
+					text={[
+						intl.formatMessage({ id: 'team.members.dencrypt.0' }),
+						intl.formatMessage({ id: 'team.members.dencrypt.1' }),
+						intl.formatMessage({ id: 'team.members.dencrypt.2' }),
+					]}
+				/>
 				<Row>
 					<Col md={4} className='member'>
 						<div className='image-container'>
@@ -85,8 +97,12 @@ const Members = () => {
 							/>
 							<AiOutlinePlayCircle />
 						</div>
-						<h3>Lukas</h3>
-						<span>- UX & Web -</span>
+						<h3>
+							<FormattedMessage id='team.members.members.0.name' />
+						</h3>
+						<span>
+							- <FormattedMessage id='team.members.members.0.specialty' /> -
+						</span>
 						<a
 							href='https://www.linkedin.com/in/lukas-hoppe-948142178'
 							rel='noopener noreferrer'
@@ -103,8 +119,12 @@ const Members = () => {
 							/>
 							<AiFillCode />
 						</div>
-						<h3>Antonio</h3>
-						<span>- IT & Web -</span>
+						<h3>
+							<FormattedMessage id='team.members.members.1.name' />
+						</h3>
+						<span>
+							- <FormattedMessage id='team.members.members.1.specialty' /> -
+						</span>
 						<a
 							href='https://www.linkedin.com/in/antonio-schmitter/'
 							rel='noopener noreferrer'
@@ -121,8 +141,12 @@ const Members = () => {
 							/>
 							<AiFillCamera />
 						</div>
-						<h3>Moritz</h3>
-						<span>- Foto -</span>
+						<h3>
+							<FormattedMessage id='team.members.members.2.name' />
+						</h3>
+						<span>
+							- <FormattedMessage id='team.members.members.2.specialty' /> -
+						</span>
 						<a
 							href='https://www.linkedin.com/in/moritzkarnahl/'
 							rel='noopener noreferrer'
@@ -141,8 +165,12 @@ const Members = () => {
 							/>
 							<AiFillVideoCamera />
 						</div>
-						<h3>David</h3>
-						<span>- Kamera -</span>
+						<h3>
+							<FormattedMessage id='team.members.members.3.name' />
+						</h3>
+						<span>
+							- <FormattedMessage id='team.members.members.3.specialty' /> -
+						</span>
 						<a
 							href='https://www.linkedin.com/in/david-greco-/'
 							rel='noopener noreferrer'
@@ -159,8 +187,12 @@ const Members = () => {
 							/>
 							<AiOutlineCodeSandbox />
 						</div>
-						<h3>Oskar</h3>
-						<span>- Kommunikation & Design -</span>
+						<h3>
+							<FormattedMessage id='team.members.members.4.name' />
+						</h3>
+						<span>
+							- <FormattedMessage id='team.members.members.4.specialty' /> -
+						</span>
 						<a
 							href='https://www.linkedin.com/company/excyted'
 							rel='noopener noreferrer'
@@ -177,8 +209,12 @@ const Members = () => {
 							/>
 							<AiFillCode />
 						</div>
-						<h3>Jonas</h3>
-						<span>- UX/UI-Design -</span>
+						<h3>
+							<FormattedMessage id='team.members.members.5.name' />
+						</h3>
+						<span>
+							- <FormattedMessage id='team.members.members.5.specialty' /> -
+						</span>
 						<a
 							href='https://www.linkedin.com/in/excyted/'
 							rel='noopener noreferrer'

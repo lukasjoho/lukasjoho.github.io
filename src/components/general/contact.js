@@ -2,18 +2,21 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import './contact.scss';
 import { IoIosPaperPlane } from 'react-icons/io';
+import { FormattedMessage } from 'gatsby-plugin-intl';
 
 const Contact = () => (
 	<section id='contact'>
 		<Container>
-			<span id='back-text'>Kontakt</span>
+			<span id='back-text'>
+				<FormattedMessage id='layout.contact.backgroundText' />
+			</span>
 			<Row>
 				<Col md={6}>
-					<h2>Let's talk!</h2>
+					<h2>
+						<FormattedMessage id='layout.contact.title' />
+					</h2>
 					<p>
-						Egal ob Du zu einem etablierten Unternehmen oder einem Start-Up
-						gehörst, jemand mit einer Idee oder einem unvollendeten Projekt
-						bist: Kontaktiere uns!
+						<FormattedMessage id='layout.contact.text' />
 					</p>
 				</Col>
 				<Col md={6} className='mail'>

@@ -5,6 +5,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css/animate.css';
 import Img from 'gatsby-image';
 import { graphql, useStaticQuery } from 'gatsby';
+import { FormattedHTMLMessage } from 'gatsby-plugin-intl';
 
 const Jubel = () => {
 	const { jubel } = useStaticQuery(graphql`
@@ -32,15 +33,10 @@ const Jubel = () => {
 						<div className='text'>
 							<ScrollAnimation
 								animateIn='animate__fadeInLeft'
-								animateOnce='true'
+								animateOnce={true}
 							>
 								<h1>
-									Nur <br />
-									Gemeinsam
-									<br />
-									Wird's
-									<br />
-									Gut
+									<FormattedHTMLMessage id='team.jubel' />
 								</h1>
 							</ScrollAnimation>
 						</div>

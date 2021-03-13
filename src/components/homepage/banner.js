@@ -7,7 +7,7 @@ import { Parallax } from 'react-scroll-parallax';
 import Triangle from '../../images/content/triangle.svg';
 import Dots from '../../images/content/dots.png';
 import Rectangles from './rectangles';
-import { Link } from 'gatsby';
+import { FormattedMessage, Link } from 'gatsby-plugin-intl';
 
 const Banner = () => {
 	const { logo, whu, code } = useStaticQuery(graphql`
@@ -52,24 +52,12 @@ const Banner = () => {
 						/>
 
 						<h3>
-							Als Creative Studio entwickeln wir <br /> State-of-the-Art
-							Lösungen <br />
-							und kreative Produkte <br />
-							für die digitale Welt.
+							<FormattedMessage id='home.banner.text' />
 						</h3>
-
-						{/* <p>
-							Als hybride Medienproduktion entwickeln wir kreative Lösungen für
-							deine Marke, dein Unternehmen oder dein Projekt. Mit excyted
-							bringen wir unsere Disziplinen aus Web Development und der
-							Produktion von Medien zusammen und können so nicht nur
-							konzeptionell sondern auch technisch eng mit Dir an deiner Idee
-							basteln. <br /> Bock zu excyten?
-							<br />
-							Let's get in touch!{' '}
-						</p> */}
 						<Link to='/projects' className='premium-button'>
-							<span className='module'>Unsere Projekte</span>
+							<span className='module'>
+								<FormattedMessage id='home.banner.button' />
+							</span>
 						</Link>
 					</Col>
 					<Col md={6} className='parallaxfull'>

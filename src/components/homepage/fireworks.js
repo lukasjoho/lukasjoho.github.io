@@ -21,8 +21,8 @@ class Fireworks extends Component {
 		return (
 			<section id='fireworks'>
 				<div className='pyro'>
-					<div class='before'></div>
-					<div class='after'></div>
+					<div className='before'></div>
+					<div className='after'></div>
 				</div>
 				<div className='text '>
 					<h1 id='fireworks-h1' ref={this.ref} className={'animate-tada'}>

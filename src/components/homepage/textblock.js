@@ -6,23 +6,23 @@ import ScrollAnimation from 'react-animate-on-scroll';
 class Textblock extends React.Component {
 	render() {
 		return (
-			<div class={Style.textblock}>
+			<div className={Style.textblock}>
 				<div className={Style.iconsinline}>
 					<div>
-						<ScrollAnimation animateIn='animate__fadeInUp' animateOnce='true'>
+						<ScrollAnimation animateIn='animate__fadeInUp' animateOnce={true}>
 							<h2>{this.props.title}</h2>
 						</ScrollAnimation>
 					</div>
 					<ScrollAnimation
 						animateIn='animate__fadeInBottomLeft'
-						delay='200'
-						animateOnce='true'
+						delay={200}
+						animateOnce={true}
 					>
 						<img className={Style.icon} src={this.props.icon} alt='' />
 					</ScrollAnimation>
 				</div>
 				<div>
-					<ScrollAnimation animateIn='animate__fadeInUp' animateOnce='true'>
+					<ScrollAnimation animateIn='animate__fadeInUp' animateOnce={true}>
 						<p>{this.props.text}</p>
 					</ScrollAnimation>
 				</div>
@@ -34,7 +34,7 @@ class Textblock extends React.Component {
 Textblock.propTypes = {
 	title: PropTypes.string.isRequired,
 	text: PropTypes.string.isRequired,
-	icon: PropTypes.object.isRequired,
+	icon: PropTypes.string.isRequired,
 };
 
 export default Textblock;
