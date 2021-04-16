@@ -22,7 +22,7 @@ const Casestudy = () => {
 				}
 				imageCode: file(relativePath: { eq: "content/image-vscode.png" }) {
 					childImageSharp {
-						fluid(maxWidth: 500) {
+						fluid(quality: 10, maxWidth: 500) {
 							...GatsbyImageSharpFluid_withWebp_noBase64
 						}
 					}

@@ -56,7 +56,7 @@ const Sections = () => {
 			}
 			code: file(relativePath: { eq: "content/image-code.png" }) {
 				childImageSharp {
-					fluid(quality: 20, maxWidth: 270) {
+					fluid(quality: 10, maxWidth: 270) {
 						...GatsbyImageSharpFluid_withWebp_noBase64
 					}
 				}
