@@ -27,28 +27,28 @@ const Siemens = () => {
 			imageImac: file(relativePath: { eq: "content/image-imac.png" }) {
 				childImageSharp {
 					fluid(quality: 90, maxWidth: 700) {
-						...GatsbyImageSharpFluid_noBase64
+						...GatsbyImageSharpFluid_withWebp_noBase64
 					}
 				}
 			}
 			imageMdxPage: file(relativePath: { eq: "content/image-mdx-page.jpg" }) {
 				childImageSharp {
 					fluid(quality: 90, maxWidth: 850) {
-						...GatsbyImageSharpFluid_noBase64
+						...GatsbyImageSharpFluid_withWebp_noBase64
 					}
 				}
 			}
 			imageMdxCode: file(relativePath: { eq: "content/image-mdx-code.png" }) {
 				childImageSharp {
 					fluid(quality: 90, maxWidth: 740) {
-						...GatsbyImageSharpFluid_noBase64
+						...GatsbyImageSharpFluid_withWebp_noBase64
 					}
 				}
 			}
 			imageDropdown: file(relativePath: { eq: "content/image-dropdown.jpg" }) {
 				childImageSharp {
 					fluid(quality: 90, maxWidth: 1100) {
-						...GatsbyImageSharpFluid_noBase64
+						...GatsbyImageSharpFluid_withWebp_noBase64
 					}
 				}
 			}

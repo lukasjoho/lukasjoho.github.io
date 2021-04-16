@@ -22,14 +22,14 @@ const Sections = () => {
 			code: file(relativePath: { eq: "content/image-code.png" }) {
 				childImageSharp {
 					fluid(quality: 20, maxWidth: 270) {
-						...GatsbyImageSharpFluid_noBase64
+						...GatsbyImageSharpFluid_withWebp_noBase64
 					}
 				}
 			}
 			screen: file(relativePath: { eq: "content/screen.jpg" }) {
 				childImageSharp {
 					fluid(quality: 60, maxWidth: 550) {
-						...GatsbyImageSharpFluid_noBase64
+						...GatsbyImageSharpFluid_withWebp_noBase64
 					}
 				}
 			}

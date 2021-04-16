@@ -28,42 +28,42 @@ const Members = () => {
 			lukas: file(relativePath: { eq: "team/lukas.jpg" }) {
 				childImageSharp {
 					fluid(quality: 70, maxWidth: 200) {
-						...GatsbyImageSharpFluid
+						...GatsbyImageSharpFluid_withWebp_noBase64
 					}
 				}
 			}
 			antonio: file(relativePath: { eq: "team/antonio.jpg" }) {
 				childImageSharp {
 					fluid(quality: 70, maxWidth: 200) {
-						...GatsbyImageSharpFluid
+						...GatsbyImageSharpFluid_withWebp_noBase64
 					}
 				}
 			}
 			jonas: file(relativePath: { eq: "team/jonas.jpg" }) {
 				childImageSharp {
 					fluid(quality: 70, maxWidth: 200) {
-						...GatsbyImageSharpFluid
+						...GatsbyImageSharpFluid_withWebp_noBase64
 					}
 				}
 			}
 			david: file(relativePath: { eq: "team/david.jpg" }) {
 				childImageSharp {
 					fluid(quality: 70, maxWidth: 200) {
-						...GatsbyImageSharpFluid
+						...GatsbyImageSharpFluid_withWebp_noBase64
 					}
 				}
 			}
 			moritz: file(relativePath: { eq: "team/moritz.jpg" }) {
 				childImageSharp {
 					fluid(quality: 70, maxWidth: 200) {
-						...GatsbyImageSharpFluid
+						...GatsbyImageSharpFluid_withWebp_noBase64
 					}
 				}
 			}
 			oskar: file(relativePath: { eq: "team/oskar.jpg" }) {
 				childImageSharp {
 					fluid(quality: 70, maxWidth: 200) {
-						...GatsbyImageSharpFluid
+						...GatsbyImageSharpFluid_withWebp_noBase64
 					}
 				}
 			}

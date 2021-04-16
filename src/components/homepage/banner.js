@@ -15,21 +15,21 @@ const Banner = () => {
 			logo: file(relativePath: { eq: "banner/logo.png" }) {
 				childImageSharp {
 					fluid(quality: 100, maxWidth: 540) {
-						...GatsbyImageSharpFluid_noBase64
+						...GatsbyImageSharpFluid_withWebp_noBase64
 					}
 				}
 			}
 			whu: file(relativePath: { eq: "content/whu.jpg" }) {
 				childImageSharp {
 					fluid(quality: 100, maxWidth: 506) {
-						...GatsbyImageSharpFluid_noBase64
+						...GatsbyImageSharpFluid_withWebp_noBase64
 					}
 				}
 			}
 			code: file(relativePath: { eq: "content/code1.png" }) {
 				childImageSharp {
 					fluid(quality: 40, maxWidth: 200) {
-						...GatsbyImageSharpFluid_noBase64
+						...GatsbyImageSharpFluid_withWebp_noBase64
 					}
 				}
 			}

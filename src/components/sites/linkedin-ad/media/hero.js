@@ -19,14 +19,14 @@ const Sections = () => {
 			kiel: file(relativePath: { eq: "content/image-kiel.jpg" }) {
 				childImageSharp {
 					fluid(quality: 70, maxWidth: 405) {
-						...GatsbyImageSharpFluid_noBase64
+						...GatsbyImageSharpFluid_withWebp_noBase64
 					}
 				}
 			}
 			captor: file(relativePath: { eq: "content/image-captor.jpg" }) {
 				childImageSharp {
 					fluid(quality: 70, maxWidth: 540) {
-						...GatsbyImageSharpFluid_noBase64
+						...GatsbyImageSharpFluid_withWebp_noBase64
 					}
 				}
 			}

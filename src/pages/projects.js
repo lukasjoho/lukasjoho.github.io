@@ -48,14 +48,14 @@ export const query = graphql`
 				}
 				photo {
 					fluid(quality: 80, maxWidth: 690) {
-						...GatsbyContentfulFluid
+						...GatsbyContentfulFluid_withWebp
 					}
 				}
 				video
 				images {
 					id
 					fluid(quality: 80, maxWidth: 740) {
-						...GatsbyContentfulFluid
+						...GatsbyContentfulFluid_withWebp
 					}
 				}
 				instagram

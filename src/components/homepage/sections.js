@@ -36,35 +36,35 @@ const Sections = () => {
 			people: file(relativePath: { eq: "content/image-people.png" }) {
 				childImageSharp {
 					fluid(quality: 70, maxWidth: 540) {
-						...GatsbyImageSharpFluid_noBase64
+						...GatsbyImageSharpFluid_withWebp_noBase64
 					}
 				}
 			}
 			kiel: file(relativePath: { eq: "content/image-kiel.jpg" }) {
 				childImageSharp {
 					fluid(quality: 70, maxWidth: 405) {
-						...GatsbyImageSharpFluid_noBase64
+						...GatsbyImageSharpFluid_withWebp_noBase64
 					}
 				}
 			}
 			captor: file(relativePath: { eq: "content/image-captor.jpg" }) {
 				childImageSharp {
 					fluid(quality: 70, maxWidth: 540) {
-						...GatsbyImageSharpFluid_noBase64
+						...GatsbyImageSharpFluid_withWebp_noBase64
 					}
 				}
 			}
 			code: file(relativePath: { eq: "content/image-code.png" }) {
 				childImageSharp {
 					fluid(quality: 20, maxWidth: 270) {
-						...GatsbyImageSharpFluid_noBase64
+						...GatsbyImageSharpFluid_withWebp_noBase64
 					}
 				}
 			}
 			screen: file(relativePath: { eq: "content/screen.jpg" }) {
 				childImageSharp {
 					fluid(quality: 60, maxWidth: 550) {
-						...GatsbyImageSharpFluid_noBase64
+						...GatsbyImageSharpFluid_withWebp_noBase64
 					}
 				}
 			}

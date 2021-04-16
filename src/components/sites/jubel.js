@@ -13,7 +13,7 @@ const Jubel = () => {
 			jubel: file(relativePath: { eq: "content/kiel-jubel.jpg" }) {
 				childImageSharp {
 					fluid(quality: 60, maxWidth: 370) {
-						...GatsbyImageSharpFluid
+						...GatsbyImageSharpFluid_withWebp_noBase64
 					}
 				}
 			}

@@ -12,7 +12,7 @@ const Picture = () => {
 			main: file(relativePath: { eq: "content/image-client.jpg" }) {
 				childImageSharp {
 					fluid(quality: 100, maxWidth: 1200) {
-						...GatsbyImageSharpFluid
+						...GatsbyImageSharpFluid_withWebp_noBase64
 					}
 				}
 			}

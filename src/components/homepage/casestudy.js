@@ -16,14 +16,14 @@ const Casestudy = () => {
 				) {
 					childImageSharp {
 						fluid(maxWidth: 800) {
-							...GatsbyImageSharpFluid_noBase64
+							...GatsbyImageSharpFluid_withWebp_noBase64
 						}
 					}
 				}
 				imageCode: file(relativePath: { eq: "content/image-vscode.png" }) {
 					childImageSharp {
 						fluid(maxWidth: 500) {
-							...GatsbyImageSharpFluid_noBase64
+							...GatsbyImageSharpFluid_withWebp_noBase64
 						}
 					}
 				}
