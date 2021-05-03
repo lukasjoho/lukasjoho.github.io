@@ -25,6 +25,10 @@
 		"seo": {
 			"description": "Als Technologie-Studio designen und entwickeln wir deine Idee und machen sie produktionsreif."
 		},
+		"casestudies": {
+			"nextButton": "Next case study",
+			"prevButton": "Previous case study"
+		},
 		"banner": {
 			"text": "As a technology studio, we design and develop your idea and make it production-ready.",
 			"button": "Our projects"

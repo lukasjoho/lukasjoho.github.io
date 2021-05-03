@@ -29,6 +29,10 @@
 			"text": "Als Technologie-Studio designen und entwickeln wir deine Idee und machen sie produktionsreif.",
 			"button": "Unsere Projekte"
 		},
+		"casestudies": {
+			"nextButton": "Nächste Casestudy",
+			"prevButton": "Vorherige Casestudy"
+		},
 		"sections": {
 			"web": {
 				"subtitle": "Wir entwickeln dir deine Website oder Web-App nach den neusten und zukunftssichersten Web-Technologie Standards.",

@@ -26,31 +26,35 @@ body {
 	background-color: #000000;
 	letter-spacing: 0.02rem;
 }
-.container {
-}
 
 body {
 	font-size: 1rem !important;
 	overflow: hidden;
-}
+	main {
+		background: $gradientBackground;
+		background-attachment: fixed;
+	}
 
-main {
-	background: $gradientBackground;
-	background-attachment: fixed;
-}
+	ul {
+		list-style: none;
+		margin: 0;
+	}
 
-ul {
-	list-style: none;
-	margin: 0;
-}
+	h1 {
+		font-weight: 800;
+	}
 
-h1 {
-	font-weight: 800;
-}
+	p {
+		line-height: 36px;
+		color: $primary;
+	}
 
-p {
-	line-height: 36px;
-	color: $primary;
+	button {
+		border: none;
+		padding: 0;
+		background: transparent;
+		cursor: pointer;
+	}
 }
 
 #legal,

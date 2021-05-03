@@ -1,0 +1,74 @@
+@import '../../_variables.scss';
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins/_breakpoints';
+
+#casestudies {
+	position: relative;
+
+	.swiper-tools-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 800px;
+		margin: 0 auto;
+
+		.swiper-button {
+			width: 4rem;
+			height: 4rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50%;
+			line-height: 0;
+			z-index: 20;
+
+			bottom: 0;
+
+			transition: background-color 0.3s ease-in-out;
+
+			&.prev {
+				left: 0rem;
+			}
+
+			&.next {
+				right: 0rem;
+			}
+
+			.icon {
+				color: $primary;
+				filter: drop-shadow(1px 1px 4px black);
+				transition: opacity 0.3s ease-in-out;
+			}
+
+			&.swiper-button-disabled {
+				.icon {
+					opacity: 0.5;
+					transition: opacity 0.3s ease-in-out;
+				}
+			}
+		}
+
+		.swiper-pagination-bullets {
+			bottom: 0;
+			display: flex;
+			align-items: center;
+			flex-grow: 1;
+			justify-content: center;
+			.swiper-pagination-bullet {
+				width: 100%;
+				max-width: 5rem;
+				height: 3px;
+				margin: 0 0.5rem;
+				background-color: $primary;
+				opacity: 0.5;
+				transition: opacity 0.3s ease-in-out;
+
+				&.swiper-pagination-bullet-active {
+					opacity: 1;
+					transition: opacity 0.3s ease-in-out;
+				}
+			}
+		}
+	}
+}
