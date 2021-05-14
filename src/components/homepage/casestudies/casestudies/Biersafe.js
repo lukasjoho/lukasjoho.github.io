@@ -50,14 +50,15 @@ const Biersafe = () => {
 								<h1>E-Commerce</h1>
 								{/* </Parallax> */}
 							</div>
+							<div className='main-image-container'>
+								<Img
+									className='main-image'
+									fluid={imageBiersafe.childImageSharp.fluid}
+									alt='Screenshot Website'
+								/>
 
-							<Img
-								className='main-image'
-								fluid={imageBiersafe.childImageSharp.fluid}
-								alt='Screenshot Website'
-							/>
-
-							<div className='overlay'></div>
+								<div className='overlay'></div>
+							</div>
 							<div className='client'>
 								{/* <Parallax y={[0, 0]} x={[5, -5]} tagOuter='figure'> */}
 								<h1>Biersafe</h1>

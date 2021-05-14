@@ -47,12 +47,14 @@ const Siemens = () => {
 									<h1>Intranetsite</h1>
 								</Parallax>
 							</div>
-							<Img
-								className='main-image'
-								fluid={imageSiemens.childImageSharp.fluid}
-								alt='Screenshot Website'
-							/>
-							<div className='overlay'></div>
+							<div className='main-image-container'>
+								<Img
+									className='main-image'
+									fluid={imageSiemens.childImageSharp.fluid}
+									alt='Screenshot Website'
+								/>
+								<div className='overlay'></div>
+							</div>
 							<div className='client'>
 								<Parallax y={[0, 0]} x={[5, -5]} tagOuter='figure'>
 									<h1>Siemens</h1>

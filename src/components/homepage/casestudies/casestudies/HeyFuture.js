@@ -52,12 +52,14 @@ const HeyFuture = () => {
 								<h1>App</h1>
 								{/* </Parallax> */}
 							</div>
-							<Img
-								className='main-image'
-								fluid={imageHeyFuture.childImageSharp.fluid}
-								alt='Screenshot App'
-							/>
-							<div className='overlay'></div>
+							<div className='main-image-container'>
+								<Img
+									className='main-image'
+									fluid={imageHeyFuture.childImageSharp.fluid}
+									alt='Screenshot App'
+								/>
+								<div className='overlay'></div>
+							</div>
 							<div className='client'>
 								{/* <Parallax y={[0, 0]} x={[5, -5]} tagOuter='figure'> */}
 								<h1>HeyFuture</h1>
