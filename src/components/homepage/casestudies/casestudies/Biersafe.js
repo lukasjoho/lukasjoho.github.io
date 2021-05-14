@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap';
 import Img from 'gatsby-image';
 import { useStaticQuery, graphql } from 'gatsby';
 import 'animate.css/animate.css';
-import { Parallax } from 'react-scroll-parallax';
+
 import { Link } from 'gatsby-plugin-intl';
 import '../casestudy.scss';
 
@@ -56,8 +56,7 @@ const Biersafe = () => {
 									fluid={imageBiersafe.childImageSharp.fluid}
 									alt='Screenshot Website'
 								/>
-
-								<div className='overlay'></div>
+								<div className='overlay' />
 							</div>
 							<div className='client'>
 								{/* <Parallax y={[0, 0]} x={[5, -5]} tagOuter='figure'> */}

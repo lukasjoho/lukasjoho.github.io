@@ -9,9 +9,6 @@ import Siemens from './casestudies/Siemens';
 import Biersafe from './casestudies/Biersafe';
 import HeyFuture from './casestudies/HeyFuture';
 
-import { IoMdArrowRoundBack } from 'react-icons/io';
-import { IoMdArrowRoundForward } from 'react-icons/io';
-
 import IconArrow from '~/images/content/icons/icon-arrow.svg';
 
 const Slider = () => {

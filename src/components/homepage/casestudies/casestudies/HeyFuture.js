@@ -3,7 +3,6 @@ import { Container } from 'react-bootstrap';
 import Img from 'gatsby-image';
 import { useStaticQuery, graphql } from 'gatsby';
 import 'animate.css/animate.css';
-import { Parallax } from 'react-scroll-parallax';
 import { Link } from 'gatsby-plugin-intl';
 import '../casestudy.scss';
 
