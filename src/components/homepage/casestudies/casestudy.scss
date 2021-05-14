@@ -149,6 +149,10 @@
 					.image {
 						margin-right: -30px;
 						margin-top: -30px;
+
+						&.biersafe {
+							margin-right: -20px;
+						}
 					}
 					.overlay {
 						box-shadow: inset 0px 0px 130px 10px rgba(0, 0, 0, 0.2);
