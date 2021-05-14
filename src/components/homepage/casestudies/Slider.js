@@ -12,6 +12,8 @@ import HeyFuture from './casestudies/HeyFuture';
 import { IoMdArrowRoundBack } from 'react-icons/io';
 import { IoMdArrowRoundForward } from 'react-icons/io';
 
+import IconArrow from '~/images/content/icons/icon-arrow.svg';
+
 const Slider = () => {
 	SwiperCore.use([Navigation, Pagination, A11y]);
 	const intl = useIntl();
@@ -54,7 +56,7 @@ const Slider = () => {
 						id: 'home.casestudies.prevButton',
 					})}
 				>
-					<IoMdArrowRoundBack className='icon' size='2rem' />
+					<IconArrow className='icon back' />
 				</button>
 				<div id='swiper-pagination' />
 				<button
@@ -64,7 +66,7 @@ const Slider = () => {
 						id: 'home.casestudies.nextButton',
 					})}
 				>
-					<IoMdArrowRoundForward className='icon' size='2rem' />
+					<IconArrow className='icon' />
 				</button>
 			</div>
 		</section>

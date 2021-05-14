@@ -8,13 +8,15 @@
 	margin-top: 20px;
 	p {
 		margin: 0;
+		line-height: 1.5;
 	}
-	.image {
+	.icon {
+		height: 50px;
 		width: 50px;
 		margin-right: 20px;
-
-		img {
-			margin: 0;
+		svg {
+			height: 100%;
+			width: 100%;
 		}
 	}
 
@@ -23,13 +25,11 @@
 
 		flex-direction: column;
 		align-items: center;
-		.image {
+		.icon {
 			margin-right: 0px;
 			margin-bottom: 10px;
-
-			img {
-				height: 60px;
-			}
+			height: 60px;
+			width: 60px;
 		}
 	}
 }

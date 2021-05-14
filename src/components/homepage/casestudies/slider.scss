@@ -33,6 +33,14 @@
 				color: $primary;
 				filter: drop-shadow(1px 1px 4px black);
 				transition: opacity 0.3s ease-in-out;
+				width: 2.2rem;
+				path {
+					stroke: $primary;
+				}
+
+				&.back {
+					transform: rotate(180deg);
+				}
 			}
 
 			&.swiper-button-disabled {
