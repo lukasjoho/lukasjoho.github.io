@@ -1,10 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination, A11y } from 'swiper';
 import { useIntl } from 'gatsby-plugin-intl';
 import 'swiper/swiper.scss';
 import './slider.scss';
-import { Container } from 'react-bootstrap';
 
 import Siemens from './casestudies/Siemens';
 import Biersafe from './casestudies/Biersafe';
@@ -16,12 +15,10 @@ import { IoMdArrowRoundForward } from 'react-icons/io';
 const Slider = () => {
 	SwiperCore.use([Navigation, Pagination, A11y]);
 	const intl = useIntl();
-	const [swiper, setSwiper] = useState();
 
 	return (
 		<section id='casestudies'>
 			<Swiper
-				onSwiper={setSwiper}
 				speed={400}
 				className='swiper'
 				spaceBetween={100}
@@ -34,7 +31,7 @@ const Slider = () => {
 					clickable: true,
 					renderBullet: (index, className) => {
 						return (
-							'<button class="' + className + '">' + (index + 1) + '</button>'
+							'<button class="' + className + '"><div class="line"/></button>'
 						);
 					},
 				}}
@@ -52,7 +49,7 @@ const Slider = () => {
 			<div className='swiper-tools-container'>
 				<button
 					id='swiper-button-prev'
-					className='swiper-button prev'
+					className='swiper-button'
 					aria-label={intl.formatMessage({
 						id: 'home.casestudies.prevButton',
 					})}
@@ -62,7 +59,7 @@ const Slider = () => {
 				<div id='swiper-pagination' />
 				<button
 					id='swiper-button-next'
-					className='swiper-button next'
+					className='swiper-button'
 					aria-label={intl.formatMessage({
 						id: 'home.casestudies.nextButton',
 					})}

@@ -5,14 +5,18 @@
 
 #casestudies {
 	position: relative;
-	margin-bottom: 4rem;
+	@include media-breakpoint-up(md) {
+		margin-bottom: 4rem;
+	}
 
 	.swiper-tools-container {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		max-width: 800px;
+		max-width: 450px;
 		margin: 0 auto;
+		position: relative;
+		top: -40px;
 
 		.swiper-button {
 			width: 4rem;
@@ -23,18 +27,7 @@
 			border-radius: 50%;
 			line-height: 0;
 			z-index: 20;
-
-			bottom: 0;
-
 			transition: background-color 0.3s ease-in-out;
-
-			&.prev {
-				left: 0rem;
-			}
-
-			&.next {
-				right: 0rem;
-			}
 
 			.icon {
 				color: $primary;
@@ -56,18 +49,27 @@
 			align-items: center;
 			flex-grow: 1;
 			justify-content: center;
+
 			.swiper-pagination-bullet {
 				width: 100%;
 				max-width: 5rem;
-				height: 3px;
 				margin: 0 0.5rem;
-				background-color: $primary;
-				opacity: 0.5;
-				transition: opacity 0.3s ease-in-out;
+				z-index: 1;
+				padding: 20px 0;
 
 				&.swiper-pagination-bullet-active {
-					opacity: 1;
+					.line {
+						opacity: 1;
+						transition: opacity 0.3s ease-in-out;
+					}
+				}
+
+				.line {
+					height: 3px;
+					background-color: $primary;
+					opacity: 0.5;
 					transition: opacity 0.3s ease-in-out;
+					position: relative;
 				}
 			}
 		}
