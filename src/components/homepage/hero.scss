@@ -1,7 +1,7 @@
 @import '../_variables.scss';
 #hero {
 	padding-top: 6rem;
-	padding-bottom: 6rem !important;
+	padding-bottom: 2rem;
 
 	.hero-container {
 		height: 350px;
@@ -33,7 +33,6 @@
 @media (max-width: 768px) {
 	#hero {
 		padding-top: 3rem;
-		padding-bottom: 4rem;
 		.hero-container {
 			.container-center {
 				margin-left: 12%;
