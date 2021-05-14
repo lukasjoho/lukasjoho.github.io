@@ -39,13 +39,6 @@ const Members = () => {
 					}
 				}
 			}
-			jonas: file(relativePath: { eq: "team/jonas.jpg" }) {
-				childImageSharp {
-					fluid(quality: 70, maxWidth: 200) {
-						...GatsbyImageSharpFluid_withWebp_noBase64
-					}
-				}
-			}
 			david: file(relativePath: { eq: "team/david.jpg" }) {
 				childImageSharp {
 					fluid(quality: 70, maxWidth: 200) {
@@ -54,13 +47,6 @@ const Members = () => {
 				}
 			}
 			moritz: file(relativePath: { eq: "team/moritz.jpg" }) {
-				childImageSharp {
-					fluid(quality: 70, maxWidth: 200) {
-						...GatsbyImageSharpFluid_withWebp_noBase64
-					}
-				}
-			}
-			oskar: file(relativePath: { eq: "team/oskar.jpg" }) {
 				childImageSharp {
 					fluid(quality: 70, maxWidth: 200) {
 						...GatsbyImageSharpFluid_withWebp_noBase64
@@ -89,7 +75,7 @@ const Members = () => {
 					]}
 				/>
 				<Row>
-					<Col md={4} className='member'>
+					<Col md={6} xl={3} className='member'>
 						<div className='image-container'>
 							<BackgroundImage
 								fluid={lukas.childImageSharp.fluid}
@@ -111,7 +97,7 @@ const Members = () => {
 							<AiFillLinkedin />
 						</a>
 					</Col>
-					<Col md={4} className='member'>
+					<Col md={6} xl={3} className='member'>
 						<div className='image-container'>
 							<BackgroundImage
 								fluid={antonio.childImageSharp.fluid}
@@ -133,7 +119,7 @@ const Members = () => {
 							<AiFillLinkedin />
 						</a>
 					</Col>
-					<Col md={4} className='member'>
+					<Col md={6} xl={3} className='member'>
 						<div className='image-container'>
 							<BackgroundImage
 								fluid={moritz.childImageSharp.fluid}
@@ -155,9 +141,7 @@ const Members = () => {
 							<AiFillLinkedin />
 						</a>
 					</Col>
-				</Row>
-				<Row>
-					<Col md={4} className='member'>
+					<Col md={6} xl={3} className='member'>
 						<div className='image-container'>
 							<BackgroundImage
 								fluid={david.childImageSharp.fluid}
@@ -173,50 +157,6 @@ const Members = () => {
 						</span>
 						<a
 							href='https://www.linkedin.com/in/david-greco-/'
-							rel='noopener noreferrer'
-							target='_blank'
-						>
-							<AiFillLinkedin />
-						</a>
-					</Col>
-					<Col md={4} className='member'>
-						<div className='image-container'>
-							<BackgroundImage
-								fluid={oskar.childImageSharp.fluid}
-								className='image'
-							/>
-							<AiOutlineCodeSandbox />
-						</div>
-						<h3>
-							<FormattedMessage id='team.members.members.4.name' />
-						</h3>
-						<span>
-							- <FormattedMessage id='team.members.members.4.specialty' /> -
-						</span>
-						<a
-							href='https://www.linkedin.com/company/excyted'
-							rel='noopener noreferrer'
-							target='_blank'
-						>
-							<AiFillLinkedin />
-						</a>
-					</Col>
-					<Col md={4} className='member'>
-						<div className='image-container'>
-							<BackgroundImage
-								fluid={jonas.childImageSharp.fluid}
-								className='image'
-							/>
-							<AiFillCode />
-						</div>
-						<h3>
-							<FormattedMessage id='team.members.members.5.name' />
-						</h3>
-						<span>
-							- <FormattedMessage id='team.members.members.5.specialty' /> -
-						</span>
-						<a
-							href='https://www.linkedin.com/in/excyted/'
 							rel='noopener noreferrer'
 							target='_blank'
 						>

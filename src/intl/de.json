@@ -162,9 +162,7 @@
 				{ "name": "Lukas", "specialty": "UX & Web development" },
 				{ "name": "Antonio", "specialty": "Web development" },
 				{ "name": "Moritz", "specialty": "Foto" },
-				{ "name": "David", "specialty": "Kamera" },
-				{ "name": "Oskar", "specialty": "Kommunikation & Design" },
-				{ "name": "Jonas", "specialty": "UX/UI-Design" }
+				{ "name": "David", "specialty": "Kamera" }
 			]
 		},
 		"jubel": "Nur <br />Gemeinsam<br />Wird's<br />Gut",
