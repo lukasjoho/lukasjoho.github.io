@@ -158,9 +158,7 @@
 				{ "name": "Lukas", "specialty": "UX & Web development" },
 				{ "name": "Antonio", "specialty": "Web development" },
 				{ "name": "Moritz", "specialty": "Photo" },
-				{ "name": "David", "specialty": "Camera" },
-				{ "name": "Oskar", "specialty": "Communication & Design" },
-				{ "name": "Jonas", "specialty": "UX/UI-Design" }
+				{ "name": "David", "specialty": "Camera" }
 			]
 		},
 		"jubel": "Only <br />Together<br />Will it <br/> become<br />Great",
