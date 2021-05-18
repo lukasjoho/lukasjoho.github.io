@@ -1,6 +1,6 @@
 import React from 'react';
 import BackgroundImage from 'gatsby-background-image';
-import Img from 'gatsby-image';
+import Img from 'gatsby-image/withIEPolyfill';
 import { Col, Modal } from 'react-bootstrap';
 import { IoMdClose } from 'react-icons/io';
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -121,6 +121,7 @@ class Project extends React.Component {
 													fluid={image.fluid}
 													alt='portfolio'
 													className='portfolio-image'
+													objectFit='contain'
 												/>
 											);
 									  })
