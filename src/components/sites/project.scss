@@ -137,11 +137,12 @@
 	max-width: 900px;
 	color: $primary;
 	// background-color: #151515;
-	background: radial-gradient(
-		44.68% 44.68% at 50% 0%,
-		#2f2f2f 0%,
-		#111111 100%
-	);
+	// background: radial-gradient(
+	// 	44.68% 44.68% at 50% 0%,
+	// 	#2f2f2f 0%,
+	// 	#111111 100%
+	// );
+	background: #111111;
 	box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.75);
 
 	iframe {
