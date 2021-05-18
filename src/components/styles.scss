@@ -37,6 +37,7 @@ body {
 main {
 	background: $gradientBackground;
 	background-attachment: fixed;
+	padding-top: 80px;
 }
 
 ul {
@@ -168,6 +169,11 @@ a {
 	&:focus,
 	&:visited {
 		opacity: 1;
+	}
+}
+@media screen and (max-width: 767px) {
+	main {
+		padding-top: 80px;
 	}
 }
 
