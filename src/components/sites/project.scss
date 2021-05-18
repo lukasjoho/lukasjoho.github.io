@@ -228,11 +228,13 @@
 		.project-wrapper {
 			height: 180px;
 			margin: 0 0 1rem;
-			.details {
-				h3 {
-					font-weight: 800;
-					font-size: 2rem;
-					text-transform: uppercase;
+			.background-image {
+				.details {
+					h3 {
+						font-weight: 800;
+						font-size: 2rem;
+						text-transform: uppercase;
+					}
 				}
 			}
 		}
