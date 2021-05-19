@@ -119,10 +119,10 @@ const Siemens = () => {
 							</Col>
 						</Row>
 						<Row>
-							<Col xs={12} lg={7}>
+							<Col xs={12} lg={6} xxl={7}>
 								<FormattedHTMLMessage id='caseStudies.siemens.text.3' />
 							</Col>
-							<Col className='images-mdx' xs={12} lg={10}>
+							<Col className='images-mdx' xs={12} lg={8} xxl={10}>
 								<Img
 									className='mdx-page'
 									fluid={imageMdxPage.childImageSharp.fluid}
@@ -140,7 +140,7 @@ const Siemens = () => {
 							<Col xs={12} lg={7}>
 								<FormattedHTMLMessage id='caseStudies.siemens.text.4' />
 							</Col>
-							<Col xs={12} lg={9}>
+							<Col xs={12} lg={8} xxl={9}>
 								<Img
 									fluid={imageDropdown.childImageSharp.fluid}
 									alt=''

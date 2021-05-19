@@ -98,7 +98,7 @@ const HeyFuture = () => {
 							<Col xs={12} lg={7}>
 								<FormattedHTMLMessage id='caseStudies.heyFuture.text.1' />
 							</Col>
-							<Col xs={12} lg={9}>
+							<Col xs={12} lg={8} xxl={9}>
 								<Img
 									className='image border-radius'
 									fluid={imageUX.childImageSharp.fluid}
@@ -112,7 +112,7 @@ const HeyFuture = () => {
 									<FormattedHTMLMessage id='caseStudies.heyFuture.text.2' />
 								</div>
 							</Col>
-							<Col xs={12} lg={8}>
+							<Col xs={12} lg={7} xxl={8}>
 								<Img
 									className='image'
 									fluid={imageUI.childImageSharp.fluid}
@@ -133,7 +133,7 @@ const HeyFuture = () => {
 								<FormattedHTMLMessage id='caseStudies.heyFuture.text.7' />
 							</Col>
 
-							<Col xs={12} lg={8}>
+							<Col xs={12} lg={7} xxl={8}>
 								<Img
 									className='image'
 									fluid={imageDev.childImageSharp.fluid}

@@ -110,7 +110,7 @@ const HeyFuture = () => {
 							<Col xs={12} lg={7}>
 								<FormattedHTMLMessage id='caseStudies.biersafe.text.1' />
 							</Col>
-							<Col xs={12} lg={9}>
+							<Col xs={12} lg={8} xxl={9}>
 								<Img fluid={imageBranding.childImageSharp.fluid} alt='' />
 							</Col>
 						</Row>
@@ -120,7 +120,7 @@ const HeyFuture = () => {
 									<FormattedHTMLMessage id='caseStudies.biersafe.text.2' />
 								</div>
 							</Col>
-							<Col xs={12} lg={9}>
+							<Col xs={12} lg={8} xxl={9}>
 								<Img
 									className='image border-radius'
 									fluid={imageUI.childImageSharp.fluid}
