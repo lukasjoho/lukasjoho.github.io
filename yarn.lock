@@ -12849,6 +12849,11 @@
   dependencies:
     "@babel/runtime" "^7.0.0"
 
+"react-compare-slider@^2.0.2":
+  "integrity" "sha512-hL4mZ6asoez23Upoce9T2hbPKRg607lt8A8rYOXDuvL6QtO7ujkmsGS0+6EZe1EIDlmGibXH9jVuXNca6JrUow=="
+  "resolved" "https://registry.npmjs.org/react-compare-slider/-/react-compare-slider-2.0.2.tgz"
+  "version" "2.0.2"
+
 "react-dev-utils@^4.2.3":
   "integrity" "sha512-uvmkwl5uMexCmC0GUv1XGQP0YjfYePJufGg4YYiukhqk2vN1tQxwWJIBERqhOmSi80cppZg8mZnPP/kOMf1sUQ=="
   "resolved" "https://registry.npmjs.org/react-dev-utils/-/react-dev-utils-4.2.3.tgz"
@@ -12880,7 +12885,7 @@
   dependencies:
     "ua-parser-js" "^0.7.22"
 
-"react-dom@^16.12.0":
+"react-dom@^16.12.0", "react-dom@>=16.8":
   "integrity" "sha512-81PIMmVLnCNLO/fFOQxdQkvEq/+Hfpv24XNJfpyZhTRfO0QcmQIF/PgCa1zCOj2w1hrn12MFLyaJ/G0+Mxtfag=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-16.13.1.tgz"
   "version" "16.13.1"
@@ -13096,7 +13101,7 @@
     "loose-envify" "^1.4.0"
     "prop-types" "^15.6.2"
 
-"react@^16.12.0", "react@^16.8.0":
+"react@^16.12.0", "react@^16.8.0", "react@>=16.8":
   "integrity" "sha512-YMZQQq32xHLX0bz5Mnibv1/LHb3Sqzngu7xstSM+vrkE5Kzr9xE0yMByK5kMoTK30YVJE61WfbxIFFvfeDKT1w=="
   "resolved" "https://registry.npmjs.org/react/-/react-16.13.1.tgz"
   "version" "16.13.1"

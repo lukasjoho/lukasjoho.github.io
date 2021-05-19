@@ -9,25 +9,33 @@ import {
 import SEO from '../../components/seo';
 import Layout from '../../components/general/layout';
 import { Container, Row, Col } from 'react-bootstrap';
-
+import { ReactCompareSlider } from 'react-compare-slider';
 import Img from 'gatsby-image';
 import '~/components/sites/case-studies/casestudy.scss';
 
 const HeyFuture = () => {
 	const intl = useIntl();
 	const {
-		imageSplashscreen,
+		imageShop,
+		imageShopOld,
 		imageBranding,
 		imageUI,
 		imageDev,
 		imageDelivery,
 	} = useStaticQuery(graphql`
 		query {
-			imageSplashscreen: file(
-				relativePath: { eq: "content/image-biersafe-shop.jpg" }
+			imageShop: file(relativePath: { eq: "content/image-biersafe-shop.jpg" }) {
+				childImageSharp {
+					fluid(quality: 90, maxWidth: 800) {
+						...GatsbyImageSharpFluid_withWebp_noBase64
+					}
+				}
+			}
+			imageShopOld: file(
+				relativePath: { eq: "content/image-biersafe-old.jpg" }
 			) {
 				childImageSharp {
-					fluid(quality: 90, maxWidth: 700) {
+					fluid(quality: 90, maxWidth: 800) {
 						...GatsbyImageSharpFluid_withWebp_noBase64
 					}
 				}
@@ -73,7 +81,7 @@ const HeyFuture = () => {
 				description={intl.formatMessage({
 					id: 'caseStudies.biersafe.seo.description',
 				})}
-				image={imageSplashscreen.childImageSharp.fluid.src}
+				image={imageShop.childImageSharp.fluid.src}
 				url='https://excyted.io/case-studies/biersafe'
 			/>
 
@@ -93,10 +101,12 @@ const HeyFuture = () => {
 						</Col>
 
 						<Col className='image-hero' xs={12}>
-							<Img
-								fluid={imageSplashscreen.childImageSharp.fluid}
-								alt=''
-								className='image border-radius img-hero'
+							<ReactCompareSlider
+								className='compare-slider'
+								itemOne={
+									<Img fluid={imageShopOld.childImageSharp.fluid} alt='' />
+								}
+								itemTwo={<Img fluid={imageShop.childImageSharp.fluid} alt='' />}
 							/>
 						</Col>
 					</Row>
