@@ -8,7 +8,6 @@ import {
 	AiFillCode,
 	AiFillCamera,
 	AiFillVideoCamera,
-	AiOutlineCodeSandbox,
 } from 'react-icons/ai';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
@@ -16,14 +15,7 @@ import { useIntl, FormattedMessage } from 'gatsby-plugin-intl';
 
 const Members = () => {
 	const intl = useIntl();
-	const {
-		lukas,
-		antonio,
-		jonas,
-		david,
-		moritz,
-		oskar,
-	} = useStaticQuery(graphql`
+	const { lukas, antonio, david, moritz } = useStaticQuery(graphql`
 		query {
 			lukas: file(relativePath: { eq: "team/lukas.jpg" }) {
 				childImageSharp {
