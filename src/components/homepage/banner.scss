@@ -114,10 +114,9 @@
 	}
 
 	h3 {
-		font-weight: 500;
-		font-size: 1.2rem;
+		font-weight: 400;
+		font-size: 1rem;
 		margin: 1rem 0 2rem;
-		text-transform: uppercase;
 		line-height: 2.8rem;
 	}
 
@@ -269,33 +268,13 @@
 					translate3d(30px, 50px, 50px);
 			}
 		}
-
-		// .thumbnail {
-		//   width: 70%;
-		//   position: absolute;
-		//   top: 0;
-		//   bottom: 0;
-		//   left: 0;
-		//   right: 0;
-		//   margin: auto;
-		// }
-
-		// .blurred {
-		//   position: absolute;
-		//   width: 50%;
-		//   bottom: 0;
-		//   left: 10px;
-		//   z-index: -1;
-		//   filter: blur(8px);
-		//   -webkit-filter: blur(8px)
-		// }
 	}
 }
 
 @media screen and (max-width: 767px) {
 	#banner {
 		h3 {
-			font-size: 0.95rem;
+			font-size: 1rem;
 			margin: 0rem 0 4rem;
 		}
 		.banner-text {

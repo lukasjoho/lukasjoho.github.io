@@ -72,7 +72,9 @@ function SEO({ title, description, image, robots, url }) {
 
 			{seo.siteUrl && <meta property='og:url' content={seo.siteUrl} />}
 
-			{seo.title && <meta property='og:title' content={seo.title} />}
+			{seo.title && (
+				<meta property='og:title' content={`${seo.title} | Excyted`} />
+			)}
 
 			{seo.description && (
 				<meta property='og:description' content={seo.description} />
@@ -82,7 +84,9 @@ function SEO({ title, description, image, robots, url }) {
 
 			<meta name='twitter:card' content='summary_large_image' />
 
-			{seo.title && <meta name='twitter:title' content={seo.title} />}
+			{seo.title && (
+				<meta name='twitter:title' content={`${seo.title} | Excyted`} />
+			)}
 
 			{seo.description && (
 				<meta name='twitter:description' content={seo.description} />
