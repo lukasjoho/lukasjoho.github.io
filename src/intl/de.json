@@ -29,6 +29,10 @@
 			"text": "Als Technologie-Studio designen und entwickeln wir deine Idee und machen sie produktionsreif.",
 			"button": "Unsere Projekte"
 		},
+		"casestudies": {
+			"nextButton": "Nächste Casestudy",
+			"prevButton": "Vorherige Casestudy"
+		},
 		"sections": {
 			"web": {
 				"subtitle": "Wir entwickeln dir deine Website oder Web-App nach den neusten und zukunftssichersten Web-Technologie Standards.",
@@ -223,6 +227,58 @@
 				"<h3>Maßgeschneidertes Content Management System</h3> <p> Die von uns eingebauten Markdown-Dateien bilden ein individualisiertes und funktionsspezifisches Content Management System. Texte, Bilder, Icons, Seiten und Verlinkungen können damit ganz einfach bearbeitet und hinzugefügt werden. Dazu braucht es keinen technischen Hintergrund und die Funktion der Seite kann nicht ungewollt beeinträchtigt werden. <br /> <br /> Inhalte wie z.B diese Texte über ein angebotenes Training (rot markiert) können sehr intuitiv über Markdown-Dateien geändert werden. Textformatierungen, Metadaten und das Einfügen von Komponenten können über einfache Codierungen vorgenommen werden. </p>",
 
 				"<h3>Filtering von Projekten</h3> <p> Über den „Use Case Explorer“ können Projekte nach mehreren Kriterien intelligent gefiltert und angezeigt werden. Mit einem Klick auf das jeweilige Projekt werden weitere Detailinformationen angezeigt. Die Seite greift dabei auf eine bereits bestehende interne API zurück, in der die Projekte hinterlegt sind."
+			]
+		},
+		"heyFuture": {
+			"seo": {
+				"title": "HeyFuture",
+				"description": "Für HeyFuture haben wir eine Web-App konzipiert und entwickelt, die Oberstufenschülern Einblicke in verschiedene Berufe in Form von Videos bietet."
+			},
+			"category": "Case Study: <em>Web Development</em>",
+			"title": "HeyFuture",
+			"subtitle": "Für HeyFuture haben wir eine Web-App konzipiert und entwickelt, die Oberstufenschülern Einblicke in verschiedene Berufe in Form von Videos bietet.",
+
+			"text": [
+				"<h2>Die Herausforderung</h2> <p>HeyFuture trat mit der Idee an uns heran, eine digitale Plattform zur Berufsorientierung zu entwickeln. Mit nicht mehr als ein paar Präsentationsfolien, die die grobe Idee vermittelten, war es unsere Aufgabe, die Idee zu konkretisieren, sie als Mobile-First-Web-Applikation zum Leben zu erwecken und schließlich den uns zugewiesenen Business Case in dem kurzen Zeitrahmen von 2 Monaten zu lösen. </p>",
+
+				"<h2>UX Design</h2> <p>In einem kontinuierlichen Discovery-Prozess mit dem Kunden berieten wir mit unserem Branchenwissen über Nutzerinteressen, Verhaltensweisen und Best Practices. Wir hinterfragten Ideen, trennten systematisch die guten von den schlechten Ideen und iterierten über die User Journey, um dann alles folgende anzugehen:</p><ol><li>Nutzer melden sich für ein Konto an, indem sie nur die grundlegendsten Informationen über sich selbst beantworten, um Abbruchraten während des Prozesses zu vermeiden.</li><li>Nutzer stimmen dann persönlichen und berufsbezogenen Fragen auf Karten zu oder lehnen sie ab, indem sie sie nach links oder rechts wischen. </li><li>Nach dem Prozess können Nutzer auf empfohlene Videos zugreifen, die auf ihren Antworten basieren.</li><li>In den Videos geben Menschen aus einer bestimmten Branche Einblicke in ihren Beruf und ihre Karriere.</li><li>Nutzer können sich unterhalb des Videos in Diskussionen mit der Community austauschen.</li></ol><p>Das Ergebnis dieses UX-Design-Prozesses waren Low-Fidelity-Wireframes, die den ersten klickbaren Prototyp darstellten.</p>",
+
+				"<h2>UI Design</h2> <p>Mit den Wireframes war es nun unser Ziel, das eigentliche Interface der App mit all seinen Details zu gestalten und die Sprache der Marke zu sprechen. Unser Ziel war es, das Produkt auf eine saubere, einfache und intuitive Art und Weise darzustellen.</p><p>Um den Fokus auf Klarheit und Konsistenz zu legen, hielten wir das Design in zwei Hauptfarben und wiederkehrenden Elementen.</p><p>Interaktive Elemente wie Karten zum Wischen und Kommentare sollten sich vertraut und intuitiv anfühlen und orientierten sich daher an etablierten Apps wie Tinder und Instagram. Auch Herzen, Sprechblasen und Filterbuttons wurden so gestaltet, dass sie den Nutzer zur spielerischen Interaktion mit dem Produkt einladen.</p>",
+
+				"<h2>Entwicklung</h2><p>Die Hauptideen drehten sich um eine entscheidungsbasierte Swiping-Funktion mit einem intelligenten Matching-Algorithmus, eine Empfehlungs-Videosammlung und einen Echtzeit-Chat.</p>",
+
+				"<h3>Architektur</h3><p>Die App-Architektur ist mit dem Javascript-Framework NextJS im Frontend und Firebase im Backend aufgebaut. Wir haben uns für diesen Stack entschieden, weil es eine schnelle Skalierbarkeit, Geschwindigkeit und einfache Wartung ermöglicht.</p>",
+
+				"<h3>CMS</h3><p>Mit der Integration von Contentful als Content-Management-System kann der Kunde nicht nur einfach Inhalte wie Fragen und Videos hinzufügen, sondern auch die hochgeladenen Inhalte klassifizieren und anpassen, um zu beeinflussen, wie sie mit den Interessen der Nutzer abgeglichen werden.</p>",
+
+				"<h3>Matching-Algorithmus</h3><p>Wir haben einen Matching-Algorithmus entwickelt, der die Antworten der Nutzer intelligent mit bestimmten Videos abgleicht, an denen der Nutzer wahrscheinlich interessiert ist. Fragen und Videos werden mit den Antworten eines Benutzers gewichtet und können so nach übereinstimmenden Interesse sortiert werden</p>",
+
+				"<h3>Echtzeit-Chat</h3><p>Um das In-App-Engagement und die Kommunikation zu fördern, haben wir eine Echtzeit-Chat-Funktion integriert, die es Nutzern ermöglicht, Kommentare unter einem Video zu lesen, zu posten und zu liken. Nutzer erhalten dadurch sofortige Reaktionen auf ihre Kommentare und die von anderen.</p>",
+
+				"<h2>Kontinuierliches Deployment</h2> <p>Die App wurde so aufgesetzt, dass eine kontinuierliche Entwicklung und ein kontinuierliches Deployment so einfach und schnell wie möglich ist. Durch die Trennung in eine Test- und eine Produktionsumgebung können neue Funktionen und Inhalte getestet werden, bevor sie für die Öffentlichkeit live gehen. Unsere leistungsstarke Backend-Lösung macht das Deployment von neuen Versionen und das Hosting schnell, sicher und zuverlässig.</p>",
+
+				"<p><a href='https://heyfuture.app'>heyfuture.app</a> ansehen</p>"
+			]
+		},
+		"biersafe": {
+			"seo": {
+				"title": "Biersafe",
+				"description": "Für Biersafe, einen Bierzubehörhersteller aus Deutschland, haben wir einen neuen E-Commerce-Shop konzipiert und entwickelt."
+			},
+			"category": "Case Study: <em>Web Development</em>",
+			"title": "Biersafe",
+			"subtitle": "Für Biersafe, einen Bierzubehörhersteller aus Deutschland, haben wir einen neuen E-Commerce-Shop konzipiert und entwickelt.",
+
+			"text": [
+				"<h2>Die Mission</h2> <p>Unsere Mission war es, den bestehenden Wordpress-Onlineshop mit modernster Technologie neu zu gestalten und zu entwickeln. Die neue Seite sollte das Einkaufserlebnis verbessern und letztendlich die Conversion steigern.<br/>Zusammen mit Biersafe haben wir uns auf einen lückenlosen Entwicklungsprozess geeinigt. Dieser umfasste mehrere Schritte, die im Folgenden aufgeführt sind</p>",
+
+				"<h2>Branding</h2> <p>In einer Discovery-Session und einem anschließenden Branding-Workshop haben wir das Biersafe-Team mit seiner Marke konfrontiert. Wir definierten den Kunden, überarbeiteten das Wertversprechen von Biersafe und schufen eine überzeugende visuelle Sprache.<br/>Wir stellten fest, dass die Kunden von Biersafe größtenteils Hausbesitzer mittleren Alters mit einem Garten und einem großen Freundeskreis sind, die sich gerne draußen treffen.<br/>Das Ergebnis war eine Branding-Guideline und eine auf diese Kunden zugeschnittene Seitenstruktur in Form von Wireframes.</p>",
+
+				"<h2>Design</h2> <p>Während die Branding-Guidelines und Wireframes die Grundlage für die Customer Journey legten, übersetzten unsere Designer diese in ein High-Fidelity User Interface. Besonderen Wert legten wir dabei auf ein Design, das stark mit der Sprache der zuvor geschaffenen Marke verbunden ist. Mit einer neuen sonnengelben Farbe, die Bier und Sonnenschein repräsentiert, und einer lässigen 70er-Jahre-Schriftart haben wir die visuelle Sprache von Biersafe aufgefrischt.<br/>Das finale Design umfasste eine emotionale User Journey auf der Landing Page, eine funktionale Shop-Seite und informative Team- und Info-Seiten.</p>",
+
+				"<h2>Entwicklung</h2><p>Um einen perfekt angepassten und hochperformanten Onlineshop zu erstellen, nutzten wir das Frontend-Framework GatsbyJS und integrierten die E-Commerce-Plattform Shopify. Die im E-Commerce-Bereich noch nicht häufig benutzte statische Seitengenerierung durch Gatsby sorgt für nahezu unmerkbare Ladezeiten. Das verbesserte Nutzererlebnis führt zu niedrigeren Absprungraten und höheren Abschlussraten.<br/>Wir fügten Contentful als Content Mangagement System hinzu, damit Biersafe die Informationsinhalte einfach bearbeiten und neue Versionen der Seite veröffentlichen kann.</p>",
+
+				"<h2>Lieferung</h2> <p>Nachfolgend kümmerten wir uns um das Deployment der neuen Seite und sorgten für einen nahtlosen Übergang von der alten zur neuen Seite ohne Ausfallzeiten.<br/>Abschließend veranstalteten wir gemeinsam mit Biersafe einen Übergabe-Workshop, in dem wir erklärten, wie man den Produktkatalog in Shopify verwaltet und Inhalte auf der Seite ändert. <br/>Seit der Übergabe hosten, warten und gewährleisten wir kontinuierlich die Sicherheit der Seite.<br/>Prost!</p>"
 			]
 		}
 	},

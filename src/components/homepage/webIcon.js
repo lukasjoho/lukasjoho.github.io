@@ -4,9 +4,7 @@ import './webicon.scss';
 const WebIcon = props => {
 	return (
 		<div className='web-icon'>
-			<div className='image'>
-				<img src={props.icon} alt='' />
-			</div>
+			<div className='icon'>{props.icon}</div>
 			<p>{props.text}</p>
 		</div>
 	);

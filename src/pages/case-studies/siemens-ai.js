@@ -12,7 +12,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Iphone from '~/components/sites/case-studies/siemens/iphone';
 
 import Img from 'gatsby-image';
-import '~/components/sites/case-studies/siemens/casestudy.scss';
+import '~/components/sites/case-studies/casestudy.scss';
 
 const Siemens = () => {
 	const intl = useIntl();
@@ -89,11 +89,11 @@ const Siemens = () => {
 							</p>
 						</Col>
 
-						<Col className='image-imac' xs={12}>
+						<Col className='image-hero' xs={12}>
 							<Img
 								fluid={imageImac.childImageSharp.fluid}
 								alt=''
-								className='img-imac'
+								className='img-hero'
 							/>
 						</Col>
 					</Row>
@@ -119,7 +119,7 @@ const Siemens = () => {
 							</Col>
 						</Row>
 						<Row>
-							<Col xs={12} lg={7} className='has-image'>
+							<Col xs={12} lg={7}>
 								<FormattedHTMLMessage id='caseStudies.siemens.text.3' />
 							</Col>
 							<Col className='images-mdx' xs={12} lg={10}>
@@ -137,7 +137,7 @@ const Siemens = () => {
 							</Col>
 						</Row>
 						<Row>
-							<Col xs={12} lg={7} className='has-image'>
+							<Col xs={12} lg={7}>
 								<FormattedHTMLMessage id='caseStudies.siemens.text.4' />
 							</Col>
 							<Col xs={12} lg={9}>

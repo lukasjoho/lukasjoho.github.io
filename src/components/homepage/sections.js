@@ -111,9 +111,9 @@ const Sections = () => {
 						/>
 					</div>
 					<div className='spacer-rect'>
-						<img className='icons globe' src={IconGlobe} alt='' />
+						<IconGlobe className='icons globe' />
 
-						<img className='icons zahnrad' src={IconZahnrad} alt='' />
+						<IconZahnrad className='icons zahnrad' />
 					</div>
 				</section>
 				<Row className='web'>
@@ -123,13 +123,13 @@ const Sections = () => {
 							<Row>
 								<Col md={6}>
 									<WebIcon
-										icon={IconCMS}
+										icon={<IconCMS />}
 										text={intl.formatMessage({ id: 'home.sections.web.cms' })}
 									/>
 								</Col>
 								<Col md={6}>
 									<WebIcon
-										icon={IconDesign}
+										icon={<IconDesign />}
 										text={intl.formatMessage({
 											id: 'home.sections.web.design',
 										})}
@@ -137,13 +137,13 @@ const Sections = () => {
 								</Col>
 								<Col md={6}>
 									<WebIcon
-										icon={IconFast}
+										icon={<IconFast />}
 										text={intl.formatMessage({ id: 'home.sections.web.speed' })}
 									/>
 								</Col>
 								<Col md={6}>
 									<WebIcon
-										icon={IconSeo}
+										icon={<IconSeo />}
 										text={intl.formatMessage({ id: 'home.sections.web.seo' })}
 									/>
 								</Col>
@@ -154,47 +154,47 @@ const Sections = () => {
 						<div className='web-panel web-app'>
 							<h3>Web-App</h3>
 							<Row>
-								<Col md={4}>
+								<Col md={6} lg={4}>
 									<WebIcon
-										icon={IconDatabase}
+										icon={<IconDatabase />}
 										text={intl.formatMessage({
 											id: 'home.sections.web.databases',
 										})}
 									/>
 								</Col>
-								<Col md={4}>
+								<Col md={6} lg={4}>
 									<WebIcon
-										icon={IconCloudFunctions}
+										icon={<IconCloudFunctions />}
 										text={intl.formatMessage({
 											id: 'home.sections.web.functions',
 										})}
 									/>
 								</Col>
-								<Col md={4}>
+								<Col md={6} lg={4}>
 									<WebIcon
-										icon={IconPayment}
+										icon={<IconPayment />}
 										text={intl.formatMessage({
 											id: 'home.sections.web.payment',
 										})}
 									/>
 								</Col>
-								<Col md={4}>
+								<Col md={6} lg={4}>
 									<WebIcon
-										icon={IconUsers}
+										icon={<IconUsers />}
 										text={intl.formatMessage({ id: 'home.sections.web.user' })}
 									/>
 								</Col>
-								<Col md={4}>
+								<Col md={6} lg={4}>
 									<WebIcon
-										icon={IconHosting}
+										icon={<IconHosting />}
 										text={intl.formatMessage({
 											id: 'home.sections.web.hosting',
 										})}
 									/>
 								</Col>
-								<Col md={4}>
+								<Col md={6} lg={4}>
 									<WebIcon
-										icon={IconScalability}
+										icon={<IconScalability />}
 										text={intl.formatMessage({
 											id: 'home.sections.web.scalability',
 										})}

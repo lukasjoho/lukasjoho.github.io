@@ -1,0 +1,172 @@
+@import '../../_variables.scss';
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints';
+.casestudy {
+	position: relative;
+	padding-top: 8rem;
+	padding-bottom: 80px;
+	@include media-breakpoint-up(lg) {
+		padding-top: 12rem;
+		padding-bottom: 100px;
+	}
+	.main {
+		width: 80%;
+		margin: auto;
+		@include media-breakpoint-up(sm) {
+			width: 80%;
+		}
+		@include media-breakpoint-up(lg) {
+			width: 60%;
+		}
+		.case {
+			position: relative;
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;
+			@include media-breakpoint-up(lg) {
+				align-items: center;
+				justify-content: flex-start;
+			}
+
+			.client {
+				position: absolute;
+				bottom: -45px;
+				@include media-breakpoint-up(lg) {
+					left: -200px;
+					bottom: 45px;
+				}
+				h1 {
+					-webkit-text-stroke: 1px $primary;
+					transition: 0.4s ease;
+					font-size: 50px;
+					font-weight: 700;
+					text-transform: uppercase;
+					letter-spacing: 2px;
+					@include media-breakpoint-up(lg) {
+						-webkit-text-stroke: 2px $primary;
+						font-size: 100px;
+					}
+				}
+			}
+
+			.image {
+				position: absolute;
+				width: 70%;
+				right: -22%;
+				top: -30%;
+				opacity: 0.9;
+				transition: 0.4s ease;
+
+				@include media-breakpoint-up(lg) {
+					right: -25%;
+					width: 50%;
+				}
+
+				&.biersafe {
+					width: 35%;
+				}
+
+				&.heyfuture {
+					right: -15%;
+					width: 40%;
+
+					@include media-breakpoint-up(md) {
+						right: -20%;
+					}
+				}
+			}
+			.main-image-container {
+				position: relative;
+				width: 100%;
+				overflow: hidden;
+				border-radius: 20px;
+
+				.main-image {
+					margin: 0;
+					box-shadow: 0 0 40px 20px rgba(0, 0, 0, 0.5),
+						0 30px 20px -10px rgba(0, 0, 0, 0.75);
+
+					&.heyfuture {
+						width: 40%;
+					}
+				}
+				.overlay {
+					background: linear-gradient(
+						rgba(0, 0, 0, 0.65),
+						rgba(0, 0, 0, 0) 50%,
+						rgba(0, 0, 0, 0.65)
+					);
+					position: absolute;
+					top: -1px;
+					bottom: -1px;
+					left: -1px;
+					right: -1px;
+				}
+			}
+
+			.category {
+				position: absolute;
+				top: -5px;
+				left: 20px;
+				transition: 0.4s ease;
+				transform: translateY(-70%);
+
+				@include media-breakpoint-up(lg) {
+					position: absolute;
+					right: 50px;
+					left: auto;
+
+					bottom: 0px;
+					transform: translateY(101%);
+				}
+
+				h1 {
+					text-align: right;
+
+					font-size: 22px;
+					font-weight: 600;
+					text-transform: uppercase;
+					color: #e0e0e0;
+					line-height: 22px;
+					margin: 0;
+					transition: 0.4s ease;
+					@include media-breakpoint-up(lg) {
+						font-size: 40px;
+					}
+				}
+			}
+			// Transforms inside of swiper slides don't work well. So hover tranform actions must be disabled on touch screen devices
+			@media (hover: hover) and (pointer: fine) {
+				&:hover {
+					cursor: pointer;
+
+					.client {
+						h1 {
+							transform: translateX(-20px);
+							-webkit-text-stroke: 2px $primary;
+							color: rgba($color: #000000, $alpha: 0);
+						}
+					}
+					.image {
+						margin-right: -30px;
+						margin-top: -30px;
+
+						&.biersafe {
+							margin-right: -20px;
+						}
+					}
+
+					.category {
+						h1 {
+							margin-top: -20px;
+							@include media-breakpoint-up(lg) {
+								margin-top: 10px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

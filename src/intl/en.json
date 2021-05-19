@@ -25,6 +25,10 @@
 		"seo": {
 			"description": "Als Technologie-Studio designen und entwickeln wir deine Idee und machen sie produktionsreif."
 		},
+		"casestudies": {
+			"nextButton": "Next case study",
+			"prevButton": "Previous case study"
+		},
 		"banner": {
 			"text": "As a technology studio, we design and develop your idea and make it production-ready.",
 			"button": "Our projects"
@@ -209,7 +213,7 @@
 				"mobile": "Tap phone for animation"
 			},
 			"text": [
-				"<h2>The Challenge</h2> <p>The old Siemens AI@CT site is based on an outdated web architecture, which causes several problems:</p> <br /> <ul> <li>Slow loading times of individual pages</li> <li>No responsive behavior at different screen sizes</li> <li>Inconvenient changing of website content</li> <li>Design restrictions due to technology limitations</li> </ul> <br /> <p>In order to present and sell training, knowledge and processes of Siemens AI@CT internally, the current site needs to be redeveloped. A new high-speed web framework is intended to perfect the loading time of pages and also give editors of the site the ability to easily and quickly add and customize content. For this purpose, an individually adapted CMS shall be integrated into the site. </p>",
+				"<h2>The Challenge</h2> <p>The old Siemens AI@CT site is based on an outdated web architecture, which causes several problems:</p> <ul> <li>Slow loading times of individual pages</li> <li>No responsive behavior at different screen sizes</li> <li>Inconvenient changing of website content</li> <li>Design restrictions due to technology limitations</li> </ul> <p>In order to present and sell training, knowledge and processes of Siemens AI@CT internally, the current site needs to be redeveloped. A new high-speed web framework is intended to perfect the loading time of pages and also give editors of the site the ability to easily and quickly add and customize content. For this purpose, an individually adapted CMS shall be integrated into the site. </p>",
 
 				"<h2>The implementation</h2> <h3>Lightning-fast loading times</h3> <p>We built the new website using the Gatsby component-based JavaScript framework. This allowed us to create pages with the fastest possible loading time. Long cluttered pages could thus be split into several shorter subpages. </p>",
 
@@ -218,6 +222,58 @@
 				"<h3>Tailor-made content management system</h3> <p>Markdown files make up an individualized and function-specific content management system. Texts, images, icons, pages and links can be easily edited and added with it. This does not require a technical background and the function of the page can not be affected unintentionally. <br /> <br /> Content such as these texts about a training offered (highlighted in red) can be changed very intuitively via Markdown files. Text formatting, metadata and insertion of components can be done via simple codings. </p>",
 
 				"<h3>Filtering of projects</h3> <p>Using the \"Use Case Explorer\", projects can be intelligently filtered and displayed according to several criteria. Clicking on the respective project displays further detailed information. The page makes use of an existing internal API in which the projects are stored."
+			]
+		},
+		"heyFuture": {
+			"seo": {
+				"title": "HeyFuture",
+				"description": "For HeyFuture we designed and developed a web application that offers high school students insights into various jobs in the form of videos."
+			},
+			"category": "Case Study: <em>Web Development</em>",
+			"title": "HeyFuture",
+			"subtitle": "For HeyFuture we designed and developed a web application that offers high school students insights into various jobs in the form of videos.",
+
+			"text": [
+				"<h2>The Challenge</h2> <p>HeyFuture approached us with the idea of building a digital job orientation platform. With no more than a few presentation slides, that conveyed the rough idea, our mission was  to flesh out the idea, bring it to life as a mobile-first web-application and ultimately solve the business case assigned to us in the short timeframe of 2 months. </p>",
+
+				"<h2>UX Design</h2> <p>In a continuous discovery process with the client we advised with our industry knowledge about user interests, behaviors and best practices. We challenged ideas, systematically separated the good ideas from the bad  and iterated over the user journey to then break everything down into the following:</p><ol><li>Users signup for an account by answering only the most basic informations about themselves to avoid drop off rate during the process.</li><li>Users then agree or decline personal and job related questions on cards by swiping them left or right.</li><li>After completion users can access recommended videos based on their given answers.</li><li>In these videos, people from a specific industry give insights into their profession and career.</li><li>Users can get into discussions with the community below the video.</li></ol><p>The result of this UX design process were low fidelity wireframes that constituted the first clickable prototype.</p>",
+
+				"<h2>UI Design</h2> <p>With our wireframes in place our goal was now to design the real interface of the app with all its details and speak the language of the brand. Our goal was to surface the product to our earlier defined student in a clean, simple and intuitive way.</p><p>To focus on clarity and consistency we kept the design clean and simple with two main colors and reoccurring elements.</p><p>Interactive elements like swiping cards and comments were supposed to feel familiar and intuitive to use and were therefore based on established apps like Tinder and Instagram. Like hearts, speech bubbles and filter buttons were designed in a way that invites users to interact in a playful way with the product.</p>",
+
+				"<h2>Development</h2><p>Main ideas revolved around a decision based swiping feature with an intelligent matching alogrithm, a recommendation video library and a realtime chat.</p>",
+
+				"<h3>Architecture</h3><p>The app architecture is built with the javascript framework NextJS on the frontend and Firebase on the backend. We chose this stack because it allows for rapid scalability, speed and easy maintenance.</p>",
+
+				"<h3>CMS</h3><p>With the integration of Contentful as a content management system the client can not only easily add content like questions and videos but also classify and customize the uploaded content to influence how it is matched with users interests.</p>",
+
+				"<h3>Matching algorithm</h3><p>We developed a matching algorithm that intelligently matches users answers to specific videos the user is likely to be interested in. Questions and videos are weighted against a user's answers and can thus be sorted by most matching interest</p>",
+
+				"<h3>Real time chat</h3><p>To foster in-app engagement and communication we integrated a real time chat feature that allows users to read, post and like comments below a video. Users get immedieate response on their comments and those of others.</p>",
+
+				"<h2>Continuous Deployment</h2> <Our>The app was set up in a way that makes continuous development and deployment as easy and fast as possible. Through the separation into a staging and production environment, new features and content can be tested before it goes live to the public. Our powerful backend-solution makes deployment of new versions and hosting fast, safe and reliable.</p>",
+
+				"<p>Check out <a href='https://heyfuture.app'>heyfuture.app</a></p>"
+			]
+		},
+		"biersafe": {
+			"seo": {
+				"title": "Biersafe",
+				"description": "We designed and developed a new e-commerce shop for Biersafe, a beer accessory manufacturer from Germany."
+			},
+			"category": "Case Study: <em>Web Development</em>",
+			"title": "Biersafe",
+			"subtitle": "We designed and developed a new e-commerce shop for Biersafe, a beer accessory manufacturer from Germany.",
+
+			"text": [
+				"<h2>The Mission</h2> <p>Our mission was to redesign and redevelop the existing Wordpress online shop with state-of-the-art technology. The new site should improve the shopping experience and ultimately increase conversion.<br/>Together with Biersafe we agreed on a end-to-end product development process. It encompassed several steps listed below</p>",
+
+				"<h2>Branding</h2> <p>In a discovery session and a following branding workshop we challenged the Biersafe team against their brand. We defined the customer, revised the value proposition of Biersafe and created a compelling visual language.<br/>We identified that Biersafe customers are largely middle aged house owners with a backyard and a big circle of friends who like to have get togethers outside.<br/>The outcome was a branding guideline and a site structure in the form of wireframes tailored to those customers.</p>",
+
+				"<h2>Design</h2> <p>While the branding guidelines and wireframes layed down the foundation for the customer journey our designers translated this into a high-fidelity user interface. We put a particular focus on a design that is strongly connected to the language of the earlier created brand. We refreshed the visual language of Biersafe with a new sunny yellow color, representing beer and sunshine and a laid-back 70s typeface.<br/>The final design included an emotional user journey throughout the landing page, a functional shop page and informational team and info pages.</p>",
+
+				"<h2>Development</h2><p>In order to craft a perfectly customized and high-performant online shop we used the frontend framework GatsbyJS and integrated the e-commerce platform Shopify. Not yet adapted in the e-commerce space, the static site generation through Gatsby allows for almost unnoticeable loading times. The enhanced user experience results in lower bounce rates and higher completed purchase rates.<br/>We added Contentful as a content mangagement system so that Biersafe can easily edit informational content and trigger new versions of the site.</p>",
+
+				"<h2>Delivery</h2> <p>Subsequently we took care of the deployment of the new site and transitioned seamlessly from the old to the new one without any downtime.<br/>Finally we arranged a handover workshop together with Biersafe where we explained how to manage the product catalog in shopify and change content on the site. <br/>Post delivery we continuously host, maintain and ensure the security of the site.<br/>Prost!</p>"
 			]
 		}
 	},
