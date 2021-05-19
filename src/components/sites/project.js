@@ -4,7 +4,10 @@ import Img from 'gatsby-image';
 import { Col, Modal } from 'react-bootstrap';
 import { IoMdClose } from 'react-icons/io';
 import ScrollAnimation from 'react-animate-on-scroll';
+import { Link } from 'gatsby-plugin-intl';
+
 import 'animate.css/animate.css';
+import { INLINES } from '@contentful/rich-text-types';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import './project.scss';
 
@@ -22,6 +25,20 @@ class Project extends React.Component {
 	componentDidMount() {
 		this.setState({ isClient: true });
 	}
+
+	richTextOptions = {
+		renderNode: {
+			[INLINES.HYPERLINK]: node => {
+				if (node.data.uri.startsWith('/')) {
+					// Internal Link
+					return <Link to={node.data.uri}>{node.content[0].value}</Link>;
+				} else {
+					// External Link
+					return <a href={node.data.uri}>{node.content[0].value}</a>;
+				}
+			},
+		},
+	};
 
 	render() {
 		var { data } = this.props;
@@ -63,7 +80,10 @@ class Project extends React.Component {
 						<Modal.Body>
 							{data.description ? (
 								<div className='rich-text-container'>
-									{documentToReactComponents(data.description.json)}
+									{documentToReactComponents(
+										data.description.json,
+										this.richTextOptions
+									)}
 								</div>
 							) : (
 								''
