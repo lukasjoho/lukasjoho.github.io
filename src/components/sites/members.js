@@ -3,7 +3,6 @@ import './members.scss';
 import { Container, Row, Col } from 'react-bootstrap';
 import UseDencrypt from './usedencrypt';
 import {
-	AiFillLinkedin,
 	AiOutlinePlayCircle,
 	AiFillCode,
 	AiFillCamera,
@@ -81,13 +80,6 @@ const Members = () => {
 						<span>
 							- <FormattedMessage id='team.members.members.0.specialty' /> -
 						</span>
-						<a
-							href='https://www.linkedin.com/in/lukas-hoppe-948142178'
-							rel='noopener noreferrer'
-							target='_blank'
-						>
-							<AiFillLinkedin />
-						</a>
 					</Col>
 					<Col md={6} xl={3} className='member'>
 						<div className='image-container'>
@@ -103,13 +95,6 @@ const Members = () => {
 						<span>
 							- <FormattedMessage id='team.members.members.1.specialty' /> -
 						</span>
-						<a
-							href='https://www.linkedin.com/in/antonio-schmitter/'
-							rel='noopener noreferrer'
-							target='_blank'
-						>
-							<AiFillLinkedin />
-						</a>
 					</Col>
 					<Col md={6} xl={3} className='member'>
 						<div className='image-container'>
@@ -125,13 +110,6 @@ const Members = () => {
 						<span>
 							- <FormattedMessage id='team.members.members.2.specialty' /> -
 						</span>
-						<a
-							href='https://www.linkedin.com/in/moritzkarnahl/'
-							rel='noopener noreferrer'
-							target='_blank'
-						>
-							<AiFillLinkedin />
-						</a>
 					</Col>
 					<Col md={6} xl={3} className='member'>
 						<div className='image-container'>
@@ -147,13 +125,6 @@ const Members = () => {
 						<span>
 							- <FormattedMessage id='team.members.members.3.specialty' /> -
 						</span>
-						<a
-							href='https://www.linkedin.com/in/david-greco-/'
-							rel='noopener noreferrer'
-							target='_blank'
-						>
-							<AiFillLinkedin />
-						</a>
 					</Col>
 				</Row>
 			</Container>
