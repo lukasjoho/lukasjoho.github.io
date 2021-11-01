@@ -2,13 +2,9 @@ import React from 'react';
 import SEO from '../components/seo';
 import Layout from '../components/general/layout';
 import { Col, Container, Row } from 'react-bootstrap';
-import { AiOutlineScissor } from 'react-icons/ai';
-import {
-	FaCameraRetro,
-	FaTabletAlt,
-	FaObjectGroup,
-	FaPencilRuler,
-} from 'react-icons/fa';
+import { AiOutlineCloudServer } from 'react-icons/ai';
+import { FaObjectGroup, FaPencilRuler, FaCode } from 'react-icons/fa';
+
 import { useIntl, FormattedMessage } from 'gatsby-plugin-intl';
 
 const Jobs = () => {
@@ -36,24 +32,20 @@ const Jobs = () => {
 						<Col md={6}>
 							<ul>
 								<li>
-									<FaCameraRetro />
-									<span>Videographer</span>
+									<FaCode />
+									<span>Frontend React Development</span>
 								</li>
 								<li>
-									<FaPencilRuler />
-									<span>Graphic Designer</span>
-								</li>
-								<li>
-									<AiOutlineScissor />
-									<span>Cutter</span>
+									<AiOutlineCloudServer />
+									<span>Backend Node.js Development</span>
 								</li>
 								<li>
 									<FaObjectGroup />
-									<span>UX-Design</span>
+									<span>UX/UI-Design</span>
 								</li>
 								<li>
-									<FaTabletAlt />
-									<span>App-Development</span>
+									<FaPencilRuler />
+									<span>3D Design</span>
 								</li>
 							</ul>
 							<div className='contact-details'>
