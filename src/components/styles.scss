@@ -135,6 +135,13 @@ body {
 	}
 }
 
+#cookies {
+	padding-top: 5rem;
+	a {
+		text-decoration: underline !important;
+	}
+}
+
 .title {
 	text-align: center;
 
@@ -184,6 +191,60 @@ a {
 @media (min-width: 1400px) {
 	.container {
 		max-width: 1350px !important;
+	}
+}
+
+// Cookiebot
+#CybotCookiebotDialog {
+	background-color: #303030 !important;
+	color: $primary !important;
+
+	.CookieCard {
+		.CybotCookiebotDialogDetailBodyContentCookieContainerButton {
+			&:hover {
+				color: $primary !important;
+			}
+		}
+	}
+
+	#CybotCookiebotDialogHeader {
+		display: none;
+	}
+
+	#CybotCookiebotDialogNav {
+		.CybotCookiebotDialogNavItemLink.active {
+			border-bottom: 2px solid $primary;
+		}
+	}
+
+	#CybotCookiebotDialogBodyEdgeMoreDetailsLink {
+		&::after {
+			color: $primary !important;
+		}
+	}
+	#CybotCookiebotDialogFooter {
+		.CybotCookiebotDialogBodyButton {
+			color: $primary;
+			border: 2px solid $primary;
+		}
+
+		#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll {
+			color: $background;
+			background-color: $primary;
+		}
+	}
+
+	#CybotCookiebotDialogTabContent {
+		input[type='checkbox'][disabled]:checked
+			+ .CybotCookiebotDialogBodyLevelButtonSlider {
+			background-color: #d6d6d6;
+		}
+		input:checked + .CybotCookiebotDialogBodyLevelButtonSlider {
+			background-color: #7c7c7c;
+		}
+		.CybotCookiebotDialogDetailBulkConsentCount {
+			background-color: #7c7c7c;
+		}
 	}
 }
 

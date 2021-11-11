@@ -106,6 +106,11 @@ const Footer = () => {
 									<FormattedMessage id='layout.footer.dataPrivacy' />
 								</Link>
 							</li>
+							<li>
+								<Link to='/cookies' activeClassName='active'>
+									Cookies
+								</Link>
+							</li>
 						</ul>
 					</Col>
 				</Row>
