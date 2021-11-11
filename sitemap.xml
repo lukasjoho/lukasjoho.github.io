@@ -11,6 +11,9 @@
 <url> <loc>https://excyted.io/case-studies/siemens-ai/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://excyted.io/de/case-studies/siemens-ai/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://excyted.io/en/case-studies/siemens-ai/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://excyted.io/cookies/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://excyted.io/de/cookies/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://excyted.io/en/cookies/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://excyted.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://excyted.io/de/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://excyted.io/en/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -22,6 +25,9 @@
 <url> <loc>https://excyted.io/medienproduktion/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://excyted.io/de/medienproduktion/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://excyted.io/en/medienproduktion/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://excyted.io/privacy-policy/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://excyted.io/de/privacy-policy/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://excyted.io/en/privacy-policy/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://excyted.io/projects/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://excyted.io/de/projects/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://excyted.io/en/projects/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
