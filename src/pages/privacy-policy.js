@@ -6,12 +6,13 @@ import { useIntl } from 'gatsby-plugin-intl';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { useStaticQuery, graphql } from 'gatsby';
 
-const Legal = () => {
+const PrivacyPolicy = () => {
 	const { locale } = useIntl();
+
 	const query = useStaticQuery(
 		graphql`
 			query {
-				allContentfulLegal(filter: { slug: { eq: "legal-notice" } }) {
+				allContentfulLegal(filter: { slug: { eq: "privacy-policy" } }) {
 					nodes {
 						title
 						richText {
@@ -42,4 +43,4 @@ const Legal = () => {
 	);
 };
 
-export default Legal;
+export default PrivacyPolicy;

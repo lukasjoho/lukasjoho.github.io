@@ -19,6 +19,9 @@ footer {
 				text-align: left;
 			}
 		}
+		.main-links {
+			margin-bottom: 0.5rem;
+		}
 		.locale-switcher-container {
 			display: flex;
 			justify-content: center;
@@ -50,6 +53,13 @@ footer {
 					background-color: $primary;
 					color: black;
 				}
+			}
+		}
+
+		.sitemap {
+			margin-bottom: 1.5rem;
+			@include media-breakpoint-up(md) {
+				margin-bottom: 0;
 			}
 		}
 	}

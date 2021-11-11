@@ -12,7 +12,7 @@ const Footer = () => {
 				<Row>
 					<Col md={6}>
 						<h3>excyted UG</h3>
-						<ul>
+						<ul className='main-links'>
 							<li>
 								<Link to='/' activeClassName='active'>
 									Technology Studio
@@ -61,7 +61,7 @@ const Footer = () => {
 							</button>
 						</div>
 					</Col>
-					<Col md={3}>
+					<Col md={3} className='sitemap'>
 						<h3>Sitemap</h3>
 						<ul>
 							<li>
@@ -102,7 +102,7 @@ const Footer = () => {
 								</Link>
 							</li>
 							<li>
-								<Link to='/legal-notice#privacy' activeClassName='active'>
+								<Link to='/privacy-policy' activeClassName='active'>
 									<FormattedMessage id='layout.footer.dataPrivacy' />
 								</Link>
 							</li>
