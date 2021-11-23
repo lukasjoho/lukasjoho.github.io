@@ -36,13 +36,13 @@ const HeyFuture = () => {
 		<div className='casestudy'>
 			<Container>
 				<div className='main'>
-					<Link to='/case-studies/heyfuture'>
+					<Link to='/case-studies/job-finder'>
 						<div className='case'>
 							<div className='image heyfuture'>
 								{/* <Parallax y={[10, -10]} x={[-5, 5]} tagOuter='figure'> */}
 								<Img
 									fluid={imageCard.childImageSharp.fluid}
-									alt='HeyFuture Swipe Card'
+									alt='Berufsfinder Swipe Card'
 								/>
 								{/* </Parallax> */}
 							</div>
@@ -61,7 +61,7 @@ const HeyFuture = () => {
 							</div>
 							<div className='client'>
 								{/* <Parallax y={[0, 0]} x={[5, -5]} tagOuter='figure'> */}
-								<h1>HeyFuture</h1>
+								<h1>Berufsfinder</h1>
 								{/* </Parallax> */}
 							</div>
 						</div>

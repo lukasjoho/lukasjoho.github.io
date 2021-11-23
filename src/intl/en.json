@@ -226,15 +226,15 @@
 		},
 		"heyFuture": {
 			"seo": {
-				"title": "HeyFuture",
-				"description": "For HeyFuture we designed and developed a web application that offers high school students insights into various jobs in the form of videos."
+				"title": "Job finder",
+				"description": "We designed and developed a web application that offers high school students insights into various jobs in the form of videos."
 			},
 			"category": "Case Study: <em>Web Development</em>",
-			"title": "HeyFuture",
-			"subtitle": "For HeyFuture we designed and developed a web application that offers high school students insights into various jobs in the form of videos.",
+			"title": "Job finder",
+			"subtitle": "We designed and developed a web application that offers high school students insights into various jobs in the form of videos.",
 
 			"text": [
-				"<h2>The Challenge</h2> <p>HeyFuture approached us with the idea of building a digital job orientation platform. With no more than a few presentation slides, that conveyed the rough idea, our mission was  to flesh out the idea, bring it to life as a mobile-first web-application and ultimately solve the business case assigned to us in the short timeframe of 2 months. </p>",
+				"<h2>The Challenge</h2> <p>The client approached us with the idea of building a digital job orientation platform. With no more than a few presentation slides, that conveyed the rough idea, our mission was  to flesh out the idea, bring it to life as a mobile-first web-application and ultimately solve the business case assigned to us in the short timeframe of 2 months. </p>",
 
 				"<h2>UX Design</h2> <p>In a continuous discovery process with the client we advised with our industry knowledge about user interests, behaviors and best practices. We challenged ideas, systematically separated the good ideas from the bad  and iterated over the user journey to then break everything down into the following:</p><ol><li>Users signup for an account by answering only the most basic informations about themselves to avoid drop off rate during the process.</li><li>Users then agree or decline personal and job related questions on cards by swiping them left or right.</li><li>After completion users can access recommended videos based on their given answers.</li><li>In these videos, people from a specific industry give insights into their profession and career.</li><li>Users can get into discussions with the community below the video.</li></ol><p>The result of this UX design process were low fidelity wireframes that constituted the first clickable prototype.</p>",
 
@@ -250,9 +250,7 @@
 
 				"<h3>Real time chat</h3><p>To foster in-app engagement and communication we integrated a real time chat feature that allows users to read, post and like comments below a video. Users get immedieate response on their comments and those of others.</p>",
 
-				"<h2>Continuous Deployment</h2> <Our>The app was set up in a way that makes continuous development and deployment as easy and fast as possible. Through the separation into a staging and production environment, new features and content can be tested before it goes live to the public. Our powerful backend-solution makes deployment of new versions and hosting fast, safe and reliable.</p>",
-
-				"<p>Check out <a href='https://heyfuture.app'>heyfuture.app</a></p>"
+				"<h2>Continuous Deployment</h2> <Our>The app was set up in a way that makes continuous development and deployment as easy and fast as possible. Through the separation into a staging and production environment, new features and content can be tested before it goes live to the public. Our powerful backend-solution makes deployment of new versions and hosting fast, safe and reliable.</p>"
 			]
 		},
 		"biersafe": {

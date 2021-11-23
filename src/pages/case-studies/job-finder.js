@@ -15,45 +15,43 @@ import '~/components/sites/case-studies/casestudy.scss';
 
 const HeyFuture = () => {
 	const intl = useIntl();
-	const {
-		imageSplashscreen,
-		imageUX,
-		imageUI,
-		imageDev,
-	} = useStaticQuery(graphql`
-		query {
-			imageSplashscreen: file(
-				relativePath: { eq: "content/image-heyfuture.png" }
-			) {
-				childImageSharp {
-					fluid(quality: 90, maxWidth: 700) {
-						...GatsbyImageSharpFluid_withWebp_noBase64
+	const { imageSplashscreen, imageUX, imageUI, imageDev } =
+		useStaticQuery(graphql`
+			query {
+				imageSplashscreen: file(
+					relativePath: { eq: "content/image-heyfuture.png" }
+				) {
+					childImageSharp {
+						fluid(quality: 90, maxWidth: 700) {
+							...GatsbyImageSharpFluid_withWebp_noBase64
+						}
+					}
+				}
+				imageUX: file(relativePath: { eq: "content/image-heyfuture-ux.jpg" }) {
+					childImageSharp {
+						fluid(quality: 90, maxWidth: 1000) {
+							...GatsbyImageSharpFluid_withWebp_noBase64
+						}
+					}
+				}
+				imageUI: file(relativePath: { eq: "content/image-heyfuture-ui.png" }) {
+					childImageSharp {
+						fluid(quality: 90, maxWidth: 1000) {
+							...GatsbyImageSharpFluid_withWebp_noBase64
+						}
+					}
+				}
+				imageDev: file(
+					relativePath: { eq: "content/image-heyfuture-dev.png" }
+				) {
+					childImageSharp {
+						fluid(quality: 90, maxWidth: 1000) {
+							...GatsbyImageSharpFluid_withWebp_noBase64
+						}
 					}
 				}
 			}
-			imageUX: file(relativePath: { eq: "content/image-heyfuture-ux.jpg" }) {
-				childImageSharp {
-					fluid(quality: 90, maxWidth: 1000) {
-						...GatsbyImageSharpFluid_withWebp_noBase64
-					}
-				}
-			}
-			imageUI: file(relativePath: { eq: "content/image-heyfuture-ui.png" }) {
-				childImageSharp {
-					fluid(quality: 90, maxWidth: 1000) {
-						...GatsbyImageSharpFluid_withWebp_noBase64
-					}
-				}
-			}
-			imageDev: file(relativePath: { eq: "content/image-heyfuture-dev.png" }) {
-				childImageSharp {
-					fluid(quality: 90, maxWidth: 1000) {
-						...GatsbyImageSharpFluid_withWebp_noBase64
-					}
-				}
-			}
-		}
-	`);
+		`);
 	return (
 		<Layout>
 			<SEO
@@ -62,7 +60,7 @@ const HeyFuture = () => {
 					id: 'caseStudies.heyFuture.seo.description',
 				})}
 				image={imageSplashscreen.childImageSharp.fluid.src}
-				url='https://excyted.io/case-studies/heyfuture'
+				url='https://excyted.io/case-studies/job-finder'
 			/>
 
 			<section className='casepage' id='heyfuture'>
@@ -145,7 +143,6 @@ const HeyFuture = () => {
 						<Row>
 							<Col xs={12} lg={7}>
 								<FormattedHTMLMessage id='caseStudies.heyFuture.text.8' />
-								<FormattedHTMLMessage id='caseStudies.heyFuture.text.9' />
 							</Col>
 						</Row>
 					</article>
