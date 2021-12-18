@@ -26,7 +26,7 @@ const ContactModal = ({ show, onHide, handleModalClose }) => {
 					<Modal.Body>
 						<div className='contacts first-child'>
 							<h2>
-								<a href='tel:+491779767078'>+49 177 9767078</a>
+								<a href='tel:+491606111994'>+49 160 6111994</a>
 							</h2>
 						</div>
 						<div className='contacts '>
