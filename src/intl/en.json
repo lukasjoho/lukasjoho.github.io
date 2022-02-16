@@ -221,7 +221,7 @@
 
 				"<h3>Tailor-made content management system</h3> <p>Markdown files make up an individualized and function-specific content management system. Texts, images, icons, pages and links can be easily edited and added with it. This does not require a technical background and the function of the page can not be affected unintentionally. <br /> <br /> Content such as these texts about a training offered (highlighted in red) can be changed very intuitively via Markdown files. Text formatting, metadata and insertion of components can be done via simple codings. </p>",
 
-				"<h3>Filtering of projects</h3> <p>Using the \"Use Case Explorer\", projects can be intelligently filtered and displayed according to several criteria. Clicking on the respective project displays further detailed information. The page makes use of an existing internal API in which the projects are stored."
+				"<h3>Filtering of projects</h3> <p>Using the \"Use Case Explorer\", projects can be intelligently filtered and displayed according to several criteria. Clicking on the respective project displays further detailed information. The page makes use of an existing internal API which fetches the projects."
 			]
 		},
 		"heyFuture": {

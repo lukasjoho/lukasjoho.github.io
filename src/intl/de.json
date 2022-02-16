@@ -226,7 +226,7 @@
 
 				"<h3>Maßgeschneidertes Content Management System</h3> <p> Die von uns eingebauten Markdown-Dateien bilden ein individualisiertes und funktionsspezifisches Content Management System. Texte, Bilder, Icons, Seiten und Verlinkungen können damit ganz einfach bearbeitet und hinzugefügt werden. Dazu braucht es keinen technischen Hintergrund und die Funktion der Seite kann nicht ungewollt beeinträchtigt werden. <br /> <br /> Inhalte wie z.B diese Texte über ein angebotenes Training (rot markiert) können sehr intuitiv über Markdown-Dateien geändert werden. Textformatierungen, Metadaten und das Einfügen von Komponenten können über einfache Codierungen vorgenommen werden. </p>",
 
-				"<h3>Filtering von Projekten</h3> <p> Über den „Use Case Explorer“ können Projekte nach mehreren Kriterien intelligent gefiltert und angezeigt werden. Mit einem Klick auf das jeweilige Projekt werden weitere Detailinformationen angezeigt. Die Seite greift dabei auf eine bereits bestehende interne API zurück, in der die Projekte hinterlegt sind."
+				"<h3>Filtering von Projekten</h3> <p> Über den „Use Case Explorer“ können Projekte nach mehreren Kriterien intelligent gefiltert und angezeigt werden. Mit einem Klick auf das jeweilige Projekt werden weitere Detailinformationen angezeigt. Die Seite greift dabei auf eine bereits bestehende interne API zurück, mit der die Projekte abgerufen werden können."
 			]
 		},
 		"heyFuture": {
